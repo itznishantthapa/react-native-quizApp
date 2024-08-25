@@ -9,6 +9,12 @@ import neon2 from '../assets/neon2.jpg';
 export default function Login({ navigation }) {
     const [passwordVisible, setPasswordVisible] = useState(true);
 
+
+    const [username, setUsername] = useState('');
+    const [Password, setPassword] = useState('');
+
+
+
     const togglePasswordVisibility = () => {
         setPasswordVisible(!passwordVisible);
     };
@@ -16,23 +22,35 @@ export default function Login({ navigation }) {
     const toggleLogin = () => {
         navigation.navigate('Signup');
     }
-    const handleLogin=()=>{
-        navigation.navigate('Dashboard');
+    const handleLogin = () => {
+        if(!(Password.trim()==='' && username.trim()==='')){
+
+            if(Password==='111' && username==='nishant'){
+    
+                navigation.navigate('Tabbar');
+            }else{
+                alert('Invalid Creditentials')
+            }
+        }else{
+            alert("Please login");
+        }
     }
+
+
 
     return (
         <KeyboardAvoidingView
-            behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
             style={styles.root}
         >
-           <StatusBar />
+            <StatusBar style='auto'/>
 
             <ImageBackground source={neon2} style={styles.background}>
                 <View style={styles.innerView}>
-                    <TextInput style={styles.inputField} placeholder='Enter your email' placeholderTextColor='#adb5bd' />
+                    <TextInput value={username} onChangeText={setUsername} style={styles.inputField} placeholder='Enter your email' placeholderTextColor='#adb5bd' />
 
                     <View style={[styles.inputField, { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }]}>
                         <TextInput
+                            value={Password} onChangeText={setPassword}
                             style={{ fontWeight: 'bold', width: '75%', color: '#adb5bd' }}
                             placeholder='Enter your password'
                             placeholderTextColor='#adb5bd'
@@ -43,13 +61,13 @@ export default function Login({ navigation }) {
                         </TouchableOpacity>
                     </View>
 
-                    <View style={{ height: 80, width: '80%',justifyContent:'space-between',alignItems:'center',position:'absolute',top:'60%' }}>
+                    <View style={{ height: 80, width: '80%', justifyContent: 'space-between', alignItems: 'center', position: 'absolute', top: '60%' }}>
 
                         <View style={styles.login}>
                             <TouchableOpacity style={styles.login} onPress={handleLogin}>
-                            <Text style={{ fontWeight: 'bold', fontSize: 18, }}>Login</Text>
+                                <Text style={{ fontWeight: 'bold', fontSize: 18, }}>Login</Text>
                             </TouchableOpacity>
-                            
+
                         </View>
 
                         <TouchableOpacity onPress={toggleLogin}>

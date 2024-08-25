@@ -5,7 +5,7 @@ import Login from './components/Login';
 import Creation from './components/Creation';
 import { ImageBackground } from 'react-native';
 import QuizApp from './components/QuizApp';
-import Dashboard from './components/Dashboard';
+import Tabbar from './components/Tabbar';
 const Stack = createNativeStackNavigator();
 
 
@@ -21,7 +21,7 @@ export default function App() {
       <Stack.Screen name="Signup" component={Signup} />
       <Stack.Screen name="Creation" component={Creation} />
       <Stack.Screen name="Quiz" component={QuizApp} />
-      <Stack.Screen name="Dashboard" component={Dashboard} />
+      <Stack.Screen name="Tabbar" component={Tabbar} />
     </Stack.Navigator>
   </NavigationContainer>
 

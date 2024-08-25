@@ -13,7 +13,6 @@ export default function Signup({navigation})  {
 
 
             <KeyboardAvoidingView
-                behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
                 style={styles.root}
             >
                 <StatusBar style='auto' />

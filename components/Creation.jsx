@@ -18,7 +18,6 @@ export default function Creation({navigation}) {
 
     return (
         <KeyboardAvoidingView
-            behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
             style={styles.root}
         >
             <StatusBar style='auto' />

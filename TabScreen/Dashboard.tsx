@@ -10,13 +10,14 @@ import pool from '../assets/pool.png'
 import venom from '../assets/venom.jpeg'
 
 import { BlurView } from 'expo-blur';
+// import Tabbar from './Tabbar';
 
 
 export default function Dashboard({navigation}) {
+const goToQuiz=()=>{
+    navigation.navigate('Quiz');
+}
 
-    const goToQuestionPage=()=>{
-navigation.navigate('Quiz');
-    }
     return (
         <View style={{ flex: 1 }}>
             <ScrollView style={styles.background}>
@@ -30,7 +31,7 @@ navigation.navigate('Quiz');
                     </View>
 
                     <View style={styles.boxContainer}>
-                        <TouchableOpacity style={{width:'100%',flex:1,justifyContent:'center',alignItems:'center'}} onPress={goToQuestionPage}>
+                        <TouchableOpacity style={{width:'100%',flex:1,justifyContent:'center',alignItems:'center'}} onPress={goToQuiz}>
                             <ImageBackground source={cosmos} resizeMode="cover" imageStyle={{ borderRadius: 20, width: '100%' }} style={styles.boxes}>
                                 <Text style={styles.textStyle}>Astronomy</Text>
                             </ImageBackground>
