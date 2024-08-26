@@ -20,8 +20,9 @@ export default function Creation({navigation}) {
         <KeyboardAvoidingView
             style={styles.root}
         >
-            <StatusBar style='auto' />
-            <ImageBackground source={neon2} style={styles.background}>
+               <StatusBar style={'light'}/>
+            {/* <ImageBackground source={neon2} style={styles.background}> */}
+            <View style={styles.background}>
                 <View style={styles.innerView}>
                     <TextInput style={styles.inputField} placeholder='Enter your full name' placeholderTextColor='#adb5bd' />
                     <TextInput style={styles.inputField} placeholder='Create username' placeholderTextColor='#adb5bd' />
@@ -65,7 +66,8 @@ export default function Creation({navigation}) {
 
 
                 </View>
-            </ImageBackground>
+                </View>
+            {/* </ImageBackground> */}
         </KeyboardAvoidingView>
     );
 }
@@ -77,6 +79,7 @@ const styles = StyleSheet.create({
     background: {
         flex: 1,
         justifyContent: 'center',
+        backgroundColor:'#000000'
     },
     innerView: {
         flex: 1,

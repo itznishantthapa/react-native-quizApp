@@ -15,9 +15,11 @@ export default function Signup({navigation})  {
             <KeyboardAvoidingView
                 style={styles.root}
             >
-                <StatusBar style='auto' />
-                <ImageBackground source={neon2} style={styles.background}>
+                   <StatusBar style={'light'}/>
+                {/* <ImageBackground source={neon2} style={styles.background}> */}
+                <View style={styles.background}>
                     <View style={styles.innerView}>
+                        <Text style={{color:'white',fontWeight:'900',fontSize:30,marginBottom:20}}>How do you want to sign up?</Text>
                         <View style={styles.loginOptions}>
                             <TouchableOpacity style={styles.loginOpt} onPress={handleCreation}>
                             <View style={styles.loginOpt}>
@@ -36,7 +38,8 @@ export default function Signup({navigation})  {
                             </View>
                         </View>
                     </View>
-                </ImageBackground>
+                    </View>
+                {/* </ImageBackground> */}
             </KeyboardAvoidingView>
 
 
@@ -58,6 +61,7 @@ const styles = StyleSheet.create({
     background: {
         flex: 1,
         justifyContent: 'center',
+        backgroundColor:'#000000'
     },
     loginOptions: {
         flexDirection: 'column',
