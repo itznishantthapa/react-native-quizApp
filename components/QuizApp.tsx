@@ -57,11 +57,11 @@ const QuizApp = () => {
     };
 
     return (
-        <>
-            <StatusBar />
+        <View style={{flex:1}}>
+          <StatusBar style={'light'} hidden={false}/>
             <ImageBackground source={neon2} style={styles.background}>
                 <View style={styles.container}>
-
+ 
                     <Text style={styles.question}>{question}</Text>
                     <View style={styles.optionsContainer}>
                         {options.map((option, index) => (
@@ -76,7 +76,7 @@ const QuizApp = () => {
                     </View>
                 </View>
             </ImageBackground>
-        </>
+        </View>
 
 
     );
@@ -86,9 +86,10 @@ const styles = StyleSheet.create({
     background: {
         flex: 1,
         justifyContent: 'center',
+        // alignItems:'center'
     },
     container: {
-        flex: 1,
+        flexDirection: 'column',
         justifyContent: "center",
         alignItems: "center",
     },

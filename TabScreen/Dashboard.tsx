@@ -17,7 +17,7 @@ export default function Dashboard({ navigation }) {
     }
 
     return (
-        <View style={{ flex: 1 }}>
+        <View style={styles.root}>
             <ScrollView style={styles.background_Dashboard}>
                 <View style={{
                     flexDirection: 'column', justifyContent: 'center', alignItems: 'center'
