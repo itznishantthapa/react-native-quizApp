@@ -8,19 +8,17 @@ import console from '../assets/console.jpg'
 import hills from '../assets/hills.png'
 import pool from '../assets/pool.png'
 import venom from '../assets/venom.jpeg'
-
-import { BlurView } from 'expo-blur';
-// import Tabbar from './Tabbar';
+import { styles } from '../style'
 
 
-export default function Dashboard({navigation}) {
-const goToQuiz=()=>{
-    navigation.navigate('Quiz');
-}
+export default function Dashboard({ navigation }) {
+    const goToQuiz = () => {
+        navigation.navigate('Quiz');
+    }
 
     return (
         <View style={{ flex: 1 }}>
-            <ScrollView style={styles.background}>
+            <ScrollView style={styles.background_Dashboard}>
                 <View style={{
                     flexDirection: 'column', justifyContent: 'center', alignItems: 'center'
                 }}>
@@ -31,7 +29,7 @@ const goToQuiz=()=>{
                     </View>
 
                     <View style={styles.boxContainer}>
-                        <TouchableOpacity style={{width:'100%',flex:1,justifyContent:'center',alignItems:'center'}} onPress={goToQuiz}>
+                        <TouchableOpacity style={{ width: '100%', flex: 1, justifyContent: 'center', alignItems: 'center' }} onPress={goToQuiz}>
                             <ImageBackground source={cosmos} resizeMode="cover" imageStyle={{ borderRadius: 20, width: '100%' }} style={styles.boxes}>
                                 <Text style={styles.textStyle}>Astronomy</Text>
                             </ImageBackground>
@@ -66,55 +64,3 @@ const goToQuiz=()=>{
     )
 }
 
-const styles = StyleSheet.create({
-    background: {
-        flex: 1,
-        backgroundColor: '#000000',
-        gap: 40
-
-    },
-    searchView: {
-        height: 60,
-        width: '90%',
-        backgroundColor: '#f0efeb',
-        borderRadius: 20,
-        flexDirection: 'row',
-        justifyContent: 'flex-start',
-        alignItems: 'center',
-        paddingLeft: 30,
-
-    },
-    boxContainer: {
-        width: '100%',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        gap: 15,
-        marginTop: 40
-    },
-    boxes: {
-        height: 150,
-        width: '90%',
-        flexDirection: 'row',
-        borderRadius: 20,
-        justifyContent: 'flex-start',
-        alignItems: 'flex-end',
-
-    },
-    textStyle: {
-        color: '#ffffff',
-        fontWeight: 'bold',
-        fontSize: 30,
-        marginLeft: 15,
-        marginBottom: 15
-    },
-    textStyle2: {
-        color: '#ffffff',
-        fontWeight: '900',
-        fontSize: 25,
-        marginLeft: 15,
-        marginBottom: 15
-    }
-
-
-})

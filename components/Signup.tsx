@@ -4,6 +4,7 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import { StyleSheet, Text, TextInput, View, ImageBackground, TouchableOpacity, KeyboardAvoidingView, Platform } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import neon2 from '../assets/neon2.jpg';
+import {styles} from '../style';
 
 export default function Signup({navigation})  {
    const handleCreation=()=>{
@@ -47,38 +48,3 @@ export default function Signup({navigation})  {
         )
     
 }
-
-const styles = StyleSheet.create({
-    root: {
-        flex: 1,
-    },
-    innerView: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        gap: 8,
-    },
-    background: {
-        flex: 1,
-        justifyContent: 'center',
-        backgroundColor:'#000000'
-    },
-    loginOptions: {
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        gap: 8,
-        height: 130,
-        width: '60%',
-    },
-    loginOpt: {
-        width: '100%',
-        height: 45,
-        flexDirection: 'row',
-        justifyContent: 'center',
-        alignItems: 'center',
-        gap: 8,
-        backgroundColor: '#ffffff',
-        borderRadius: 20,
-    },
-});

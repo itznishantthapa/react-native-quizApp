@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faEye, faEyeSlash } from '@fortawesome/free-regular-svg-icons';
 import React, { useState } from 'react';
 import neon2 from '../assets/neon2.jpg';
+import {styles} from '../style'
 
 
 export default function Creation({navigation}) {
@@ -72,55 +73,55 @@ export default function Creation({navigation}) {
     );
 }
 
-const styles = StyleSheet.create({
-    root: {
-        flex: 1,
-    },
-    background: {
-        flex: 1,
-        justifyContent: 'center',
-        backgroundColor:'#000000'
-    },
-    innerView: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        gap: 8,
-    },
-    inputField: {
-        width: '80%',
-        height: 40,
-        borderBottomWidth: 1,
-        borderColor: '#adb5bd',
-        paddingLeft: 10,
-        color: '#adb5bd',
-        fontWeight: 'bold',
-    },
-    login: {
-        width: '100%',
-        height: 45,
-        flexDirection: 'row',
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: '#f8f9fa',
-        borderRadius: 20,
-    },
-    loginOptions: {
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        gap: 8,
-        height: 130,
-        width: '60%',
-    },
-    loginOpt: {
-        width: '100%',
-        height: 45,
-        flexDirection: 'row',
-        justifyContent: 'center',
-        alignItems: 'center',
-        gap: 8,
-        backgroundColor: '#0466c8',
-        borderRadius: 20,
-    },
-});
+// const styles = StyleSheet.create({
+//     root: {
+//         flex: 1,
+//     },
+//     background: {
+//         flex: 1,
+//         justifyContent: 'center',
+//         backgroundColor:'#000000'
+//     },
+//     innerView: {
+//         flex: 1,
+//         justifyContent: 'center',
+//         alignItems: 'center',
+//         gap: 8,
+//     },
+//     inputField: {
+//         width: '80%',
+//         height: 40,
+//         borderBottomWidth: 1,
+//         borderColor: '#adb5bd',
+//         paddingLeft: 10,
+//         color: '#adb5bd',
+//         fontWeight: 'bold',
+//     },
+//     login: {
+//         width: '100%',
+//         height: 45,
+//         flexDirection: 'row',
+//         justifyContent: 'center',
+//         alignItems: 'center',
+//         backgroundColor: '#f8f9fa',
+//         borderRadius: 20,
+//     },
+//     loginOptions: {
+//         flexDirection: 'column',
+//         justifyContent: 'center',
+//         alignItems: 'center',
+//         gap: 8,
+//         height: 130,
+//         width: '60%',
+//     },
+//     loginOpt: {
+//         width: '100%',
+//         height: 45,
+//         flexDirection: 'row',
+//         justifyContent: 'center',
+//         alignItems: 'center',
+//         gap: 8,
+//         backgroundColor: '#0466c8',
+//         borderRadius: 20,
+//     },
+// });
