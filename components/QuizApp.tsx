@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { View, Text, Button, Alert, TouchableOpacity, StyleSheet, ImageBackground } from "react-native";
 import neon2 from '../assets/neon2.jpg';
+import { StatusBar } from "expo-status-bar";
 
 const QuizApp = () => {
     const [data, setData] = useState(null);
@@ -56,22 +57,27 @@ const QuizApp = () => {
     };
 
     return (
-        <ImageBackground source={neon2} style={styles.background}>
-            <View style={styles.container}>
-                <Text style={styles.question}>{question}</Text>
-                <View style={styles.optionsContainer}>
-                    {options.map((option, index) => (
-                        <TouchableOpacity
-                            key={index}
-                            style={styles.optionButton}
-                            onPress={() => handleOptionClick(option)}
-                        >
-                            <Text style={styles.optionText}>{option}</Text>
-                        </TouchableOpacity>
-                    ))}
+        <>
+            <StatusBar />
+            <ImageBackground source={neon2} style={styles.background}>
+                <View style={styles.container}>
+
+                    <Text style={styles.question}>{question}</Text>
+                    <View style={styles.optionsContainer}>
+                        {options.map((option, index) => (
+                            <TouchableOpacity
+                                key={index}
+                                style={styles.optionButton}
+                                onPress={() => handleOptionClick(option)}
+                            >
+                                <Text style={styles.optionText}>{option}</Text>
+                            </TouchableOpacity>
+                        ))}
+                    </View>
                 </View>
-            </View>
-        </ImageBackground>
+            </ImageBackground>
+        </>
+
 
     );
 };
@@ -91,8 +97,8 @@ const styles = StyleSheet.create({
         marginBottom: 20,
         textAlign: "center",
         paddingHorizontal: 20,
-        color:'#edf6f9',
-        fontWeight:'bold'
+        color: '#edf6f9',
+        fontWeight: 'bold'
     },
     optionsContainer: {
         width: "100%",
