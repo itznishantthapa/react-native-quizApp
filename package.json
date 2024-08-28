@@ -28,7 +28,8 @@
     "typescript": "~5.3.3"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.0"
+    "@babel/core": "^7.20.0",
+    "react-native-make": "^1.0.1"
   },
   "private": true
 }
