@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, TextInput, View, ImageBackground, TouchableOpacity, KeyboardAvoidingView, Platform } from 'react-native';
+import { StyleSheet, Text, TextInput, View, ImageBackground, TouchableOpacity,Alert, KeyboardAvoidingView, Platform } from 'react-native';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faEye, faEyeSlash } from '@fortawesome/free-regular-svg-icons';
 import React, { useState } from 'react';
@@ -24,17 +24,18 @@ export default function Login({ navigation }) {
         navigation.navigate('Signup');
     }
     const handleLogin = () => {
-        if(!(Password.trim()==='' && username.trim()==='')){
+        // if(!(Password.trim()==='' && username.trim()==='')){
 
-            if(Password==='111' && username==='nishant'){
+        //     if(Password==='111' && username==='nishant'){
     
-                navigation.navigate('Tabbar');
-            }else{
-                alert('Invalid Creditentials')
-            }
-        }else{
-            alert("Please login");
-        }
+        //         navigation.navigate('Tabbar');
+        //     }else{
+        //         Alert.alert("Invalid Creditentials", "Please enter correct username and password");
+        //     }
+        // }else{
+        //     alert("Please login");
+        // }
+        navigation.navigate('Tabbar');
     }
 
 

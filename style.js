@@ -99,6 +99,34 @@ export const  styles = StyleSheet.create({
         fontSize: 25,
         marginLeft: 15,
         marginBottom: 15
-    }
+    },
+    container: {
+        flexDirection: 'column',
+        justifyContent: "center",
+        alignItems: "center",
+    },
+    question: {
+        fontSize: 24,
+        marginBottom: 20,
+        textAlign: "center",
+        paddingHorizontal: 20,
+        color: '#edf6f9',
+        fontWeight: 'bold'
+    },
+    optionsContainer: {
+        width: "100%",
+        paddingHorizontal: 20,
+    },
+    optionButton: {
+        backgroundColor: "#5a189a",
+        padding: 15,
+        marginVertical: 10,
+        borderRadius: 10,
+        alignItems: "center",
+    },
+    optionText: {
+        color: "#fff",
+        fontSize: 18,
+    },
 
 });
