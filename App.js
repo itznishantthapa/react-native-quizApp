@@ -7,7 +7,16 @@ import { ImageBackground, View, StyleSheet, Alert } from 'react-native';
 import QuizApp from './components/QuizApp';
 import Tabbar from './components/Tabbar';
 import { useState, useEffect } from 'react';
+// import { enableScreens } from 'react-native-screens';
+
+
+// enableScreens();
+
 const Stack = createNativeStackNavigator();
+
+
+
+
 
 
 export default function App() {
@@ -66,10 +75,16 @@ export default function App() {
     setOptions(options);
   };
 
+
+  
+
   return (
     // <View style={styles.container}>
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Login" screenOptions={{ headerShown: false }}>
+      <Stack.Navigator initialRouteName="Login" screenOptions={{
+        headerShown: false, 
+        animation: 'slide_from_right', 
+      }}>
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="Signup" component={Signup} />
         <Stack.Screen name="Creation" component={Creation} />
