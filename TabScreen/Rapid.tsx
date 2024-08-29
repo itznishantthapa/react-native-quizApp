@@ -6,7 +6,7 @@ import { styles } from '../style';
 const Rapid = ({question,options,handleOptionClick}) => {
     return (
         <View style={{flex:1}}>
-          <StatusBar style={'light'} hidden={false}/>
+           <StatusBar style={'light'} hidden={false} backgroundColor='black' />
             <View  style={styles.background}>
 
 

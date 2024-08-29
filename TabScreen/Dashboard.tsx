@@ -9,7 +9,8 @@ import hills from '../assets/hills.png'
 import pool from '../assets/pool.png'
 import venom from '../assets/venom.jpeg'
 import { styles } from '../style'
-import  { useRef } from 'react';
+import { useRef } from 'react';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 export default function Dashboard({ navigation }) {
 
@@ -30,22 +31,24 @@ export default function Dashboard({ navigation }) {
         navigation.navigate('Quiz');
     }
 
-    const handleSearch=()=>{
+    const handleSearch = () => {
         textInputRef.current.focus();
     }
 
     return (
-        <View style={styles.root}>
+        <SafeAreaView style={styles.root}>
+            <StatusBar hidden={false} backgroundColor='black' style='light' />
             <ScrollView style={styles.background_Dashboard}>
+
                 <View style={{
                     flexDirection: 'column', justifyContent: 'center', alignItems: 'center'
                 }}>
-                    <StatusBar hidden />
+
                     <View style={styles.searchView}>
                         <TouchableOpacity onPress={handleSearch}>
-                        <Icon name='search' style={{ color: '#495057' }} size={30}></Icon>
+                            <Icon name='search' style={{ color: '#495057' }} size={30}></Icon>
                         </TouchableOpacity>
-                        <TextInput ref={textInputRef}  style={{ fontSize: 20, fontWeight: 'bold', width: '80%' }} placeholder='username' placeholderTextColor='#495057'></TextInput>
+                        <TextInput ref={textInputRef} style={{ fontSize: 20, fontWeight: 'bold', width: '80%' }} placeholder='username' placeholderTextColor='#495057'></TextInput>
                     </View>
 
                     <View style={styles.boxContainer}>
@@ -80,7 +83,7 @@ export default function Dashboard({ navigation }) {
 
                 </View>
             </ScrollView>
-        </View>
+        </SafeAreaView>
     )
 }
 

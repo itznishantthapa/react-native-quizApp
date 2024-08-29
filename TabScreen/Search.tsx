@@ -5,6 +5,7 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import { styles } from '../style'
 import  { useRef,useState,useEffect } from 'react';
 import { useFocusEffect } from '@react-navigation/native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 export default function Search({ navigation }) {
 
@@ -30,12 +31,13 @@ export default function Search({ navigation }) {
     }
 
     return (
-        <View style={styles.root}>
-            <ScrollView style={styles.background_Dashboard}>
+        <SafeAreaView style={styles.root}>
+            {/* <ScrollView style={styles.background_Dashboard}> */}
+            <View style={styles.background_Dashboard}>
                 <View style={{
                     flexDirection: 'column', justifyContent: 'center', alignItems: 'center'
                 }}>
-                    <StatusBar hidden />
+                    <StatusBar hidden={false} backgroundColor='black' style='light'/>
                     <View style={styles.searchView}>
                         <TouchableOpacity onPress={handleSearch}>
                         <Icon name='search' style={{ color: '#495057' }} size={30}></Icon>
@@ -50,8 +52,9 @@ export default function Search({ navigation }) {
 
 
                 </View>
-            </ScrollView>
-        </View>
+                </View>
+            {/* </ScrollView> */}
+        </SafeAreaView>
     )
 }
 

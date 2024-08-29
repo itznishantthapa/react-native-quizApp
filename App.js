@@ -7,10 +7,10 @@ import { ImageBackground, View, StyleSheet, Alert } from 'react-native';
 import QuizApp from './components/QuizApp';
 import Tabbar from './components/Tabbar';
 import { useState, useEffect } from 'react';
-// import { enableScreens } from 'react-native-screens';
+import { enableScreens } from 'react-native-screens';
 
 
-// enableScreens();
+enableScreens();
 
 const Stack = createNativeStackNavigator();
 
@@ -97,8 +97,6 @@ export default function App() {
           {props => <Tabbar {...props} question={question} options={options} handleOptionClick={handleOptionClick} />}
         </Stack.Screen>
 
-
-        {/* <Stack.Screen name="Tabbar" component={Tabbar} /> */}
       </Stack.Navigator>
     </NavigationContainer>
     // </View>

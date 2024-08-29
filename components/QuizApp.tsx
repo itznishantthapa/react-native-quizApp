@@ -7,7 +7,7 @@ import { styles } from '../style';
 const QuizApp = ({question,options,handleOptionClick}) => {
     return (
         <View style={{flex:1}}>
-          <StatusBar style={'light'} hidden={false}/>
+          <StatusBar hidden={false} backgroundColor='black' style='light' />
             <View  style={styles.background}>
                 <View style={styles.container}>
  

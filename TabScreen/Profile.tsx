@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Image,TouchableOpacity, ScrollView } from 'react-native'
+import { StyleSheet, Text, View, Image, TouchableOpacity, ScrollView } from 'react-native'
 import { StatusBar } from 'expo-status-bar';
 import React from 'react'
 import { styles } from '../style'
@@ -17,18 +17,20 @@ export default function Profile() {
   return (
     <>
       <View style={styles.root}>
-        <StatusBar style={'light'} hidden={true} />
+        <StatusBar style={'light'} hidden={false} backgroundColor='black' />
         <View style={[styles.background, { justifyContent: 'space-between' }]}>
-          <View style={stylesHere.profieText_gear_container}>
-            <View></View>
-            <Text style={stylesHere.profileText}>Profile</Text>
-            <TouchableOpacity>
-            <Icon name="gear" size={35} color="white" />
-            </TouchableOpacity>
-          </View>
-          <View style={stylesHere.profileContainer}>
-            <Image source={lady} style={stylesHere.profileImage}></Image>
-          </View>
+                <View style={stylesHere.profieText_gear_container}>
+                  <View></View>
+                  <Text style={stylesHere.profileText}>Profile</Text>
+                  <TouchableOpacity>
+                    <Icon name="gear" size={35} color="white" />
+                  </TouchableOpacity>
+                </View>
+
+                <View style={stylesHere.profileContainer}>
+                  <Image source={lady} style={stylesHere.profileImage}></Image>
+                </View>
+
           <View style={stylesHere.iconsNameContainer}>
             <View style={stylesHere.name_usernameContainer}>
               <Text style={{ fontSize: 20, fontWeight: 'bold' }}>Nishant Thapa</Text>
@@ -36,13 +38,13 @@ export default function Profile() {
             </View>
             <View style={stylesHere.gameInfo}>
 
-            <TouchableOpacity style={stylesHere.gameInfoIcons}>
-              {/* <View style={stylesHere.gameInfoIcons}> */}
+              <TouchableOpacity style={stylesHere.gameInfoIcons}>
+                {/* <View style={stylesHere.gameInfoIcons}> */}
                 <Image style={stylesHere.iconImage} source={rank}></Image>
                 <Text style={{ fontWeight: 'bold', fontSize: 20 }}>#99</Text>
                 <Text style={{ fontWeight: 'bold' }}>World</Text>
                 <Text style={{ fontWeight: 'bold' }}>Rank</Text>
-              {/* </View> */}
+                {/* </View> */}
               </TouchableOpacity>
 
               <TouchableOpacity style={stylesHere.gameInfoIcons}>
@@ -77,11 +79,11 @@ export default function Profile() {
               </TouchableOpacity>
 
             </View>
-            <Text style={{ fontSize: 30, fontWeight: 'bold',marginLeft:20 }}>Friends (6)</Text>
+            <Text style={{ fontSize: 30, fontWeight: 'bold', marginLeft: 20 }}>Friends (6)</Text>
 
-            <ScrollView style={{marginTop:31 }}>
-              <View style={{ alignItems: 'center', flexDirection: 'column',gap:10,paddingTop:10 }}>
-               
+            <ScrollView style={{ marginTop: 31 }}>
+              <View style={{ alignItems: 'center', flexDirection: 'column', gap: 10, paddingTop: 10 }}>
+
                 <TouchableOpacity style={stylesHere.friendBox}>
                   <Text style={stylesHere.friendRank}>#1</Text>
                   <Image source={lady} style={stylesHere.friendImage}></Image>
@@ -121,14 +123,16 @@ const stylesHere = StyleSheet.create({
     alignItems: 'center',
     zIndex: 999,
     position: 'absolute',
-    top: 70,
+    top: '15%',
     width: '100%'
   },
   profieText_gear_container: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    paddingHorizontal: 15
+    paddingHorizontal: 15,
+    // backgroundColor: 'grey',
+    height:'20%'
 
   },
   profileImage: {
@@ -162,11 +166,11 @@ const stylesHere = StyleSheet.create({
     borderRadius: 20,
     // borderColor: 'grey',
     // borderWidth: 2,
-    backgroundColor:'white'
+    backgroundColor: 'white'
   },
   iconsNameContainer: {
     backgroundColor: '#dee2e6',
-    height: '85%',
+    height: '80%',
     borderTopLeftRadius: 30,
     borderTopRightRadius: 30,
     flexDirection: 'column'
@@ -197,7 +201,7 @@ const stylesHere = StyleSheet.create({
     gap: 20,
     alignItems: 'center',
     paddingLeft: 20,
-    backgroundColor:'#ced4da'
+    backgroundColor: '#ced4da'
   },
   friendImage: {
     width: 70,

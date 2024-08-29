@@ -16,7 +16,7 @@ export default function Signup({navigation})  {
             <KeyboardAvoidingView
                 style={styles.root}
             >
-                   <StatusBar style={'light'}/>
+                   <StatusBar hidden={false} backgroundColor='black' style='light' />
                 {/* <ImageBackground source={neon2} style={styles.background}> */}
                 <View style={styles.background}>
                     <View style={styles.innerView}>

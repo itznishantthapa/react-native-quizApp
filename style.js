@@ -4,6 +4,8 @@ export const  styles = StyleSheet.create({
     //styles for Login
     root: {
         flex: 1,
+      
+
     },
     background: {
         flex: 1,
