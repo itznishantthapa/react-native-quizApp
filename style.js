@@ -118,15 +118,16 @@ export const  styles = StyleSheet.create({
         paddingHorizontal: 20,
     },
     optionButton: {
-        backgroundColor: "#5a189a",
+        backgroundColor: "#cccccc",
         padding: 15,
         marginVertical: 10,
         borderRadius: 10,
         alignItems: "center",
     },
     optionText: {
-        color: "#fff",
+        color: "black",
         fontSize: 18,
+        fontWeight:'bold'
     },
 
 });

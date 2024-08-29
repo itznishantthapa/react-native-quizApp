@@ -9,11 +9,29 @@ import hills from '../assets/hills.png'
 import pool from '../assets/pool.png'
 import venom from '../assets/venom.jpeg'
 import { styles } from '../style'
-
+import  { useRef } from 'react';
 
 export default function Dashboard({ navigation }) {
+
+
+
+    const textInputRef = useRef(null);
+
+    // const handleButtonPress = () => {
+    //     // Focus the TextInput when button is pressed
+    //     if (textInputRef.current) {
+    //       textInputRef.current.focus();
+    //     }
+    //   };
+
+
+
     const goToQuiz = () => {
         navigation.navigate('Quiz');
+    }
+
+    const handleSearch=()=>{
+        textInputRef.current.focus();
     }
 
     return (
@@ -24,8 +42,10 @@ export default function Dashboard({ navigation }) {
                 }}>
                     <StatusBar hidden />
                     <View style={styles.searchView}>
+                        <TouchableOpacity onPress={handleSearch}>
                         <Icon name='search' style={{ color: '#495057' }} size={30}></Icon>
-                        <TextInput style={{ fontSize: 20, fontWeight: 'bold', width: '80%' }} placeholder='username' placeholderTextColor='#495057'></TextInput>
+                        </TouchableOpacity>
+                        <TextInput ref={textInputRef}  style={{ fontSize: 20, fontWeight: 'bold', width: '80%' }} placeholder='username' placeholderTextColor='#495057'></TextInput>
                     </View>
 
                     <View style={styles.boxContainer}>

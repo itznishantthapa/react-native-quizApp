@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Image, ImageBackground, ScrollView } from 'react-native'
+import { StyleSheet, Text, View, Image,TouchableOpacity, ScrollView } from 'react-native'
 import { StatusBar } from 'expo-status-bar';
 import React from 'react'
 import { styles } from '../style'
@@ -22,7 +22,9 @@ export default function Profile() {
           <View style={stylesHere.profieText_gear_container}>
             <View></View>
             <Text style={stylesHere.profileText}>Profile</Text>
+            <TouchableOpacity>
             <Icon name="gear" size={35} color="white" />
+            </TouchableOpacity>
           </View>
           <View style={stylesHere.profileContainer}>
             <Image source={lady} style={stylesHere.profileImage}></Image>
@@ -33,42 +35,46 @@ export default function Profile() {
               <Text>@username</Text>
             </View>
             <View style={stylesHere.gameInfo}>
-              <View style={stylesHere.gameInfoIcons}>
+
+            <TouchableOpacity style={stylesHere.gameInfoIcons}>
+              {/* <View style={stylesHere.gameInfoIcons}> */}
                 <Image style={stylesHere.iconImage} source={rank}></Image>
                 <Text style={{ fontWeight: 'bold', fontSize: 20 }}>#99</Text>
                 <Text style={{ fontWeight: 'bold' }}>World</Text>
                 <Text style={{ fontWeight: 'bold' }}>Rank</Text>
-              </View>
-              <View style={stylesHere.gameInfoIcons}>
+              {/* </View> */}
+              </TouchableOpacity>
+
+              <TouchableOpacity style={stylesHere.gameInfoIcons}>
                 <Image style={stylesHere.iconImage} source={console_logo}></Image>
                 <Text style={{ fontWeight: 'bold', fontSize: 20 }}>250</Text>
                 <Text style={{ fontWeight: 'bold' }}>Games</Text>
                 <Text style={{ fontWeight: 'bold' }}>Played</Text>
-              </View>
-              <View style={stylesHere.gameInfoIcons}>
+              </TouchableOpacity>
+              <TouchableOpacity style={stylesHere.gameInfoIcons}>
                 <Image style={stylesHere.iconImage} source={points}></Image>
                 <Text style={{ fontWeight: 'bold', fontSize: 20 }}>1,082</Text>
                 <Text style={{ fontWeight: 'bold' }}>Points</Text>
                 <Text style={{ fontWeight: 'bold' }}>Total</Text>
-              </View>
-              <View style={stylesHere.gameInfoIcons}>
+              </TouchableOpacity>
+              <TouchableOpacity style={stylesHere.gameInfoIcons}>
                 <Image style={stylesHere.iconImage} source={charge}></Image>
                 <Text style={{ fontWeight: 'bold', fontSize: 20 }}>72%</Text>
                 <Text style={{ fontWeight: 'bold' }}>Completion</Text>
                 <Text style={{ fontWeight: 'bold' }}>rate</Text>
-              </View>
-              <View style={stylesHere.gameInfoIcons}>
+              </TouchableOpacity>
+              <TouchableOpacity style={stylesHere.gameInfoIcons}>
                 <Image style={stylesHere.iconImage} source={correct}></Image>
                 <Text style={{ fontWeight: 'bold', fontSize: 20 }}>80%</Text>
                 <Text style={{ fontWeight: 'bold' }}>Correct</Text>
                 <Text style={{ fontWeight: 'bold' }}>answers</Text>
-              </View>
-              <View style={stylesHere.gameInfoIcons}>
+              </TouchableOpacity>
+              <TouchableOpacity style={stylesHere.gameInfoIcons}>
                 <Image style={stylesHere.iconImage} source={wrong}></Image>
                 <Text style={{ fontWeight: 'bold', fontSize: 20 }}>20%</Text>
                 <Text style={{ fontWeight: 'bold' }}>Incorrect</Text>
                 <Text style={{ fontWeight: 'bold' }}>answers</Text>
-              </View>
+              </TouchableOpacity>
 
             </View>
             <Text style={{ fontSize: 30, fontWeight: 'bold',marginLeft:20 }}>Friends (6)</Text>
@@ -76,26 +82,26 @@ export default function Profile() {
             <ScrollView style={{marginTop:31 }}>
               <View style={{ alignItems: 'center', flexDirection: 'column',gap:10,paddingTop:10 }}>
                
-                <View style={stylesHere.friendBox}>
+                <TouchableOpacity style={stylesHere.friendBox}>
                   <Text style={stylesHere.friendRank}>#1</Text>
                   <Image source={lady} style={stylesHere.friendImage}></Image>
                   <Text style={stylesHere.friendUsername} >@username</Text>
-                </View>
-                <View style={stylesHere.friendBox}>
+                </TouchableOpacity>
+                <TouchableOpacity style={stylesHere.friendBox}>
                   <Text style={stylesHere.friendRank}>#1</Text>
                   <Image source={lady} style={stylesHere.friendImage}></Image>
                   <Text style={stylesHere.friendUsername} >@username</Text>
-                </View>
-                <View style={stylesHere.friendBox}>
+                </TouchableOpacity>
+                <TouchableOpacity style={stylesHere.friendBox}>
                   <Text style={stylesHere.friendRank}>#1</Text>
                   <Image source={lady} style={stylesHere.friendImage}></Image>
                   <Text style={stylesHere.friendUsername} >@username</Text>
-                </View>
-                <View style={stylesHere.friendBox}>
+                </TouchableOpacity>
+                <TouchableOpacity style={stylesHere.friendBox}>
                   <Text style={stylesHere.friendRank}>#1</Text>
                   <Image source={lady} style={stylesHere.friendImage}></Image>
                   <Text style={stylesHere.friendUsername} >@username</Text>
-                </View>
+                </TouchableOpacity>
 
               </View>
             </ScrollView>
@@ -128,7 +134,7 @@ const stylesHere = StyleSheet.create({
   profileImage: {
     width: 100,
     height: 100,
-    borderRadius: 50, // Half of the width/height to make it circular
+    borderRadius: 50, // Half of the width/height to make it circularrr 
     borderWidth: 2, // Optional: adds a border around the image
     borderColor: '#000', // Optional: border color
   },
@@ -175,7 +181,8 @@ const stylesHere = StyleSheet.create({
 
   iconImage: {
     height: '30%',
-    width: '100%',
+    // width: '100%',
+    width: '30%',
     objectFit: 'contain'
 
   },

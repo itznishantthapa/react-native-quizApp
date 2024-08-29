@@ -93,9 +93,12 @@ export default function App() {
         <Stack.Screen name="Quiz"  >
           {props => <QuizApp {...props} question={question} options={options} handleOptionClick={handleOptionClick} />}
         </Stack.Screen>
+        <Stack.Screen name="Tabbar"  >
+          {props => <Tabbar {...props} question={question} options={options} handleOptionClick={handleOptionClick} />}
+        </Stack.Screen>
 
 
-        <Stack.Screen name="Tabbar" component={Tabbar} />
+        {/* <Stack.Screen name="Tabbar" component={Tabbar} /> */}
       </Stack.Navigator>
     </NavigationContainer>
     // </View>

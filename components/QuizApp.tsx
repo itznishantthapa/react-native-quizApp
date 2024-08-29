@@ -8,7 +8,7 @@ const QuizApp = ({question,options,handleOptionClick}) => {
     return (
         <View style={{flex:1}}>
           <StatusBar style={'light'} hidden={false}/>
-            <ImageBackground source={neon2} style={styles.background}>
+            <View  style={styles.background}>
                 <View style={styles.container}>
  
                     <Text style={styles.question}>{question}</Text>
@@ -24,7 +24,7 @@ const QuizApp = ({question,options,handleOptionClick}) => {
                         ))}
                     </View>
                 </View>
-            </ImageBackground>
+            </View>
         </View>
 
 

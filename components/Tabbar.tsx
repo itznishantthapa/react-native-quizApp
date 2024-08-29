@@ -13,15 +13,21 @@ import Dashboard from '../TabScreen/Dashboard.tsx';
 
 
 
+
+
 const Tab = createBottomTabNavigator();
-export default function Tabbar() {
+
+
+export default function Tabbar({ question, options, handleOptionClick }) {
+
     return (
 
         <Tab.Navigator
             initialRouteName='Dashboard'
             screenOptions={({ route }) => ({
                 headerShown: false,
-                tabBarShowLabel:false,
+                tabBarShowLabel: false,
+                
                 tabBarIcon: ({ color, size }) => {
                     let iconName;
                     if (route.name == 'Dashboard') {
@@ -38,19 +44,22 @@ export default function Tabbar() {
                 },
                 tabBarActiveTintColor: 'tomato',
                 tabBarInactiveTintColor: 'gray',
-                tabBarStyle:{
-                    backgroundColor:'black',
-                    borderTopColor:'black',
+                tabBarStyle: {
+                    backgroundColor: 'black',
+                    borderTopColor: 'black',
                     // marginBottom:5,
-                    height:60
+                    height: 60
 
                 }
             })}
         >
             <Tab.Screen name='Dashboard' component={Dashboard} />
-            <Tab.Screen name='Search' component={Search} />
-            <Tab.Screen name='Rapid' component={Rapid} />
 
+            <Tab.Screen name='Search' component={Search}>
+            </Tab.Screen>
+            <Tab.Screen name='Rapid'  >
+                {props => <Rapid {...props} question={question} options={options} handleOptionClick={handleOptionClick} />}
+            </Tab.Screen>
             <Tab.Screen name='Profile' component={Profile} />
         </Tab.Navigator>
 
