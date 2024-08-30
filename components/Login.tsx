@@ -30,7 +30,7 @@ export default function Login({ navigation }) {
     
         //         navigation.navigate('Tabbar');
         //     }else{
-        //         Alert.alert("Invalid Creditentials", "Please enter correct username and password");
+        //         Alert.alert("Invalid Creditentials", "Incorrect username or password");
         //     }
         // }else{
         //     alert("Please login");

@@ -123,7 +123,7 @@ const stylesHere = StyleSheet.create({
     alignItems: 'center',
     zIndex: 999,
     position: 'absolute',
-    top: '15%',
+    top: '13%',
     width: '100%'
   },
   profieText_gear_container: {

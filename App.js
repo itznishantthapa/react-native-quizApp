@@ -8,6 +8,8 @@ import QuizApp from './components/QuizApp';
 import Tabbar from './components/Tabbar';
 import { useState, useEffect } from 'react';
 import { enableScreens } from 'react-native-screens';
+import backend from './backend';
+
 
 
 enableScreens();
@@ -21,7 +23,7 @@ const Stack = createNativeStackNavigator();
 
 export default function App() {
 
-  const [data, setData] = useState(null);
+  const [data, setdata] = useState(null);
   const [counter, setCounter] = useState(0);
   const [playerPoints, setPlayerPoints] = useState(0);
   const [question, setQuestion] = useState(null);
@@ -46,9 +48,9 @@ export default function App() {
   useEffect(() => {
     fetch("https://the-trivia-api.com/v2/questions")
       .then((response) => response.json())
-      .then((rawData) => {
-        setData(rawData);
-        changeQuestion(rawData, counter);
+      .then((rawdata) => {
+        setdata(rawdata);
+        changeQuestion(rawdata, counter);
       });
   }, []);
 
@@ -76,6 +78,19 @@ export default function App() {
   };
 
 
+  useEffect(() => {
+    // Fetch data from the Django server
+    backend.get('/api/')  // Replace with your actual endpoint
+      .then(response => {
+        setdata(response.data);  // Update state with the fetched data
+      
+      })
+      .catch(error => {
+        console.error('Error fetching data:', error);
+      });
+  }, []);
+
+  console.log("This is the data", JSON.stringify(data))
   
 
   return (
