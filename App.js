@@ -47,10 +47,14 @@ export default function App() {
 
   useEffect(() => {
     fetch("https://the-trivia-api.com/v2/questions")
+    // fetch("http://192.168.1.66:8000/api/questions/")
       .then((response) => response.json())
       .then((rawdata) => {
         setdata(rawdata);
         changeQuestion(rawdata, counter);
+      })
+      .catch(error => {
+        console.error('Error fetching data:', error);
       });
   }, []);
 
@@ -78,19 +82,19 @@ export default function App() {
   };
 
 
-  useEffect(() => {
-    // Fetch data from the Django server
-    backend.get('/api/')  // Replace with your actual endpoint
-      .then(response => {
-        setdata(response.data);  // Update state with the fetched data
+  // useEffect(() => {
+  //   // Fetch data from the Django server
+  //   backend.get('/api/')  // Replace with your actual endpoint
+  //     .then(response => {
+  //       setdata(response.data);  // Update state with the fetched data
       
-      })
-      .catch(error => {
-        console.error('Error fetching data:', error);
-      });
-  }, []);
+  //     })
+  //     .catch(error => {
+  //       console.error('Error fetching data:', error);
+  //     });
+  // }, []);
 
-  console.log("This is the data", JSON.stringify(data))
+  // console.log("This is the data", JSON.stringify(data))
   
 
   return (

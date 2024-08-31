@@ -7,8 +7,16 @@ import neon2 from '../assets/neon2.jpg';
 import {styles} from '../style'
 
 
+
+
+
 export default function Creation({navigation}) {
     const [passwordVisible, setPasswordVisible] = useState(true);
+
+
+    const [email, setUsername] = useState('');
+    const [password, setPassword] = useState('');
+    const [errorMessage, setErrorMessage] = useState(null);
 
     const togglePasswordVisibility = () => {
         setPasswordVisible(!passwordVisible);
@@ -16,6 +24,11 @@ export default function Creation({navigation}) {
     const toggleLogin = () => {
         navigation.navigate('Login');
     }
+
+ const handleSignup=()=>{
+    console.log("you have clicked the create button")
+ }
+
 
     return (
         <KeyboardAvoidingView
@@ -26,7 +39,7 @@ export default function Creation({navigation}) {
             <View style={styles.background}>
                 <View style={styles.innerView}>
                     <TextInput style={styles.inputField} placeholder='Enter your full name' placeholderTextColor='#adb5bd' />
-                    <TextInput style={styles.inputField} placeholder='Create username' placeholderTextColor='#adb5bd' />
+                    <TextInput style={styles.inputField} value={email} onChangeText={setUsername} placeholder='Enter you email' placeholderTextColor='#adb5bd' />
 
                     <View style={[styles.inputField, { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }]}>
                         <TextInput
@@ -34,6 +47,9 @@ export default function Creation({navigation}) {
                             placeholder='Create your password'
                             placeholderTextColor='#adb5bd'
                             secureTextEntry={passwordVisible}
+                            value={password}
+                            onChangeText={setPassword}
+                            autoCapitalize='none'
                         />
                         <TouchableOpacity onPress={togglePasswordVisibility}>
                             <FontAwesomeIcon icon={passwordVisible ? faEyeSlash : faEye} size={25} color="#adb5bd" />
@@ -55,9 +71,9 @@ export default function Creation({navigation}) {
 
                     <View style={{ height: 80, width: '80%', justifyContent: 'space-between', alignItems: 'center', position: 'absolute', top: '80%' }}>
 
-                        <View style={styles.login}>
+                        <TouchableOpacity style={styles.login} onPress={handleSignup}>
                             <Text style={{ fontWeight: 'bold', fontSize: 18, }}>Create</Text>
-                        </View>
+                        </TouchableOpacity>
 
                         <TouchableOpacity onPress={toggleLogin}>
                             <Text style={{ color: 'white', marginTop: 6 }}>Already have an account?</Text>

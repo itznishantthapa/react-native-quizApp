@@ -6,14 +6,16 @@ import React, { useState } from 'react';
 import neon2 from '../assets/neon2.jpg';
 import {styles} from '../style.js'
 
+// import  firebase  from '../firebase/firebase';
+
 
 export default function Login({ navigation }) {
     const [passwordVisible, setPasswordVisible] = useState(true);
 
 
-    const [username, setUsername] = useState('');
-    const [Password, setPassword] = useState('');
-
+    const [email, setUsername] = useState('');
+    const [password, setPassword] = useState('');
+    const [errorMessage, setErrorMessage] = useState(null);
 
 
     const togglePasswordVisibility = () => {
@@ -23,21 +25,13 @@ export default function Login({ navigation }) {
     const toggleLogin = () => {
         navigation.navigate('Signup');
     }
-    const handleLogin = () => {
-        // if(!(Password.trim()==='' && username.trim()==='')){
 
-        //     if(Password==='111' && username==='nishant'){
+
+const handleLogin=()=>{
+    navigation.navigate('Tabbar')
+    // console.log(firebase)
     
-        //         navigation.navigate('Tabbar');
-        //     }else{
-        //         Alert.alert("Invalid Creditentials", "Incorrect username or password");
-        //     }
-        // }else{
-        //     alert("Please login");
-        // }
-        navigation.navigate('Tabbar');
-    }
-
+}
 
 
     return (
@@ -49,11 +43,11 @@ export default function Login({ navigation }) {
             {/* <ImageBackground source={neon2} style={styles.background}> */}
             <View style={styles.background}>
                 <View style={styles.innerView}>
-                    <TextInput value={username} onChangeText={setUsername} style={styles.inputField} placeholder='Enter your email' placeholderTextColor='#adb5bd' />
+                    <TextInput value={email} onChangeText={setUsername} style={styles.inputField} placeholder='Enter your email' placeholderTextColor='#adb5bd' />
 
                     <View style={[styles.inputField, { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }]}>
                         <TextInput
-                            value={Password} onChangeText={setPassword}
+                            value={password} onChangeText={setPassword}
                             style={{ fontWeight: 'bold', width: '75%', color: '#adb5bd' }}
                             placeholder='Enter your password'
                             placeholderTextColor='#adb5bd'
