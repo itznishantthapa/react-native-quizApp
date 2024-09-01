@@ -6,7 +6,8 @@ import React, { useState } from 'react';
 import neon2 from '../assets/neon2.jpg';
 import {styles} from '../style.js'
 
-// import  firebase  from '../firebase/firebase';
+// Import Firebase Auth
+import auth from '@react-native-firebase/auth';
 
 
 export default function Login({ navigation }) {
@@ -27,11 +28,32 @@ export default function Login({ navigation }) {
     }
 
 
-const handleLogin=()=>{
-    navigation.navigate('Tabbar')
-    // console.log(firebase)
-    
-}
+    const handleLogin = () => {
+                // Basic validation
+                if (!email || !password) {
+                    setErrorMessage("Email and Password cannot be empty.");
+                    Alert.alert("Validation Error", errorMessage);
+                    return;
+                }
+        auth()
+            .signInWithEmailAndPassword(email, password)
+            .then(() => {
+                console.log('User signed in!');
+                navigation.navigate('Tabbar'); // Navigate to your home or dashboard screen after login
+            })
+            .catch(error => {
+                if (error.code === 'auth/invalid-email') {
+                    setErrorMessage('Invalid email address!');
+                } else if (error.code === 'auth/user-not-found') {
+                    setErrorMessage('No user found with this email!');
+                } else if (error.code === 'auth/wrong-password') {
+                    setErrorMessage('Incorrect password!');
+                } else {
+                    setErrorMessage(error.message);
+                }
+                Alert.alert("Login Failed", errorMessage);
+            });
+    };
 
 
     return (

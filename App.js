@@ -8,7 +8,6 @@ import QuizApp from './components/QuizApp';
 import Tabbar from './components/Tabbar';
 import { useState, useEffect } from 'react';
 import { enableScreens } from 'react-native-screens';
-import backend from './backend';
 
 
 
