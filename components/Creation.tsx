@@ -1,12 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, TextInput, View, ImageBackground, TouchableOpacity, KeyboardAvoidingView, Platform } from 'react-native';
+import { Alert,StyleSheet, Text, TextInput, View, ImageBackground, TouchableOpacity, KeyboardAvoidingView, Platform } from 'react-native';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faEye, faEyeSlash } from '@fortawesome/free-regular-svg-icons';
 import React, { useState } from 'react';
 import neon2 from '../assets/neon2.jpg';
 import {styles} from '../style'
 
-import auth from '@react-native-firebase/auth';
+// import auth from '@react-native-firebase/auth';
+import { createUserWithEmailAndPassword } from 'firebase/auth';
+import { auth } from '../firebaseConfig';
 
 
 
@@ -25,22 +27,24 @@ export default function Creation({navigation}) {
         navigation.navigate('Login');
     }
 
-    const handleSignup = () => {
-        auth()
-            .createUserWithEmailAndPassword(email, password)
-            .then(() => {
-                console.log('User account created & signed in!');
-                navigation.navigate('Login'); // Redirect to login or another screen after signup
-            })
-            .catch(error => {
-                if (error.code === 'auth/email-already-in-use') {
-                    setErrorMessage('That email address is already in use!');
-                } else if (error.code === 'auth/invalid-email') {
-                    setErrorMessage('That email address is invalid!');
-                } else {
-                    setErrorMessage(error.message);
-                }
-            });
+
+
+    const handleSignup = async() => {
+        if (!email || !password) {
+            Alert.alert("Error","emails and password fields cannot be empty.");
+            return;
+        }
+
+        try {
+            await createUserWithEmailAndPassword(auth, email, password);
+            console.log('User signed up successfull');
+            Alert.alert("Successfull Message","Account has been created.")
+            navigation.navigate('Tabbar');
+          } 
+          catch (error) {
+            Alert.alert("Error", "please fill the form correctly");
+            // console.error('Error during sign-up:', error.message);
+          }
     };
 
 
@@ -53,7 +57,7 @@ export default function Creation({navigation}) {
             <View style={styles.background}>
                 <View style={styles.innerView}>
                     <TextInput style={styles.inputField} placeholder='Enter your full name' placeholderTextColor='#adb5bd' />
-                    <TextInput style={styles.inputField} value={email} onChangeText={setUsername} placeholder='Enter you email' placeholderTextColor='#adb5bd' />
+                    <TextInput style={styles.inputField} value={email} onChangeText={setUsername} placeholder='example@gmail.com' placeholderTextColor='#adb5bd' />
 
                     <View style={[styles.inputField, { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }]}>
                         <TextInput

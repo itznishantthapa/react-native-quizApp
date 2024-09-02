@@ -1,14 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, TextInput, View, ImageBackground, TouchableOpacity,Alert, KeyboardAvoidingView, Platform } from 'react-native';
+import { StyleSheet, Text, TextInput, View, ImageBackground, TouchableOpacity, Alert, KeyboardAvoidingView, Platform } from 'react-native';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faEye, faEyeSlash } from '@fortawesome/free-regular-svg-icons';
 import React, { useState } from 'react';
-import neon2 from '../assets/neon2.jpg';
-import {styles} from '../style.js'
+import { styles } from '../style.js'
 
-// Import Firebase Auth
-import auth from '@react-native-firebase/auth';
-
+import { signInWithEmailAndPassword } from 'firebase/auth';
+import { auth } from '../firebaseConfig';
 
 export default function Login({ navigation }) {
     const [passwordVisible, setPasswordVisible] = useState(true);
@@ -16,7 +14,6 @@ export default function Login({ navigation }) {
 
     const [email, setUsername] = useState('');
     const [password, setPassword] = useState('');
-    const [errorMessage, setErrorMessage] = useState(null);
 
 
     const togglePasswordVisibility = () => {
@@ -28,31 +25,22 @@ export default function Login({ navigation }) {
     }
 
 
-    const handleLogin = () => {
-                // Basic validation
-                if (!email || !password) {
-                    setErrorMessage("Email and Password cannot be empty.");
-                    Alert.alert("Validation Error", errorMessage);
-                    return;
-                }
-        auth()
-            .signInWithEmailAndPassword(email, password)
-            .then(() => {
-                console.log('User signed in!');
-                navigation.navigate('Tabbar'); // Navigate to your home or dashboard screen after login
-            })
-            .catch(error => {
-                if (error.code === 'auth/invalid-email') {
-                    setErrorMessage('Invalid email address!');
-                } else if (error.code === 'auth/user-not-found') {
-                    setErrorMessage('No user found with this email!');
-                } else if (error.code === 'auth/wrong-password') {
-                    setErrorMessage('Incorrect password!');
-                } else {
-                    setErrorMessage(error.message);
-                }
-                Alert.alert("Login Failed", errorMessage);
-            });
+    const handleLogin = async () => {
+        // Basic validation
+        if (!email || !password) {
+            Alert.alert("Error","empty fields");
+            return;
+        }
+
+
+        try {
+            await signInWithEmailAndPassword(auth, email, password);
+            console.log('User login successfull');
+            navigation.navigate('Tabbar');
+        }
+        catch (error) {
+            Alert.alert("Login Failed", "invalid credentials");
+        }
     };
 
 
@@ -60,7 +48,7 @@ export default function Login({ navigation }) {
         <KeyboardAvoidingView
             style={styles.root}
         >
-           <StatusBar hidden={false} backgroundColor='black' style='light' />
+            <StatusBar hidden={false} backgroundColor='black' style='light' />
 
             {/* <ImageBackground source={neon2} style={styles.background}> */}
             <View style={styles.background}>

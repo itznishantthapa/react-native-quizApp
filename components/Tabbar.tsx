@@ -5,10 +5,10 @@ import FaIcon from 'react-native-vector-icons/FontAwesome';
 import MaIcon from 'react-native-vector-icons/MaterialIcons';
 // import { NavigationContainer } from '@react-navigation/native';
 
-import Profile from '../TabScreen/Profile.tsx';
-import Rapid from '../TabScreen/Rapid.tsx';
-import Search from '../TabScreen/Search.tsx';
-import Dashboard from '../TabScreen/Dashboard.tsx';
+import Profile from '../TabScreen/Profile';
+import Rapid from '../TabScreen/Rapid';
+import Search from '../TabScreen/Search';
+import Dashboard from '../TabScreen/Dashboard';
 
 
 
