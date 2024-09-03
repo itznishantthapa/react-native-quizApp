@@ -1,12 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, TextInput, View, ImageBackground, TouchableOpacity, Alert, KeyboardAvoidingView, Platform } from 'react-native';
+import { Text, TextInput, View, TouchableOpacity, Alert, KeyboardAvoidingView } from 'react-native';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faEye, faEyeSlash } from '@fortawesome/free-regular-svg-icons';
 import React, { useState } from 'react';
 import { styles } from '../style.js'
 
 import { signInWithEmailAndPassword } from 'firebase/auth';
-import { auth } from '../firebaseConfig';
+import { auth } from '../firebase/firebaseConfig.js';
+
+//Internet connection validation
+import NetInfo from '@react-native-community/netinfo';
 
 export default function Login({ navigation }) {
     const [passwordVisible, setPasswordVisible] = useState(true);
@@ -26,28 +29,38 @@ export default function Login({ navigation }) {
 
 
     const handleLogin = async () => {
-        // Basic validation
-        if (!email || !password) {
-            Alert.alert("Error","empty fields");
-            return;
-        }
+       
+        // // Basic validation
+        // if (!email || !password) {
+        //     Alert.alert("Error","empty fields");
+        //     return;
+        // }
+
+        // //Checking the internet connection
+        // const networkState = await NetInfo.fetch();
+        // if(!networkState.isConnected){
+        //     Alert.alert("Network Error","Please connect to the internet.");
+        //     return
+        // }
 
 
-        try {
-            await signInWithEmailAndPassword(auth, email, password);
-            console.log('User login successfull');
-            navigation.navigate('Tabbar');
-        }
-        catch (error) {
-            Alert.alert("Login Failed", "invalid credentials");
-        }
+
+        // try {
+        //     await signInWithEmailAndPassword(auth, email, password);
+        //     console.log('User login successfull');
+        //     navigation.navigate('Tabbar');
+        // }
+        // catch (error) {
+        //     Alert.alert("Login Failed", "invalid credentials");
+        // }
+        navigation.navigate('Tabbar');
+       
     };
 
 
     return (
         <KeyboardAvoidingView
-            style={styles.root}
-        >
+            style={styles.root}>
             <StatusBar hidden={false} backgroundColor='black' style='light' />
 
             {/* <ImageBackground source={neon2} style={styles.background}> */}

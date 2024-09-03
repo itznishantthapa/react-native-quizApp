@@ -61,7 +61,7 @@ export default function Profile() {
               </TouchableOpacity>
               <TouchableOpacity style={stylesHere.gameInfoIcons}>
                 <Image style={stylesHere.iconImage} source={charge}></Image>
-                <Text style={{ fontWeight: 'bold', fontSize: 20 }}>72%</Text>
+                <Text style={{ fontWeight: 'bold', fontSize: 20 }}>72%</Text> 
                 <Text style={{ fontWeight: 'bold' }}>Completion</Text>
                 <Text style={{ fontWeight: 'bold' }}>rate</Text>
               </TouchableOpacity>
@@ -132,7 +132,8 @@ const stylesHere = StyleSheet.create({
     alignItems: 'center',
     paddingHorizontal: 15,
     // backgroundColor: 'grey',
-    height:'20%'
+    height:'20%',
+    width:'100%'
 
   },
   profileImage: {
@@ -145,7 +146,9 @@ const stylesHere = StyleSheet.create({
   profileText: {
     color: 'white',
     fontSize: 40,
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+    marginLeft:10
+
 
   },
   gameInfo: {

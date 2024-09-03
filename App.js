@@ -27,42 +27,69 @@ export default function App() {
   const [playerPoints, setPlayerPoints] = useState(0);
   const [question, setQuestion] = useState(null);
   const [options, setOptions] = useState([]);
+  const [isOver, setisOver] = useState(false)
 
   const handleOptionClick = (choosed) => {
-    if (counter < data.length - 1) {
+    if (!(counter === data.length - 1)) {
+
+
+      if (choosed === data[counter].correctAnswer) {
+        setPlayerPoints(playerPoints + 1);
+      }
+
       setCounter(counter + 1);
-    }
-    if (choosed === data[counter].correctAnswer && counter < data.length - 1) {
-      setPlayerPoints(playerPoints + 1);
+    } else {
+      // Added this else block to handle the case when it's the last question
+      if (choosed === data[counter].correctAnswer) {
+        setPlayerPoints(playerPoints + 1);
+      }
+      Alert.alert("Quiz Complete", `Your score is ${playerPoints + 1}`);
+      setisOver(true);
     }
   };
 
   useEffect(() => {
-    if (data && counter === data.length - 1) {
+    if (data && counter === data.length - 1 && question === null) {
       Alert.alert("Quiz Complete", `Your score is ${playerPoints}`);
-      // alert();
+      setisOver(true);
     }
   }, [playerPoints, counter]);
 
-  useEffect(() => {
+
+
+  //making function to fetch question and wrap into useEffect, cuz i also want to fetch when the button is pressed
+
+  const fetchQuestions = () => {
+    setCounter(0);
+    setPlayerPoints(0);
+    setisOver(false);
     fetch("https://the-trivia-api.com/v2/questions")
-    // fetch("http://192.168.1.66:8000/api/questions/")
+      // fetch("http://192.168.1.66:8000/api/questions/")
       .then((response) => response.json())
       .then((rawdata) => {
         setdata(rawdata);
-        changeQuestion(rawdata, counter);
+        changeQuestion(rawdata, 0);
       })
       .catch(error => {
         console.error('Error fetching data:', error);
       });
+
+
+  };
+
+  useEffect(() => {
+    fetchQuestions();
   }, []);
+
+
+
+  //Logic to change the question.
 
   useEffect(() => {
     if (data) {
       changeQuestion(data, counter);
     }
   }, [counter]);
-
   const changeQuestion = (data, counter) => {
     const incorrectOptions = data[counter].incorrectAnswers;
     const options = [
@@ -86,7 +113,7 @@ export default function App() {
   //   backend.get('/api/')  // Replace with your actual endpoint
   //     .then(response => {
   //       setdata(response.data);  // Update state with the fetched data
-      
+
   //     })
   //     .catch(error => {
   //       console.error('Error fetching data:', error);
@@ -94,14 +121,14 @@ export default function App() {
   // }, []);
 
   // console.log("This is the data", JSON.stringify(data))
-  
+
 
   return (
     // <View style={styles.container}>
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Login" screenOptions={{
-        headerShown: false, 
-        animation: 'slide_from_right', 
+        headerShown: false,
+        animation: 'slide_from_right',
       }}>
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="Signup" component={Signup} />
@@ -109,7 +136,7 @@ export default function App() {
 
 
         <Stack.Screen name="Quiz"  >
-          {props => <QuizApp {...props} question={question} options={options} handleOptionClick={handleOptionClick} />}
+          {props => <QuizApp {...props} question={question} options={options} counter={counter} isOver={isOver} handleOptionClick={handleOptionClick} fetchQuestion={fetchQuestions} />}
         </Stack.Screen>
         <Stack.Screen name="Tabbar"  >
           {props => <Tabbar {...props} question={question} options={options} handleOptionClick={handleOptionClick} />}
