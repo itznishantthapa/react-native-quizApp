@@ -8,8 +8,8 @@ import { styles } from '../style'
 
 // import auth from '@react-native-firebase/auth';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
-import { auth } from '../firebase/firebaseConfig';
-
+import { auth ,firestore } from '../firebase/firebaseConfig';
+import { doc, setDoc } from 'firebase/firestore';
 
 // Internet connection checking
 import NetInfo from '@react-native-community/netinfo';
@@ -58,8 +58,16 @@ export default function Creation({ navigation }) {
 
         try {
 
-            //storing the credentials into a variable first
-            const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+             // Create user with email and password
+             const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+               // Get the user ID
+            const userId = userCredential.user.uid;
+
+            // Store additional user information in Firestore
+            await setDoc(doc(firestore, "users", userId), {
+                fullName: fullName,
+                email: email
+            });
 
             console.log('User signed up successfull');
             Alert.alert("Successfull Message", "Account has been created.")

@@ -8,6 +8,7 @@ import QuizApp from './components/QuizApp';
 import Tabbar from './components/Tabbar';
 import { useState, useEffect } from 'react';
 import { enableScreens } from 'react-native-screens';
+import Setting from './components/Setting';
 
 
 
@@ -126,13 +127,15 @@ export default function App() {
   return (
     // <View style={styles.container}>
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Login" screenOptions={{
+      <Stack.Navigator initialRouteName="Login"  screenOptions={{
         headerShown: false,
         animation: 'slide_from_right',
+        
       }}>
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="Signup" component={Signup} />
         <Stack.Screen name="Creation" component={Creation} />
+        <Stack.Screen name="Setting" component={Setting} />
 
 
         <Stack.Screen name="Quiz"  >

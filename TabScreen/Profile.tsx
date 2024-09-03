@@ -11,30 +11,67 @@ import wrong from '../assets/wrong.png'
 import points from '../assets/points.png'
 import charge from '../assets/charge.png'
 
+import { auth, firestore } from '../firebase/firebaseConfig'; // Import Firestore and Auth
+import { doc, getDoc } from 'firebase/firestore';
+import { useState, useEffect } from 'react';
 
 
-export default function Profile() {
+export default function Profile({navigation}) {
+  // State to store user's name and email
+  const [userData, setUserData] = useState({ fullName: '', email: '' });
+
+  useEffect(() => {
+    const fetchUserData = async () => {
+      try {
+        const user = auth.currentUser; // Get the current authenticated user
+        if (user) {
+          const userDoc = await getDoc(doc(firestore, 'users', user.uid)); // Fetch user data from Firestore
+
+          if (userDoc.exists()) {
+            const data = userDoc.data() as { fullName: string; email: string }; // Type assertion in typescripts
+            setUserData({
+              fullName: data.fullName || 'Unknown Name', // Fallback in case fullName is missing
+              email: data.email || 'Unknown Email',     // Fallback in case email is missing
+
+              //if not typescripts this can be done with simple
+              // setUserData(userDoc.data());
+            });
+
+
+          }
+        }
+      } catch (error) {
+        console.error("Error fetching user data: ", error);
+      }
+    };
+
+    fetchUserData(); // Call the function to fetch data
+  }, []);
+
+const handleGear=()=>{
+  navigation.navigate('Setting');
+}
   return (
     <>
       <View style={styles.root}>
         <StatusBar style={'light'} hidden={false} backgroundColor='black' />
         <View style={[styles.background, { justifyContent: 'space-between' }]}>
-                <View style={stylesHere.profieText_gear_container}>
-                  <View></View>
-                  <Text style={stylesHere.profileText}>Profile</Text>
-                  <TouchableOpacity>
-                    <Icon name="gear" size={35} color="white" />
-                  </TouchableOpacity>
-                </View>
+          <View style={stylesHere.profieText_gear_container}>
+            <View></View>
+            <Text style={stylesHere.profileText}>Profile</Text>
+            <TouchableOpacity onPress={handleGear}>
+              <Icon name="gear" size={35} color="white" />
+            </TouchableOpacity>
+          </View>
 
-                <View style={stylesHere.profileContainer}>
-                  <Image source={lady} style={stylesHere.profileImage}></Image>
-                </View>
+          <View style={stylesHere.profileContainer}>
+            <Image source={lady} style={stylesHere.profileImage}></Image>
+          </View>
 
           <View style={stylesHere.iconsNameContainer}>
             <View style={stylesHere.name_usernameContainer}>
-              <Text style={{ fontSize: 20, fontWeight: 'bold' }}>Nishant Thapa</Text>
-              <Text>@username</Text>
+              <Text style={{ fontSize: 20, fontWeight: 'bold' }}>{userData.fullName}</Text>
+              <Text>{userData.email}</Text>
             </View>
             <View style={stylesHere.gameInfo}>
 
@@ -61,7 +98,7 @@ export default function Profile() {
               </TouchableOpacity>
               <TouchableOpacity style={stylesHere.gameInfoIcons}>
                 <Image style={stylesHere.iconImage} source={charge}></Image>
-                <Text style={{ fontWeight: 'bold', fontSize: 20 }}>72%</Text> 
+                <Text style={{ fontWeight: 'bold', fontSize: 20 }}>72%</Text>
                 <Text style={{ fontWeight: 'bold' }}>Completion</Text>
                 <Text style={{ fontWeight: 'bold' }}>rate</Text>
               </TouchableOpacity>
@@ -132,8 +169,8 @@ const stylesHere = StyleSheet.create({
     alignItems: 'center',
     paddingHorizontal: 15,
     // backgroundColor: 'grey',
-    height:'20%',
-    width:'100%'
+    height: '20%',
+    width: '100%'
 
   },
   profileImage: {
@@ -147,7 +184,7 @@ const stylesHere = StyleSheet.create({
     color: 'white',
     fontSize: 40,
     fontWeight: 'bold',
-    marginLeft:10
+    marginLeft: 10
 
 
   },
