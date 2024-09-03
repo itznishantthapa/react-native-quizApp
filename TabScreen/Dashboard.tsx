@@ -6,8 +6,8 @@ import cosmos from '../assets/cosmos.jpg'
 import lady from '../assets/lady.jpeg'
 import console from '../assets/console.jpg'
 import hills from '../assets/hills.png'
-import pool from '../assets/pool.png'
-import venom from '../assets/venom.jpeg'
+import temple from '../assets/Temple.jpg'
+import yellowGame from '../assets/yellowGame.jpg'
 import { styles } from '../style'
 import { useRef } from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context';
@@ -69,12 +69,12 @@ export default function Dashboard({ navigation }) {
                     </View>
 
                     <View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center', width: '100%', height: 150, gap: 8, marginTop: 12 }}>
-                        <ImageBackground source={pool} resizeMode='cover' imageStyle={{ height: 150, width: '100%', borderRadius: 20 }} style={{ height: 150, width: '45%', justifyContent: 'center' }}>
-                            <Text style={styles.textStyle2}>Your Ranking</Text>
+                        <ImageBackground source={temple} resizeMode='cover' imageStyle={{ height: 150, width: '100%', borderRadius: 20 }} style={{ height: 150, width: '45%', justifyContent: 'center',alignItems:'center' }}>
+                            <Text style={[styles.textStyle2,{fontSize:18,fontWeight:'900'}]}>Your Ranking</Text>
                         </ImageBackground>
-                        <ImageBackground source={venom} resizeMode='cover' imageStyle={{ height: 150, width: '100%', borderRadius: 20, }} style={{ height: 150, width: '45%', justifyContent: 'center' }}>
+                        <ImageBackground source={yellowGame} resizeMode='cover' imageStyle={{ height: 150, width: '100%', borderRadius: 20, }} style={{ height: 150, width: '45%', justifyContent: 'center',alignItems:'center' }}>
 
-                            <Text style={styles.textStyle2}>Total Question  Solved</Text>
+                            <Text style={[styles.textStyle2,{fontSize:18,fontWeight:'900'}]}>Total Solved</Text>
 
                         </ImageBackground>
                     </View>
