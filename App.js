@@ -1,5 +1,5 @@
 import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { createStackNavigator,CardStyleInterpolators } from '@react-navigation/stack';
 import Signup from './Screens/Signup';
 import Login from './Screens/Login';
 import Creation from './Screens/Creation';
@@ -15,9 +15,9 @@ import AccountDeletion from './SettingScreens/AccountDeletion';
 
 
 
-enableScreens();
+enableScreens(false);
 
-const Stack = createNativeStackNavigator();
+const Stack = createStackNavigator();
 
 
 
@@ -112,29 +112,32 @@ export default function App() {
   };
 
 
-  // useEffect(() => {
-  //   // Fetch data from the Django server
-  //   backend.get('/api/')  // Replace with your actual endpoint
-  //     .then(response => {
-  //       setdata(response.data);  // Update state with the fetched data
-
-  //     })
-  //     .catch(error => {
-  //       console.error('Error fetching data:', error);
-  //     });
-  // }, []);
-
-  // console.log("This is the data", JSON.stringify(data))
+// Define a mapping of screen names to their interpolators
+const screenInterpolators = {
+  Login: CardStyleInterpolators.forVerticalIOS,
+  Signup: CardStyleInterpolators.forFadeFromBottomAndroid,
+  Creation: CardStyleInterpolators.forHorizontalIOS,
+  Setting: CardStyleInterpolators.forFadeFromBottomAndroid,
+  Account: CardStyleInterpolators.forHorizontalIOS,
+  AccountEdit: CardStyleInterpolators.forFadeFromBottomAndroid,
+  AccountDeletion: CardStyleInterpolators.forFadeFromBottomAndroid,
+  Tabbar: CardStyleInterpolators.forFadeFromBottomAndroid,
+};
 
 
   return (
     // <View style={styles.container}>
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Login"  screenOptions={{
+      <Stack.Navigator initialRouteName="Login"
+      
+      screenOptions={({ route }) => ({
+        // Apply the interpolator based on the screen name
+        cardStyleInterpolator: screenInterpolators[route.name] || CardStyleInterpolators.forHorizontalIOS,
+        // Include other common settings
         headerShown: false,
-        animation: 'slide_from_right',
-        
-      }}>
+        gestureEnabled: true,
+        detachPreviousScreen: false,
+      })} >
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="Signup" component={Signup} />
         <Stack.Screen name="Creation" component={Creation} />
@@ -142,15 +145,12 @@ export default function App() {
         <Stack.Screen name="Account" component={Account} />
         <Stack.Screen name="AccountEdit" component={AccountEdit} />
         <Stack.Screen name="AccountDeletion" component={AccountDeletion} />
-
-
-        <Stack.Screen name="Quiz"  >
-          {props => <QuizApp {...props} question={question} options={options} counter={counter} isOver={isOver} handleOptionClick={handleOptionClick} fetchQuestion={fetchQuestions} />}
+        <Stack.Screen name="Quiz">
+        {props => <QuizApp {...props} question={question} options={options} counter={counter} isOver={isOver} handleOptionClick={handleOptionClick} fetchQuestion={fetchQuestions} />}
         </Stack.Screen>
-        <Stack.Screen name="Tabbar"  >
-          {props => <Tabbar {...props} question={question} options={options} handleOptionClick={handleOptionClick} />}
+        <Stack.Screen name="Tabbar">
+        {props => <Tabbar {...props} question={question} options={options} handleOptionClick={handleOptionClick} />}
         </Stack.Screen>
-
       </Stack.Navigator>
     </NavigationContainer>
     // </View>
