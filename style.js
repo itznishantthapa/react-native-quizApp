@@ -133,4 +133,87 @@ export const  styles = StyleSheet.create({
         fontWeight:'bold'
     },
 
+    //setting css
+    settingBox: {
+        height: '10%',
+        width: '100%',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center'
+    },
+    accountBox: {
+        height: '50%',
+        width: '100%',
+        flexDirection: 'column',
+        justifyContent: 'flex-start',
+        alignItems: 'center'
+
+    },
+    accountBoxSections: {
+
+        flexDirection: 'row',
+        justifyContent: 'flex-start',
+        gap: 8, alignItems: 'center',
+        width: '80%',
+        borderBottomWidth: 1,
+        borderColor: 'white',
+        height: 60
+    },
+    sectionText: {
+        fontSize: 18,
+        fontWeight: 'bold',
+        color: 'white'
+
+    },
+
+    //added css
+    modalOverlay: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: 'rgba(0, 0, 0, 0.5)',
+      },
+      modalContainer: {
+        width: 300,
+        padding: 20,
+        backgroundColor: 'white',
+        borderRadius: 10,
+        alignItems: 'center',
+      },
+      modalTitle: {
+        fontSize: 18,
+        fontWeight: 'bold',
+        marginBottom: 10,
+      },
+      modalMessage: {
+        fontSize: 16,
+        marginBottom: 20,
+        textAlign: 'center',
+      },
+      buttonContainer: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        width: '100%',
+      },
+      cancelButton: {
+        padding: 10,
+        backgroundColor: 'grey',
+        borderRadius: 5,
+        marginRight: 10,
+      },
+      deleteButton: {
+        padding: 10,
+        backgroundColor: '#ff4444',
+        borderRadius: 5,
+      },
+      buttonText: {
+        color: 'white',
+        fontWeight: 'bold',
+      },
+      openButton: {
+        padding: 10,
+        backgroundColor: '#007BFF',
+        borderRadius: 5,
+      },
+
 });

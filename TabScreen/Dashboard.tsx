@@ -18,14 +18,6 @@ export default function Dashboard({ navigation }) {
 
     const textInputRef = useRef(null);
 
-    // const handleButtonPress = () => {
-    //     // Focus the TextInput when button is pressed
-    //     if (textInputRef.current) {
-    //       textInputRef.current.focus();
-    //     }
-    //   };
-
-
 
     const goToQuiz = () => {
         navigation.navigate('Quiz');

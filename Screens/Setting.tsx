@@ -8,7 +8,6 @@ import IconV from 'react-native-vector-icons/Ionicons';
 import IconF from 'react-native-vector-icons/Feather';
 import IconF5 from 'react-native-vector-icons/FontAwesome5';
 import IconSimple from 'react-native-vector-icons/SimpleLineIcons';
-import { Colors } from 'react-native/Libraries/NewAppScreen'
 
 
 const Setting = ({navigation}) => {
@@ -39,13 +38,16 @@ const Setting = ({navigation}) => {
     const handleBackArrow=()=>{
         navigation.navigate('Profile');
     }
+    const handleAccount=()=>{
+        navigation.navigate('Account');
+    }
     return (
         <SafeAreaView style={styles.background}>
             <StatusBar hidden={false} backgroundColor='' style='light' />
             <View style={{ flex: 1, justifyContent: 'flex-start', alignItems: 'center' }}>
 
                 {/* setting box */}
-                <View style={stylesHere.settingBox}>
+                <View style={styles.settingBox}>
                     <TouchableOpacity onPress={handleBackArrow}>
                         <IconF name='arrow-left' size={50} style={{ color: 'white', marginLeft: 5 }}></IconF>
                     </TouchableOpacity>
@@ -54,47 +56,47 @@ const Setting = ({navigation}) => {
                 </View>
 
                 {/* Account box */}
-                <View style={stylesHere.accountBox}>
+                <View style={styles.accountBox}>
                     {/* Account Box Sections */}
-                    <TouchableWithoutFeedback>
-                        <View style={stylesHere.accountBoxSections}>
+                    <TouchableWithoutFeedback onPress={handleAccount}>
+                        <View style={styles.accountBoxSections}>
                             <IconV name='person-outline' size={24} style={{ color: 'white' }} ></IconV>
-                            <Text style={stylesHere.sectionText}>Account</Text>
+                            <Text style={styles.sectionText}>Account</Text>
                             <Icon name='angle-right' size={24} style={{ marginLeft: 'auto', color: 'white' }}></Icon>
                         </View>
                     </TouchableWithoutFeedback>
                     <TouchableWithoutFeedback>
-                        <View style={stylesHere.accountBoxSections}>
+                        <View style={styles.accountBoxSections}>
                             <IconV name='notifications-outline' size={24} style={{ color: 'white' }}></IconV>
-                            <Text style={stylesHere.sectionText}>Notifications</Text>
+                            <Text style={styles.sectionText}>Notifications</Text>
                             <Icon name='angle-right' size={24} style={{ marginLeft: 'auto', color: 'white' }}></Icon>
                         </View>
                     </TouchableWithoutFeedback>
                     <TouchableWithoutFeedback>
-                        <View style={stylesHere.accountBoxSections}>
+                        <View style={styles.accountBoxSections}>
                             <IconF name='lock' size={24} style={{ color: 'white' }}></IconF>
-                            <Text style={stylesHere.sectionText}>Privacy & Security</Text>
+                            <Text style={styles.sectionText}>Privacy & Security</Text>
                             <Icon name='angle-right' size={24} style={{ marginLeft: 'auto', color: 'white' }}></Icon>
                         </View>
                     </TouchableWithoutFeedback>
                     <TouchableWithoutFeedback>
-                        <View style={stylesHere.accountBoxSections}>
+                        <View style={styles.accountBoxSections}>
                             <IconF5 name='hands-helping' size={24} style={{ color: 'white' }}></IconF5>
-                            <Text style={stylesHere.sectionText}>Help and Support</Text>
+                            <Text style={styles.sectionText}>Help and Support</Text>
                             <Icon name='angle-right' size={24} style={{ marginLeft: 'auto', color: 'white' }}></Icon>
                         </View>
                     </TouchableWithoutFeedback>
                     <TouchableWithoutFeedback>
-                        <View style={stylesHere.accountBoxSections}>
+                        <View style={styles.accountBoxSections}>
                             <IconF name='help-circle' size={24} style={{ color: 'white' }}></IconF>
-                            <Text style={stylesHere.sectionText}>About</Text>
+                            <Text style={styles.sectionText}>About</Text>
                             <Icon name='angle-right' size={24} style={{ marginLeft: 'auto', color: 'white' }}></Icon>
                         </View>
                     </TouchableWithoutFeedback>
                     <TouchableWithoutFeedback onPress={handleLogout}>
-                        <View style={stylesHere.accountBoxSections}>
+                        <View style={styles.accountBoxSections}>
                             <IconSimple name='logout' size={24} style={{ color: 'white' }}></IconSimple>
-                            <Text style={stylesHere.sectionText}>Logout</Text>
+                            <Text style={styles.sectionText}>Logout</Text>
                             <Icon name='angle-right' size={24} style={{ marginLeft: 'auto', color: 'white' }}></Icon>
                         </View>
                     </TouchableWithoutFeedback>
@@ -112,37 +114,3 @@ const Setting = ({navigation}) => {
 
 export default Setting
 
-const stylesHere = StyleSheet.create({
-    settingBox: {
-        height: '10%',
-        width: '100%',
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        alignItems: 'center'
-    },
-    accountBox: {
-        height: '50%',
-        width: '100%',
-        flexDirection: 'column',
-        justifyContent: 'flex-start',
-        alignItems: 'center'
-
-    },
-    accountBoxSections: {
-
-        flexDirection: 'row',
-        justifyContent: 'flex-start',
-        gap: 8, alignItems: 'center',
-        width: '80%',
-        borderBottomWidth: 1,
-        borderColor: 'white',
-        height: 60
-    },
-    sectionText: {
-        fontSize: 18,
-        fontWeight: 'bold',
-        color: 'white'
-
-    }
-
-});

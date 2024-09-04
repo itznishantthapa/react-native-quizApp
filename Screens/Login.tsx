@@ -49,13 +49,16 @@ export default function Login({ navigation }) {
             await signInWithEmailAndPassword(auth, email, password);
             console.log('User login successfull');
             navigation.navigate('Tabbar');
+            setUsername("");
+            setPassword("");
+
         }
         catch (error) {
             Alert.alert("Login Failed", "invalid credentials");
         }
 
         // navigation.navigate('Tabbar');
-       
+
     };
 
 
@@ -67,11 +70,11 @@ export default function Login({ navigation }) {
             {/* <ImageBackground source={neon2} style={styles.background}> */}
             <View style={styles.background}>
                 <View style={styles.innerView}>
-                    <TextInput onChangeText={setUsername} style={styles.inputField} placeholder='Enter your email' placeholderTextColor='#adb5bd' />
+                    <TextInput value={email} onChangeText={setUsername} style={styles.inputField} placeholder='Enter your email' placeholderTextColor='#adb5bd' />
 
                     <View style={[styles.inputField, { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }]}>
                         <TextInput
-                            onChangeText={setPassword}
+                            value={password}                            onChangeText={setPassword}
                             style={{ fontWeight: 'bold', width: '75%', color: '#adb5bd' }}
                             placeholder='Enter your password'
                             placeholderTextColor='#adb5bd'

@@ -1,14 +1,17 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import Signup from './components/Signup';
-import Login from './components/Login';
-import Creation from './components/Creation';
+import Signup from './Screens/Signup';
+import Login from './Screens/Login';
+import Creation from './Screens/Creation';
 import { ImageBackground, View, StyleSheet, Alert } from 'react-native';
-import QuizApp from './components/QuizApp';
-import Tabbar from './components/Tabbar';
+import QuizApp from './Screens/QuizApp';
+import Tabbar from './Screens/Tabbar';
 import { useState, useEffect } from 'react';
 import { enableScreens } from 'react-native-screens';
-import Setting from './components/Setting';
+import Setting from './Screens/Setting';
+import Account from './SettingScreens/Account';
+import AccountEdit from './SettingScreens/AccountEdit';
+import AccountDeletion from './SettingScreens/AccountDeletion';
 
 
 
@@ -136,6 +139,9 @@ export default function App() {
         <Stack.Screen name="Signup" component={Signup} />
         <Stack.Screen name="Creation" component={Creation} />
         <Stack.Screen name="Setting" component={Setting} />
+        <Stack.Screen name="Account" component={Account} />
+        <Stack.Screen name="AccountEdit" component={AccountEdit} />
+        <Stack.Screen name="AccountDeletion" component={AccountDeletion} />
 
 
         <Stack.Screen name="Quiz"  >
