@@ -31,10 +31,10 @@ const QuizApp = ({ question, options, handleOptionClick, counter,isOver, fetchQu
                     <View style={{position:'absolute',top:'80%'}}>
                     {isOver && (
                         <TouchableOpacity
-                            style={style_this.outlineButton}
+                            style={styles.outlineButton}
                             onPress={fetchQuestion}
                         >
-                            <Text style={style_this.outlineButtonText}>Restart</Text>
+                            <Text style={styles.outlineButtonText}>Restart</Text>
                         </TouchableOpacity>
                     )}
                     </View>
@@ -51,18 +51,3 @@ const QuizApp = ({ question, options, handleOptionClick, counter,isOver, fetchQu
 export default QuizApp;
 
 
-const style_this = StyleSheet.create({
-    outlineButton: {
-        borderColor: '#ffffff', // White outline
-        borderWidth: 2, // Thickness of the outline
-        borderRadius: 8, // Rounded corners
-        paddingVertical: 10, // Vertical padding for the button
-        paddingHorizontal: 20, // Horizontal padding for the button
-        alignItems: 'center', // Center the text inside the button
-    },
-    outlineButtonText: {
-        color: '#ffffff', // White text
-        fontSize: 16, // Font size for the text
-        fontWeight: 'bold', // Make the text bold
-    },
-});

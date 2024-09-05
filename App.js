@@ -12,6 +12,11 @@ import Setting from './Screens/Setting';
 import Account from './SettingScreens/Account';
 import AccountEdit from './SettingScreens/AccountEdit';
 import AccountDeletion from './SettingScreens/AccountDeletion';
+import About from './SettingScreens/About';
+import Notifications from './SettingScreens/Notification';
+import Privacy from './SettingScreens/Privacy';
+import PrivacyEdit from './SettingScreens/PrivacyEdit';
+import HelpSupport from './SettingScreens/helpSupport';
 
 
 
@@ -128,7 +133,7 @@ const screenInterpolators = {
   return (
     // <View style={styles.container}>
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Login"
+      <Stack.Navigator initialRouteName="Tabbar"
       
       screenOptions={({ route }) => ({
         // Apply the interpolator based on the screen name
@@ -145,6 +150,13 @@ const screenInterpolators = {
         <Stack.Screen name="Account" component={Account} />
         <Stack.Screen name="AccountEdit" component={AccountEdit} />
         <Stack.Screen name="AccountDeletion" component={AccountDeletion} />
+        <Stack.Screen name="About" component={About} />
+        <Stack.Screen name="Notifications" component={Notifications} />
+        <Stack.Screen name="Privacy" component={Privacy} />
+        <Stack.Screen name="PrivacyEdit" component={PrivacyEdit} />
+        <Stack.Screen name="HelpSupport" component={HelpSupport} />
+
+
         <Stack.Screen name="Quiz">
         {props => <QuizApp {...props} question={question} options={options} counter={counter} isOver={isOver} handleOptionClick={handleOptionClick} fetchQuestion={fetchQuestions} />}
         </Stack.Screen>

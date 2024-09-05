@@ -1,5 +1,6 @@
 import { StyleSheet } from "react-native";
 
+
 export const  styles = StyleSheet.create({
     //styles for Login
     root: {
@@ -132,6 +133,22 @@ export const  styles = StyleSheet.create({
         fontSize: 18,
         fontWeight:'bold'
     },
+    //restart button css
+
+    
+    outlineButton: {
+        borderColor: '#ffffff', // White outline
+        borderWidth: 2, // Thickness of the outline
+        borderRadius: 8, // Rounded corners
+        paddingVertical: 10, // Vertical padding for the button
+        paddingHorizontal: 20, // Horizontal padding for the button
+        alignItems: 'center', // Center the text inside the button
+    },
+    outlineButtonText: {
+        color: '#ffffff', // White text
+        fontSize: 16, // Font size for the text
+        fontWeight: 'bold', // Make the text bold
+    },
 
     //setting css
     settingBox: {
@@ -215,5 +232,35 @@ export const  styles = StyleSheet.create({
         backgroundColor: '#007BFF',
         borderRadius: 5,
       },
+      
+    //   AccountDeletion css
+      deleteContainer:{
+        height:'100%',
+        width:'100%',
+        flexDirection:'column',
+        alignItems:'center',
+        gap:30
+    },
+    deleteInfoBox:{
+      height:'30%',
+      width:'80%',
+      backgroundColor:'white',
+      borderRadius:10,
+      padding:15,
+      flexDirection:'column',
+      justifyContent:'flex-start',
+      gap:20
+      
+    },
+    infoPoints:{
+        flexDirection:'row',
+        justifyContent:'flex-start',
+        alignItems:'center',
+        gap:10
+    },
+    infoPointContainer:{
+        gap:10
+    },
+
 
 });

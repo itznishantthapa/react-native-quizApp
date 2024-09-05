@@ -16,7 +16,7 @@ import { doc, getDoc } from 'firebase/firestore';
 import { useState, useEffect } from 'react';
 
 
-export default function Profile({navigation}) {
+export default function Profile({ navigation }) {
   // State to store user's name and email
   const [userData, setUserData] = useState({ fullName: '', email: '' });
 
@@ -46,11 +46,12 @@ export default function Profile({navigation}) {
     };
 
     fetchUserData(); // Call the function to fetch data
-  }, []);
+  }, [userData]);
 
-const handleGear=()=>{
-  navigation.navigate('Setting');
-}
+  const handleGear = () => {
+    navigation.navigate('Setting');
+  }
+
   return (
     <>
       <View style={styles.root}>
@@ -70,8 +71,18 @@ const handleGear=()=>{
 
           <View style={stylesHere.iconsNameContainer}>
             <View style={stylesHere.name_usernameContainer}>
-              <Text style={{ fontSize: 20, fontWeight: 'bold' }}>{userData.fullName}</Text>
-              <Text>{userData.email}</Text>
+            {/* Conditional rendering */}
+              {userData ? (
+                <>
+                  <Text style={{ fontSize: 20, fontWeight: 'bold' }}>{userData.fullName}</Text>
+                  <Text>{userData.email}</Text>
+                </>
+              ) : (
+                <TouchableOpacity style={[styles.deleteButton, { backgroundColor: 'green' }]}>
+                  <Text style={styles.buttonText}>Sign In</Text>
+                </TouchableOpacity>
+              )}
+
             </View>
             <View style={stylesHere.gameInfo}>
 

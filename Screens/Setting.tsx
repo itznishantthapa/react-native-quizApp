@@ -41,6 +41,19 @@ const Setting = ({navigation}) => {
     const handleAccount=()=>{
         navigation.navigate('Account');
     }
+    const handleAbout=()=>{
+        navigation.navigate('About');
+    }
+    const handleNotification=()=>{
+        navigation.navigate('Notifications');
+    }
+    const handlePrivacy=()=>{
+        navigation.navigate('Privacy');
+    }
+
+    const handleHelpSupport=()=>{
+        navigation.navigate('HelpSupport');
+    }
     return (
         <SafeAreaView style={styles.background}>
             <StatusBar hidden={false} backgroundColor='' style='light' />
@@ -65,28 +78,28 @@ const Setting = ({navigation}) => {
                             <Icon name='angle-right' size={24} style={{ marginLeft: 'auto', color: 'white' }}></Icon>
                         </View>
                     </TouchableWithoutFeedback>
-                    <TouchableWithoutFeedback>
+                    <TouchableWithoutFeedback onPress={handleNotification}>
                         <View style={styles.accountBoxSections}>
                             <IconV name='notifications-outline' size={24} style={{ color: 'white' }}></IconV>
                             <Text style={styles.sectionText}>Notifications</Text>
                             <Icon name='angle-right' size={24} style={{ marginLeft: 'auto', color: 'white' }}></Icon>
                         </View>
                     </TouchableWithoutFeedback>
-                    <TouchableWithoutFeedback>
+                    <TouchableWithoutFeedback  onPress={handlePrivacy}>
                         <View style={styles.accountBoxSections}>
                             <IconF name='lock' size={24} style={{ color: 'white' }}></IconF>
                             <Text style={styles.sectionText}>Privacy & Security</Text>
                             <Icon name='angle-right' size={24} style={{ marginLeft: 'auto', color: 'white' }}></Icon>
                         </View>
                     </TouchableWithoutFeedback>
-                    <TouchableWithoutFeedback>
+                    <TouchableWithoutFeedback onPress={handleHelpSupport}>
                         <View style={styles.accountBoxSections}>
                             <IconF5 name='hands-helping' size={24} style={{ color: 'white' }}></IconF5>
                             <Text style={styles.sectionText}>Help and Support</Text>
                             <Icon name='angle-right' size={24} style={{ marginLeft: 'auto', color: 'white' }}></Icon>
                         </View>
                     </TouchableWithoutFeedback>
-                    <TouchableWithoutFeedback>
+                    <TouchableWithoutFeedback onPress={handleAbout}>
                         <View style={styles.accountBoxSections}>
                             <IconF name='help-circle' size={24} style={{ color: 'white' }}></IconF>
                             <Text style={styles.sectionText}>About</Text>

@@ -62,20 +62,20 @@ const AccountDeletion = ({navigation}) => {
                     <View></View>
                 </View>
 
-                <View style={stylesHere.deleteContainer}>
+                <View style={styles.deleteContainer}>
                 <Text style={{color:'white', fontSize:15,fontWeight:'bold',marginRight:'28%'}}>Hi Nishant, sorry to see you go !</Text>
-                <View style={stylesHere.deleteInfoBox}>
+                <View style={styles.deleteInfoBox}>
                     <Text style={{textDecorationLine:'underline'}}>After deletion of your account</Text>
-                    <View style={stylesHere.infoPointContainer}>
-                        <View style={stylesHere.infoPoints}>
+                    <View style={styles.infoPointContainer}>
+                        <View style={styles.infoPoints}>
                             <IconAnt name='arrowright'></IconAnt>
                             <Text>You will lose your progress.</Text>
                         </View>
-                        <View style={stylesHere.infoPoints}>
+                        <View style={styles.infoPoints}>
                             <IconAnt name='arrowright'></IconAnt>
                             <Text>Friend connections will be lost.</Text>
                         </View>
-                        <View style={stylesHere.infoPoints}>
+                        <View style={styles.infoPoints}>
                             <IconAnt name='arrowright'></IconAnt>
                             <Text>Account cannot be recovered.</Text>
                         </View>
@@ -105,37 +105,3 @@ const AccountDeletion = ({navigation}) => {
 export default AccountDeletion
 
 
-const stylesHere=StyleSheet.create({
-    deleteContainer:{
-        height:'100%',
-        width:'100%',
-        flexDirection:'column',
-        alignItems:'center',
-        gap:30
-    },
-    deleteInfoBox:{
-      height:'30%',
-      width:'80%',
-      backgroundColor:'white',
-      borderRadius:10,
-      padding:15,
-      flexDirection:'column',
-      justifyContent:'flex-start',
-      gap:20
-      
-    },
-    infoPoints:{
-        flexDirection:'row',
-        justifyContent:'flex-start',
-        alignItems:'center',
-        gap:10
-    },
-    infoPointContainer:{
-        gap:10
-    },
-
-    //added css
-
-
-    
-});
