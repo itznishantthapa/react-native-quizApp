@@ -325,7 +325,7 @@ export default function Profile({ navigation, gameInfo, setgameInfo }) {
               </TouchableOpacity>
               <TouchableOpacity style={styles.gameInfoIcons}>
                 <Image style={styles.iconImage} source={charge}></Image>
-                <Text style={{ fontWeight: 'bold', fontSize: 20 }}>{(((gameInfo.points) / 4) * 100) / (gameInfo.gamePlayed * 10)}%</Text>
+                <Text style={{ fontWeight: 'bold', fontSize: 20 }}>{((((gameInfo.points) / 4) * 100) / (gameInfo.gamePlayed * 10)).toFixed(2)}% </Text>
                 <Text style={{ fontWeight: 'bold' }}>Accuracy</Text>
                 <Text style={{ fontWeight: 'bold' }}>rate</Text>
               </TouchableOpacity>
@@ -348,7 +348,8 @@ export default function Profile({ navigation, gameInfo, setgameInfo }) {
             <ScrollView style={{ marginTop: 31 }}>
               <View style={{ alignItems: 'center', flexDirection: 'column', gap: 10, paddingTop: 10 }}>
               { auth.currentUser?
-              signedUpUsers.map((user, index) => (
+              signedUpUsers.filter(user => user.id !== auth.currentUser.uid) // Filter out the current user
+              .map((user, index) => (
                   <TouchableOpacity key={user.id} style={styles.friendBox} onPress={()=>handleUserProfile(user,signedUpUsers)}>
                     <Text style={styles.friendRank}>#{index+1}</Text>
                     <Image source={user.profileImage ? { uri: user.profileImage } : require('../assets/person.jpg')} style={styles.friendImage} /> 

@@ -81,7 +81,7 @@ export default function UserProfile({navigation}) {
               </TouchableOpacity>
               <TouchableOpacity style={styles.gameInfoIcons}>
                 <Image style={styles.iconImage} source={charge}></Image>
-                <Text style={{ fontWeight: 'bold', fontSize: 20 }}>{user.gameInfo?(((user.gameInfo.points) / 4) * 100) / (user.gameInfo.gamePlayed * 10):0}%</Text>
+                <Text style={{ fontWeight: 'bold', fontSize: 20 }}>{user.gameInfo?((((user.gameInfo.points) / 4) * 100) / (user.gameInfo.gamePlayed * 10)).toFixed(2):0}%</Text>
                 <Text style={{ fontWeight: 'bold' }}>Accuracy</Text>
                 <Text style={{ fontWeight: 'bold' }}>rate</Text>
               </TouchableOpacity>

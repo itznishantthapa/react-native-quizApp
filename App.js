@@ -155,6 +155,8 @@ export default function App() {
     Signup: CardStyleInterpolators.forFadeFromBottomAndroid,
     Creation: CardStyleInterpolators.forHorizontalIOS,
     Setting: CardStyleInterpolators.forFadeFromBottomAndroid,
+    UserProfile: CardStyleInterpolators.forFadeFromBottomAndroid,
+
 
     Account: CardStyleInterpolators.forHorizontalIOS,
     Notifications: CardStyleInterpolators.forHorizontalIOS,
