@@ -1,23 +1,18 @@
 // import React, { useEffect, useState } from "react";
-import { View, Text, Button, Alert, TouchableOpacity, StyleSheet, ImageBackground } from "react-native";
+import { View, Text, Alert, TouchableOpacity, StyleSheet, ImageBackground } from "react-native";
 import { StatusBar } from "expo-status-bar";
 import { styles } from '../style';
 
-const Rapid = ({question,options,handleOptionClick}) => {
+
+const Rapid = ({ question, options, handleOptionClick, counter,isOver, fetchQuestion }) => {
+
     return (
-        <View style={{flex:1}}>
-           <StatusBar style={'light'} hidden={false} backgroundColor='black' />
-            <View  style={styles.background}>
+        <View style={{ flex: 1 }}>
+            <StatusBar hidden={false} backgroundColor='black' style='light' />
+            <View style={[styles.background, { alignItems: 'center', justifyContent: 'space-evenly' }]}>
 
-
-              <View  style={{width:'100%',flexDirection:'row',justifyContent:'center',height:60,marginBottom:50}}>
-                  <Text style={{color:'white',fontSize:30,fontWeight:'bold', fontFamily:'monospace',textDecorationLine:'underline'}}>Random Quiz</Text>
-              </View>
-
-
+                <Text style={{ color: 'white', fontSize: 25, fontWeight: '900',position:'absolute',top:'10%'}}>Question {counter + 1}/10</Text>
                 <View style={styles.container}>
-                
- 
                     <Text style={styles.question}>{question}</Text>
                     <View style={styles.optionsContainer}>
                         {options.map((option, index) => (
@@ -31,6 +26,18 @@ const Rapid = ({question,options,handleOptionClick}) => {
                         ))}
                     </View>
                 </View>
+
+                    <View style={{position:'absolute',top:'80%'}}>
+                    {isOver && (
+                        <TouchableOpacity
+                            style={styles.outlineButton}
+                            onPress={fetchQuestion}>
+                            <Text style={styles.outlineButtonText}>Restart</Text>
+                        </TouchableOpacity>
+                    )}
+                    </View>
+
+                    
             </View>
         </View>
 
@@ -39,4 +46,6 @@ const Rapid = ({question,options,handleOptionClick}) => {
 };
 
 
-export default Rapid;
+export default Rapid
+
+

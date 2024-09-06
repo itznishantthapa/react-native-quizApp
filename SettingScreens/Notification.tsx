@@ -14,11 +14,7 @@ const Notifications = ({ navigation }) => {
         navigation.navigate('Setting');
     }
     const handleNotyOnOff = () => {
-        if (!isOn) {
-            setisOn(true)
-        } else {
-            setisOn(false)
-        }
+       setisOn(!isOn)
     }
 
     return (

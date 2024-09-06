@@ -66,7 +66,8 @@ export default function Creation({ navigation }) {
             // Store additional user information in Firestore
             await setDoc(doc(firestore, "users", userId), {
                 fullName: fullName,
-                email: email
+                email:email
+                //other informations.....
             });
 
             console.log('User signed up successfull');

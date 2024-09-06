@@ -263,4 +263,112 @@ export const  styles = StyleSheet.create({
     },
 
 
+    //profile css
+    profileContainer: {
+        flexDirection: 'row',
+        justifyContent: 'center',
+        alignItems: 'center',
+        zIndex: 999,
+        position: 'absolute',
+        top: '13%',
+        width: '100%',
+        // backgroundColor:'grey'
+      },
+      profieText_gear_container: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        paddingHorizontal: 15,
+        // backgroundColor: 'grey',
+        height: '20%',
+        width: '100%'
+    
+      },
+      profileImage: {
+        width: 100,
+        height: 100,
+        borderRadius: 50, // Half of the width/height to make it circularrr 
+        borderWidth: 2, // Optional: adds a border around the image
+        borderColor: '#000', // Optional: border color
+      },
+      profileText: {
+        color: 'white',
+        fontSize: 40,
+        fontWeight: 'bold',
+        // marginLeft: 10
+    
+    
+      },
+      gameInfo: {
+        height: '40%',
+        flexWrap: 'wrap',
+        flexDirection: 'row',
+        justifyContent: 'space-evenly',
+        alignItems: 'center',
+        gap: 10,
+        marginTop: 10
+      },
+      gameInfoIcons: {
+        height: '45%',
+        width: '30%',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        borderRadius: 20,
+        // borderColor: 'grey',
+        // borderWidth: 2,
+        backgroundColor: 'white'
+      },
+      iconsNameContainer: {
+        backgroundColor: '#dee2e6',
+        height: '80%',
+        borderTopLeftRadius: 30,
+        borderTopRightRadius: 30,
+        flexDirection: 'column'
+      },
+      name_usernameContainer: {
+    
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginTop: 50
+      },
+    
+      iconImage: {
+        height: '30%',
+        // width: '100%',
+        width: '30%',
+        objectFit: 'contain'
+    
+      },
+      friendBox: {
+        // borderWidth: 1,
+        // borderColor: 'black',
+        width: '80%',
+        height: 80,
+        borderRadius: 15,
+        flexDirection: 'row',
+        justifyContent: 'flex-start',
+        gap: 20,
+        alignItems: 'center',
+        paddingLeft: 20,
+        backgroundColor: '#ced4da'
+      },
+      friendImage: {
+        width: 70,
+        height: 70,
+        borderRadius: 50, // Half of the width/height to make it circular
+        // borderWidth: 2, // Optional: adds a border around the image
+        // borderColor: '#000',
+      },
+      friendRank: {
+        fontSize: 20,
+        fontWeight: 'bold'
+      },
+      friendUsername: {
+        fontSize: 15,
+        fontWeight: 'bold'
+      }
+    
+
 });

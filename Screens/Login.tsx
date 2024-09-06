@@ -12,7 +12,7 @@ import { auth } from '../firebase/firebaseConfig.js';
 import NetInfo from '@react-native-community/netinfo';
 
 export default function Login({ navigation }) {
-    const [passwordVisible, setPasswordVisible] = useState(true);
+   const [passwordVisible, setPasswordVisible] = useState(true);
 
 
     const [email, setUsername] = useState('');

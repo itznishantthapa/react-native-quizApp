@@ -1,9 +1,9 @@
 import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator,CardStyleInterpolators } from '@react-navigation/stack';
+import { createStackNavigator, CardStyleInterpolators } from '@react-navigation/stack';
 import Signup from './Screens/Signup';
 import Login from './Screens/Login';
 import Creation from './Screens/Creation';
-import { ImageBackground, View, StyleSheet, Alert } from 'react-native';
+import { Alert } from 'react-native';
 import QuizApp from './Screens/QuizApp';
 import Tabbar from './Screens/Tabbar';
 import { useState, useEffect } from 'react';
@@ -17,6 +17,13 @@ import Notifications from './SettingScreens/Notification';
 import Privacy from './SettingScreens/Privacy';
 import PrivacyEdit from './SettingScreens/PrivacyEdit';
 import HelpSupport from './SettingScreens/helpSupport';
+
+import { auth, firestore } from './firebase/firebaseConfig'; // Import Firestore and Auth
+import { doc, getDoc } from 'firebase/firestore';
+// import { useState, useEffect } from 'react';
+
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import UserProfile from './Screens/UserProfile';
 
 
 
@@ -38,22 +45,46 @@ export default function App() {
   const [options, setOptions] = useState([]);
   const [isOver, setisOver] = useState(false)
 
+  const [gameInfo, setgameInfo] = useState(
+    {
+      worldRank:'NA',
+      gamePlayed:0,
+      points:0 ,
+      totalAttempted:0
+
+    })
+
+
+
+
   const handleOptionClick = (choosed) => {
     if (!(counter === data.length - 1)) {
 
 
       if (choosed === data[counter].correctAnswer) {
         setPlayerPoints(playerPoints + 1);
+        setgameInfo((prevGameInfo)=>
+          ({...prevGameInfo,   points:prevGameInfo.points+4})) //setting the player points on each correct answer
+      
       }
 
       setCounter(counter + 1);
+      setgameInfo((prevGameInfo)=>({...prevGameInfo,   totalAttempted:(prevGameInfo.totalAttempted)+1})) //totalQuestion Solved
+     
     } else {
-      // Added this else block to handle the case when it's the last question
-      if (choosed === data[counter].correctAnswer) {
-        setPlayerPoints(playerPoints + 1);
+      if(!isOver){
+
+        // Added this else block to handle the case when it's the last question
+        if (choosed === data[counter].correctAnswer) {
+          setPlayerPoints(playerPoints + 1);
+          setgameInfo((prevGameInfo)=>({...prevGameInfo,   points:prevGameInfo.points+4}))
+        }
+        setgameInfo((prevGameInfo)=>({...prevGameInfo,   totalAttempted:(prevGameInfo.totalAttempted)+1}))   //totalQuestion Solved
+        setgameInfo((prevGameInfo)=>({...prevGameInfo,   gamePlayed:(prevGameInfo.gamePlayed)+1}))   //total game completed or played
+     
+        Alert.alert("Quiz Complete", `Your score is ${playerPoints}`);
+        setisOver(true);
       }
-      Alert.alert("Quiz Complete", `Your score is ${playerPoints + 1}`);
-      setisOver(true);
     }
   };
 
@@ -80,7 +111,7 @@ export default function App() {
         changeQuestion(rawdata, 0);
       })
       .catch(error => {
-        console.error('Error fetching data:', error);
+        Alert.alert("Network Error","Please connect to the internet.");
       });
 
 
@@ -99,6 +130,7 @@ export default function App() {
       changeQuestion(data, counter);
     }
   }, [counter]);
+
   const changeQuestion = (data, counter) => {
     const incorrectOptions = data[counter].incorrectAnswers;
     const options = [
@@ -117,36 +149,75 @@ export default function App() {
   };
 
 
-// Define a mapping of screen names to their interpolators
-const screenInterpolators = {
-  Login: CardStyleInterpolators.forVerticalIOS,
-  Signup: CardStyleInterpolators.forFadeFromBottomAndroid,
-  Creation: CardStyleInterpolators.forHorizontalIOS,
-  Setting: CardStyleInterpolators.forFadeFromBottomAndroid,
-  Account: CardStyleInterpolators.forHorizontalIOS,
-  AccountEdit: CardStyleInterpolators.forFadeFromBottomAndroid,
-  AccountDeletion: CardStyleInterpolators.forFadeFromBottomAndroid,
-  Tabbar: CardStyleInterpolators.forFadeFromBottomAndroid,
-};
+  // Define a mapping of screen names to their interpolators
+  const screenInterpolators = {
+    Login: CardStyleInterpolators.forVerticalIOS,
+    Signup: CardStyleInterpolators.forFadeFromBottomAndroid,
+    Creation: CardStyleInterpolators.forHorizontalIOS,
+    Setting: CardStyleInterpolators.forFadeFromBottomAndroid,
+
+    Account: CardStyleInterpolators.forHorizontalIOS,
+    Notifications: CardStyleInterpolators.forHorizontalIOS,
+    Privacy: CardStyleInterpolators.forHorizontalIOS,
+    About: CardStyleInterpolators.forHorizontalIOS,
+    HelpSupport: CardStyleInterpolators.forFadeFromBottomAndroid,
+
+    AccountEdit: CardStyleInterpolators.forFadeFromBottomAndroid,
+    PrivacyEdit: CardStyleInterpolators.forFadeFromBottomAndroid,
+    AccountDeletion: CardStyleInterpolators.forFadeFromBottomAndroid,
+    Tabbar: CardStyleInterpolators.forFadeFromBottomAndroid,
+  };
+
+  // ---------STORING DATA TO ASYNC STORAGE----------------------------------------------------------------
+    // Step 2: Load gameInfo from AsyncStorage when the component mounts
+    useEffect(() => {
+      const loadGameInfo = async () => {
+        try {
+          const storedGameInfo = await AsyncStorage.getItem('gameInfo');
+          if (storedGameInfo !== null) {
+            setgameInfo(JSON.parse(storedGameInfo)); // Convert back to object
+          }
+        } catch (e) {
+          console.error('Failed to load game info', e);
+        }
+      };
+      loadGameInfo();
+    }, []);
+  
+    // Step 3: Save gameInfo to AsyncStorage whenever it changes
+    useEffect(() => {
+      const saveGameInfo = async () => {
+        try {
+          await AsyncStorage.setItem('gameInfo', JSON.stringify(gameInfo)); // Convert to string
+          console.log('Save success.')
+        } catch (e) {
+          console.error('Failed to save game info', e);
+        }
+      };
+      saveGameInfo();
+    }, [gameInfo]);
+    // ------------------------------------------(STORING END)----------------------------------------------------------------------------
 
 
   return (
     // <View style={styles.container}>
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Tabbar"
-      
-      screenOptions={({ route }) => ({
-        // Apply the interpolator based on the screen name
-        cardStyleInterpolator: screenInterpolators[route.name] || CardStyleInterpolators.forHorizontalIOS,
-        // Include other common settings
-        headerShown: false,
-        gestureEnabled: true,
-        detachPreviousScreen: false,
-      })} >
+
+        screenOptions={({ route }) => ({
+          // Apply the interpolator based on the screen name
+          cardStyleInterpolator: screenInterpolators[route.name] || CardStyleInterpolators.forHorizontalIOS,
+          // Include other common settings
+          headerShown: false,
+          gestureEnabled: true,
+          detachPreviousScreen: false,
+        })} >
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="Signup" component={Signup} />
         <Stack.Screen name="Creation" component={Creation} />
-        <Stack.Screen name="Setting" component={Setting} />
+        <Stack.Screen name="Setting" >
+          {props =><Setting {...props} setgameInfo={setgameInfo} />}
+          </Stack.Screen>
         <Stack.Screen name="Account" component={Account} />
         <Stack.Screen name="AccountEdit" component={AccountEdit} />
         <Stack.Screen name="AccountDeletion" component={AccountDeletion} />
@@ -155,13 +226,14 @@ const screenInterpolators = {
         <Stack.Screen name="Privacy" component={Privacy} />
         <Stack.Screen name="PrivacyEdit" component={PrivacyEdit} />
         <Stack.Screen name="HelpSupport" component={HelpSupport} />
+        <Stack.Screen name="UserProfile" component={UserProfile} />
 
 
         <Stack.Screen name="Quiz">
-        {props => <QuizApp {...props} question={question} options={options} counter={counter} isOver={isOver} handleOptionClick={handleOptionClick} fetchQuestion={fetchQuestions} />}
+          {props => <QuizApp {...props} question={question} options={options} counter={counter} isOver={isOver} handleOptionClick={handleOptionClick} fetchQuestion={fetchQuestions} />}
         </Stack.Screen>
         <Stack.Screen name="Tabbar">
-        {props => <Tabbar {...props} question={question} options={options} handleOptionClick={handleOptionClick} />}
+          {props => <Tabbar {...props} question={question} options={options} counter={counter} isOver={isOver} handleOptionClick={handleOptionClick} fetchQuestion={fetchQuestions} gameInfo={gameInfo} setgameInfo={setgameInfo} />}
         </Stack.Screen>
       </Stack.Navigator>
     </NavigationContainer>

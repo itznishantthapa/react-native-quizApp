@@ -18,7 +18,7 @@ import Dashboard from '../TabScreen/Dashboard';
 const Tab = createBottomTabNavigator();
 
 
-export default function Tabbar({ question, options, handleOptionClick }) {
+export default function Tabbar({question, options, handleOptionClick, counter,isOver, fetchQuestion,     gameInfo, setgameInfo}) {
 
     return (
 
@@ -58,9 +58,11 @@ export default function Tabbar({ question, options, handleOptionClick }) {
             <Tab.Screen name='Search' component={Search}>
             </Tab.Screen>
             <Tab.Screen name='Rapid'  >
-                {props => <Rapid {...props} question={question} options={options} handleOptionClick={handleOptionClick} />}
+                {props => <Rapid {...props} question={question} options={options} counter={counter} isOver={isOver} handleOptionClick={handleOptionClick} fetchQuestion={fetchQuestion} />}
             </Tab.Screen>
-            <Tab.Screen name='Profile' component={Profile} />
+            <Tab.Screen name='Profile'>
+            {props => <Profile {...props}  gameInfo={gameInfo} setgameInfo={setgameInfo}  />}
+            </Tab.Screen>
         </Tab.Navigator>
 
 

@@ -1,4 +1,4 @@
-import { View, Text, TouchableOpacity, StyleSheet, TouchableWithoutFeedback, TextInput } from 'react-native'
+import { View, Text, TouchableOpacity, StyleSheet, TouchableWithoutFeedback, TextInput ,Alert} from 'react-native'
 import React from 'react'
 import { styles } from '../style'
 import { StatusBar } from 'expo-status-bar'
@@ -9,11 +9,19 @@ import IconF6 from 'react-native-vector-icons/FontAwesome6'
 import { auth, firestore } from '../firebase/firebaseConfig'; // Import Firestore and Auth
 import { doc, getDoc,updateDoc } from 'firebase/firestore';
 import { useState, useEffect } from 'react';
+import { EmailAuthProvider, reauthenticateWithCredential, updateEmail } from 'firebase/auth';
+
+
+
 
 const AccountEdit = ({navigation}) => {
 
       // State to store user's name and email
-  const [userData, setUserData] = useState({ fullName: '', email: '' });
+  const [userData, setUserData] = useState({ fullName: '', otherInfo: '' });
+
+
+
+
 
   useEffect(() => {
     const fetchUserData = async () => {
@@ -23,10 +31,10 @@ const AccountEdit = ({navigation}) => {
           const userDoc = await getDoc(doc(firestore, 'users', user.uid)); // Fetch user data from Firestore
 
           if (userDoc.exists()) {
-            const data = userDoc.data() as { fullName: string; email: string }; // Type assertion in typescripts
+            const data = userDoc.data() as { fullName: string }; // Type assertion in typescripts
             setUserData({
               fullName: data.fullName || 'Unknown Name', // Fallback in case fullName is missing
-              email: data.email || 'Unknown Email',     // Fallback in case email is missing
+              otherInfo: 'add more info..'    // Fallback in case email is missing
 
               //if not typescripts this can be done with simple
               // setUserData(userDoc.data());
@@ -36,12 +44,36 @@ const AccountEdit = ({navigation}) => {
           }
         }
       } catch (error) {
-        console.error("Error fetching user data: ", error);
+        Alert.alert("Network Error","Please connect to the internet.");
       }
     };
 
     fetchUserData(); // Call the function to fetch data
   }, []);
+
+
+  
+
+  const updateUserData=async()=>{
+    try {
+      const user = auth.currentUser; // Get the current authenticated user
+      if (user) 
+        {
+          await updateDoc(doc(firestore, 'users', user.uid),{
+           fullName:userData.fullName,
+        });
+
+        console.log('Update success')
+        navigation.navigate('Setting');
+
+      }
+    } catch (error) {
+      Alert.alert("Network Error","Please connect to the internet.");
+    }
+  }
+
+
+  
 
 
 
@@ -67,18 +99,26 @@ const AccountEdit = ({navigation}) => {
                 {/* Account box */}
                 <View style={[styles.accountBox,{gap:10}]}>
                     {/* Account Box Sections */}
-                    <TouchableWithoutFeedback>
-                        <View style={[styles.accountBoxSections,{borderWidth:1,borderRadius:10,justifyContent:'space-evenly',flexDirection:'row',alignItems:'center'}]}>
-                            <TextInput value={userData.fullName}  placeholderTextColor='white' style={[styles.sectionText,{paddingLeft:10,width:'80%'}]}></TextInput>
-                            <IconF6 name='pen-to-square' size={30} style={{color:'white'}}></IconF6>
-                        </View>
-                    </TouchableWithoutFeedback>
-                    <TouchableWithoutFeedback>
+                    <TouchableWithoutFeedback >
                         <View style={[styles.accountBoxSections,{borderWidth:1,borderRadius:10,justifyContent:'space-evenly'}]}>
-                            <TextInput value={userData.email}  placeholderTextColor='white' style={[styles.sectionText,{paddingLeft:10,width:'80%'}]}></TextInput>
+                          {/* Dictionary ko value set garda yesstie oder ma hunu parxa */}
+                            <TextInput value={userData.fullName}  onChangeText={(newName)=>{setUserData({...userData,fullName:newName})}} placeholderTextColor='white' style={[styles.sectionText,{paddingLeft:10,width:'80%'}]}></TextInput>
                             <IconF6 name='pen-to-square' size={30} style={{color:'white'}}></IconF6>
                         </View>
                     </TouchableWithoutFeedback>
+                    <TouchableWithoutFeedback onPress={()=>{
+                      Alert.alert('Go Back to Profile', 'tap and hold profile picture to change');
+                    }}>
+                        <View style={[styles.accountBoxSections,{borderWidth:1,borderRadius:10,justifyContent:'space-evenly'}]}>
+                          {/* Dictionary ko value set garda yesstie oder ma hunu parxa */}
+                            <Text style={[styles.sectionText,{paddingLeft:10,width:'80%'}]}>Choose profile picture</Text>
+                            <IconF6 name='pen-to-square' size={30} style={{color:'white'}}></IconF6>
+                        </View>
+                    </TouchableWithoutFeedback>
+                 
+                    <TouchableOpacity style={styles.outlineButton} onPress={updateUserData}>
+                    <Text style={styles.outlineButtonText}>Save</Text>
+                   </TouchableOpacity>
 
                 </View>
 

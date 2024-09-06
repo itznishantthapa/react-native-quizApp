@@ -5,12 +5,67 @@ import { StatusBar } from 'expo-status-bar'
 import IconF from 'react-native-vector-icons/Feather'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import IconF6 from 'react-native-vector-icons/FontAwesome6'
+import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
+import { faEye, faEyeSlash } from '@fortawesome/free-regular-svg-icons';
 
 import { auth, firestore } from '../firebase/firebaseConfig'; // Import Firestore and Auth
 import { doc, getDoc, updateDoc } from 'firebase/firestore';
-import { useState, useEffect } from 'react';
+import { EmailAuthProvider, reauthenticateWithCredential, updatePassword } from 'firebase/auth';
+import { useState, useEffect, } from 'react';
+import { Alert } from 'react-native'
 
 const PrivacyEdit = ({ navigation }) => {
+
+    const [usercurrentPassword, setusercurrentPassword] = useState('')
+    const [usernewPassword, setusernewPassword] = useState('')
+    const [userConfirmPassword, setConfirmPassword] = useState('')
+    const [passwordVisible, setPasswordVisible] = useState(true);
+
+
+
+
+    const togglePasswordVisibility = () => {
+        setPasswordVisible(!passwordVisible);
+    };
+
+    // Function to re-authenticate the user
+    const reauthenticateUser = async () => {
+    const user = auth.currentUser; // Get the current authenticated user
+  
+    if (user) {
+      const credential = EmailAuthProvider.credential(user.email, usercurrentPassword); // Create credential with email and current password
+      await reauthenticateWithCredential(user, credential); // Re-authenticate the user
+      console.log('User re-authenticated');
+    }
+  };
+
+  const handleUpdatePassword = async () => {
+    if(usernewPassword===userConfirmPassword ){
+
+        try {
+          // Re-authenticate user before updating password
+          await reauthenticateUser();
+      
+          const user = auth.currentUser; // Get the currently logged-in user
+      
+          if (user) {
+            await updatePassword(user, usernewPassword); // Update the password
+            console.log('Password updated successfully');
+            Alert.alert("Success", "Password has been updated.");
+            navigation.navigate('Privacy');
+          }
+        } catch (error) {
+          Alert.alert("Error","Failed to update password.");
+        }
+    }else{
+        Alert.alert('Invalid Confirmation');
+    }
+
+  };
+
+
+
+
     const handleBack = () => {
         navigation.navigate('Privacy');
     }
@@ -33,22 +88,33 @@ const PrivacyEdit = ({ navigation }) => {
                     {/* Account Box Sections */}
                     <TouchableWithoutFeedback>
                         <View style={[styles.accountBoxSections, { borderWidth: 1, borderRadius: 10, justifyContent: 'space-evenly', flexDirection: 'row', alignItems: 'center' }]}>
-                            <TextInput placeholder='Enter current password' placeholderTextColor='white' style={[styles.sectionText, { paddingLeft: 10, width: '80%' }]}></TextInput>
-                            <IconF6 name='pen-to-square' size={30} style={{ color: 'white' }}></IconF6>
+                            <TextInput  secureTextEntry={passwordVisible} placeholder='Enter current password' placeholderTextColor='white' onChangeText={setusercurrentPassword} style={[styles.sectionText, { paddingLeft: 10, width: '80%' }]}></TextInput>
+                            <TouchableOpacity onPress={togglePasswordVisibility}>
+                            <FontAwesomeIcon icon={passwordVisible ? faEyeSlash : faEye} size={25} color="#adb5bd" />
+                        </TouchableOpacity>
                         </View>
                     </TouchableWithoutFeedback>
                     <TouchableWithoutFeedback>
                         <View style={[styles.accountBoxSections, { borderWidth: 1, borderRadius: 10, justifyContent: 'space-evenly', flexDirection: 'row', alignItems: 'center' }]}>
-                            <TextInput placeholder='Enter new password' placeholderTextColor='white' style={[styles.sectionText, { paddingLeft: 10, width: '80%' }]}></TextInput>
-                            <IconF6 name='pen-to-square' size={30} style={{ color: 'white' }}></IconF6>
+                            <TextInput  secureTextEntry={passwordVisible} placeholder='Enter new password' onChangeText={setusernewPassword} placeholderTextColor='white' style={[styles.sectionText, { paddingLeft: 10, width: '80%' }]}></TextInput>
+                            <TouchableOpacity onPress={togglePasswordVisibility}>
+                            <FontAwesomeIcon icon={passwordVisible ? faEyeSlash : faEye} size={25} color="#adb5bd" />
+                        </TouchableOpacity>
                         </View>
                     </TouchableWithoutFeedback>
                     <TouchableWithoutFeedback>
                         <View style={[styles.accountBoxSections, { borderWidth: 1, borderRadius: 10, justifyContent: 'space-evenly', flexDirection: 'row', alignItems: 'center' }]}>
-                            <TextInput placeholder='Confirm password' placeholderTextColor='white' style={[styles.sectionText, { paddingLeft: 10, width: '80%' }]}></TextInput>
-                            <IconF6 name='pen-to-square' size={30} style={{ color: 'white' }}></IconF6>
+                            <TextInput  secureTextEntry={passwordVisible} placeholder='Confirm password' onChangeText={setConfirmPassword} placeholderTextColor='white' style={[styles.sectionText, { paddingLeft: 10, width: '80%' }]}></TextInput>
+                            <TouchableOpacity onPress={togglePasswordVisibility}>
+                            <FontAwesomeIcon icon={passwordVisible ? faEyeSlash : faEye} size={25} color="#adb5bd" />
+                        </TouchableOpacity>
                         </View>
                     </TouchableWithoutFeedback>
+
+                    <TouchableOpacity style={styles.outlineButton} onPress={handleUpdatePassword}>
+                    <Text style={styles.outlineButtonText}>Update password</Text>
+                   </TouchableOpacity>
+
 
 
                 </View>

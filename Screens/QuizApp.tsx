@@ -1,6 +1,5 @@
 // import React, { useEffect, useState } from "react";
 import { View, Text, Alert, TouchableOpacity, StyleSheet, ImageBackground } from "react-native";
-import neon2 from '../assets/neon2.jpg';
 import { StatusBar } from "expo-status-bar";
 import { styles } from '../style';
 
@@ -32,8 +31,7 @@ const QuizApp = ({ question, options, handleOptionClick, counter,isOver, fetchQu
                     {isOver && (
                         <TouchableOpacity
                             style={styles.outlineButton}
-                            onPress={fetchQuestion}
-                        >
+                            onPress={fetchQuestion}>
                             <Text style={styles.outlineButtonText}>Restart</Text>
                         </TouchableOpacity>
                     )}

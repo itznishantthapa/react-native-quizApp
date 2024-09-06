@@ -44,31 +44,47 @@ export default function Dashboard({ navigation }) {
                     </View>
 
                     <View style={styles.boxContainer}>
+
                         <TouchableOpacity style={{ width: '100%', flex: 1, justifyContent: 'center', alignItems: 'center' }} onPress={goToQuiz}>
                             <ImageBackground source={cosmos} resizeMode="cover" imageStyle={{ borderRadius: 20, width: '100%' }} style={styles.boxes}>
                                 <Text style={styles.textStyle}>Astronomy</Text>
                             </ImageBackground>
                         </TouchableOpacity>
+
+                        <TouchableOpacity   style={{ width: '100%', flex: 1, justifyContent: 'center', alignItems: 'center' }} onPress={goToQuiz}>
                         <ImageBackground source={console} resizeMode="cover" imageStyle={{ borderRadius: 20, width: '100%' }} style={styles.boxes}>
                             <Text style={styles.textStyle}>Gaming</Text>
                         </ImageBackground>
+                        </TouchableOpacity>
+
+                        <TouchableOpacity  style={{ width: '100%', flex: 1, justifyContent: 'center', alignItems: 'center' }} onPress={goToQuiz}>
                         <ImageBackground source={lady} resizeMode="cover" imageStyle={{ borderRadius: 20, width: '100%' }} style={styles.boxes}>
                             <Text style={styles.textStyle}>Science</Text>
                         </ImageBackground>
+                        </TouchableOpacity>
+                        
+                        <TouchableOpacity  style={{ width: '100%', flex: 1, justifyContent: 'center', alignItems: 'center' }} onPress={goToQuiz}>
                         <ImageBackground source={hills} resizeMode="cover" imageStyle={{ borderRadius: 20, width: '100%' }} style={styles.boxes}>
                             <Text style={styles.textStyle}>Geography</Text>
                         </ImageBackground>
+                        </TouchableOpacity>
+
                     </View>
 
                     <View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center', width: '100%', height: 150, gap: 8, marginTop: 12 }}>
-                        <ImageBackground source={temple} resizeMode='cover' imageStyle={{ height: 150, width: '100%', borderRadius: 20 }} style={{ height: 150, width: '45%', justifyContent: 'center',alignItems:'center' }}>
+                        <TouchableOpacity style={{width:'45%',flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
+                        <ImageBackground source={temple} resizeMode='cover' imageStyle={{ height: 150, width: '100%', borderRadius: 20 }} style={{ height: 150, width: '100%', justifyContent: 'center',alignItems:'center' }}>
                             <Text style={[styles.textStyle2,{fontSize:18,fontWeight:'900'}]}>Your Ranking</Text>
                         </ImageBackground>
-                        <ImageBackground source={yellowGame} resizeMode='cover' imageStyle={{ height: 150, width: '100%', borderRadius: 20, }} style={{ height: 150, width: '45%', justifyContent: 'center',alignItems:'center' }}>
+                        </TouchableOpacity>
+
+                        <TouchableOpacity style={{width:'45%',flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
+                        <ImageBackground source={yellowGame} resizeMode='cover' imageStyle={{ height: 150, width: '100%', borderRadius: 20, }} style={{ height: 150, width: '100%', justifyContent: 'center',alignItems:'center' }}>
 
                             <Text style={[styles.textStyle2,{fontSize:18,fontWeight:'900'}]}>Total Solved</Text>
 
                         </ImageBackground>
+                            </TouchableOpacity>
                     </View>
 
 

@@ -1,5 +1,5 @@
 import { StyleSheet, Text, View, TouchableOpacity, TouchableWithoutFeedback,Alert } from 'react-native'
-import React from 'react'
+import React, { useState,useEffect } from 'react'
 import { styles } from '../style'
 import { StatusBar } from 'expo-status-bar'
 import { SafeAreaView } from 'react-native-safe-area-context'
@@ -8,9 +8,25 @@ import IconV from 'react-native-vector-icons/Ionicons';
 import IconF from 'react-native-vector-icons/Feather';
 import IconF5 from 'react-native-vector-icons/FontAwesome5';
 import IconSimple from 'react-native-vector-icons/SimpleLineIcons';
+import IconAnt from 'react-native-vector-icons/AntDesign';
+
+import { signOut } from 'firebase/auth';
+import { auth } from '../firebase/firebaseConfig';
 
 
-const Setting = ({navigation}) => {
+const Setting = ({navigation,setgameInfo}) => {
+
+    // Initial state for gameInfo
+const initialGameInfo = {
+    worldRank:'NA',
+      gamePlayed:0,
+      points:0 ,
+      totalAttempted:0
+  };
+  
+
+//    console.log(auth.currentUser.email)
+
 
     const handleLogout=()=>{
         Alert.alert(
@@ -23,16 +39,33 @@ const Setting = ({navigation}) => {
               },
               {
                 text: "Logout",
-                onPress: () => {
-                  // Handle the logout action here
-                  navigation.navigate('Login');
-                  console.log("User logged out");
+                onPress: async() => {
+                    try {
+                        await signOut(auth);  // Log the user out from Firebase
+
+                        //when user get signout the data is reset to zero
+                        setgameInfo(initialGameInfo)
+
+
+                        // navigation.reset({
+                        //     index: 0, // Set the first screen in the stack (Login screen)
+                        //     routes: [{ name: 'Login' }]  // Define a new stack with only the 'Login' screen [Reverse Disable] ---> Yoh login vnda aagdi kuenii pni screen xaina (x,x,x,(0)login)
+                        // });
+                        navigation.navigate('Profile');
+                        console.log("User logged out");
+                    } catch (error) {
+                        console.error("Error logging out: ", error);
+                    }
                 },
                 style: "destructive"
               }
             ]
           );
        
+    }
+
+    const handleSignIn=()=>{
+        navigation.navigate('Login')
     }
 
     const handleBackArrow=()=>{
@@ -106,13 +139,27 @@ const Setting = ({navigation}) => {
                             <Icon name='angle-right' size={24} style={{ marginLeft: 'auto', color: 'white' }}></Icon>
                         </View>
                     </TouchableWithoutFeedback>
-                    <TouchableWithoutFeedback onPress={handleLogout}>
-                        <View style={styles.accountBoxSections}>
-                            <IconSimple name='logout' size={24} style={{ color: 'white' }}></IconSimple>
-                            <Text style={styles.sectionText}>Logout</Text>
-                            <Icon name='angle-right' size={24} style={{ marginLeft: 'auto', color: 'white' }}></Icon>
-                        </View>
-                    </TouchableWithoutFeedback>
+
+                    {
+                        auth.currentUser?(
+                            <TouchableWithoutFeedback onPress={handleLogout}>
+                            <View style={styles.accountBoxSections}>
+                                <IconSimple name='logout' size={24} style={{ color: 'white' }}></IconSimple>
+                                <Text style={styles.sectionText}>Logout</Text>
+                                <Icon name='angle-right' size={24} style={{ marginLeft: 'auto', color: 'white' }}></Icon>
+                            </View>
+                        </TouchableWithoutFeedback>
+                        ):(
+                            <TouchableWithoutFeedback onPress={handleSignIn}>
+                            <View style={styles.accountBoxSections}>
+                                <IconAnt name='login' size={24} style={{ color: 'white' }}></IconAnt>
+                                <Text style={styles.sectionText}>Sign In</Text>
+                                <Icon name='angle-right' size={24} style={{ marginLeft: 'auto', color: 'white' }}></Icon>
+                            </View>
+                        </TouchableWithoutFeedback>
+                        )
+                    }
+                   
                 </View>
 
 
