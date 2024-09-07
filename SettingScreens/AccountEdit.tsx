@@ -6,7 +6,7 @@ import IconF from 'react-native-vector-icons/Feather'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import IconF6 from 'react-native-vector-icons/FontAwesome6'
 
-import { auth, firestore } from '../firebase/firebaseConfig'; // Import Firestore and Auth
+import { auth, firestore } from '../firebaseConfig'; // Import Firestore and Auth
 import { doc, getDoc,updateDoc } from 'firebase/firestore';
 import { useState, useEffect } from 'react';
 import { EmailAuthProvider, reauthenticateWithCredential, updateEmail } from 'firebase/auth';

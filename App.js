@@ -18,9 +18,9 @@ import Privacy from './SettingScreens/Privacy';
 import PrivacyEdit from './SettingScreens/PrivacyEdit';
 import HelpSupport from './SettingScreens/helpSupport';
 
-import { auth, firestore } from './firebase/firebaseConfig'; // Import Firestore and Auth
-import { doc, getDoc } from 'firebase/firestore';
-// import { useState, useEffect } from 'react';
+import { auth, firestore } from './firebaseConfig';
+import firebaseConfig from './firebaseConfig';
+
 
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import UserProfile from './Screens/UserProfile';

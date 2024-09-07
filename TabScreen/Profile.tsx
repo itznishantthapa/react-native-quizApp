@@ -13,7 +13,7 @@ import charge from '../assets/charge.png'
 import IconF from 'react-native-vector-icons/Feather';
 import { useNavigation } from '@react-navigation/native';
 
-import { auth, firestore } from '../firebase/firebaseConfig'; // Import Firestore and Auth
+import { auth, firestore } from '../firebaseConfig'; // Import Firestore and Auth
 import { doc, getDoc, updateDoc, collection ,getDocs } from 'firebase/firestore';
 import { useState, useEffect } from 'react';
 import { useFocusEffect } from '@react-navigation/native';
@@ -57,7 +57,8 @@ export default function Profile({ navigation, gameInfo, setgameInfo }) {
       if (user) {
         const userDoc = await getDoc(doc(firestore, 'users', user.uid));
         if (userDoc.exists()) {
-          setUserData(userDoc.data());
+          const data = userDoc.data() as { fullName: string, email: string }; // Type assertion here
+          setUserData(data);
           console.log('Data is fetched');
         }
       }
@@ -280,7 +281,7 @@ export default function Profile({ navigation, gameInfo, setgameInfo }) {
             </TouchableOpacity>
           </View>
 
-          <View style={styles.profileContainer} onPress={pickImage}>
+          <View style={styles.profileContainer}>
             <TouchableOpacity onLongPress={pickImage}>
               {/* <Image  source={imageUri ? { uri: profileImageUri } : require("../assets/lady.jpeg")} style={styles.profileImage}></Image> */}
               <Image source={auth.currentUser ? { uri: imageUri } : require('../assets/person.jpg')} style={styles.profileImage}></Image>
@@ -343,7 +344,7 @@ export default function Profile({ navigation, gameInfo, setgameInfo }) {
               </TouchableOpacity>
 
             </View>
-            <Text style={{ fontSize: 30, fontWeight: 'bold', marginLeft: 20 }}>Friends ({auth.currentUser?signedUpUsers.length:0})</Text>
+            <Text style={{ fontSize: 30, fontWeight: 'bold', marginLeft: 20 }}>Friends ({auth.currentUser?signedUpUsers.length-1:0})</Text>
 
             <ScrollView style={{ marginTop: 31 }}>
               <View style={{ alignItems: 'center', flexDirection: 'column', gap: 10, paddingTop: 10 }}>

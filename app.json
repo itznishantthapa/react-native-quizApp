@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "quiz",
-    "slug": "quiz",
+    "name": "quizy",
+    "slug": "quizy",
     "version": "2.0.0",
     "orientation": "portrait",
     "icon": "./assets/quiz_icon2.png",
@@ -26,8 +26,9 @@
     },
     "extra": {
       "eas": {
-        "projectId": "48c45b44-2368-4ff6-b96a-de55c9f38246"
+        "projectId": "668cbdb5-6c55-45a6-9385-41c821bc097a"
       }
-    }
+    },
+    "owner": "itznishantthapaof2002"
   }
 }

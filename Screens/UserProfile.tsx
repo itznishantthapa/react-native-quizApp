@@ -11,7 +11,7 @@ import wrong from '../assets/wrong.png'
 import points from '../assets/points.png'
 import charge from '../assets/charge.png'
 
-import { auth, firestore } from '../firebase/firebaseConfig'; // Import Firestore and Auth
+import { auth, firestore } from '../firebaseConfig'; // Import Firestore and Auth
 import { doc, getDoc, updateDoc, collection ,getDocs } from 'firebase/firestore';
 import { useState, useEffect } from 'react';
 import { useFocusEffect } from '@react-navigation/native';
@@ -21,16 +21,32 @@ import * as ImagePicker from 'expo-image-picker';
 import { getStorage, ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 import { useRoute,RouteProp } from '@react-navigation/native'; 
 
-// Define the type for the route params
-// type UserProfileRouteProp = RouteProp<{ UserProfile: { user: { fullName: string, email: string } } }, 'UserProfile'>;
+/// Define the type for the route params
+type GameInfo = {
+  gamePlayed: number;
+  points: number;
+  totalAttempted: number;
+  worldRank: string;
+};
+
+type User = {
+  email: string;
+  fullName: string;
+  gameInfo: GameInfo;
+  profileImage: string;
+};
+
+type UserProfileRouteProp = RouteProp<{ UserProfile: { user: User; signedUpUsers: any[] } }, 'UserProfile'>;
+
 
 
 export default function UserProfile({navigation}) {
-    // const route = useRoute<UserProfileRouteProp>();
-    const route = useRoute();
-    const  {user,signedUpUsers}  = route.params; // Access the user data passed from the Profile screen
+  const route = useRoute<UserProfileRouteProp>();
+    // const route = useRoute();
 
-    const handleUserProfile=(user,signedUpUsers)=>{
+    const { user, signedUpUsers } = route.params
+
+    const handleUserProfile=(user: any,signedUpUsers: any[])=>{
       navigation.navigate('UserProfile',{user,signedUpUsers})
     }
   
