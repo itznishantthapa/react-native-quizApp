@@ -11,7 +11,7 @@ import IconSimple from 'react-native-vector-icons/SimpleLineIcons';
 import IconAnt from 'react-native-vector-icons/AntDesign';
 
 import { signOut } from 'firebase/auth';
-import { auth } from '../firebase/firebaseConfig';
+import { auth } from '../firebaseConfig';
 
 
 const Setting = ({navigation,setgameInfo}) => {

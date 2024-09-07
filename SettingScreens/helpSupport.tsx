@@ -7,7 +7,7 @@ import IconAnt from 'react-native-vector-icons/AntDesign'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { useState } from 'react'
 import { TextInput } from 'react-native-gesture-handler'
-import { auth, firestore } from '../firebase/firebaseConfig';
+import { auth, firestore } from '../firebaseConfig';
 import { Linking } from 'react-native'
 
 import { Alert } from 'react-native'

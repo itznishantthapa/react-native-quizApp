@@ -8,7 +8,7 @@ import { styles } from '../style'
 
 // import auth from '@react-native-firebase/auth';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
-import { auth ,firestore } from '../firebase/firebaseConfig';
+import { auth ,firestore } from '../firebaseConfig';
 import { doc, setDoc } from 'firebase/firestore';
 
 // Internet connection checking

@@ -8,7 +8,7 @@ import IconF6 from 'react-native-vector-icons/FontAwesome6'
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faEye, faEyeSlash } from '@fortawesome/free-regular-svg-icons';
 
-import { auth, firestore } from '../firebase/firebaseConfig'; // Import Firestore and Auth
+import { auth, firestore } from '../firebaseConfig'; // Import Firestore and Auth
 import { doc, getDoc, updateDoc } from 'firebase/firestore';
 import { EmailAuthProvider, reauthenticateWithCredential, updatePassword } from 'firebase/auth';
 import { useState, useEffect, } from 'react';

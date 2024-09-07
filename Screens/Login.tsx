@@ -6,7 +6,7 @@ import React, { useState } from 'react';
 import { styles } from '../style.js'
 
 import { signInWithEmailAndPassword } from 'firebase/auth';
-import { auth } from '../firebase/firebaseConfig.js';
+import { auth } from '../firebaseConfig.js';
 
 //Internet connection validation
 import NetInfo from '@react-native-community/netinfo';
