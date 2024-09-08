@@ -18,12 +18,11 @@ import Privacy from './SettingScreens/Privacy';
 import PrivacyEdit from './SettingScreens/PrivacyEdit';
 import HelpSupport from './SettingScreens/helpSupport';
 
-import { auth, firestore } from './firebaseConfig';
-import firebaseConfig from './firebaseConfig';
+import {storage } from './firebaseConfig';
+import { ref, getDownloadURL } from 'firebase/storage';
 
-
-import AsyncStorage from '@react-native-async-storage/async-storage';
 import UserProfile from './Screens/UserProfile';
+import { saveLocalData,getLocalData } from './localStorage';
 
 
 
@@ -44,6 +43,7 @@ export default function App() {
   const [question, setQuestion] = useState(null);
   const [options, setOptions] = useState([]);
   const [isOver, setisOver] = useState(false)
+  const [quizData, setquizData] = useState(null)
 
   const [gameInfo, setgameInfo] = useState(
     {
@@ -103,8 +103,8 @@ export default function App() {
     setCounter(0);
     setPlayerPoints(0);
     setisOver(false);
-    fetch("https://the-trivia-api.com/v2/questions")
-      // fetch("http://192.168.1.66:8000/api/questions/")
+    // fetch("https://the-trivia-api.com/v2/questions")
+      fetch("https://firebasestorage.googleapis.com/v0/b/v3quiz-ef69a.appspot.com/o/Questions%2Fastronomy.json?alt=media&token=ce7f7b3d-a6df-4b78-bba1-0276ef33f425")
       .then((response) => response.json())
       .then((rawdata) => {
         setdata(rawdata);
@@ -122,6 +122,25 @@ export default function App() {
   }, []);
 
 
+// ----------------------------------------------------------------------------------------------------(Optionnal)
+  useEffect(() => {
+    const fetchQuizData = async () => {
+      const storageRef = ref(storage, 'Questions/astronomy.json'); // Use correct path
+      try {
+        const url = await getDownloadURL(storageRef);
+        const response = await fetch(url);
+        const data = await response.json();
+        setquizData(data);
+        console.log(url)
+      } catch (error) {
+        console.log('Here is the error')
+        console.error("Error fetching quiz data: ", error);
+      }
+    };
+
+    fetchQuizData();
+  }, []);
+// -------------------------------------------------------------------------------------------------------
 
   //Logic to change the question.
 
@@ -174,14 +193,7 @@ export default function App() {
     // Step 2: Load gameInfo from AsyncStorage when the component mounts
     useEffect(() => {
       const loadGameInfo = async () => {
-        try {
-          const storedGameInfo = await AsyncStorage.getItem('gameInfo');
-          if (storedGameInfo !== null) {
-            setgameInfo(JSON.parse(storedGameInfo)); // Convert back to object
-          }
-        } catch (e) {
-          console.error('Failed to load game info', e);
-        }
+          getLocalData('gameInfo')
       };
       loadGameInfo();
     }, []);
@@ -189,12 +201,7 @@ export default function App() {
     // Step 3: Save gameInfo to AsyncStorage whenever it changes
     useEffect(() => {
       const saveGameInfo = async () => {
-        try {
-          await AsyncStorage.setItem('gameInfo', JSON.stringify(gameInfo)); // Convert to string
-          console.log('Save success.')
-        } catch (e) {
-          console.error('Failed to save game info', e);
-        }
+          await saveLocalData('gameInfo',gameInfo);
       };
       saveGameInfo();
     }, [gameInfo]);

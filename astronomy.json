@@ -1,0 +1,426 @@
+[
+    {
+      "category": "astronomy",
+      "id": "001",
+      "correctAnswer": "Milky Way",
+      "incorrectAnswers": ["Andromeda", "Triangulum", "Whirlpool"],
+      "question": {
+        "text": "What is the name of the galaxy that contains our Solar System?"
+      },
+      "tags": ["galaxies", "astronomy"],
+      "type": "text_choice",
+      "difficulty": "easy",
+      "regions": [],
+      "isNiche": false
+    },
+    {
+      "category": "astronomy",
+      "id": "002",
+      "correctAnswer": "Saturn",
+      "incorrectAnswers": ["Jupiter", "Neptune", "Uranus"],
+      "question": {
+        "text": "Which planet is famous for its prominent ring system?"
+      },
+      "tags": ["planets", "solar_system"],
+      "type": "text_choice",
+      "difficulty": "medium",
+      "regions": [],
+      "isNiche": false
+    },
+    {
+      "category": "astronomy",
+      "id": "003",
+      "correctAnswer": "Hubble Space Telescope",
+      "incorrectAnswers": ["James Webb Telescope", "Chandra X-ray Observatory", "Spitzer Space Telescope"],
+      "question": {
+        "text": "What is the name of the telescope that has been orbiting Earth since 1990?"
+      },
+      "tags": ["space", "telescopes"],
+      "type": "text_choice",
+      "difficulty": "medium",
+      "regions": [],
+      "isNiche": false
+    },
+    {
+      "category": "astronomy",
+      "id": "004",
+      "correctAnswer": "Neil Armstrong",
+      "incorrectAnswers": ["Buzz Aldrin", "Michael Collins", "Yuri Gagarin"],
+      "question": {
+        "text": "Who was the first person to walk on the Moon?"
+      },
+      "tags": ["space_exploration", "astronomy"],
+      "type": "text_choice",
+      "difficulty": "easy",
+      "regions": [],
+      "isNiche": false
+    },
+    {
+      "category": "astronomy",
+      "id": "005",
+      "correctAnswer": "Black hole",
+      "incorrectAnswers": ["White dwarf", "Neutron star", "Red giant"],
+      "question": {
+        "text": "What is the name of the region in space where gravity is so strong that nothing can escape it?"
+      },
+      "tags": ["space", "cosmology"],
+      "type": "text_choice",
+      "difficulty": "hard",
+      "regions": [],
+      "isNiche": false
+    },
+
+    {
+        "category": "gaming",
+        "id": "101",
+        "correctAnswer": "The Legend of Zelda",
+        "incorrectAnswers": ["Super Mario", "Donkey Kong", "Metroid"],
+        "question": {
+          "text": "Which Nintendo game features a protagonist named Link?"
+        },
+        "tags": ["gaming", "nintendo"],
+        "type": "text_choice",
+        "difficulty": "easy",
+        "regions": [],
+        "isNiche": false
+      },
+      {
+        "category": "gaming",
+        "id": "102",
+        "correctAnswer": "Counter-Strike",
+        "incorrectAnswers": ["Call of Duty", "Overwatch", "Fortnite"],
+        "question": {
+          "text": "Which popular multiplayer game is known for its bomb defusal mode and tactical gameplay?"
+        },
+        "tags": ["gaming", "fps"],
+        "type": "text_choice",
+        "difficulty": "medium",
+        "regions": [],
+        "isNiche": false
+      },
+      {
+        "category": "gaming",
+        "id": "103",
+        "correctAnswer": "Minecraft",
+        "incorrectAnswers": ["Terraria", "Roblox", "Fortnite"],
+        "question": {
+          "text": "Which sandbox game allows players to build with blocks in a procedurally generated world?"
+        },
+        "tags": ["gaming", "sandbox"],
+        "type": "text_choice",
+        "difficulty": "easy",
+        "regions": [],
+        "isNiche": false
+      },
+      {
+        "category": "gaming",
+        "id": "104",
+        "correctAnswer": "Geralt of Rivia",
+        "incorrectAnswers": ["Kratos", "Lara Croft", "Master Chief"],
+        "question": {
+          "text": "Who is the main protagonist in 'The Witcher' video game series?"
+        },
+        "tags": ["gaming", "rpg"],
+        "type": "text_choice",
+        "difficulty": "medium",
+        "regions": [],
+        "isNiche": false
+      },
+      {
+        "category": "gaming",
+        "id": "105",
+        "correctAnswer": "Sony",
+        "incorrectAnswers": ["Microsoft", "Nintendo", "Sega"],
+        "question": {
+          "text": "Which company developed and released the PlayStation console?"
+        },
+        "tags": ["gaming", "consoles"],
+        "type": "text_choice",
+        "difficulty": "easy",
+        "regions": [],
+        "isNiche": false
+      },
+
+      {
+        "category": "science",
+        "id": "201",
+        "correctAnswer": "Gravity",
+        "incorrectAnswers": ["Magnetism", "Nuclear Force", "Electromagnetic Force"],
+        "question": {
+          "text": "What force keeps planets in orbit around the sun?"
+        },
+        "tags": ["science", "physics"],
+        "type": "text_choice",
+        "difficulty": "easy",
+        "regions": [],
+        "isNiche": false
+      },
+      {
+        "category": "science",
+        "id": "202",
+        "correctAnswer": "Oxygen",
+        "incorrectAnswers": ["Carbon", "Hydrogen", "Nitrogen"],
+        "question": {
+          "text": "What element do humans need to breathe in to survive?"
+        },
+        "tags": ["science", "biology"],
+        "type": "text_choice",
+        "difficulty": "easy",
+        "regions": [],
+        "isNiche": false
+      },
+      {
+        "category": "science",
+        "id": "203",
+        "correctAnswer": "Neptune",
+        "incorrectAnswers": ["Jupiter", "Saturn", "Mars"],
+        "question": {
+          "text": "What is the farthest planet from the sun in our solar system?"
+        },
+        "tags": ["science", "astronomy"],
+        "type": "text_choice",
+        "difficulty": "medium",
+        "regions": [],
+        "isNiche": false
+      },
+      {
+        "category": "science",
+        "id": "204",
+        "correctAnswer": "Albert Einstein",
+        "incorrectAnswers": ["Isaac Newton", "Galileo Galilei", "Nikola Tesla"],
+        "question": {
+          "text": "Who developed the theory of relativity?"
+        },
+        "tags": ["science", "physics"],
+        "type": "text_choice",
+        "difficulty": "medium",
+        "regions": [],
+        "isNiche": false
+      },
+      {
+        "category": "science",
+        "id": "205",
+        "correctAnswer": "H2O",
+        "incorrectAnswers": ["CO2", "O2", "CH4"],
+        "question": {
+          "text": "What is the chemical formula for water?"
+        },
+        "tags": ["science", "chemistry"],
+        "type": "text_choice",
+        "difficulty": "easy",
+        "regions": [],
+        "isNiche": false
+      },
+      {
+        "category": "science",
+        "id": "206",
+        "correctAnswer": "DNA",
+        "incorrectAnswers": ["RNA", "Protein", "Lipids"],
+        "question": {
+          "text": "What molecule carries genetic information in living organisms?"
+        },
+        "tags": ["science", "biology"],
+        "type": "text_choice",
+        "difficulty": "medium",
+        "regions": [],
+        "isNiche": false
+      },
+      {
+        "category": "science",
+        "id": "207",
+        "correctAnswer": "Photosynthesis",
+        "incorrectAnswers": ["Respiration", "Transpiration", "Fermentation"],
+        "question": {
+          "text": "What process do plants use to convert sunlight into energy?"
+        },
+        "tags": ["science", "biology"],
+        "type": "text_choice",
+        "difficulty": "easy",
+        "regions": [],
+        "isNiche": false
+      },
+      {
+        "category": "science",
+        "id": "208",
+        "correctAnswer": "Proton",
+        "incorrectAnswers": ["Neutron", "Electron", "Photon"],
+        "question": {
+          "text": "What is the positively charged particle in an atom's nucleus?"
+        },
+        "tags": ["science", "physics"],
+        "type": "text_choice",
+        "difficulty": "medium",
+        "regions": [],
+        "isNiche": false
+      },
+      {
+        "category": "science",
+        "id": "209",
+        "correctAnswer": "Volcano",
+        "incorrectAnswers": ["Earthquake", "Hurricane", "Tornado"],
+        "question": {
+          "text": "What is the term for a mountain that erupts with lava?"
+        },
+        "tags": ["science", "geology"],
+        "type": "text_choice",
+        "difficulty": "easy",
+        "regions": [],
+        "isNiche": false
+      },
+      {
+        "category": "science",
+        "id": "210",
+        "correctAnswer": "Electron",
+        "incorrectAnswers": ["Neutron", "Proton", "Quark"],
+        "question": {
+          "text": "What subatomic particle is negatively charged and orbits the nucleus of an atom?"
+        },
+        "tags": ["science", "physics"],
+        "type": "text_choice",
+        "difficulty": "medium",
+        "regions": [],
+        "isNiche": false
+      },
+
+      {
+        "category": "geography",
+        "id": "301",
+        "correctAnswer": "Mount Everest",
+        "incorrectAnswers": ["K2", "Mount Kilimanjaro", "Mount Elbrus"],
+        "question": {
+          "text": "What is the highest mountain in the world?"
+        },
+        "tags": ["geography", "mountains"],
+        "type": "text_choice",
+        "difficulty": "easy",
+        "regions": [],
+        "isNiche": false
+      },
+      {
+        "category": "geography",
+        "id": "302",
+        "correctAnswer": "Nile River",
+        "incorrectAnswers": ["Amazon River", "Yangtze River", "Mississippi River"],
+        "question": {
+          "text": "What is the longest river in the world?"
+        },
+        "tags": ["geography", "rivers"],
+        "type": "text_choice",
+        "difficulty": "medium",
+        "regions": [],
+        "isNiche": false
+      },
+      {
+        "category": "geography",
+        "id": "303",
+        "correctAnswer": "Australia",
+        "incorrectAnswers": ["Greenland", "New Zealand", "Iceland"],
+        "question": {
+          "text": "Which is the smallest continent by land area?"
+        },
+        "tags": ["geography", "continents"],
+        "type": "text_choice",
+        "difficulty": "easy",
+        "regions": [],
+        "isNiche": false
+      },
+      {
+        "category": "geography",
+        "id": "304",
+        "correctAnswer": "Sahara Desert",
+        "incorrectAnswers": ["Gobi Desert", "Arabian Desert", "Kalahari Desert"],
+        "question": {
+          "text": "Which desert is the largest in the world?"
+        },
+        "tags": ["geography", "deserts"],
+        "type": "text_choice",
+        "difficulty": "easy",
+        "regions": [],
+        "isNiche": false
+      },
+      {
+        "category": "geography",
+        "id": "305",
+        "correctAnswer": "Tokyo",
+        "incorrectAnswers": ["New York", "Shanghai", "Mumbai"],
+        "question": {
+          "text": "Which city is the most populous in the world?"
+        },
+        "tags": ["geography", "cities"],
+        "type": "text_choice",
+        "difficulty": "medium",
+        "regions": [],
+        "isNiche": false
+      },
+      {
+        "category": "geography",
+        "id": "306",
+        "correctAnswer": "Vatican City",
+        "incorrectAnswers": ["Monaco", "San Marino", "Liechtenstein"],
+        "question": {
+          "text": "Which is the smallest country in the world by land area?"
+        },
+        "tags": ["geography", "countries"],
+        "type": "text_choice",
+        "difficulty": "easy",
+        "regions": [],
+        "isNiche": false
+      },
+      {
+        "category": "geography",
+        "id": "307",
+        "correctAnswer": "Asia",
+        "incorrectAnswers": ["Africa", "Europe", "North America"],
+        "question": {
+          "text": "Which continent is home to the largest population?"
+        },
+        "tags": ["geography", "continents"],
+        "type": "text_choice",
+        "difficulty": "easy",
+        "regions": [],
+        "isNiche": false
+      },
+      {
+        "category": "geography",
+        "id": "308",
+        "correctAnswer": "Russia",
+        "incorrectAnswers": ["Canada", "China", "United States"],
+        "question": {
+          "text": "Which country has the largest land area in the world?"
+        },
+        "tags": ["geography", "countries"],
+        "type": "text_choice",
+        "difficulty": "medium",
+        "regions": [],
+        "isNiche": false
+      },
+      {
+        "category": "geography",
+        "id": "309",
+        "correctAnswer": "Amazon Rainforest",
+        "incorrectAnswers": ["Congo Rainforest", "Borneo Rainforest", "Daintree Rainforest"],
+        "question": {
+          "text": "Which is the largest tropical rainforest in the world?"
+        },
+        "tags": ["geography", "forests"],
+        "type": "text_choice",
+        "difficulty": "medium",
+        "regions": [],
+        "isNiche": false
+      },
+      {
+        "category": "geography",
+        "id": "310",
+        "correctAnswer": "Pacific Ocean",
+        "incorrectAnswers": ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean"],
+        "question": {
+          "text": "Which is the largest ocean on Earth?"
+        },
+        "tags": ["geography", "oceans"],
+        "type": "text_choice",
+        "difficulty": "easy",
+        "regions": [],
+        "isNiche": false
+      }
+  ]
+  

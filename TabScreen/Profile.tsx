@@ -13,6 +13,7 @@ import charge from '../assets/charge.png'
 import IconF from 'react-native-vector-icons/Feather';
 import { useNavigation } from '@react-navigation/native';
 
+
 import { auth, firestore } from '../firebaseConfig'; // Import Firestore and Auth
 import { doc, getDoc, updateDoc, collection ,getDocs } from 'firebase/firestore';
 import { useState, useEffect } from 'react';
@@ -42,6 +43,8 @@ export default function Profile({ navigation, gameInfo, setgameInfo }) {
       console.error('Error fetching users:', error);
     }
   };
+
+  
 
   // Fetch users when the component mounts
   useEffect(() => {
@@ -109,7 +112,7 @@ export default function Profile({ navigation, gameInfo, setgameInfo }) {
     // Check if result is valid and not cancelled
     if (!result.canceled && auth.currentUser) { // Update 'cancelled' to 'canceled'
       setImageUri(result.assets[0].uri);// Display image locally
-      uploadImageToFirebase(result.assets[0].uri); // Call function to upload image
+      // uploadImageToFirebase(result.assets[0].uri); // Call function to upload image
     } else {
       console.log('Image selection was cancelled');
       Alert.alert('Please SignIn', 'You must sign in to change the profile')
@@ -266,6 +269,8 @@ export default function Profile({ navigation, gameInfo, setgameInfo }) {
   const handleBackArrow=()=>{
     navigation.navigate('Dashboard');
 }
+
+    
   return (
     <>
       <View style={styles.root}>
