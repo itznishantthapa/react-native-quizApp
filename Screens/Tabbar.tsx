@@ -18,7 +18,7 @@ import Dashboard from '../TabScreen/Dashboard';
 const Tab = createBottomTabNavigator();
 
 
-export default function Tabbar({question, options, handleOptionClick, counter,isOver, fetchQuestion,     gameInfo, setgameInfo}) {
+export default function Tabbar({question, options, handleOptionClick, counter,isOver, fetchQuestion,     gameInfo, setgameInfo  }) {
 
     return (
 

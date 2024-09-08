@@ -10,6 +10,7 @@ import { styles } from '../style'
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { auth ,firestore } from '../firebaseConfig';
 import { doc, setDoc } from 'firebase/firestore';
+import { createAccount } from '../db';
 
 // Internet connection checking
 import NetInfo from '@react-native-community/netinfo';
@@ -48,35 +49,8 @@ export default function Creation({ navigation }) {
             Alert.alert("Confirmation Denied", "Password mismatched. ");
             return;
         }
-
-        // Check network connection
-        const networkState = await NetInfo.fetch();
-        if (!networkState.isConnected) {
-            Alert.alert("Network Error", "No internet connection. Please check your connection and try again.");
-            return;
-        }
-
-        try {
-
-             // Create user with email and password
-             const userCredential = await createUserWithEmailAndPassword(auth, email, password);
-               // Get the user ID
-            const userId = userCredential.user.uid;
-
-            // Store additional user information in Firestore
-            await setDoc(doc(firestore, "users", userId), {
-                fullName: fullName,
-                email:email
-                //other informations.....
-            });
-
-            console.log('User signed up successfull');
-            Alert.alert("Successfull Message", "Account has been created.")
-            navigation.navigate('Tabbar');
-        }
-        catch (error) {
-            Alert.alert("Error", "please fill the form correctly");
-        }
+        //calling a crearAccount function that I made in db.js file.
+        await createAccount(navigation,email,password,    {fullName:fullName,email:email});
     };
 
 

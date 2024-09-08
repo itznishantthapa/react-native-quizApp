@@ -2,8 +2,6 @@ import { StyleSheet, Text, View, Image, TouchableOpacity, ScrollView, Alert } fr
 import { StatusBar } from 'expo-status-bar';
 import React from 'react'
 import { styles } from '../style'
-import Icon from 'react-native-vector-icons/FontAwesome';
-import lady from '../assets/lady.jpeg'
 import console_logo from '../assets/console_logo.png'
 import rank from '../assets/rank.png'
 import correct from '../assets/correct.png'
@@ -11,14 +9,7 @@ import wrong from '../assets/wrong.png'
 import points from '../assets/points.png'
 import charge from '../assets/charge.png'
 
-import { auth, firestore } from '../firebaseConfig'; // Import Firestore and Auth
-import { doc, getDoc, updateDoc, collection ,getDocs } from 'firebase/firestore';
-import { useState, useEffect } from 'react';
-import { useFocusEffect } from '@react-navigation/native';
-
-
-import * as ImagePicker from 'expo-image-picker';
-import { getStorage, ref, uploadBytes, getDownloadURL } from 'firebase/storage';
+import { auth} from '../firebaseConfig'; // Import Firestore and Auth
 import { useRoute,RouteProp } from '@react-navigation/native'; 
 
 /// Define the type for the route params

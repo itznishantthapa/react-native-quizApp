@@ -23,7 +23,7 @@ import { ref, getDownloadURL } from 'firebase/storage';
 
 import UserProfile from './Screens/UserProfile';
 import { saveLocalData,getLocalData } from './localStorage';
-
+import { fileUploadToFirebaseStorage, getFromFirebase,updateToFirebase } from './db';
 
 
 enableScreens(false);
@@ -122,7 +122,7 @@ export default function App() {
   }, []);
 
 
-// ----------------------------------------------------------------------------------------------------(Optionnal)
+// // ----------------------------------------------------------------------------------------------------(Optionnal)
   useEffect(() => {
     const fetchQuizData = async () => {
       const storageRef = ref(storage, 'Questions/astronomy.json'); // Use correct path
@@ -242,7 +242,7 @@ export default function App() {
           {props => <QuizApp {...props} question={question} options={options} counter={counter} isOver={isOver} handleOptionClick={handleOptionClick} fetchQuestion={fetchQuestions} />}
         </Stack.Screen>
         <Stack.Screen name="Tabbar">
-          {props => <Tabbar {...props} question={question} options={options} counter={counter} isOver={isOver} handleOptionClick={handleOptionClick} fetchQuestion={fetchQuestions} gameInfo={gameInfo} setgameInfo={setgameInfo} />}
+          {props => <Tabbar {...props} question={question} options={options} counter={counter} isOver={isOver} handleOptionClick={handleOptionClick} fetchQuestion={fetchQuestions} gameInfo={gameInfo} setgameInfo={setgameInfo}/>}
         </Stack.Screen>
       </Stack.Navigator>
     </NavigationContainer>

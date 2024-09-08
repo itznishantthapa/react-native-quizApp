@@ -1,9 +1,8 @@
-import { StyleSheet, Text, View, Image, TouchableOpacity, ScrollView, Alert } from 'react-native'
+import {Text, View, Image, TouchableOpacity, ScrollView, Alert } from 'react-native'
 import { StatusBar } from 'expo-status-bar';
 import React from 'react'
 import { styles } from '../style'
 import Icon from 'react-native-vector-icons/FontAwesome';
-import lady from '../assets/lady.jpeg'
 import console_logo from '../assets/console_logo.png'
 import rank from '../assets/rank.png'
 import correct from '../assets/correct.png'
@@ -11,26 +10,21 @@ import wrong from '../assets/wrong.png'
 import points from '../assets/points.png'
 import charge from '../assets/charge.png'
 import IconF from 'react-native-vector-icons/Feather';
-import { useNavigation } from '@react-navigation/native';
-
-
 import { auth, firestore } from '../firebaseConfig'; // Import Firestore and Auth
-import { doc, getDoc, updateDoc, collection ,getDocs } from 'firebase/firestore';
+import { collection ,getDocs } from 'firebase/firestore';
 import { useState, useEffect } from 'react';
 import { useFocusEffect } from '@react-navigation/native';
-
-
 import * as ImagePicker from 'expo-image-picker';
-import { getStorage, ref, uploadBytes, getDownloadURL } from 'firebase/storage';
+import { fileUploadToFirebaseStorage, getFromFirebase,updateToFirebase } from '../db';
 
 
 
-export default function Profile({ navigation, gameInfo, setgameInfo }) {
-  console.log(gameInfo)
-  // State to store user's name and email //
+export default function Profile({ navigation, gameInfo, setgameInfo}) {
+  // State to store user's name and email
   const [userData, setUserData] = useState({ fullName: '', email: '' });
-
-  // --------------------------------SIGNUP USER FETCHING--------------------------------------
+  const [imageUri, setImageUri] = useState(null);  
+  
+   // --------------------------------SIGNUP USER FETCHING--------------------------------------
   const [signedUpUsers, setsignedUpUsers] = useState([])
 
   // Function to fetch users from Firestore
@@ -43,9 +37,6 @@ export default function Profile({ navigation, gameInfo, setgameInfo }) {
       console.error('Error fetching users:', error);
     }
   };
-
-  
-
   // Fetch users when the component mounts
   useEffect(() => {
     fetchUsers();
@@ -53,28 +44,6 @@ export default function Profile({ navigation, gameInfo, setgameInfo }) {
   // ----------------------------------------------------------------------------------------------------------
 
 
-  // Function to fetch user data
-  const fetchUserData = async () => {
-    try {
-      const user = auth.currentUser;
-      if (user) {
-        const userDoc = await getDoc(doc(firestore, 'users', user.uid));
-        if (userDoc.exists()) {
-          const data = userDoc.data() as { fullName: string, email: string }; // Type assertion here
-          setUserData(data);
-          console.log('Data is fetched');
-        }
-      }
-      else {
-        setUserData({ fullName: '', email: '' }); // Clear data when not logged in
-      }
-
-
-
-    } catch (error) {
-      Alert.alert("Network Error", "Please connect to the internet.");
-    }
-  };
 
 
 
@@ -82,195 +51,119 @@ export default function Profile({ navigation, gameInfo, setgameInfo }) {
 
 
 
-  const handleGear = () => {
-    navigation.navigate('Setting');
+
+
+
+
+
+
+
+
+
+// updating data--------------------------------------------------------------------------------------------------------------------
+const uploadGameInfo = async () => {
+  await updateToFirebase({gameInfo})
+  console.log("Game data is updated to firestore.")
+};
+useEffect(() => {
+  if (gameInfo) {
+    uploadGameInfo();
   }
+}, [gameInfo]);
+// -----------------------------------------------------------------------------------------------------------------------------------------
 
 
 
 
-  // Profile Image Setting---------------------------------------------------------------------------------------------
 
-  const [imageUri, setImageUri] = useState(null); // State to hold the image URI
+
+
+
+
+
+      
+const uploadImageToFirebase = async (uri: string) => {
+  await fileUploadToFirebaseStorage('profile',uri);
+};
 
   // Function to handle selecting an image
   const pickImage = async () => {
-    // Ask for permission to access the image library
+    //Permisson?
     const permissionResult = await ImagePicker.requestMediaLibraryPermissionsAsync();
-
     if (!permissionResult.granted) {
       alert("You've refused to allow this app to access your photos!");
       return;
     }
-
+    //If granted, lunching gallary
     const result = await ImagePicker.launchImageLibraryAsync({
       mediaTypes: ImagePicker.MediaTypeOptions.Images,
       quality: 1,
     });
 
-
-    // Check if result is valid and not cancelled
-    if (!result.canceled && auth.currentUser) { // Update 'cancelled' to 'canceled'
-      setImageUri(result.assets[0].uri);// Display image locally
-      // uploadImageToFirebase(result.assets[0].uri); // Call function to upload image
+    //If selected, setUp to state & uploading to firebase
+    if (!result.canceled && auth.currentUser) { 
+      setImageUri(result.assets[0].uri);
+      uploadImageToFirebase(result.assets[0].uri); 
     } else {
       console.log('Image selection was cancelled');
       Alert.alert('Please SignIn', 'You must sign in to change the profile')
     }
   };
 
-  // profile update to the firebase--------------------------------------------------------------------------
+ 
+  const handleGear = () => {
+    navigation.navigate('Setting');
+  }
+  const handleUserProfile=(user: any,signedUpUsers: any[])=>{
+    navigation.navigate('UserProfile',{user,signedUpUsers})
+  }
+  const handleBackArrow=()=>{
+    navigation.navigate('Dashboard');
+}
 
-  const uploadImageToFirebase = async (uri) => {
-    const user = auth.currentUser; // Get current user
-    if (!user) {
-      console.log('No user is currently logged in');
-      return;
-    }
 
-    try {
-      const storage = getStorage();
-      const storageRef = ref(storage, `profileImages/${user.uid}`); // Create a storage reference with the user UID
-
-      // Fetch the file blob from the URI
-      const response = await fetch(uri);
-      if (!response.ok) {
-        throw new Error(`Failed to fetch the image. Status: ${response.status}`);
-      }
-
-      const blob = await response.blob();
-
-      // Upload file to Firebase Storage
-      await uploadBytes(storageRef, blob);
-      console.log('Image uploaded to Firebase Storage');
-      Alert.alert('Successful Message', 'You profile has been updated.')
-
-      // Get the download URL of the uploaded image
-      const downloadURL = await getDownloadURL(storageRef);
-
-      // Store the download URL in Firestore
-      const userDocRef = doc(firestore, 'users', user.uid);
-      await updateDoc(userDocRef, { profileImage: downloadURL });
-
-      console.log('Profile image URL updated in Firestore');
-    } catch (error) {
-      console.error('Error uploading image: ', error);
-    }
+  // fetching data------------------------------------------------------------------------------------------------------------
+  const fetchUserData = async () => {
+    const userDoc = await getFromFirebase();
+    const data = userDoc.data() as { fullName: string, email: string }; // Type assertion here
+    setUserData(data);
   };
+  const fetchGameInfo = async () => {
+    const userAllData = await getFromFirebase();
+    const userAllDataInObj= userAllData.data()
+    setgameInfo(userAllDataInObj.gameInfo)
+    console.log('Game data is updated locally from the firebase.')
+  };
+  useFocusEffect(
+    React.useCallback(() => {
+      fetchUserData();  
+      fetchGameInfo();
+    }, [])
+  );
 
 
-  // profile fetching from the firebase----------------------------------------------------------------------------------------------->>>>>>>>>>>
+
   const fetchProfileImage = async () => {
-    const user = auth.currentUser; // Get current user
-    if (!user) {
-      console.log('No user is currently logged in');
-      return null;
-    }
-
-    try {
-      const userDocRef = doc(firestore, 'users', user.uid);
-      const docSnap = await getDoc(userDocRef);
-      if (docSnap.exists()) {
-        const userData = docSnap.data();
-        return userData.profileImage; // Return the stored profile image URL
-      } else {
-        console.log('No such document!');
-        return null;
-      }
-    } catch (error) {
-      console.error('Error fetching profile image: ', error);
-      return null;
-    }
+    const userAllData=await getFromFirebase();
+    const userAllDataInObj= userAllData.data();
+    return userAllDataInObj.profile;
   };
-
   useFocusEffect(
     React.useCallback(() => {
       const loadProfileImage = async () => {
-        const incommingUri = await fetchProfileImage(); // Fetch image URL from Firestore
+        const incommingUri = await fetchProfileImage();
         if (incommingUri) {
-          // setProfileImageUri(imageUri);
           setImageUri(incommingUri);
-          console.log('pp is set')
-          console.log(incommingUri)
         }
       };
 
       loadProfileImage();
     }, [])
   )
+   
+// ------------------------------------------------------------------------------------------------------------------------------
 
 
-
-
-  // profile finished---------------------------------------------------------------------------x
-
-  // Function to fetch the latest gameInfo from Firestore
-  const fetchGameInfo = async () => {
-    const user = auth.currentUser;
-    if (!user) {
-      console.log('No user is currently logged in');
-      return;
-    }
-
-    try {
-      const gameDoc = await getDoc(doc(firestore, 'users', user.uid));
-      if (gameDoc.exists()) {
-        const fetchedGameInfo = gameDoc.data().gameInfo;
-        if (fetchedGameInfo) {
-          setgameInfo(fetchedGameInfo); // Update local gameInfo state with Firestore data
-          console.log('GameInfo fetched', fetchedGameInfo);
-        }
-      }
-    } catch (error) {
-      console.error('Error fetching gameInfo: ', error);
-    }
-  };
-
-  // Function to upload gameInfo to Firestore
-  const uploadGameInfo = async () => {
-    const user = auth.currentUser;
-    if (!user) {
-      console.log('No user is currently logged in');
-      return;
-    }
-
-    try {
-      const userDocRef = doc(firestore, 'users', user.uid);
-      await updateDoc(userDocRef, { gameInfo }); // Update gameInfo in Firestore
-      console.log('GameInfo updated in Firestore');
-    } catch (error) {
-      console.error('Error uploading gameInfo: ', error);
-    }
-  };
-
-  // Fetch user data when the screen is focused (e.g., after a login)
-  useFocusEffect(
-    React.useCallback(() => {
-      fetchUserData();  // Re-fetch the data when the screen is focused
-      fetchGameInfo();
-    }, [])
-  );
-
-  // Example usage: Upload gameInfo after game session is completed
-  useEffect(() => {
-    if (gameInfo) {
-      uploadGameInfo(); // Upload the latest gameInfo to Firestore
-    }
-  }, [gameInfo]);
-
-
-  // const navigation = useNavigation();
-
-
-  const handleUserProfile=(user,signedUpUsers)=>{
-    navigation.navigate('UserProfile',{user,signedUpUsers})
-  }
-
-  const handleBackArrow=()=>{
-    navigation.navigate('Dashboard');
-}
-
-    
   return (
     <>
       <View style={styles.root}>
