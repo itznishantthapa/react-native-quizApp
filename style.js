@@ -270,7 +270,7 @@ export const  styles = StyleSheet.create({
         alignItems: 'center',
         zIndex: 999,
         position: 'absolute',
-        top: '13%',
+        top: '18%',
         width: '100%',
         // backgroundColor:'grey'
       },
@@ -295,7 +295,7 @@ export const  styles = StyleSheet.create({
         color: 'white',
         fontSize: 40,
         fontWeight: 'bold',
-        // marginLeft: 10
+        marginRight:'3.5%'
     
     
       },
@@ -321,7 +321,7 @@ export const  styles = StyleSheet.create({
       },
       iconsNameContainer: {
         backgroundColor: '#dee2e6',
-        height: '80%',
+        height: '75%',
         borderTopLeftRadius: 30,
         borderTopRightRadius: 30,
         flexDirection: 'column'
@@ -342,8 +342,6 @@ export const  styles = StyleSheet.create({
     
       },
       friendBox: {
-        // borderWidth: 1,
-        // borderColor: 'black',
         width: '80%',
         height: 80,
         borderRadius: 15,
@@ -352,7 +350,8 @@ export const  styles = StyleSheet.create({
         gap: 20,
         alignItems: 'center',
         paddingLeft: 20,
-        backgroundColor: '#ced4da'
+        // backgroundColor: '#ced4da'
+        backgroundColor: 'black'
       },
       friendImage: {
         width: 70,
@@ -363,11 +362,21 @@ export const  styles = StyleSheet.create({
       },
       friendRank: {
         fontSize: 20,
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+        color:'white'
       },
       friendUsername: {
         fontSize: 15,
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+         color:'white'
+      },
+      friendTextAndNotificationContainer:{
+        flexDirection:'row',
+        justifyContent:'space-between',
+        alignItems:'center',
+        width:'100%',
+        // backgroundColor:'grey',
+        paddingHorizontal:20
       }
     
 

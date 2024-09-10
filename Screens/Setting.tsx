@@ -12,6 +12,7 @@ import IconAnt from 'react-native-vector-icons/AntDesign';
 
 import { signOut } from 'firebase/auth';
 import { auth } from '../firebaseConfig';
+import { saveLocally } from '../db'
 
 
 const Setting = ({navigation,setgameInfo}) => {
@@ -42,7 +43,6 @@ const initialGameInfo = {
                 onPress: async() => {
                     try {
                         await signOut(auth);  // Log the user out from Firebase
-
                         //when user get signout the data is reset to zero
                         setgameInfo(initialGameInfo)
 

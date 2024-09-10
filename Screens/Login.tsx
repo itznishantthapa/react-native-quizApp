@@ -4,12 +4,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faEye, faEyeSlash } from '@fortawesome/free-regular-svg-icons';
 import React, { useState } from 'react';
 import { styles } from '../style.js'
-
-import { signInWithEmailAndPassword } from 'firebase/auth';
-import { auth } from '../firebaseConfig.js';
-
 //Internet connection validation
 import NetInfo from '@react-native-community/netinfo';
+import { signAccount } from '../db.js';
 
 export default function Login({ navigation }) {
    const [passwordVisible, setPasswordVisible] = useState(true);
@@ -43,21 +40,9 @@ export default function Login({ navigation }) {
             return
         }
 
-
-
-        try {
-            await signInWithEmailAndPassword(auth, email, password);
-            console.log('User login successfull');
-            navigation.navigate('Tabbar');
+          await signAccount(navigation,email,password);
             setUsername("");
             setPassword("");
-
-        }
-        catch (error) {
-            Alert.alert("Login Failed", "invalid credentials");
-        }
-
-        // navigation.navigate('Tabbar');
 
     };
 

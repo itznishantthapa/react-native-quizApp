@@ -6,7 +6,7 @@ import Creation from './Screens/Creation';
 import { Alert } from 'react-native';
 import QuizApp from './Screens/QuizApp';
 import Tabbar from './Screens/Tabbar';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, createContext } from 'react';
 import { enableScreens } from 'react-native-screens';
 import Setting from './Screens/Setting';
 import Account from './SettingScreens/Account';
@@ -24,6 +24,7 @@ import { ref, getDownloadURL } from 'firebase/storage';
 import UserProfile from './Screens/UserProfile';
 import { saveLocalData,getLocalData } from './localStorage';
 import { fileUploadToFirebaseStorage, getFromFirebase,updateToFirebase } from './db';
+import { AppProvider } from './AppProvider';
 
 
 enableScreens(false);
@@ -31,6 +32,8 @@ enableScreens(false);
 const Stack = createStackNavigator();
 
 
+
+const MyContext = createContext();
 
 
 
@@ -208,8 +211,13 @@ export default function App() {
     // ------------------------------------------(STORING END)----------------------------------------------------------------------------
 
 
+
+
+
+
   return (
     // <View style={styles.container}>
+    <AppProvider >
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Tabbar"
 
@@ -246,7 +254,7 @@ export default function App() {
         </Stack.Screen>
       </Stack.Navigator>
     </NavigationContainer>
-    // </View>
+    </AppProvider>
 
 
 
@@ -255,5 +263,5 @@ export default function App() {
   );
 }
 
-
+export {MyContext}
 
