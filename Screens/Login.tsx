@@ -59,8 +59,10 @@ export default function Login({ navigation }) {
 
                     <View style={[styles.inputField, { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }]}>
                         <TextInput
-                            value={password}                            onChangeText={setPassword}
-                            style={{ fontWeight: 'bold', width: '75%', color: '#adb5bd' }}
+                            value={password} 
+                            onChangeText={setPassword}
+                            // style={{ fontWeight: 'bold', width: '75%', color: '#adb5bd' } }
+                            style={[styles.inputField,{width:'90%',flexDirection:'row',justifyContent:'space-between',alignItems:'center',paddingLeft:0}]}
                             placeholder='Enter your password'
                             placeholderTextColor='#adb5bd'
                             secureTextEntry={passwordVisible}

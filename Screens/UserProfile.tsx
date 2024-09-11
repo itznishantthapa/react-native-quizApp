@@ -106,13 +106,16 @@ export default function UserProfile({ navigation }) {
               </TouchableOpacity>
 
             </View>
-            <Text style={{ fontSize: 30, fontWeight: 'bold', marginLeft: 20 }}>Friends ({signedUpUsers.length})</Text>
+            <Text style={{ fontSize: 30, fontWeight: 'bold', marginLeft: 20 }}>Friends ({signedUpUsers.length-1})</Text>
 
             <ScrollView style={{ marginTop: 31 }}>
               <View style={{ alignItems: 'center', flexDirection: 'column', gap: 10, paddingTop: 10 }}>
 
+
+                {/* I want to filter out the user.fullName user from the signedUpUsers array and display the rest of the users in the signedUpUsers array. I am trying to do this by using the filter method but it is not working. Can someone help me with this? */}
                 {auth.currentUser ?
-                  signedUpUsers.map((user, index) => (
+                  signedUpUsers.filter((allUser) => allUser.fullName !== user.fullName)
+                  .map((user, index) => (
                     <TouchableOpacity key={user.id} style={styles.friendBox} onPress={() => handleUserProfile(user, signedUpUsers)}>
                       <Text style={styles.friendRank}>#{index + 1}</Text>
                       <Image source={user.profile ? { uri: user.profile } : require('../assets/person.jpg')} style={styles.friendImage} />

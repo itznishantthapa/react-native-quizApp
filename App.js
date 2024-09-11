@@ -125,25 +125,25 @@ export default function App() {
   }, []);
 
 
-// // ----------------------------------------------------------------------------------------------------(Optionnal)
-  useEffect(() => {
-    const fetchQuizData = async () => {
-      const storageRef = ref(storage, 'Questions/astronomy.json'); // Use correct path
-      try {
-        const url = await getDownloadURL(storageRef);
-        const response = await fetch(url);
-        const data = await response.json();
-        setquizData(data);
-        console.log(url)
-      } catch (error) {
-        console.log('Here is the error')
-        console.error("Error fetching quiz data: ", error);
-      }
-    };
+// // // ----------------------------------------------------------------------------------------------------(Optionnal)
+//   useEffect(() => {
+//     const fetchQuizData = async () => {
+//       const storageRef = ref(storage, 'Questions/astronomy.json'); // Use correct path
+//       try {
+//         const url = await getDownloadURL(storageRef);
+//         const response = await fetch(url);
+//         const data = await response.json();
+//         setquizData(data);
+//         console.log(url)
+//       } catch (error) {
+//         console.log('Here is the error')
+//         console.error("Error fetching quiz data: ", error);
+//       }
+//     };
 
-    fetchQuizData();
-  }, []);
-// -------------------------------------------------------------------------------------------------------
+//     fetchQuizData();
+//   }, []);
+// // -------------------------------------------------------------------------------------------------------
 
   //Logic to change the question.
 

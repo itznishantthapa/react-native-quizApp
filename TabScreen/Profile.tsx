@@ -150,21 +150,6 @@ export default function Profile({ navigation, gameInfo, setgameInfo }) {
   };
 
 
-  // ----------------------------------------------------------------------------------------------------
-
-//   async function nameUpdateFromLocalStorage() {
-//     const data = await getLocally('userData');
-//     setUserData((dic)=>({...dic,fullName:data.fullName}));
-//     console.log('finally set the name------------------------------------------------>')
-//   }
-
-//   useFocusEffect(
-//     useCallback(() => {
-//         nameUpdateFromLocalStorage();    
-//   }, [])
-// );
-  
-
   // Updating game info in Firestore
   useEffect(() => {
     if (auth.currentUser && gameInfo.gamePlayed) {

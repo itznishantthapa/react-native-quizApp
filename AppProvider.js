@@ -1,12 +1,6 @@
 // AppContext.js
 import React, { useState, createContext } from 'react';
 
-// Create a context with default values
-// const MyContext = createContext({
-//   userData: { fullName: '' ,email:''},
-//   setUserData: (e) => {}
-// });
-
 const MyContext=createContext()
 
 export const AppProvider = ({ children }) => {
