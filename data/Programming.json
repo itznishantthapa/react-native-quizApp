@@ -1,0 +1,182 @@
+[
+    {
+        "category": "programming",
+        "id": "001",
+        "correctAnswer": "JavaScript",
+        "incorrectAnswers": ["Python", "Java", "C++"],
+        "question": {
+            "text": "Which programming language is often used for web development?"
+        }
+    },
+    {
+        "category": "programming",
+        "id": "002",
+        "correctAnswer": "JSON",
+        "incorrectAnswers": ["XML", "YAML", "CSV"],
+        "question": {
+            "text": "Which data interchange format is commonly used in web APIs?"
+        }
+    },
+    {
+        "category": "programming",
+        "id": "003",
+        "correctAnswer": "true",
+        "incorrectAnswers": ["false"],
+        "question": {
+            "text": "JSON stands for JavaScript Object Notation. (true/false)"
+        }
+    },
+    {
+        "category": "programming",
+        "id": "004",
+        "correctAnswer": "key-value pairs",
+        "incorrectAnswers": ["arrays", "objects", "strings"],
+        "question": {
+            "text": "In JSON, data is represented using what?"
+        }
+    },
+    {
+        "category": "programming",
+        "id": "005",
+        "correctAnswer": "parse",
+        "incorrectAnswers": ["stringify", "serialize", "decode"],
+        "question": {
+            "text": "In JavaScript, what method is used to convert a JSON string into a JavaScript object?"
+        }
+    },
+    {
+        "category": "programming",
+        "id": "006",
+        "correctAnswer": "stringify",
+        "incorrectAnswers": ["parse", "serialize", "encode"],
+        "question": {
+            "text": "In JavaScript, what method is used to convert a JavaScript object into a JSON string?"
+        }
+    },
+    {
+        "category": "programming",
+        "id": "007",
+        "correctAnswer": "null",
+        "incorrectAnswers": ["undefined", "NaN", "false"],
+        "question": {
+            "text": "In JSON, what value represents the absence of a value?"
+        }
+    },
+    {
+        "category": "programming",
+        "id": "008",
+        "correctAnswer": "square brackets",
+        "incorrectAnswers": ["curly braces", "parentheses", "angle brackets"],
+        "question": {
+            "text": "In JSON, arrays are enclosed in what?"
+        }
+    },
+    {
+        "category": "programming",
+        "id": "009",
+        "correctAnswer": "curly braces",
+        "incorrectAnswers": ["square brackets", "parentheses", "angle brackets"],
+        "question": {
+            "text": "In JSON, objects are enclosed in what?"
+        }
+    },
+    {
+        "category": "programming",
+        "id": "010",
+        "correctAnswer": "false",
+        "incorrectAnswers": ["true"],
+        "question": {
+            "text": "In JSON, property names must be enclosed in double quotes. (true/false)"
+        }
+    },
+    {
+        "category": "programming",
+        "id": "011",
+        "correctAnswer": "JavaScript",
+        "incorrectAnswers": ["Java", "Python", "C++"],
+        "question": {
+            "text": "Which programming language is often used alongside JSON for web development?"
+        }
+    },
+    {
+        "category": "programming",
+        "id": "012",
+        "correctAnswer": "JSON.parse()",
+        "incorrectAnswers": ["JSON.stringify()", "JSON.serialize()", "JSON.decode()"],
+        "question": {
+            "text": "In JavaScript, what method is used to parse a JSON string?"
+        }
+    },
+    {
+        "category": "programming",
+        "id": "013",
+        "correctAnswer": "JSON.stringify()",
+        "incorrectAnswers": ["JSON.parse()", "JSON.serialize()", "JSON.encode()"],
+        "question": {
+            "text": "In JavaScript, what method is used to convert an object into a JSON string?"
+        }
+    },
+    {
+        "category": "programming",
+        "id": "014",
+        "correctAnswer": "true",
+        "incorrectAnswers": ["false"],
+        "question": {
+            "text": "JSON can represent complex data structures. (true/false)"
+        }
+    },
+    {
+        "category": "programming",
+        "id": "015",
+        "correctAnswer": "JSON",
+        "incorrectAnswers": ["XML", "YAML", "CSV"],
+        "question": {
+            "text": "Which data format is often used for configuration files?"
+        }
+    },
+    {
+        "category": "programming",
+        "id": "016",
+        "correctAnswer": "JSON",
+        "incorrectAnswers": ["HTML", "CSS", "JavaScript"],
+        "question": {
+            "text": "Which format is commonly used for data exchange between a client and a server?"
+        }
+    },
+    {
+        "category": "programming",
+        "id": "017",
+        "correctAnswer": "true",
+        "incorrectAnswers": ["false"],
+        "question": {
+            "text": "JSON is a lightweight data interchange format. (true/false)"
+        }
+    },
+    {
+        "category": "programming",
+        "id": "018",
+        "correctAnswer": "JSON",
+        "incorrectAnswers": ["XML", "YAML", "CSV"],
+        "question": {
+            "text": "Which format is often used for storing and transmitting data in web applications?"
+        }
+    },
+    {
+        "category": "programming",
+        "id": "019",
+        "correctAnswer": "JSON",
+        "incorrectAnswers": ["XML", "YAML", "CSV"],
+        "question": {
+            "text": "Which format is human-readable and easy to understand?"
+        }
+    },
+    {
+        "category": "programming",
+        "id": "020",
+        "correctAnswer": "JSON",
+        "incorrectAnswers": ["XML", "YAML", "CSV"],
+        "question": {
+            "text": "Which format is often used for representing data in NoSQL databases?"
+        }
+    }
+]

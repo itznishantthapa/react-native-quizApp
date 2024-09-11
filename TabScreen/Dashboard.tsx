@@ -2,12 +2,17 @@ import { ScrollView, StyleSheet, Text, TextInput, View, ImageBackground, Touchab
 import React,{useState} from 'react'
 import { StatusBar } from 'expo-status-bar'
 import Icon from 'react-native-vector-icons/FontAwesome';
-import cosmos from '../assets/cosmos.jpg'
-import lady from '../assets/lady.jpeg'
-import console from '../assets/console.jpg'
-import hills from '../assets/hills.png'
+// import cosmos from '../assets/cosmos.jpg'
+// import lady from '../assets/lady.jpeg'
+// import console from '../assets/console.jpg'
+// import hills from '../assets/hills.png'
 import pixels from '../assets/pixels.jpeg'
 import clock from '../assets/clock.jpg'
+import database from '../assets/database.jpg'
+import programming from '../assets/programming.jpg'
+import cloudComputing from '../assets/coludComputing.jpg'
+import networking from '../assets/networking.jpeg'
+
 import { styles } from '../style'
 import { useRef } from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context';
@@ -54,26 +59,26 @@ export default function Dashboard({ navigation, fetchQuestion,setQuestionAmount 
                     <View style={styles.boxContainer}>
 
                         <TouchableOpacity style={{ width: '100%', flex: 1, justifyContent: 'center', alignItems: 'center' }} onPress={() => goToQuiz('database')} >
-                            <ImageBackground source={cosmos} resizeMode="cover" imageStyle={{ borderRadius: 20, width: '100%' }} style={styles.boxes}>
+                            <ImageBackground source={database} resizeMode="cover" imageStyle={{ borderRadius: 20, width: '100%' }} style={styles.boxes}>
                                 <Text style={styles.textStyle}>Database</Text>
                             </ImageBackground>
                         </TouchableOpacity>
 
-                        <TouchableOpacity   style={{ width: '100%', flex: 1, justifyContent: 'center', alignItems: 'center' }} onPress={() => goToQuiz('gaming')}>
-                        <ImageBackground source={console} resizeMode="cover" imageStyle={{ borderRadius: 20, width: '100%' }} style={styles.boxes}>
-                            <Text style={styles.textStyle}>Gaming</Text>
+                        <TouchableOpacity   style={{ width: '100%', flex: 1, justifyContent: 'center', alignItems: 'center' }} onPress={() => goToQuiz('react')}>
+                        <ImageBackground source={programming} resizeMode="cover" imageStyle={{ borderRadius: 20, width: '100%' }} style={styles.boxes}>
+                            <Text style={styles.textStyle}>Programming</Text>
                         </ImageBackground>
                         </TouchableOpacity>
 
                         <TouchableOpacity  style={{ width: '100%', flex: 1, justifyContent: 'center', alignItems: 'center' }}onPress={() => goToQuiz('science')}>
-                        <ImageBackground source={lady} resizeMode="cover" imageStyle={{ borderRadius: 20, width: '100%' }} style={styles.boxes}>
-                            <Text style={styles.textStyle}>Science</Text>
+                        <ImageBackground source={networking} resizeMode="cover" imageStyle={{ borderRadius: 20, width: '100%' }} style={styles.boxes}>
+                            <Text style={styles.textStyle}>Networking & OS</Text>
                         </ImageBackground>
                         </TouchableOpacity>
                         
                         <TouchableOpacity  style={{ width: '100%', flex: 1, justifyContent: 'center', alignItems: 'center' }} onPress={() => goToQuiz('geography')}>
-                        <ImageBackground source={hills} resizeMode="cover" imageStyle={{ borderRadius: 20, width: '100%' }} style={styles.boxes}>
-                            <Text style={styles.textStyle}>Geography</Text>
+                        <ImageBackground source={cloudComputing} resizeMode="cover" imageStyle={{ borderRadius: 20, width: '100%' }} style={styles.boxes}>
+                            <Text style={styles.textStyle}>Cloud Computing</Text>
                         </ImageBackground>
                         </TouchableOpacity>
 
@@ -100,6 +105,7 @@ export default function Dashboard({ navigation, fetchQuestion,setQuestionAmount 
                         isVisible={isModalVisible}
 
                         handleSetQuestions={handleSetQuestions} 
+                        setModalVisible={setModalVisible}
                 />
 
 

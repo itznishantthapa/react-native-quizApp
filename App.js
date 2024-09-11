@@ -25,7 +25,7 @@ import UserProfile from './Screens/UserProfile';
 import { saveLocalData,getLocalData } from './localStorage';
 import { fileUploadToFirebaseStorage, getFromFirebase,updateToFirebase } from './db';
 import { AppProvider } from './AppProvider';
-import PopUp from './Screens/PopUp';
+
 
 
 enableScreens(false);
@@ -117,8 +117,8 @@ export default function App() {
       case 'database':
         questionData = require('./data/database.json');
         break;
-      case 'gaming':
-        questionData = require('./data/gaming.json');
+      case 'react':
+        questionData = require('./data/react.json');
         break;
       case 'science':
         questionData = require('./data/science.json');
@@ -130,6 +130,12 @@ export default function App() {
         Alert.alert('Error', 'Category not found.');
         return;
     }
+
+        // Shuffle the questionData array
+        for (let i = questionData.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [questionData[i], questionData[j]] = [questionData[j], questionData[i]];
+      }
 
     setdata(questionData);
     console.log(questionData.length)
@@ -238,7 +244,6 @@ export default function App() {
         <Stack.Screen name="PrivacyEdit" component={PrivacyEdit} />
         <Stack.Screen name="HelpSupport" component={HelpSupport} />
         <Stack.Screen name="UserProfile" component={UserProfile} />
-        <Stack.Screen name="PopUp" component={PopUp} />
 
 
         <Stack.Screen name="Quiz">
