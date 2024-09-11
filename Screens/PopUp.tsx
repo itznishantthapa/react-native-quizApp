@@ -1,0 +1,39 @@
+import { View, Text, TouchableOpacity,Modal } from 'react-native'
+import React from 'react'
+import { styles } from '../style'
+
+
+
+const PopUp = ({ isVisible, handleSetQuestions }) => {
+    return (
+      <Modal
+        transparent={true}
+        animationType="fade"
+        visible={isVisible}
+      >
+
+
+        <View style={styles.modalOverlay}>
+          <View style={[styles.modalContainer,{width:'80%',height:150}]}>
+            <Text style={[styles.modalTitle,{textDecorationLine:'underline'}]}>Set questions to attempt.</Text>
+             <View style={{width:'100%',flexDirection:'row',justifyContent:'space-evenly',alignItems:'center'}}>
+            <TouchableOpacity style={styles.questionsAttempt} onPress={()=>handleSetQuestions(10)}><Text style={{fontWeight:'bold',fontSize:22,color:'white'}}>10</Text></TouchableOpacity>
+            <TouchableOpacity style={styles.questionsAttempt} onPress={()=>handleSetQuestions(20)}><Text style={{fontWeight:'bold',fontSize:22,color:'white'}}>20</Text></TouchableOpacity>
+            <TouchableOpacity style={styles.questionsAttempt} onPress={()=>handleSetQuestions(30)}><Text style={{fontWeight:'bold',fontSize:22,color:'white'}}>30</Text></TouchableOpacity>
+            <TouchableOpacity style={styles.questionsAttempt} onPress={()=>handleSetQuestions(50)}><Text style={{fontWeight:'bold',fontSize:22,color:'white'}}>50</Text></TouchableOpacity>
+            <TouchableOpacity style={styles.questionsAttempt} onPress={()=>handleSetQuestions(100)}><Text style={{fontWeight:'bold',fontSize:22,color:'white'}}>100</Text></TouchableOpacity>
+
+             </View>
+          </View>
+        </View>
+
+
+
+      </Modal>
+    );
+  };
+  
+
+export default PopUp;
+
+

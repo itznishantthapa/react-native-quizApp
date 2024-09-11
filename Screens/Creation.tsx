@@ -1,15 +1,9 @@
 import { StatusBar } from 'expo-status-bar';
-import { Alert, Text, TextInput, View, TouchableOpacity, KeyboardAvoidingView, Platform } from 'react-native';
+import { Alert, Text, TextInput, View, TouchableOpacity, KeyboardAvoidingView } from 'react-native';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faEye, faEyeSlash } from '@fortawesome/free-regular-svg-icons';
 import React, { useState } from 'react';
-import neon2 from '../assets/neon2.jpg';
 import { styles } from '../style'
-
-// import auth from '@react-native-firebase/auth';
-import { createUserWithEmailAndPassword } from 'firebase/auth';
-import { auth ,firestore } from '../firebaseConfig';
-import { doc, setDoc } from 'firebase/firestore';
 import { createAccount } from '../db';
 
 // Internet connection checking

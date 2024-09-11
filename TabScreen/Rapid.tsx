@@ -4,7 +4,7 @@ import { StatusBar } from "expo-status-bar";
 import { styles } from '../style';
 
 
-const Rapid = ({ question, options, handleOptionClick, counter,isOver, fetchQuestion }) => {
+const Rapid = ({ question, options, handleOptionClick, counter,isOver }) => {
 
     return (
         <View style={{ flex: 1 }}>
@@ -30,8 +30,7 @@ const Rapid = ({ question, options, handleOptionClick, counter,isOver, fetchQues
                     <View style={{position:'absolute',top:'80%'}}>
                     {isOver && (
                         <TouchableOpacity
-                            style={styles.outlineButton}
-                            onPress={fetchQuestion}>
+                            style={styles.outlineButton}>
                             <Text style={styles.outlineButtonText}>Restart</Text>
                         </TouchableOpacity>
                     )}

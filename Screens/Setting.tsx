@@ -26,9 +26,6 @@ const initialGameInfo = {
   };
   
 
-//    console.log(auth.currentUser.email)
-
-
     const handleLogout=()=>{
         Alert.alert(
             "Confirm Logout",
@@ -42,15 +39,10 @@ const initialGameInfo = {
                 text: "Logout",
                 onPress: async() => {
                     try {
-                        await signOut(auth);  // Log the user out from Firebase
+                        //signout the user
+                        await signOut(auth);
                         //when user get signout the data is reset to zero
                         setgameInfo(initialGameInfo)
-
-
-                        // navigation.reset({
-                        //     index: 0, // Set the first screen in the stack (Login screen)
-                        //     routes: [{ name: 'Login' }]  // Define a new stack with only the 'Login' screen [Reverse Disable] ---> Yoh login vnda aagdi kuenii pni screen xaina (x,x,x,(0)login)
-                        // });
                         navigation.navigate('Profile');
                         console.log("User logged out");
                     } catch (error) {
@@ -159,14 +151,8 @@ const initialGameInfo = {
                         </TouchableWithoutFeedback>
                         )
                     }
-                   
+           
                 </View>
-
-
-
-
-
-
             </View>
         </SafeAreaView>
     )

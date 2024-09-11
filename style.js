@@ -377,6 +377,18 @@ export const  styles = StyleSheet.create({
         width:'100%',
         // backgroundColor:'grey',
         paddingHorizontal:20
+      },
+      questionsAttempt:{
+        height:60,
+        width:60,
+        borderRadius:50,
+        flexDirection:'column',
+        justifyContent:'center',
+        alignItems:'center',
+        // borderWidth:2,
+        borderColor:'grey',
+        backgroundColor:'black'
+
       }
     
 

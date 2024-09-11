@@ -25,6 +25,7 @@ import UserProfile from './Screens/UserProfile';
 import { saveLocalData,getLocalData } from './localStorage';
 import { fileUploadToFirebaseStorage, getFromFirebase,updateToFirebase } from './db';
 import { AppProvider } from './AppProvider';
+import PopUp from './Screens/PopUp';
 
 
 enableScreens(false);
@@ -46,7 +47,9 @@ export default function App() {
   const [question, setQuestion] = useState(null);
   const [options, setOptions] = useState([]);
   const [isOver, setisOver] = useState(false)
-  const [quizData, setquizData] = useState(null)
+  const [questionAmount, setQuestionAmount] = useState(30)
+
+
 
   const [gameInfo, setgameInfo] = useState(
     {
@@ -61,35 +64,36 @@ export default function App() {
 
 
   const handleOptionClick = (choosed) => {
-    if (!(counter === data.length - 1)) {
-
-
-      if (choosed === data[counter].correctAnswer) {
-        setPlayerPoints(playerPoints + 1);
-        setgameInfo((prevGameInfo)=>
-          ({...prevGameInfo,   points:prevGameInfo.points+4})) //setting the player points on each correct answer
-      
-      }
-
+    if (!(counter === questionAmount-1)) 
+      {
+            if (choosed === data[counter].correctAnswer) {
+              setPlayerPoints(playerPoints + 1);
+              setgameInfo((prevGameInfo)=>
+                ({...prevGameInfo,   points:prevGameInfo.points+4})) //setting the player points on each correct answer
+            }
       setCounter(counter + 1);
       setgameInfo((prevGameInfo)=>({...prevGameInfo,   totalAttempted:(prevGameInfo.totalAttempted)+1})) //totalQuestion Solved
      
-    } else {
-      if(!isOver){
-
-        // Added this else block to handle the case when it's the last question
-        if (choosed === data[counter].correctAnswer) {
-          setPlayerPoints(playerPoints + 1);
-          setgameInfo((prevGameInfo)=>({...prevGameInfo,   points:prevGameInfo.points+4}))
+    } else 
+    {
+      if(!isOver)
+        {
+                // Added this else block to handle the case when it's the last question
+                if (choosed === data[counter].correctAnswer) {
+                  setPlayerPoints(playerPoints + 1);
+                  setgameInfo((prevGameInfo)=>({...prevGameInfo,   points:prevGameInfo.points+4}))
+                }
+                setgameInfo((prevGameInfo)=>({...prevGameInfo,   totalAttempted:(prevGameInfo.totalAttempted)+1})) //totalQuestion Solved
+                setgameInfo((prevGameInfo)=>({...prevGameInfo,   gamePlayed:(prevGameInfo.gamePlayed)+1}))   //Everytime questions load considers as game played
+                Alert.alert("Game Complete", `You have scored ${playerPoints} out of ${questionAmount}`);
+                setisOver(true);
         }
-        setgameInfo((prevGameInfo)=>({...prevGameInfo,   totalAttempted:(prevGameInfo.totalAttempted)+1}))   //totalQuestion Solved
-        setgameInfo((prevGameInfo)=>({...prevGameInfo,   gamePlayed:(prevGameInfo.gamePlayed)+1}))   //total game completed or played
+
      
-        Alert.alert("Quiz Complete", `Your score is ${playerPoints}`);
-        setisOver(true);
-      }
     }
+ 
   };
+
 
   useEffect(() => {
     if (data && counter === data.length - 1 && question === null) {
@@ -102,50 +106,40 @@ export default function App() {
 
   //making function to fetch question and wrap into useEffect, cuz i also want to fetch when the button is pressed
 
-  const fetchQuestions = () => {
+  const fetchQuestion = (category) => {
     setCounter(0);
     setPlayerPoints(0);
     setisOver(false);
-    // fetch("https://the-trivia-api.com/v2/questions")
-      fetch("https://firebasestorage.googleapis.com/v0/b/v3quiz-ef69a.appspot.com/o/Questions%2Fastronomy.json?alt=media&token=ce7f7b3d-a6df-4b78-bba1-0276ef33f425")
-      .then((response) => response.json())
-      .then((rawdata) => {
-        setdata(rawdata);
-        changeQuestion(rawdata, 0);
-      })
-      .catch(error => {
-        Alert.alert("Network Error","Please connect to the internet.");
-      });
 
 
+    let questionData;
+    switch (category) {
+      case 'database':
+        questionData = require('./data/database.json');
+        break;
+      case 'gaming':
+        questionData = require('./data/gaming.json');
+        break;
+      case 'science':
+        questionData = require('./data/science.json');
+        break;
+      case 'geography':
+        questionData = require('./data/geography.json');
+        break;
+      default:
+        Alert.alert('Error', 'Category not found.');
+        return;
+    }
+
+    setdata(questionData);
+    console.log(questionData.length)
+    changeQuestion(questionData, 0);
+  
   };
 
-  useEffect(() => {
-    fetchQuestions();
-  }, []);
 
 
-// // // ----------------------------------------------------------------------------------------------------(Optionnal)
-//   useEffect(() => {
-//     const fetchQuizData = async () => {
-//       const storageRef = ref(storage, 'Questions/astronomy.json'); // Use correct path
-//       try {
-//         const url = await getDownloadURL(storageRef);
-//         const response = await fetch(url);
-//         const data = await response.json();
-//         setquizData(data);
-//         console.log(url)
-//       } catch (error) {
-//         console.log('Here is the error')
-//         console.error("Error fetching quiz data: ", error);
-//       }
-//     };
 
-//     fetchQuizData();
-//   }, []);
-// // -------------------------------------------------------------------------------------------------------
-
-  //Logic to change the question.
 
   useEffect(() => {
     if (data) {
@@ -244,21 +238,18 @@ export default function App() {
         <Stack.Screen name="PrivacyEdit" component={PrivacyEdit} />
         <Stack.Screen name="HelpSupport" component={HelpSupport} />
         <Stack.Screen name="UserProfile" component={UserProfile} />
+        <Stack.Screen name="PopUp" component={PopUp} />
 
 
         <Stack.Screen name="Quiz">
-          {props => <QuizApp {...props} question={question} options={options} counter={counter} isOver={isOver} handleOptionClick={handleOptionClick} fetchQuestion={fetchQuestions} />}
+          {props => <QuizApp {...props} question={question} options={options} counter={counter} isOver={isOver} handleOptionClick={handleOptionClick}   fetchQuestion={fetchQuestion} noOfQuestions={questionAmount} />}
         </Stack.Screen>
         <Stack.Screen name="Tabbar">
-          {props => <Tabbar {...props} question={question} options={options} counter={counter} isOver={isOver} handleOptionClick={handleOptionClick} fetchQuestion={fetchQuestions} gameInfo={gameInfo} setgameInfo={setgameInfo}/>}
-        </Stack.Screen>
+          {props => <Tabbar {...props} question={question} options={options} counter={counter} isOver={isOver} handleOptionClick={handleOptionClick}  fetchQuestion={fetchQuestion}  gameInfo={gameInfo} setgameInfo={setgameInfo} setQuestionAmount={setQuestionAmount}/>}
+        </Stack.Screen> 
       </Stack.Navigator>
     </NavigationContainer>
     </AppProvider>
-
-
-
-
 
   );
 }

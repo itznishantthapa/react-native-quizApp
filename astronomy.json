@@ -6,12 +6,7 @@
       "incorrectAnswers": ["Andromeda", "Triangulum", "Whirlpool"],
       "question": {
         "text": "What is the name of the galaxy that contains our Solar System?"
-      },
-      "tags": ["galaxies", "astronomy"],
-      "type": "text_choice",
-      "difficulty": "easy",
-      "regions": [],
-      "isNiche": false
+      }
     },
     {
       "category": "astronomy",
@@ -20,12 +15,8 @@
       "incorrectAnswers": ["Jupiter", "Neptune", "Uranus"],
       "question": {
         "text": "Which planet is famous for its prominent ring system?"
-      },
-      "tags": ["planets", "solar_system"],
-      "type": "text_choice",
-      "difficulty": "medium",
-      "regions": [],
-      "isNiche": false
+      }
+  
     },
     {
       "category": "astronomy",

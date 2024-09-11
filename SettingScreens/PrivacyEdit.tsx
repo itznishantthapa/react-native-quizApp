@@ -33,8 +33,8 @@ const PrivacyEdit = ({ navigation }) => {
     const user = auth.currentUser; // Get the current authenticated user
   
     if (user) {
-      const credential = EmailAuthProvider.credential(user.email, usercurrentPassword); // Create credential with email and current password
-      await reauthenticateWithCredential(user, credential); // Re-authenticate the user
+      const credential = EmailAuthProvider.credential(user.email, usercurrentPassword); 
+      await reauthenticateWithCredential(user, credential); 
       console.log('User re-authenticated');
     }
   };
@@ -50,7 +50,6 @@ const PrivacyEdit = ({ navigation }) => {
       
           if (user) {
             await updatePassword(user, usernewPassword); // Update the password
-            console.log('Password updated successfully');
             Alert.alert("Success", "Password has been updated.");
             navigation.navigate('Privacy');
           }

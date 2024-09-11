@@ -56,7 +56,7 @@ export default function Profile({ navigation, gameInfo, setgameInfo }) {
   const pickImage = async () => {
     const permissionResult = await ImagePicker.requestMediaLibraryPermissionsAsync();
     if (!permissionResult.granted) {
-      alert("You've refused to allow this app to access your photos!");
+      Alert.alert("Error", "You've refused to allow this app to access your photos.");
       return;
     }
 
@@ -68,7 +68,8 @@ export default function Profile({ navigation, gameInfo, setgameInfo }) {
     if (!result.canceled && auth.currentUser) {
       setImageUri(result.assets[0].uri);
       await fileUploadToFirebaseStorage('profile', result.assets[0].uri);
-    } else {
+    } 
+    else if(!auth.currentUser) {
       Alert.alert('Please SignIn', 'You must sign in to change the profile');
     }
   };
@@ -94,7 +95,7 @@ export default function Profile({ navigation, gameInfo, setgameInfo }) {
         setUserData({ fullName: data.fullName, email: data.email });
       }
     } catch (error) {
-      console.error('Error fetching user data:', error);
+      Alert.alert("Error", "Something went wrong.");
     }
   };
 
@@ -107,7 +108,7 @@ export default function Profile({ navigation, gameInfo, setgameInfo }) {
         setgameInfo(userAllDataInObj.gameInfo);
       }
     } catch (error) {
-      console.error('Error fetching game info:', error);
+      Alert.alert("Error", "Something went wrong.");
     }
   };
 
@@ -120,7 +121,7 @@ export default function Profile({ navigation, gameInfo, setgameInfo }) {
         setImageUri(userAllDataInObj.profile);
       }
     } catch (error) {
-      console.error('Error fetching profile image:', error);
+      Alert.alert("Error", "Something went wrong.");
     }
   };
 
@@ -145,7 +146,7 @@ export default function Profile({ navigation, gameInfo, setgameInfo }) {
   
       setsignedUpUsers(sortedUsers); // Update state with sorted users
     } catch (error) {
-      console.error('Error fetching and sorting users:', error);
+      Alert.alert("Error", "Something went wrong.");
     }
   };
 
@@ -223,7 +224,7 @@ export default function Profile({ navigation, gameInfo, setgameInfo }) {
                 <Image style={styles.iconImage} source={console_logo}></Image>
                 <Text style={{ fontWeight: 'bold', fontSize: 20 }}>{gameInfo.gamePlayed}</Text>
                 <Text style={{ fontWeight: 'bold' }}>Games</Text>
-                <Text style={{ fontWeight: 'bold' }}>Played</Text>
+                <Text style={{ fontWeight: 'bold' }}>Completed</Text>
               </TouchableOpacity>
               <TouchableOpacity style={styles.gameInfoIcons}>
                 <Image style={styles.iconImage} source={points}></Image>
@@ -233,7 +234,7 @@ export default function Profile({ navigation, gameInfo, setgameInfo }) {
               </TouchableOpacity>
               <TouchableOpacity style={styles.gameInfoIcons}>
                 <Image style={styles.iconImage} source={charge}></Image>
-                <Text style={{ fontWeight: 'bold', fontSize: 20 }}>{((((gameInfo.points) / 4) * 100) / (gameInfo.gamePlayed * 10)).toFixed(2)}% </Text>
+                <Text style={{ fontWeight: 'bold', fontSize: 20 }}>{((((gameInfo.points) / 4) * 100) / (gameInfo.totalAttempted)).toFixed(2)}% </Text>
                 <Text style={{ fontWeight: 'bold' }}>Accuracy</Text>
                 <Text style={{ fontWeight: 'bold' }}>rate</Text>
               </TouchableOpacity>
@@ -245,7 +246,7 @@ export default function Profile({ navigation, gameInfo, setgameInfo }) {
               </TouchableOpacity>
               <TouchableOpacity style={styles.gameInfoIcons}>
                 <Image style={styles.iconImage} source={wrong}></Image>
-                <Text style={{ fontWeight: 'bold', fontSize: 20 }}>{((gameInfo.gamePlayed) * 10) - ((gameInfo.points) / 4)}</Text>
+                <Text style={{ fontWeight: 'bold', fontSize: 20 }}>{(gameInfo.totalAttempted) - ((gameInfo.points) / 4)}</Text>
                 <Text style={{ fontWeight: 'bold' }}>Incorrect</Text>
                 <Text style={{ fontWeight: 'bold' }}>answers</Text>
               </TouchableOpacity>

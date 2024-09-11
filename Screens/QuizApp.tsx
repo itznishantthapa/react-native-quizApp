@@ -4,14 +4,14 @@ import { StatusBar } from "expo-status-bar";
 import { styles } from '../style';
 
 
-const QuizApp = ({ question, options, handleOptionClick, counter,isOver, fetchQuestion }) => {
+const QuizApp = ({ question, options, handleOptionClick, counter,isOver, fetchQuestion ,noOfQuestions}) => {
 
     return (
         <View style={{ flex: 1 }}>
             <StatusBar hidden={false} backgroundColor='black' style='light' />
             <View style={[styles.background, { alignItems: 'center', justifyContent: 'space-evenly' }]}>
 
-                <Text style={{ color: 'white', fontSize: 25, fontWeight: '900',position:'absolute',top:'10%'}}>Question {counter + 1}/10</Text>
+                <Text style={{ color: 'white', fontSize: 25, fontWeight: '900',position:'absolute',top:'10%'}}>Question {counter + 1}/{noOfQuestions}</Text>
                 <View style={styles.container}>
                     <Text style={styles.question}>{question}</Text>
                     <View style={styles.optionsContainer}>

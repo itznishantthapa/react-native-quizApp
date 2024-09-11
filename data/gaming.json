@@ -1,0 +1,30 @@
+[
+  {
+    "category": "gaming",
+    "id": "102",
+    "correctAnswer": "Counter-Strike",
+    "incorrectAnswers": ["Call of Duty", "Overwatch", "Fortnite"],
+    "question": {
+      "text": "Which popular multiplayer game is known for its bomb defusal mode and tactical gameplay?"
+    }
+  },
+  {
+    "category": "gaming",
+    "id": "103",
+    "correctAnswer": "Minecraft",
+    "incorrectAnswers": ["Terraria", "Roblox", "Fortnite"],
+    "question": {
+      "text": "Which sandbox game allows players to build with blocks in a procedurally generated world?"
+    }
+  },
+  {
+    "category": "gaming",
+    "id": "104",
+    "correctAnswer": "Geralt of Rivia",
+    "incorrectAnswers": ["Kratos", "Lara Croft", "Master Chief"],
+    "question": {
+      "text": "Who is the main protagonist in 'The Witcher' video game series?"
+    }
+  }
+  ]
+  

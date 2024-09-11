@@ -1,15 +1,11 @@
-import { View, Text, TouchableOpacity, StyleSheet, TouchableWithoutFeedback, TextInput ,Alert} from 'react-native'
+import { View, Text, TouchableOpacity, TouchableWithoutFeedback, TextInput ,Alert} from 'react-native'
 import React,{useContext} from 'react'
 import { styles } from '../style'
 import { StatusBar } from 'expo-status-bar'
 import IconF from 'react-native-vector-icons/Feather'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import IconF6 from 'react-native-vector-icons/FontAwesome6'
-
-import { auth, firestore } from '../firebaseConfig'; // Import Firestore and Auth
-import { doc, getDoc,updateDoc } from 'firebase/firestore';
-import { useState, useEffect } from 'react';
-import { EmailAuthProvider, reauthenticateWithCredential, updateEmail } from 'firebase/auth';
+import {useEffect } from 'react';
 import { getFromFirebase, updateToFirebase,saveLocally } from '../db'
 import { MyContext } from '../AppProvider'
 
@@ -20,13 +16,7 @@ import { MyContext } from '../AppProvider'
 
 const AccountEdit = ({navigation}) => {
 
-      // State to store user's name and email
-      // const [userData, setUserData] = useState({ fullName: '', email: '' });
-      const {userData,setUserData}=useContext(MyContext);
-
-
-
-
+const {userData,setUserData}=useContext(MyContext);
 
   useEffect(() => {
 
@@ -35,36 +25,20 @@ const AccountEdit = ({navigation}) => {
     const userDoc = await getFromFirebase();
     const data = userDoc.data();
     if (data) {
-      setUserData((data)=>({...data,fullName:data.fullName }));
+      setUserData((data: { fullName: any })=>({...data,fullName:data.fullName }));
     }
   } catch (error) {
-    console.error('Error fetching user data:', error);
+    Alert.alert("Error", "Something went wrong.");
   }
  }
     fetchUserData(); // Call the function to fetch data
   }, []);
 
-
-
-
-  
-
-
-  
-
   const updateUserData=async()=>{
     await updateToFirebase({fullName:userData.fullName})
     await saveLocally('userData',userData);
     navigation.navigate('Setting')
-    console.log('--------------------sccss')
   }
-
-
-  
-
-
-
-
 
     const handleBack=()=>{
         navigation.navigate('Account');
@@ -102,18 +76,10 @@ const AccountEdit = ({navigation}) => {
                             <IconF6 name='pen-to-square' size={30} style={{color:'white'}}></IconF6>
                         </View>
                     </TouchableWithoutFeedback>
-                 
                     <TouchableOpacity style={styles.outlineButton} onPress={updateUserData}>
                     <Text style={styles.outlineButtonText}>Save</Text>
                    </TouchableOpacity>
-
                 </View>
-
-
-
-
-
-
             </View>
         </SafeAreaView>
     )

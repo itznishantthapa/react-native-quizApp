@@ -2,9 +2,6 @@ import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import FaIcon from 'react-native-vector-icons/FontAwesome';
-import MaIcon from 'react-native-vector-icons/MaterialIcons';
-// import { NavigationContainer } from '@react-navigation/native';
-
 import Profile from '../TabScreen/Profile';
 import Rapid from '../TabScreen/Rapid';
 import Search from '../TabScreen/Search';
@@ -18,7 +15,7 @@ import Dashboard from '../TabScreen/Dashboard';
 const Tab = createBottomTabNavigator();
 
 
-export default function Tabbar({question, options, handleOptionClick, counter,isOver, fetchQuestion,     gameInfo, setgameInfo  }) {
+export default function Tabbar({question, options, handleOptionClick, counter,isOver, gameInfo, setgameInfo, fetchQuestion,setQuestionAmount  }) {
 
     return (
 
@@ -53,12 +50,14 @@ export default function Tabbar({question, options, handleOptionClick, counter,is
                 }
             })}
         >
-            <Tab.Screen name='Dashboard' component={Dashboard} />
+            <Tab.Screen name='Dashboard'>
+                {props=> <Dashboard {...props} fetchQuestion={fetchQuestion} setQuestionAmount={setQuestionAmount} />}
+            </Tab.Screen>
 
             <Tab.Screen name='Search' component={Search}>
             </Tab.Screen>
             <Tab.Screen name='Rapid'  >
-                {props => <Rapid {...props} question={question} options={options} counter={counter} isOver={isOver} handleOptionClick={handleOptionClick} fetchQuestion={fetchQuestion} />}
+                {props => <Rapid {...props} question={question} options={options} counter={counter} isOver={isOver} handleOptionClick={handleOptionClick} />}
             </Tab.Screen>
             <Tab.Screen name='Profile'>
             {props => <Profile {...props}  gameInfo={gameInfo} setgameInfo={setgameInfo}  />}

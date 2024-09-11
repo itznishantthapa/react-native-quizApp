@@ -1,0 +1,904 @@
+[
+    {
+      "category": "database",
+      "id": "201",
+      "correctAnswer": "Entity-Relationship Model",
+      "incorrectAnswers": ["Relational Model", "Hierarchical Model", "Network Model"],
+      "question": {
+        "text": "Which data modeling technique uses entities and relationships to represent data structures?"
+      }
+    },
+    {
+      "category": "database",
+      "id": "202",
+      "correctAnswer": "Normalization",
+      "incorrectAnswers": ["Denormalization", "Data Aggregation", "Data Mining"],
+      "question": {
+        "text": "What is the process called that aims to reduce data redundancy and improve data integrity in a relational database?"
+      }
+    },
+    {
+      "category": "database",
+      "id": "203",
+      "correctAnswer": "Primary Key",
+      "incorrectAnswers": ["Foreign Key", "Candidate Key", "Unique Key"],
+      "question": {
+        "text": "What is the term for a unique identifier for a record in a database table?"
+      }
+    },
+    {
+      "category": "database",
+      "id": "204",
+      "correctAnswer": "SQL (Structured Query Language)",
+      "incorrectAnswers": ["NoSQL", "XML", "HTML"],
+      "question": {
+        "text": "Which language is commonly used to perform queries, updates, and management of relational databases?"
+      }
+    },
+    {
+      "category": "database",
+      "id": "205",
+      "correctAnswer": "JOIN",
+      "incorrectAnswers": ["UNION", "INTERSECT", "EXCEPT"],
+      "question": {
+        "text": "Which SQL operation is used to combine rows from two or more tables based on a related column?"
+      }
+    },
+    {
+      "category": "database",
+      "id": "206",
+      "correctAnswer": "Relational Model",
+      "incorrectAnswers": ["Hierarchical Model", "Network Model", "Object-Oriented Model"],
+      "question": {
+        "text": "Which database model organizes data into tables with rows and columns and is the most commonly used model?"
+      }
+    },
+    {
+      "category": "database",
+      "id": "207",
+      "correctAnswer": "Foreign Key",
+      "incorrectAnswers": ["Primary Key", "Composite Key", "Alternate Key"],
+      "question": {
+        "text": "What is the term for a field in one table that uniquely identifies a row of another table?"
+      }
+    },
+    {
+      "category": "database",
+      "id": "208",
+      "correctAnswer": "ACID",
+      "incorrectAnswers": ["BASE", "CAP", "RDBMS"],
+      "question": {
+        "text": "What acronym represents the properties (Atomicity, Consistency, Isolation, Durability) that guarantee database transactions are processed reliably?"
+      }
+    },
+    {
+      "category": "database",
+      "id": "209",
+      "correctAnswer": "Index",
+      "incorrectAnswers": ["View", "Trigger", "Stored Procedure"],
+      "question": {
+        "text": "What is used in a database to improve the speed of data retrieval operations by creating a quick lookup table?"
+      }
+    },
+    {
+      "category": "database",
+      "id": "210",
+      "correctAnswer": "View",
+      "incorrectAnswers": ["Trigger", "Stored Procedure", "Index"],
+      "question": {
+        "text": "What is a virtual table in a database that provides a way to represent data from one or more tables through a SELECT query?"
+      }
+    },
+    {
+        "category": "database",
+        "id": "211",
+        "correctAnswer": "Data Independence",
+        "incorrectAnswers": ["Data Redundancy", "Data Integrity", "Data Normalization"],
+        "question": {
+          "text": "What is the term for the property that allows changes to the database schema without affecting the data access or application programs?"
+        }
+      },
+      {
+        "category": "database",
+        "id": "212",
+        "correctAnswer": "Entity",
+        "incorrectAnswers": ["Attribute", "Relationship", "Table"],
+        "question": {
+          "text": "In an Entity-Relationship model, what is an object that can have attributes and relationships with other objects called?"
+        }
+      },
+      {
+        "category": "database",
+        "id": "213",
+        "correctAnswer": "Normalization",
+        "incorrectAnswers": ["Schema Transformation", "Data Aggregation", "Data Anomaly"],
+        "question": {
+          "text": "Which technique involves organizing a database to minimize redundancy and improve data integrity through various normal forms?"
+        }
+      },
+      {
+        "category": "database",
+        "id": "214",
+        "correctAnswer": "Relational Algebra",
+        "incorrectAnswers": ["Relational Calculus", "Structured Query Language", "Entity-Relationship Diagram"],
+        "question": {
+          "text": "What is the theoretical foundation of SQL that involves operations like selection, projection, and join?"
+        }
+      },
+      {
+        "category": "database",
+        "id": "215",
+        "correctAnswer": "Foreign Key Constraint",
+        "incorrectAnswers": ["Primary Key Constraint", "Unique Constraint", "Check Constraint"],
+        "question": {
+          "text": "What constraint ensures that a value in one table matches a value in another table, establishing a relationship between them?"
+        }
+      },
+      {
+        "category": "database",
+        "id": "216",
+        "correctAnswer": "Logical Schema",
+        "incorrectAnswers": ["Physical Schema", "Conceptual Schema", "External Schema"],
+        "question": {
+          "text": "Which schema represents the logical view of the database, including tables, columns, and relationships, but not the physical storage details?"
+        }
+      },
+      {
+        "category": "database",
+        "id": "217",
+        "correctAnswer": "Data Definition Language (DDL)",
+        "incorrectAnswers": ["Data Manipulation Language (DML)", "Data Query Language (DQL)", "Data Control Language (DCL)"],
+        "question": {
+          "text": "Which SQL subset is used to define and modify the database structure, such as creating and altering tables?"
+        }
+      },
+      {
+        "category": "database",
+        "id": "218",
+        "correctAnswer": "SQL Injection",
+        "incorrectAnswers": ["Cross-Site Scripting", "Buffer Overflow", "Man-in-the-Middle Attack"],
+        "question": {
+          "text": "What type of security vulnerability allows an attacker to execute arbitrary SQL commands in a database due to improper input validation?"
+        }
+      },
+      {
+        "category": "database",
+        "id": "219",
+        "correctAnswer": "Case Study",
+        "incorrectAnswers": ["In-Course Test", "Project Proposal", "Lab Report"],
+        "question": {
+          "text": "What type of coursework involves designing and implementing a database system based on a given problem specification?"
+        }
+      },
+      {
+        "category": "database",
+        "id": "220",
+        "correctAnswer": "Entity-Relationship Diagram (ERD)",
+        "incorrectAnswers": ["Unified Modeling Language (UML)", "Class Diagram", "Flowchart"],
+        "question": {
+          "text": "Which diagrammatic tool is used to visually represent entities, their attributes, and relationships in a database design?"
+        }
+      },
+
+      {
+        "category": "database",
+        "id": "221",
+        "correctAnswer": "Hierarchical Model",
+        "incorrectAnswers": ["Relational Model", "Network Model", "Object-Oriented Model"],
+        "question": {
+          "text": "Which database model organizes data in a tree-like structure with parent-child relationships?"
+        }
+      },
+      {
+        "category": "database",
+        "id": "222",
+        "correctAnswer": "Composite Key",
+        "incorrectAnswers": ["Primary Key", "Foreign Key", "Unique Key"],
+        "question": {
+          "text": "What type of key consists of two or more columns that together uniquely identify a row in a table?"
+        }
+      },
+      {
+        "category": "database",
+        "id": "223",
+        "correctAnswer": "Data Integrity",
+        "incorrectAnswers": ["Data Redundancy", "Data Security", "Data Migration"],
+        "question": {
+          "text": "What term describes the accuracy and consistency of data stored in a database?"
+        }
+      },
+      {
+        "category": "database",
+        "id": "224",
+        "correctAnswer": "Stored Procedure",
+        "incorrectAnswers": ["Trigger", "View", "Function"],
+        "question": {
+          "text": "What is a precompiled collection of one or more SQL statements that can be executed as a unit called?"
+        }
+      },
+      {
+        "category": "database",
+        "id": "225",
+        "correctAnswer": "Entity-Relationship Diagram (ERD)",
+        "incorrectAnswers": ["Class Diagram", "Flowchart", "Use Case Diagram"],
+        "question": {
+          "text": "Which diagram helps in visualizing the database schema, showing entities and their relationships?"
+        }
+      },
+      {
+        "category": "database",
+        "id": "226",
+        "correctAnswer": "Data Normalization",
+        "incorrectAnswers": ["Data Aggregation", "Data Analysis", "Data Transformation"],
+        "question": {
+          "text": "Which process involves decomposing a table into smaller tables to eliminate redundancy and improve data integrity?"
+        }
+      },
+      {
+        "category": "database",
+        "id": "227",
+        "correctAnswer": "Relational Algebra Operations",
+        "incorrectAnswers": ["SQL Queries", "Data Modeling", "Database Design"],
+        "question": {
+          "text": "Which concept involves operations like union, intersection, and difference to manipulate sets of data in relational databases?"
+        }
+      },
+      {
+        "category": "database",
+        "id": "228",
+        "correctAnswer": "Database Schema",
+        "incorrectAnswers": ["Data Model", "Data Set", "Data Dictionary"],
+        "question": {
+          "text": "What is the term for the structure that defines the organization of data within a database, including tables and relationships?"
+        }
+      },
+      {
+        "category": "database",
+        "id": "229",
+        "correctAnswer": "ACID Properties",
+        "incorrectAnswers": ["CAP Theorem", "BASE Properties", "RDBMS Features"],
+        "question": {
+          "text": "What acronym represents the key principles of database transactions ensuring reliability and consistency?"
+        }
+      },
+      {
+        "category": "database",
+        "id": "230",
+        "correctAnswer": "Normalization Forms",
+        "incorrectAnswers": ["Schema Diagrams", "Data Models", "Index Types"],
+        "question": {
+          "text": "What are the stages called that are used to assess the level of redundancy and ensure data integrity in a relational database?"
+        }
+      },
+      {
+        "category": "database",
+        "id": "231",
+        "correctAnswer": "SELECT",
+        "incorrectAnswers": ["INSERT", "UPDATE", "DELETE"],
+        "question": {
+          "text": "Which SQL statement is used to retrieve data from a database table?"
+        }
+      },
+      {
+        "category": "database",
+        "id": "232",
+        "correctAnswer": "WHERE",
+        "incorrectAnswers": ["GROUP BY", "HAVING", "ORDER BY"],
+        "question": {
+          "text": "Which SQL clause is used to filter records based on specified conditions?"
+        }
+      },
+      {
+        "category": "database",
+        "id": "233",
+        "correctAnswer": "JOIN",
+        "incorrectAnswers": ["UNION", "INTERSECT", "EXCEPT"],
+        "question": {
+          "text": "Which SQL operation combines rows from two or more tables based on a related column?"
+        }
+      },
+      {
+        "category": "database",
+        "id": "234",
+        "correctAnswer": "ORDER BY",
+        "incorrectAnswers": ["GROUP BY", "HAVING", "DISTINCT"],
+        "question": {
+          "text": "Which SQL clause is used to sort the result set of a query in ascending or descending order?"
+        }
+      },
+      {
+        "category": "database",
+        "id": "235",
+        "correctAnswer": "GROUP BY",
+        "incorrectAnswers": ["ORDER BY", "HAVING", "LIMIT"],
+        "question": {
+          "text": "Which SQL clause is used to group rows that have the same values into summary rows?"
+        }
+      },
+      {
+        "category": "database",
+        "id": "236",
+        "correctAnswer": "INSERT INTO",
+        "incorrectAnswers": ["UPDATE", "DELETE", "SELECT"],
+        "question": {
+          "text": "Which SQL statement is used to add new rows to a table?"
+        }
+      },
+      {
+        "category": "database",
+        "id": "237",
+        "correctAnswer": "UPDATE",
+        "incorrectAnswers": ["INSERT", "DELETE", "ALTER"],
+        "question": {
+          "text": "Which SQL statement is used to modify existing records in a table?"
+        }
+      },
+      {
+        "category": "database",
+        "id": "238",
+        "correctAnswer": "DELETE",
+        "incorrectAnswers": ["TRUNCATE", "DROP", "ALTER"],
+        "question": {
+          "text": "Which SQL statement is used to remove rows from a table based on a specified condition?"
+        }
+      },
+      {
+        "category": "database",
+        "id": "239",
+        "correctAnswer": "DISTINCT",
+        "incorrectAnswers": ["ALL", "GROUP BY", "ORDER BY"],
+        "question": {
+          "text": "Which SQL keyword is used to return only unique values in the result set of a query?"
+        }
+      },
+      {
+        "category": "database",
+        "id": "240",
+        "correctAnswer": "HAVING",
+        "incorrectAnswers": ["WHERE", "GROUP BY", "ORDER BY"],
+        "question": {
+          "text": "Which SQL clause is used to filter groups of records after an aggregation operation?"
+        }
+      },
+      {
+        "category": "database",
+        "id": "241",
+        "correctAnswer": "Primary Key",
+        "incorrectAnswers": ["Foreign Key", "Unique Key", "Composite Key"],
+        "question": {
+          "text": "What is the term for a unique identifier for a record in a database table that cannot be null?"
+        }
+      },
+      {
+        "category": "database",
+        "id": "242",
+        "correctAnswer": "Foreign Key",
+        "incorrectAnswers": ["Primary Key", "Unique Key", "Index"],
+        "question": {
+          "text": "What is the term for a field in one table that uniquely identifies a row of another table, establishing a relationship between the two tables?"
+        }
+      },
+      {
+        "category": "database",
+        "id": "243",
+        "correctAnswer": "Normalization",
+        "incorrectAnswers": ["Denormalization", "Decomposition", "Aggregation"],
+        "question": {
+          "text": "What process involves organizing data in a database to minimize redundancy and improve data integrity?"
+        }
+      },
+      {
+        "category": "database",
+        "id": "244",
+        "correctAnswer": "Data Type",
+        "incorrectAnswers": ["Data Format", "Data Size", "Data Structure"],
+        "question": {
+          "text": "What is the term for the specification that determines the kind of data a column can hold, such as INTEGER or VARCHAR?"
+        }
+      },
+      {
+        "category": "database",
+        "id": "245",
+        "correctAnswer": "Index",
+        "incorrectAnswers": ["Key", "Constraint", "View"],
+        "question": {
+          "text": "What is used to improve the speed of data retrieval operations on a database table by creating a data structure for quick lookups?"
+        }
+      },
+      {
+        "category": "database",
+        "id": "246",
+        "correctAnswer": "Schema",
+        "incorrectAnswers": ["Table", "Record", "Field"],
+        "question": {
+          "text": "What is the term for the organizational structure that defines how data is stored in a database, including tables, columns, and relationships?"
+        }
+      },
+      {
+        "category": "database",
+        "id": "247",
+        "correctAnswer": "Query",
+        "incorrectAnswers": ["Report", "Form", "Procedure"],
+        "question": {
+          "text": "What is the term for a request for data or information from a database using SQL?"
+        }
+      },
+      {
+        "category": "database",
+        "id": "248",
+        "correctAnswer": "Tuple",
+        "incorrectAnswers": ["Column", "Row", "Table"],
+        "question": {
+          "text": "What is the term for a single record or row in a relational database table?"
+        }
+      },
+      {
+        "category": "database",
+        "id": "249",
+        "correctAnswer": "Column",
+        "incorrectAnswers": ["Row", "Table", "Field"],
+        "question": {
+          "text": "What is the term for a vertical entity in a table that contains all the information associated with a specific attribute?"
+        }
+      },
+      {
+        "category": "database",
+        "id": "250",
+        "correctAnswer": "Table",
+        "incorrectAnswers": ["View", "Index", "Field"],
+        "question": {
+          "text": "What is the term for a collection of rows and columns in a database that stores data in a structured format?"
+        }
+      },
+      {
+        "category": "database",
+        "id": "251",
+        "correctAnswer": "DDL",
+        "incorrectAnswers": ["DML", "DCL", "TCL"],
+        "question": {
+          "text": "Which SQL language is used to define and manage database schema and objects like tables and indexes?"
+        }
+      },
+      {
+        "category": "database",
+        "id": "252",
+        "correctAnswer": "DML",
+        "incorrectAnswers": ["DDL", "DCL", "TCL"],
+        "question": {
+          "text": "Which SQL language is used for manipulating and querying data within tables, such as SELECT, INSERT, UPDATE, and DELETE?"
+        }
+      },
+      {
+        "category": "database",
+        "id": "253",
+        "correctAnswer": "CREATE TABLE",
+        "incorrectAnswers": ["ALTER TABLE", "DROP TABLE", "TRUNCATE TABLE"],
+        "question": {
+          "text": "Which SQL command is used to create a new table in a database?"
+        }
+      },
+      {
+        "category": "database",
+        "id": "254",
+        "correctAnswer": "ALTER TABLE",
+        "incorrectAnswers": ["CREATE TABLE", "DROP TABLE", "INSERT INTO"],
+        "question": {
+          "text": "Which SQL command is used to modify an existing table structure, such as adding a new column?"
+        }
+      },
+      {
+        "category": "database",
+        "id": "255",
+        "correctAnswer": "DROP TABLE",
+        "incorrectAnswers": ["TRUNCATE TABLE", "DELETE", "UPDATE"],
+        "question": {
+          "text": "Which SQL command is used to remove a table and all of its data from the database?"
+        }
+      },
+      {
+        "category": "database",
+        "id": "256",
+        "correctAnswer": "INSERT INTO",
+        "incorrectAnswers": ["UPDATE", "DELETE", "SELECT"],
+        "question": {
+          "text": "Which SQL command is used to add new rows to a table?"
+        }
+      },
+      {
+        "category": "database",
+        "id": "257",
+        "correctAnswer": "COMMIT",
+        "incorrectAnswers": ["ROLLBACK", "SAVEPOINT", "BEGIN"],
+        "question": {
+          "text": "Which SQL command is used to save all changes made during the current transaction?"
+        }
+      },
+      {
+        "category": "database",
+        "id": "258",
+        "correctAnswer": "ROLLBACK",
+        "incorrectAnswers": ["COMMIT", "SAVEPOINT", "BEGIN"],
+        "question": {
+          "text": "Which SQL command is used to undo changes made during the current transaction?"
+        }
+      },
+      {
+        "category": "database",
+        "id": "259",
+        "correctAnswer": "GRANT",
+        "incorrectAnswers": ["REVOKE", "DENY", "ALTER"],
+        "question": {
+          "text": "Which SQL command is used to give specific privileges to users or roles in a database?"
+        }
+      },
+      {
+        "category": "database",
+        "id": "260",
+        "correctAnswer": "REVOKE",
+        "incorrectAnswers": ["GRANT", "DENY", "ALTER"],
+        "question": {
+          "text": "Which SQL command is used to remove specific privileges from users or roles in a database?"
+        }
+      },
+      {
+        "category": "database",
+        "id": "261",
+        "correctAnswer": "SELECT COUNT(*)",
+        "incorrectAnswers": ["SELECT SUM()", "SELECT AVG()", "SELECT MAX()"],
+        "question": {
+          "text": "Which SQL function is used to count the number of rows in a result set?"
+        }
+      },
+      {
+        "category": "database",
+        "id": "262",
+        "correctAnswer": "SELECT DISTINCT",
+        "incorrectAnswers": ["SELECT UNIQUE", "SELECT ALL", "SELECT GROUP BY"],
+        "question": {
+          "text": "Which SQL clause is used to retrieve unique values from a column?"
+        }
+      },
+      {
+        "category": "database",
+        "id": "263",
+        "correctAnswer": "LIKE",
+        "incorrectAnswers": ["BETWEEN", "IN", "IS NULL"],
+        "question": {
+          "text": "Which SQL operator is used to search for a specified pattern in a column?"
+        }
+      },
+      {
+        "category": "database",
+        "id": "264",
+        "correctAnswer": "NULL",
+        "incorrectAnswers": ["EMPTY", "ZERO", "NOT DEFINED"],
+        "question": {
+          "text": "What is the term used in SQL to represent a missing or undefined value in a column?"
+        }
+      },
+      {
+        "category": "database",
+        "id": "265",
+        "correctAnswer": "BETWEEN",
+        "incorrectAnswers": ["LIKE", "IN", "NOT"],
+        "question": {
+          "text": "Which SQL operator is used to filter records within a specified range?"
+        }
+      },
+      {
+        "category": "database",
+        "id": "266",
+        "correctAnswer": "HAVING",
+        "incorrectAnswers": ["WHERE", "ORDER BY", "GROUP BY"],
+        "question": {
+          "text": "Which SQL clause is used to filter groups of records after applying aggregate functions?"
+        }
+      },
+      {
+        "category": "database",
+        "id": "267",
+        "correctAnswer": "UNION",
+        "incorrectAnswers": ["JOIN", "INTERSECT", "EXCEPT"],
+        "question": {
+          "text": "Which SQL operation combines the results of two or more SELECT queries, removing duplicates?"
+        }
+      },
+      {
+        "category": "database",
+        "id": "268",
+        "correctAnswer": "TRUNCATE TABLE",
+        "incorrectAnswers": ["DROP TABLE", "DELETE FROM", "ALTER TABLE"],
+        "question": {
+          "text": "Which SQL command is used to remove all rows from a table without removing the table itself?"
+        }
+      },
+      {
+        "category": "database",
+        "id": "269",
+        "correctAnswer": "LIMIT",
+        "incorrectAnswers": ["TOP", "OFFSET", "ROWNUM"],
+        "question": {
+          "text": "Which SQL clause is used to specify the number of rows to return in a result set?"
+        }
+      },
+      {
+        "category": "database",
+        "id": "270",
+        "correctAnswer": "EXISTS",
+        "incorrectAnswers": ["IN", "ANY", "ALL"],
+        "question": {
+          "text": "Which SQL operator is used to test for the existence of rows in a subquery?"
+        }
+      },
+        {
+            "category": "database",
+            "id": "271",
+            "correctAnswer": "CASE",
+            "incorrectAnswers": ["IF", "SWITCH", "WHEN"],
+            "question": {
+            "text": "Which SQL expression is used to perform conditional logic in a query?"
+            }
+        },
+        {
+            "category": "database",
+            "id": "272",
+            "correctAnswer": "GROUP BY",
+            "incorrectAnswers": ["ORDER BY", "HAVING", "WHERE"],
+            "question": {
+            "text": "Which SQL clause is used to group rows that have the same values into summary rows?"
+            }
+        },
+        {
+            "category": "database",
+            "id": "273",
+            "correctAnswer": "ORDER BY",
+            "incorrectAnswers": ["GROUP BY", "HAVING", "WHERE"],
+            "question": {
+            "text": "Which SQL clause is used to sort the result set of a query in ascending or descending order?"
+            }
+        },
+        {
+            "category": "database",
+            "id": "274",
+            "correctAnswer": "HAVING",
+            "incorrectAnswers": ["WHERE", "GROUP BY", "ORDER BY"],
+            "question": {
+            "text": "Which SQL clause is used to filter groups of records after an aggregation operation?"
+            }
+        },
+        {
+            "category": "database",
+            "id": "275",
+            "correctAnswer": "JOIN",
+            "incorrectAnswers": ["UNION", "INTERSECT", "EXCEPT"],
+            "question": {
+            "text": "Which SQL operation is used to combine rows from two or more tables based on a related column?"
+            }
+        },
+        {
+            "category": "database",
+            "id": "276",
+            "correctAnswer": "UNION",
+            "incorrectAnswers": ["JOIN", "INTERSECT", "EXCEPT"],
+            "question": {
+            "text": "Which SQL operation is used to combine the results of two or more SELECT queries, removing duplicates?"
+            }
+        },
+        {
+            "category": "database",
+            "id": "277",
+            "correctAnswer": "INTERSECT",
+            "incorrectAnswers": ["JOIN", "UNION", "EXCEPT"],
+            "question": {
+            "text": "Which SQL operation returns rows that are common to two or more SELECT queries?"
+            }
+        },
+        {
+            "category": "database",
+            "id": "278",
+            "correctAnswer": "EXCEPT",
+            "incorrectAnswers": ["JOIN", "UNION", "INTERSECT"],
+            "question": {
+            "text": "Which SQL operation returns rows that are unique to the first SELECT query but not the second?"
+            }
+        },
+        {
+            "category": "database",
+            "id": "279",
+            "correctAnswer": "LIKE",
+            "incorrectAnswers": ["IN", "BETWEEN", "IS NULL"],
+            "question": {
+            "text": "Which SQL operator is used to search for a specified pattern in a column?"
+            }
+        },
+        {
+            "category": "database",
+            "id": "280",
+            "correctAnswer": "IN",
+            "incorrectAnswers": ["LIKE", "BETWEEN", "IS NULL"],
+            "question": {
+            "text": "Which SQL operator is used to specify multiple values in a WHERE clause?"
+            }
+        },
+        {
+            "category": "database",
+            "id": "281",
+            "correctAnswer": "BETWEEN",
+            "incorrectAnswers": ["LIKE", "IN", "IS NULL"],
+            "question": {
+            "text": "Which SQL operator is used to filter records within a specified range?"
+            }
+        },
+        {
+            "category": "database",
+            "id": "282",
+            "correctAnswer": "IS NULL",
+            "incorrectAnswers": ["NOT NULL", "EMPTY", "MISSING"],
+            "question": {
+            "text": "Which SQL operator is used to test for NULL values in a column?"
+            }
+        },
+        {
+            "category": "database",
+            "id": "283",
+            "correctAnswer": "ORDER BY",
+            "incorrectAnswers": ["GROUP BY", "HAVING", "WHERE"],
+            "question": {
+            "text": "Which SQL clause is used to sort the result set of a query in ascending or descending order?"
+            }
+        },
+        {
+            "category": "database",
+            "id": "284",
+            "correctAnswer": "GROUP BY",
+            "incorrectAnswers": ["ORDER BY", "HAVING", "WHERE"],
+            "question": {
+            "text": "Which SQL clause is used to group rows that have the same values into summary rows?"
+            }
+        },
+        {
+            "category": "database",
+            "id": "285",
+            "correctAnswer": "HAVING",
+            "incorrectAnswers": ["WHERE", "GROUP BY", "ORDER BY"],
+            "question": {
+            "text": "Which SQL clause is used to filter groups of records after an aggregation operation?"
+            }
+        },
+        {
+            "category": "database",
+            "id": "286",
+            "correctAnswer": "JOIN",
+            "incorrectAnswers": ["UNION", "INTERSECT", "EXCEPT"],
+            "question": {
+            "text": "Which SQL operation is used to combine rows from two or more tables based on a related column?"
+            }
+        },
+        {
+            "category": "database",
+            "id": "287",
+            "correctAnswer": "UNION",
+            "incorrectAnswers": ["JOIN", "INTERSECT", "EXCEPT"],
+            "question": {
+            "text": "Which SQL operation is used to combine the results of two or more SELECT queries, removing duplicates?"
+            }
+        },
+        {
+            "category": "database",
+            "id": "288",
+            "correctAnswer": "INTERSECT",
+            "incorrectAnswers": ["JOIN", "UNION", "EXCEPT"],
+            "question": {
+            "text": "Which SQL operation returns rows that are common to two or more SELECT queries?"
+            }
+        },
+        {
+            "category": "database",
+            "id": "289",
+            "correctAnswer": "EXCEPT",
+            "incorrectAnswers": ["JOIN", "UNION", "INTERSECT"],
+            "question": {
+            "text": "Which SQL operation returns rows that are unique to the first SELECT query but not the second?"
+            }
+        },
+        {
+            "category": "database",
+            "id": "290",
+            "correctAnswer": "LIKE",
+            "incorrectAnswers": ["IN", "BETWEEN", "IS NULL"],
+            "question": {
+            "text": "Which SQL operator is used to search for a specified pattern in a column?"
+            }
+        },
+        {
+            "category": "database",
+            "id": "291",
+            "correctAnswer": "IN",
+            "incorrectAnswers": ["LIKE", "BETWEEN", "IS NULL"],
+            "question": {
+            "text": "Which SQL operator is used to specify multiple values in a WHERE clause?"
+            }
+        },
+        {
+            "category": "database",
+            "id": "292",
+            "correctAnswer": "BETWEEN",
+            "incorrectAnswers": ["LIKE", "IN", "IS NULL"],
+            "question": {
+            "text": "Which SQL operator is used to filter records within a specified range?"
+            }
+        },
+        {
+            "category": "database",
+            "id": "293",
+            "correctAnswer": "IS NULL",
+            "incorrectAnswers": ["NOT NULL", "EMPTY", "MISSING"],
+            "question": {
+            "text": "Which SQL operator is used to test for NULL values in a column?"
+            }
+        },
+        {
+            "category": "database",
+            "id": "294",
+            "correctAnswer": "ORDER BY",
+            "incorrectAnswers": ["GROUP BY", "HAVING", "WHERE"],
+            "question": {
+            "text": "Which SQL clause is used to sort the result set of a query in ascending or descending order?"
+            }
+        },
+        {
+            "category": "database",
+            "id": "295",
+            "correctAnswer": "GROUP BY",
+            "incorrectAnswers": ["ORDER BY", "HAVING", "WHERE"],
+            "question": {
+            "text": "Which SQL clause is used to group rows that have the same values into summary rows?"
+            }
+        },
+        {
+            "category": "database",
+            "id": "296",
+            "correctAnswer": "HAVING",
+            "incorrectAnswers": ["WHERE", "GROUP BY", "ORDER BY"],
+            "question": {
+            "text": "Which SQL clause is used to filter groups of records after an aggregation operation?"
+            }
+        },
+        {
+            "category": "database",
+            "id": "297",
+            "correctAnswer": "JOIN",
+            "incorrectAnswers": ["UNION", "INTERSECT", "EXCEPT"],
+            "question": {
+            "text": "Which SQL operation is used to combine rows from two or more tables based on a related column?"
+            }
+        },
+        {
+            "category": "database",
+            "id": "298",
+            "correctAnswer": "UNION",
+            "incorrectAnswers": ["JOIN", "INTERSECT", "EXCEPT"],
+            "question": {
+            "text": "Which SQL operation is used to combine the results of two or more SELECT queries, removing duplicates?"
+            }
+        },
+        {
+            "category": "database",
+            "id": "299",
+            "correctAnswer": "INTERSECT",
+            "incorrectAnswers": ["JOIN", "UNION", "EXCEPT"],
+            "question": {
+            "text": "Which SQL operation returns rows that are common to two or more SELECT queries?"
+            }
+        },
+        {
+            "category": "database",
+            "id": "300",
+            "correctAnswer": "EXCEPT",
+            "incorrectAnswers": ["JOIN", "UNION", "INTERSECT"],
+            "question": {
+            "text": "Which SQL operation returns rows that are unique to the first SELECT query but not the second?"
+            }
+        }
+  ]
+  
