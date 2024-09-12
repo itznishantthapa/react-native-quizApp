@@ -61,7 +61,7 @@ export default function Dashboard({ navigation, fetchQuestion, setQuestionAmount
 
                     <View style={styles.boxContainer}>
 
-                        <TouchableOpacity style={{ width: '100%', flex: 1, justifyContent: 'center', alignItems: 'center' }} onPress={() => goToQuiz('nepali')} >
+                        <TouchableOpacity style={{ width: '100%', flex: 1, justifyContent: 'center', alignItems: 'center' }} onPress={() => goToQuiz('database')} >
                             <ImageBackground source={darkDataBase} resizeMode="cover" imageStyle={{ borderRadius: 20, width: '100%' }} style={styles.boxes}>
                                 <Text style={styles.textStyle}>Database</Text>
                             </ImageBackground>

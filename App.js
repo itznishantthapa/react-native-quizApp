@@ -116,9 +116,9 @@ export default function App() {
 
     let questionData;
     switch (category) {
-      case 'nepali':
-        // questionData = require('./data/database.json');
-        questionData = require('./data/nepali.json');
+      case 'database':
+        questionData = require('./data/database.json');
+        // questionData = require('./data/nepali.json');
         break;
       case 'react':
         questionData = require('./data/react.json');
