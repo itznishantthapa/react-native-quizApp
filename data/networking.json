@@ -1,0 +1,916 @@
+[
+    {
+        "category": "networking",
+        "id": "001",
+        "correctAnswer": "OSI",
+        "incorrectAnswers": ["TCP/IP", "IP Routes", "Subnetting"],
+        "question": {
+            "text": "What is the name of the networking model that consists of seven layers?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "002",
+        "correctAnswer": "TCP/IP",
+        "incorrectAnswers": ["OSI", "IP Routes", "Subnetting"],
+        "question": {
+            "text": "Which protocol suite is widely used for internet communication?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "003",
+        "correctAnswer": "IP Routes",
+        "incorrectAnswers": ["OSI", "TCP/IP", "Subnetting"],
+        "question": {
+            "text": "What is used to determine the path that network traffic takes from source to destination?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "004",
+        "correctAnswer": "Subnetting",
+        "incorrectAnswers": ["OSI", "TCP/IP", "IP Routes"],
+        "question": {
+            "text": "What is the process of dividing a network into smaller subnetworks called?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "005",
+        "correctAnswer": "DNS",
+        "incorrectAnswers": ["DHCP", "FTP", "HTTP"],
+        "question": {
+            "text": "What is the protocol used to translate domain names to IP addresses?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "006",
+        "correctAnswer": "DHCP",
+        "incorrectAnswers": ["DNS", "FTP", "HTTP"],
+        "question": {
+            "text": "What is the protocol used to automatically assign IP addresses to devices on a network?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "007",
+        "correctAnswer": "FTP",
+        "incorrectAnswers": ["DNS", "DHCP", "HTTP"],
+        "question": {
+            "text": "What is the protocol used for transferring files between a client and a server?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "008",
+        "correctAnswer": "HTTP",
+        "incorrectAnswers": ["DNS", "DHCP", "FTP"],
+        "question": {
+            "text": "What is the protocol used for transferring hypertext documents over the World Wide Web?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "009",
+        "correctAnswer": "SMTP",
+        "incorrectAnswers": ["POP3", "IMAP", "HTTP"],
+        "question": {
+            "text": "What is the protocol used for sending email messages?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "010",
+        "correctAnswer": "POP3",
+        "incorrectAnswers": ["SMTP", "IMAP", "HTTP"],
+        "question": {
+            "text": "What is the protocol used for retrieving email messages from a server?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "011",
+        "correctAnswer": "IMAP",
+        "incorrectAnswers": ["SMTP", "POP3", "HTTP"],
+        "question": {
+            "text": "What is the protocol used for accessing email messages on a server?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "012",
+        "correctAnswer": "SSH",
+        "incorrectAnswers": ["FTP", "Telnet", "RDP"],
+        "question": {
+            "text": "What is the protocol used for secure remote access to a server?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "013",
+        "correctAnswer": "Telnet",
+        "incorrectAnswers": ["SSH", "FTP", "RDP"],
+        "question": {
+            "text": "What is the protocol used for remote access to a server?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "014",
+        "correctAnswer": "RDP",
+        "incorrectAnswers": ["SSH", "FTP", "Telnet"],
+        "question": {
+            "text": "What is the protocol used for remote desktop access to a server?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "015",
+        "correctAnswer": "Firewall",
+        "incorrectAnswers": ["Router", "Switch", "Hub"],
+        "question": {
+            "text": "What is used to protect a network from unauthorized access?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "016",
+        "correctAnswer": "Router",
+        "incorrectAnswers": ["Firewall", "Switch", "Hub"],
+        "question": {
+            "text": "What is used to connect multiple networks and route data between them?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "017",
+        "correctAnswer": "Switch",
+        "incorrectAnswers": ["Firewall", "Router", "Hub"],
+        "question": {
+            "text": "What is used to connect devices within a network and forward data to the intended recipient?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "018",
+        "correctAnswer": "Hub",
+        "incorrectAnswers": ["Firewall", "Router", "Switch"],
+        "question": {
+            "text": "What is used to connect multiple devices within a network?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "019",
+        "correctAnswer": "MAC Address",
+        "incorrectAnswers": ["IP Address", "Subnet Mask", "Default Gateway"],
+        "question": {
+            "text": "What is a unique identifier assigned to network interfaces for communications on the physical network segment?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "020",
+        "correctAnswer": "IP Address",
+        "incorrectAnswers": ["MAC Address", "Subnet Mask", "Default Gateway"],
+        "question": {
+            "text": "What is a numerical label assigned to devices participating in a computer network that uses the Internet Protocol for communication?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "021",
+        "correctAnswer": "Subnet Mask",
+        "incorrectAnswers": ["MAC Address", "IP Address", "Default Gateway"],
+        "question": {
+            "text": "What is used to divide an IP address into network and host portions?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "022",
+        "correctAnswer": "Default Gateway",
+        "incorrectAnswers": ["MAC Address", "IP Address", "Subnet Mask"],
+        "question": {
+            "text": "What is used to forward network traffic from devices on one network to devices on another network?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "023",
+        "correctAnswer": "DNS Server",
+        "incorrectAnswers": ["DHCP Server", "Web Server", "Mail Server"],
+        "question": {
+            "text": "What is used to translate domain names to IP addresses?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "024",
+        "correctAnswer": "DHCP Server",
+        "incorrectAnswers": ["DNS Server", "Web Server", "Mail Server"],
+        "question": {
+            "text": "What is used to automatically assign IP addresses to devices on a network?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "025",
+        "correctAnswer": "Web Server",
+        "incorrectAnswers": ["DNS Server", "DHCP Server", "Mail Server"],
+        "question": {
+            "text": "What is used to host websites and serve web pages to clients over the internet?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "026",
+        "correctAnswer": "Mail Server",
+        "incorrectAnswers": ["DNS Server", "DHCP Server", "Web Server"],
+        "question": {
+            "text": "What is used to send, receive, and store email messages?"
+        }
+    },
+
+
+    {
+        "category": "networking",
+        "id": "046",
+        "correctAnswer": "ARP",
+        "incorrectAnswers": ["RARP", "ICMP", "IGMP"],
+        "question": {
+            "text": "What is used to map an IP address to a MAC address?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "047",
+        "correctAnswer": "RARP",
+        "incorrectAnswers": ["ARP", "ICMP", "IGMP"],
+        "question": {
+            "text": "What is used to map a MAC address to an IP address?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "048",
+        "correctAnswer": "ICMP",
+        "incorrectAnswers": ["ARP", "RARP", "IGMP"],
+        "question": {
+            "text": "What is used to send error messages and operational information indicating success or failure when communicating with another IP address?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "049",
+        "correctAnswer": "IGMP",
+        "incorrectAnswers": ["ARP", "RARP", "ICMP"],
+        "question": {
+            "text": "What is used to manage the membership of devices in a multicast group?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "050",
+        "correctAnswer": "VLAN",
+        "incorrectAnswers": ["VPN", "VTP", "VRRP"],
+        "question": {
+            "text": "What is used to logically segment a network into separate broadcast domains?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "051",
+        "correctAnswer": "VPN",
+        "incorrectAnswers": ["VLAN", "VTP", "VRRP"],
+        "question": {
+            "text": "What is used to create a secure connection over a public network?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "052",
+        "correctAnswer": "VTP",
+        "incorrectAnswers": ["VLAN", "VPN", "VRRP"],
+        "question": {
+            "text": "What is used to manage VLAN configurations across a network?"
+        }
+    },
+
+    {
+        "category": "networking",
+        "id": "053",
+        "correctAnswer": "VRRP",
+        "incorrectAnswers": ["VLAN", "VPN", "VTP"],
+        "question": {
+            "text": "What is used to provide high availability by assigning a virtual IP address to a group of routers?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "054",
+        "correctAnswer": "NAT",
+        "incorrectAnswers": ["PAT", "NAPT", "SNAT"],
+        "question": {
+            "text": "What is used to map private IP addresses to public IP addresses?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "055",
+        "correctAnswer": "PAT",
+        "incorrectAnswers": ["NAT", "NAPT", "SNAT"],
+        "question": {
+            "text": "What is used to map multiple private IP addresses to a single public IP address?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "056",
+        "correctAnswer": "NAPT",
+        "incorrectAnswers": ["NAT", "PAT", "SNAT"],
+        "question": {
+            "text": "What is used to map multiple private IP addresses to multiple public IP addresses?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "057",
+        "correctAnswer": "SNAT",
+        "incorrectAnswers": ["NAT", "PAT", "NAPT"],
+        "question": {
+            "text": "What is used to map a single private IP address to multiple public IP addresses?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "058",
+        "correctAnswer": "ACL",
+        "incorrectAnswers": ["NAT", "PAT", "NAPT"],
+        "question": {
+            "text": "What is used to control traffic flow in and out of a network?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "059",
+        "correctAnswer": "QoS",
+        "incorrectAnswers": ["NAT", "PAT", "NAPT"],
+        "question": {
+            "text": "What is used to prioritize network traffic to improve performance?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "060",
+        "correctAnswer": "STP",
+        "incorrectAnswers": ["RSTP", "MSTP", "PVST"],
+        "question": {
+            "text": "What is used to prevent loops in a network topology?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "061",
+        "correctAnswer": "RSTP",
+        "incorrectAnswers": ["STP", "MSTP", "PVST"],
+        "question": {
+            "text": "What is used to provide faster convergence than STP in a network topology?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "062",
+        "correctAnswer": "MSTP",
+        "incorrectAnswers": ["STP", "RSTP", "PVST"],
+        "question": {
+            "text": "What is used to provide multiple spanning trees for different VLANs in a network topology?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "063",
+        "correctAnswer": "PVST",
+        "incorrectAnswers": ["STP", "RSTP", "MSTP"],
+        "question": {
+            "text": "What is used to provide a separate spanning tree for each VLAN in a network topology?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "064",
+        "correctAnswer": "OSPF",
+        "incorrectAnswers": ["RIP", "EIGRP", "BGP"],
+        "question": {
+            "text": "What is used to route IP packets within an autonomous system?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "065",
+        "correctAnswer": "RIP",
+        "incorrectAnswers": ["OSPF", "EIGRP", "BGP"],
+        "question": {
+            "text": "What is used to route IP packets between autonomous systems?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "066",
+        "correctAnswer": "EIGRP",
+        "incorrectAnswers": ["OSPF", "RIP", "BGP"],
+        "question": {
+            "text": "What is used to route IP packets based on distance and bandwidth?"
+        }
+    },  
+    {
+        "category": "networking",
+        "id": "067",
+        "correctAnswer": "BGP",
+        "incorrectAnswers": ["OSPF", "RIP", "EIGRP"],
+        "question": {
+            "text": "What is used to route IP packets between different autonomous systems?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "068",
+        "correctAnswer": "VLSM",
+        "incorrectAnswers": ["CIDR", "NAT", "PAT"],
+        "question": {
+            "text": "What is used to allocate IP addresses based on network requirements?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "069",
+        "correctAnswer": "CIDR",
+        "incorrectAnswers": ["VLSM", "NAT", "PAT"],
+        "question": {
+            "text": "What is used to aggregate IP addresses for routing purposes?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "070",
+        "correctAnswer": "BGP",
+        "incorrectAnswers": ["OSPF", "RIP", "EIGRP"],
+        "question": {
+            "text": "What is used to route IP packets between different autonomous systems?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "071",
+        "correctAnswer": "VLSM",
+        "incorrectAnswers": ["CIDR", "NAT", "PAT"],
+        "question": {
+            "text": "What is used to allocate IP addresses based on network requirements?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "072",
+        "correctAnswer": "CIDR",
+        "incorrectAnswers": ["VLSM", "NAT", "PAT"],
+        "question": {
+            "text": "What is used to aggregate IP addresses for routing purposes?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "073",
+        "correctAnswer": "BGP",
+        "incorrectAnswers": ["OSPF", "RIP", "EIGRP"],
+        "question": {
+            "text": "What is used to route IP packets between different autonomous systems?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "074",
+        "correctAnswer": "VLSM",
+        "incorrectAnswers": ["CIDR", "NAT", "PAT"],
+        "question": {
+            "text": "What is used to allocate IP addresses based on network requirements?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "075",
+        "correctAnswer": "CIDR",
+        "incorrectAnswers": ["VLSM", "NAT", "PAT"],
+        "question": {
+            "text": "What is used to aggregate IP addresses for routing purposes?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "076",
+        "correctAnswer": "BGP",
+        "incorrectAnswers": ["OSPF", "RIP", "EIGRP"],
+        "question": {
+            "text": "What is used to route IP packets between different autonomous systems?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "077",
+        "correctAnswer": "VLSM",
+        "incorrectAnswers": ["CIDR", "NAT", "PAT"],
+        "question": {
+            "text": "What is used to allocate IP addresses based on network requirements?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "078",
+        "correctAnswer": "CIDR",
+        "incorrectAnswers": ["VLSM", "NAT", "PAT"],
+        "question": {
+            "text": "What is used to aggregate IP addresses for routing purposes?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "079",
+        "correctAnswer": "BGP",
+        "incorrectAnswers": ["OSPF", "RIP", "EIGRP"],
+        "question": {
+            "text": "What is used to route IP packets between different autonomous systems?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "080",
+        "correctAnswer": "VLSM",
+        "incorrectAnswers": ["CIDR", "NAT", "PAT"],
+        "question": {
+            "text": "What is used to allocate IP addresses based on network requirements?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "081",
+        "correctAnswer": "CIDR",
+        "incorrectAnswers": ["VLSM", "NAT", "PAT"],
+        "question": {
+            "text": "What is used to aggregate IP addresses for routing purposes?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "082",
+        "correctAnswer": "BGP",
+        "incorrectAnswers": ["OSPF", "RIP", "EIGRP"],
+        "question": {
+            "text": "What is used to route IP packets between different autonomous systems?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "083",
+        "correctAnswer": "VLSM",
+        "incorrectAnswers": ["CIDR", "NAT", "PAT"],
+        "question": {
+            "text": "What is used to allocate IP addresses based on network requirements?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "084",
+        "correctAnswer": "CIDR",
+        "incorrectAnswers": ["VLSM", "NAT", "PAT"],
+        "question": {
+            "text": "What is used to aggregate IP addresses for routing purposes?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "085",
+        "correctAnswer": "BGP",
+        "incorrectAnswers": ["OSPF", "RIP", "EIGRP"],
+        "question": {
+            "text": "What is used to route IP packets between different autonomous systems?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "086",
+        "correctAnswer": "VLSM",
+        "incorrectAnswers": ["CIDR", "NAT", "PAT"],
+        "question": {
+            "text": "What is used to allocate IP addresses based on network requirements?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "087",
+        "correctAnswer": "CIDR",
+        "incorrectAnswers": ["VLSM", "NAT", "PAT"],
+        "question": {
+            "text": "What is used to aggregate IP addresses for routing purposes?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "088",
+        "correctAnswer": "BGP",
+        "incorrectAnswers": ["OSPF", "RIP", "EIGRP"],
+        "question": {
+            "text": "What is used to route IP packets between different autonomous systems?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "089",
+        "correctAnswer": "VLSM",
+        "incorrectAnswers": ["CIDR", "NAT", "PAT"],
+        "question": {
+            "text": "What is used to allocate IP addresses based on network requirements?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "090",
+        "correctAnswer": "CIDR",
+        "incorrectAnswers": ["VLSM", "NAT", "PAT"],
+        "question": {
+            "text": "What is used to aggregate IP addresses for routing purposes?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "091",
+        "correctAnswer": "BGP",
+        "incorrectAnswers": ["OSPF", "RIP", "EIGRP"],
+        "question": {
+            "text": "What is used to route IP packets between different autonomous systems?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "092",
+        "correctAnswer": "VLSM",
+        "incorrectAnswers": ["CIDR", "NAT", "PAT"],
+        "question": {
+            "text": "What is used to allocate IP addresses based on network requirements?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "093",
+        "correctAnswer": "CIDR",
+        "incorrectAnswers": ["VLSM", "NAT", "PAT"],
+        "question": {
+            "text": "What is used to aggregate IP addresses for routing purposes?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "094",
+        "correctAnswer": "BGP",
+        "incorrectAnswers": ["OSPF", "RIP", "EIGRP"],
+        "question": {
+            "text": "What is used to route IP packets between different autonomous systems?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "095",
+        "correctAnswer": "VLSM",
+        "incorrectAnswers": ["CIDR", "NAT", "PAT"],
+        "question": {
+            "text": "What is used to allocate IP addresses based on network requirements?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "096",
+        "correctAnswer": "CIDR",
+        "incorrectAnswers": ["VLSM", "NAT", "PAT"],
+        "question": {
+            "text": "What is used to aggregate IP addresses for routing purposes?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "097",
+        "correctAnswer": "BGP",
+        "incorrectAnswers": ["OSPF", "RIP", "EIGRP"],
+        "question": {
+            "text": "What is used to route IP packets between different autonomous systems?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "098",
+        "correctAnswer": "VLSM",
+        "incorrectAnswers": ["CIDR", "NAT", "PAT"],
+        "question": {
+            "text": "What is used to allocate IP addresses based on network requirements?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "099",
+        "correctAnswer": "CIDR",
+        "incorrectAnswers": ["VLSM", "NAT", "PAT"],
+        "question": {
+            "text": "What is used to aggregate IP addresses for routing purposes?"
+        }
+    },
+    {
+        "category": "networking",
+        "id": "100",
+        "correctAnswer": "BGP",
+        "incorrectAnswers": ["OSPF", "RIP", "EIGRP"],
+        "question": {
+            "text": "What is used to route IP packets between different autonomous systems?"
+        }
+    },
+    {   
+        "category": "networking",
+        "id": "101",
+        "correctAnswer": "VLSM",
+        "incorrectAnswers": ["CIDR", "NAT", "PAT"],
+        "question": {
+            "text": "What is used to allocate IP addresses based on network requirements?"
+        }
+    },
+    {   
+        "category": "networking",
+        "id": "102",
+        "correctAnswer": "CIDR",
+        "incorrectAnswers": ["VLSM", "NAT", "PAT"],
+        "question": {
+            "text": "What is used to aggregate IP addresses for routing purposes?"
+        }
+    },
+    {   
+        "category": "networking",
+        "id": "103",
+        "correctAnswer": "BGP",
+        "incorrectAnswers": ["OSPF", "RIP", "EIGRP"],
+        "question": {
+            "text": "What is used to route IP packets between different autonomous systems?"
+        }
+    },
+    {   
+        "category": "networking",
+        "id": "104",
+        "correctAnswer": "VLSM",
+        "incorrectAnswers": ["CIDR", "NAT", "PAT"],
+        "question": {
+            "text": "What is used to allocate IP addresses based on network requirements?"
+        }
+    },
+    {   
+        "category": "networking",
+        "id": "105",
+        "correctAnswer": "CIDR",
+        "incorrectAnswers": ["VLSM", "NAT", "PAT"],
+        "question": {
+            "text": "What is used to aggregate IP addresses for routing purposes?"
+        }
+    },
+    {   
+        "category": "networking",
+        "id": "106",
+        "correctAnswer": "BGP",
+        "incorrectAnswers": ["OSPF", "RIP", "EIGRP"],
+        "question": {
+            "text": "What is used to route IP packets between different autonomous systems?"
+        }
+    },
+    {   
+        "category": "networking",
+        "id": "107",
+        "correctAnswer": "VLSM",
+        "incorrectAnswers": ["CIDR", "NAT", "PAT"],
+        "question": {
+            "text": "What is used to allocate IP addresses based on network requirements?"
+        }
+    },
+    {   
+        "category": "networking",
+        "id": "108",
+        "correctAnswer": "CIDR",
+        "incorrectAnswers": ["VLSM", "NAT", "PAT"],
+        "question": {
+            "text": "What is used to aggregate IP addresses for routing purposes?"
+        }
+    },
+    {   
+        "category": "networking",
+        "id": "109",
+        "correctAnswer": "BGP",
+        "incorrectAnswers": ["OSPF", "RIP", "EIGRP"],
+        "question": {
+            "text": "What is used to route IP packets between different autonomous systems?"
+        }
+    },
+
+    {   
+        "category": "networking",
+        "id": "110",
+        "correctAnswer": "VLSM",
+        "incorrectAnswers": ["CIDR", "NAT", "PAT"],
+        "question": {
+            "text": "What is used to allocate IP addresses based on network requirements?"
+        }
+    },
+    {   
+        "category": "networking",
+        "id": "111",
+        "correctAnswer": "CIDR",
+        "incorrectAnswers": ["VLSM", "NAT", "PAT"],
+        "question": {
+            "text": "What is used to aggregate IP addresses for routing purposes?"
+        }
+    },
+    {   
+        "category": "networking",
+        "id": "112",
+        "correctAnswer": "BGP",
+        "incorrectAnswers": ["OSPF", "RIP", "EIGRP"],
+        "question": {
+            "text": "What is used to route IP packets between different autonomous systems?"
+        }
+    },
+    {   
+        "category": "networking",
+        "id": "113",
+        "correctAnswer": "VLSM",
+        "incorrectAnswers": ["CIDR", "NAT", "PAT"],
+        "question": {
+            "text": "What is used to allocate IP addresses based on network requirements?"
+        }
+    },
+    {   
+        "category": "networking",
+        "id": "114",
+        "correctAnswer": "CIDR",
+        "incorrectAnswers": ["VLSM", "NAT", "PAT"],
+        "question": {
+            "text": "What is used to aggregate IP addresses for routing purposes?"
+        }
+    },
+    {   
+        "category": "networking",
+        "id": "115",
+        "correctAnswer": "BGP",
+        "incorrectAnswers": ["OSPF", "RIP", "EIGRP"],
+        "question": {
+            "text": "What is used to route IP packets between different autonomous systems?"
+        }
+    },
+    {   
+        "category": "networking",
+        "id": "116",
+        "correctAnswer": "VLSM",
+        "incorrectAnswers": ["CIDR", "NAT", "PAT"],
+        "question": {
+            "text": "What is used to allocate IP addresses based on network requirements?"
+        }
+    },
+    {   
+        "category": "networking",
+        "id": "117",
+        "correctAnswer": "CIDR",
+        "incorrectAnswers": ["VLSM", "NAT", "PAT"],
+        "question": {
+            "text": "What is used to aggregate IP addresses for routing purposes?"
+        }
+    },
+    {   
+        "category": "networking",
+        "id": "118",
+        "correctAnswer": "BGP",
+        "incorrectAnswers": ["OSPF", "RIP", "EIGRP"],
+        "question": {
+            "text": "What is used to route IP packets between different autonomous systems?"
+        }
+    },
+    {   
+        "category": "networking",
+        "id": "119",
+        "correctAnswer": "VLSM",
+        "incorrectAnswers": ["CIDR", "NAT", "PAT"],
+        "question": {
+            "text": "What is used to allocate IP addresses based on network requirements?"
+        }
+    },
+    {   
+        "category": "networking",
+        "id": "120",
+        "correctAnswer": "CIDR",
+        "incorrectAnswers": ["VLSM", "NAT", "PAT"],
+        "question": {
+            "text": "What is used to aggregate IP addresses for routing purposes?"
+        }
+    }
+
+]

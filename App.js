@@ -25,6 +25,8 @@ import UserProfile from './Screens/UserProfile';
 import { saveLocalData,getLocalData } from './localStorage';
 import { fileUploadToFirebaseStorage, getFromFirebase,updateToFirebase } from './db';
 import { AppProvider } from './AppProvider';
+import History from './Screens/History';
+import QuestionList from './Screens/QuestionList';
 
 
 
@@ -114,17 +116,18 @@ export default function App() {
 
     let questionData;
     switch (category) {
-      case 'database':
-        questionData = require('./data/database.json');
+      case 'nepali':
+        // questionData = require('./data/database.json');
+        questionData = require('./data/nepali.json');
         break;
       case 'react':
         questionData = require('./data/react.json');
         break;
-      case 'science':
-        questionData = require('./data/science.json');
+      case 'networking':
+        questionData = require('./data/networking.json');
         break;
-      case 'geography':
-        questionData = require('./data/geography.json');
+      case 'computing':
+        questionData = require('./data/computing.json');
         break;
       default:
         Alert.alert('Error', 'Category not found.');
@@ -177,7 +180,9 @@ export default function App() {
     Signup: CardStyleInterpolators.forFadeFromBottomAndroid,
     Creation: CardStyleInterpolators.forHorizontalIOS,
     Setting: CardStyleInterpolators.forFadeFromBottomAndroid,
+    History: CardStyleInterpolators.forFadeFromBottomAndroid,
     UserProfile: CardStyleInterpolators.forFadeFromBottomAndroid,
+    QuestionList: CardStyleInterpolators.forHorizontalIOS,
 
 
     Account: CardStyleInterpolators.forHorizontalIOS,
@@ -244,6 +249,8 @@ export default function App() {
         <Stack.Screen name="PrivacyEdit" component={PrivacyEdit} />
         <Stack.Screen name="HelpSupport" component={HelpSupport} />
         <Stack.Screen name="UserProfile" component={UserProfile} />
+        <Stack.Screen name="History" component={History} />
+        <Stack.Screen name="QuestionList" component={QuestionList} />
 
 
         <Stack.Screen name="Quiz">

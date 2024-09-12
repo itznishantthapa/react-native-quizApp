@@ -778,5 +778,248 @@
         "question": {
             "text": "Which format is often used for representing data in NoSQL databases?"
         }
+    },
+    {
+        "id": "021",
+        "question": {
+            "text": "What is the purpose of the map() method in JavaScript?"
+        },
+        "correctAnswer": "To iterate over an array and transform each element",
+        "incorrectAnswers": [
+            "To filter an array based on a condition",
+            "To reduce an array to a single value",
+            "To sort an array in ascending order"
+        ]
+    },
+    {
+        "id": "022",
+        "question": {
+            "text": "What is the purpose of the filter() method in JavaScript?"
+        },
+        "correctAnswer": "To create a new array with elements that pass a certain condition",
+        "incorrectAnswers": [
+            "To transform each element of an array",
+            "To reduce an array to a single value",
+            "To sort an array in ascending order"
+        ]
+    },
+    {
+        "id": "023",
+        "question": {
+            "text": "What is the purpose of the reduce() method in JavaScript?"
+        },
+        "correctAnswer": "To reduce an array to a single value by applying a function to each element",
+        "incorrectAnswers": [
+            "To iterate over an array and transform each element",
+            "To filter an array based on a condition",
+            "To sort an array in ascending order"
+        ]
+    },
+    {
+        "id": "024",
+        "question": {
+            "text": "What is the purpose of the sort() method in JavaScript?"
+        },
+        "correctAnswer": "To sort an array in ascending order",
+        "incorrectAnswers": [
+            "To iterate over an array and transform each element",
+            "To filter an array based on a condition",
+            "To reduce an array to a single value"
+        ]
+    },
+    {
+        "id": "025",
+        "question": {
+            "text": "What is the purpose of the find() method in JavaScript?"
+        },
+        "correctAnswer": "To find the first element in an array that satisfies a condition",
+        "incorrectAnswers": [
+            "To iterate over an array and transform each element",
+            "To filter an array based on a condition",
+            "To reduce an array to a single value"
+        ]
+    },
+    {
+        "id": "026",
+        "question": {
+            "text": "What is the purpose of the some() method in JavaScript?"
+        },
+        "correctAnswer": "To check if at least one element in an array satisfies a condition",
+        "incorrectAnswers": [
+            "To iterate over an array and transform each element",
+            "To filter an array based on a condition",
+            "To reduce an array to a single value"
+        ]
+    },
+    {
+        "id": "027",
+        "question": {
+            "text": "What is the purpose of the every() method in JavaScript?"
+        },
+        "correctAnswer": "To check if all elements in an array satisfy a condition",
+        "incorrectAnswers": [
+            "To iterate over an array and transform each element",
+            "To filter an array based on a condition",
+            "To reduce an array to a single value"
+        ]
+    },
+    {
+        "id": "028",
+        "question": {
+            "text": "What is the purpose of the concat() method in JavaScript?"
+        },
+        "correctAnswer": "To combine two or more arrays into a single array",
+        "incorrectAnswers": [
+            "To iterate over an array and transform each element",
+            "To filter an array based on a condition",
+            "To reduce an array to a single value"
+        ]
+    },
+    {
+        "id": "029",
+        "question": {
+            "text": "What is the purpose of the slice() method in JavaScript?"
+        },
+        "correctAnswer": "To extract a portion of an array into a new array",
+        "incorrectAnswers": [
+            "To iterate over an array and transform each element",
+            "To filter an array based on a condition",
+            "To reduce an array to a single value"
+        ]
+    },
+    {
+        "id": "030",
+        "question": {
+            "text": "What is the purpose of the splice() method in JavaScript?"
+        },
+        "correctAnswer": "To add or remove elements from an array at a specific index",
+        "incorrectAnswers": [
+            "To iterate over an array and transform each element",
+            "To filter an array based on a condition",
+            "To reduce an array to a single value"
+        ]
+    },
+    {
+        "id": "031",
+        "question": {
+            "text": "What is the purpose of the push() method in JavaScript?"
+        },
+        "correctAnswer": "To add one or more elements to the end of an array",
+        "incorrectAnswers": [
+            "To iterate over an array and transform each element",
+            "To filter an array based on a condition",
+            "To reduce an array to a single value"
+        ]
+    },
+    {
+        "id": "032",
+        "question": {
+            "text": "What is the purpose of the pop() method in JavaScript?"
+        },
+        "correctAnswer": "To remove the last element from an array and return it",
+        "incorrectAnswers": [
+            "To iterate over an array and transform each element",
+            "To filter an array based on a condition",
+            "To reduce an array to a single value"
+        ]
+    },
+    {
+        "id": "033",
+        "question": {
+            "text": "What is the purpose of the shift() method in JavaScript?"
+        },
+        "correctAnswer": "To remove the first element from an array and return it",
+        "incorrectAnswers": [
+            "To iterate over an array and transform each element",
+            "To filter an array based on a condition",
+            "To reduce an array to a single value"
+        ]
+    },
+    {
+        "id": "034",
+        "question": {
+            "text": "What is the purpose of the unshift() method in JavaScript?"
+        },
+        "correctAnswer": "To add one or more elements to the beginning of an array",
+        "incorrectAnswers": [
+            "To iterate over an array and transform each element",
+            "To filter an array based on a condition",
+            "To reduce an array to a single value"
+        ]
+    },
+    {
+        "id": "035",
+        "question": {
+            "text": "What is the purpose of the indexOf() method in JavaScript?"
+        },
+        "correctAnswer": "To find the index of the first occurrence of a specified value in an array",
+        "incorrectAnswers": [
+            "To iterate over an array and transform each element",
+            "To filter an array based on a condition",
+            "To reduce an array to a single value"
+        ]
+    },
+    {
+        "id": "036",
+        "question": {
+            "text": "What is the purpose of the includes() method in JavaScript?"
+        },
+        "correctAnswer": "To check if an array contains a specified value",
+        "incorrectAnswers": [
+            "To iterate over an array and transform each element",
+            "To filter an array based on a condition",
+            "To reduce an array to a single value"
+        ]
+    },
+    {
+        "id": "037",
+        "question": {
+            "text": "What is the purpose of the join() method in JavaScript?"
+        },
+        "correctAnswer": "To join all elements of an array into a string",
+        "incorrectAnswers": [
+            "To iterate over an array and transform each element",
+            "To filter an array based on a condition",
+            "To reduce an array to a single value"
+        ]
+    },
+    {
+        "id": "038",
+        "question": {
+            "text": "What is the purpose of the reverse() method in JavaScript?"
+        },
+        "correctAnswer": "To reverse the order of the elements in an array",
+        "incorrectAnswers": [
+            "To iterate over an array and transform each element",
+            "To filter an array based on a condition",
+            "To reduce an array to a single value"
+        ]
+    },
+    {
+        "id": "039",
+        "question": {
+            "text": "What is the purpose of the toString() method in JavaScript?"
+        },
+        "correctAnswer": "To convert an array to a string",
+        "incorrectAnswers": [
+            "To iterate over an array and transform each element",
+            "To filter an array based on a condition",
+            "To reduce an array to a single value"
+        ]
+    },
+    {
+        "id": "040",
+        "question": {
+            "text": "What is the purpose of the length property in JavaScript arrays?"
+        },
+        "correctAnswer": "To get the number of elements in an array",
+        "incorrectAnswers": [
+            "To iterate over an array and transform each element",
+            "To filter an array based on a condition",
+            "To reduce an array to a single value"
+        ]
     }
+
+    
+    
 ]

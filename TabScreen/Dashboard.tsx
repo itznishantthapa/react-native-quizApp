@@ -1,7 +1,9 @@
 import { ScrollView, StyleSheet, Text, TextInput, View, ImageBackground, Touchable, TouchableOpacity } from 'react-native'
-import React,{useState} from 'react'
+import React, { useState } from 'react'
 import { StatusBar } from 'expo-status-bar'
 import Icon from 'react-native-vector-icons/FontAwesome';
+import IconEntypo from 'react-native-vector-icons/Entypo';
+import IconAnt from 'react-native-vector-icons/AntDesign';
 // import cosmos from '../assets/cosmos.jpg'
 // import lady from '../assets/lady.jpeg'
 // import console from '../assets/console.jpg'
@@ -12,27 +14,28 @@ import database from '../assets/database.jpg'
 import programming from '../assets/programming.jpg'
 import cloudComputing from '../assets/coludComputing.jpg'
 import networking from '../assets/networking.jpeg'
+import darkDataBase from '../assets/darkDatabase.jpg'
 
 import { styles } from '../style'
 import { useRef } from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import PopUp from '../Screens/PopUp';
 
-export default function Dashboard({ navigation, fetchQuestion,setQuestionAmount }) {
+export default function Dashboard({ navigation, fetchQuestion, setQuestionAmount }) {
 
     const [isModalVisible, setModalVisible] = useState(false);
-    const handleSetQuestions = (questionNo:number) => {
+    const handleSetQuestions = (questionNo: number) => {
         // Handle logic here
         setQuestionAmount(questionNo)
         setModalVisible(false);
-      };
-    
+    };
+
 
     const textInputRef = useRef(null);
 
 
     const goToQuiz = (category: string) => {
-           fetchQuestion(category);        
+        fetchQuestion(category);
         navigation.navigate('Quiz'); // Pass category as a parameter
     }
 
@@ -58,55 +61,61 @@ export default function Dashboard({ navigation, fetchQuestion,setQuestionAmount 
 
                     <View style={styles.boxContainer}>
 
-                        <TouchableOpacity style={{ width: '100%', flex: 1, justifyContent: 'center', alignItems: 'center' }} onPress={() => goToQuiz('database')} >
-                            <ImageBackground source={database} resizeMode="cover" imageStyle={{ borderRadius: 20, width: '100%' }} style={styles.boxes}>
+                        <TouchableOpacity style={{ width: '100%', flex: 1, justifyContent: 'center', alignItems: 'center' }} onPress={() => goToQuiz('nepali')} >
+                            <ImageBackground source={darkDataBase} resizeMode="cover" imageStyle={{ borderRadius: 20, width: '100%' }} style={styles.boxes}>
                                 <Text style={styles.textStyle}>Database</Text>
                             </ImageBackground>
                         </TouchableOpacity>
 
-                        <TouchableOpacity   style={{ width: '100%', flex: 1, justifyContent: 'center', alignItems: 'center' }} onPress={() => goToQuiz('react')}>
-                        <ImageBackground source={programming} resizeMode="cover" imageStyle={{ borderRadius: 20, width: '100%' }} style={styles.boxes}>
-                            <Text style={styles.textStyle}>Programming</Text>
-                        </ImageBackground>
+                        <TouchableOpacity style={{ width: '100%', flex: 1, justifyContent: 'center', alignItems: 'center' }} onPress={() => goToQuiz('react')}>
+                            <ImageBackground source={programming} resizeMode="cover" imageStyle={{ borderRadius: 20, width: '100%' }} style={styles.boxes}>
+                                <Text style={styles.textStyle}>Programming</Text>
+                            </ImageBackground>
                         </TouchableOpacity>
 
-                        <TouchableOpacity  style={{ width: '100%', flex: 1, justifyContent: 'center', alignItems: 'center' }}onPress={() => goToQuiz('science')}>
-                        <ImageBackground source={networking} resizeMode="cover" imageStyle={{ borderRadius: 20, width: '100%' }} style={styles.boxes}>
-                            <Text style={styles.textStyle}>Networking & OS</Text>
-                        </ImageBackground>
+                        <TouchableOpacity style={{ width: '100%', flex: 1, justifyContent: 'center', alignItems: 'center' }} onPress={() => goToQuiz('networking')}>
+                            <ImageBackground source={networking} resizeMode="cover" imageStyle={{ borderRadius: 20, width: '100%' }} style={styles.boxes}>
+                                <Text style={styles.textStyle}>Networking & OS</Text>
+                            </ImageBackground>
                         </TouchableOpacity>
-                        
-                        <TouchableOpacity  style={{ width: '100%', flex: 1, justifyContent: 'center', alignItems: 'center' }} onPress={() => goToQuiz('geography')}>
-                        <ImageBackground source={cloudComputing} resizeMode="cover" imageStyle={{ borderRadius: 20, width: '100%' }} style={styles.boxes}>
-                            <Text style={styles.textStyle}>Cloud Computing</Text>
-                        </ImageBackground>
+
+                        <TouchableOpacity style={{ width: '100%', flex: 1, justifyContent: 'center', alignItems: 'center' }} onPress={() => goToQuiz('computing')}>
+                            <ImageBackground source={cloudComputing} resizeMode="cover" imageStyle={{ borderRadius: 20, width: '100%' }} style={styles.boxes}>
+                                <Text style={styles.textStyle}>Cloud Computing</Text>
+                            </ImageBackground>
                         </TouchableOpacity>
 
                     </View>
 
                     <View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center', width: '100%', height: 150, gap: 8, marginTop: 12 }}>
-                        <TouchableOpacity style={{width:'45%',flexDirection:'column',justifyContent:'center',alignItems:'center'}} onPress={()=>setModalVisible(true)}>
-                        <ImageBackground source={pixels} resizeMode='cover' imageStyle={{ height: 150, width: '100%', borderRadius: 20 }} style={{ height: 150, width: '100%', justifyContent: 'center',alignItems:'center' }}>
+                        <TouchableOpacity style={{ width: '45%', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }} onPress={() => setModalVisible(true)}>
+                            {/* <ImageBackground source={pixels} resizeMode='cover' imageStyle={{ height: 150, width: '100%', borderRadius: 20 }} style={{ height: 150, width: '100%', justifyContent: 'center',alignItems:'center' }}>
                             <Text style={[styles.textStyle2,{fontSize:18,fontWeight:'900'}]}>Set Question</Text>
-                        </ImageBackground>
+                        </ImageBackground> */}
+                            <View style={{ height: 150, width: '100%', justifyContent: 'center', alignItems: 'center', backgroundColor: '#ffa200', borderRadius: 20 }}>
+                                <IconAnt name='select1' size={60}></IconAnt>
+                            </View>
                         </TouchableOpacity>
 
-                        <TouchableOpacity style={{width:'45%',flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
-                        <ImageBackground source={clock} resizeMode='cover' imageStyle={{ height: 150, width: '100%', borderRadius: 20, }} style={{ height: 150, width: '100%', justifyContent: 'center',alignItems:'center' }}>
+                        <TouchableOpacity style={{ width: '45%', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }} onPress={()=>navigation.navigate('History')}>
+                            {/* <ImageBackground source={clock} resizeMode='cover' imageStyle={{ height: 150, width: '100%', borderRadius: 20, }} style={{ height: 150, width: '100%', justifyContent: 'center',alignItems:'center' }}>
 
                             <Text style={[styles.textStyle2,{fontSize:18,fontWeight:'900'}]}></Text>
 
-                        </ImageBackground>
-                            </TouchableOpacity>
+                        </ImageBackground> */}
+                            <View style={{ height: 150, width: '100%', justifyContent: 'center', alignItems: 'center', backgroundColor: '#2c0735', borderRadius: 20 }}>
+                                <IconEntypo name='back-in-time' size={60} style={{color:'white'}}></IconEntypo>
+                            </View>
+                        </TouchableOpacity>
                     </View>
 
 
-                <PopUp
+                    <PopUp
                         isVisible={isModalVisible}
 
-                        handleSetQuestions={handleSetQuestions} 
+                        handleSetQuestions={handleSetQuestions}
                         setModalVisible={setModalVisible}
-                />
+                    />
 
 
                 </View>

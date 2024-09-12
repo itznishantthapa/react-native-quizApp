@@ -1,5 +1,5 @@
-import { StyleSheet, Text, View, TouchableOpacity, TouchableWithoutFeedback,Alert } from 'react-native'
-import React, { useState,useEffect } from 'react'
+import { StyleSheet, Text, View, TouchableOpacity, TouchableWithoutFeedback, Alert } from 'react-native'
+import React, { useState, useEffect } from 'react'
 import { styles } from '../style'
 import { StatusBar } from 'expo-status-bar'
 import { SafeAreaView } from 'react-native-safe-area-context'
@@ -15,68 +15,68 @@ import { auth } from '../firebaseConfig';
 import { saveLocally } from '../db'
 
 
-const Setting = ({navigation,setgameInfo}) => {
+const Setting = ({ navigation, setgameInfo }) => {
 
     // Initial state for gameInfo
-const initialGameInfo = {
-    worldRank:'NA',
-      gamePlayed:0,
-      points:0 ,
-      totalAttempted:0
-  };
-  
+    const initialGameInfo = {
+        worldRank: 'NA',
+        gamePlayed: 0,
+        points: 0,
+        totalAttempted: 0
+    };
 
-    const handleLogout=()=>{
+
+    const handleLogout = () => {
         Alert.alert(
             "Confirm Logout",
             "Are you sure you want to logout?",
             [
-              {
-                text: "Cancel",
-                style: "cancel"
-              },
-              {
-                text: "Logout",
-                onPress: async() => {
-                    try {
-                        //signout the user
-                        await signOut(auth);
-                        //when user get signout the data is reset to zero
-                        setgameInfo(initialGameInfo)
-                        navigation.navigate('Profile');
-                        console.log("User logged out");
-                    } catch (error) {
-                        console.error("Error logging out: ", error);
-                    }
+                {
+                    text: "Cancel",
+                    style: "cancel"
                 },
-                style: "destructive"
-              }
+                {
+                    text: "Logout",
+                    onPress: async () => {
+                        try {
+                            //signout the user
+                            await signOut(auth);
+                            //when user get signout the data is reset to zero
+                            setgameInfo(initialGameInfo)
+                            navigation.navigate('Profile');
+                            console.log("User logged out");
+                        } catch (error) {
+                            console.error("Error logging out: ", error);
+                        }
+                    },
+                    style: "destructive"
+                }
             ]
-          );
-       
+        );
+
     }
 
-    const handleSignIn=()=>{
+    const handleSignIn = () => {
         navigation.navigate('Login')
     }
 
-    const handleBackArrow=()=>{
+    const handleBackArrow = () => {
         navigation.navigate('Profile');
     }
-    const handleAccount=()=>{
+    const handleAccount = () => {
         navigation.navigate('Account');
     }
-    const handleAbout=()=>{
+    const handleAbout = () => {
         navigation.navigate('About');
     }
-    const handleNotification=()=>{
+    const handleNotification = () => {
         navigation.navigate('Notifications');
     }
-    const handlePrivacy=()=>{
+    const handlePrivacy = () => {
         navigation.navigate('Privacy');
     }
 
-    const handleHelpSupport=()=>{
+    const handleHelpSupport = () => {
         navigation.navigate('HelpSupport');
     }
     return (
@@ -96,27 +96,42 @@ const initialGameInfo = {
                 {/* Account box */}
                 <View style={styles.accountBox}>
                     {/* Account Box Sections */}
-                    <TouchableWithoutFeedback onPress={handleAccount}>
-                        <View style={styles.accountBoxSections}>
-                            <IconV name='person-outline' size={24} style={{ color: 'white' }} ></IconV>
-                            <Text style={styles.sectionText}>Account</Text>
-                            <Icon name='angle-right' size={24} style={{ marginLeft: 'auto', color: 'white' }}></Icon>
-                        </View>
-                    </TouchableWithoutFeedback>
-                    <TouchableWithoutFeedback onPress={handleNotification}>
-                        <View style={styles.accountBoxSections}>
-                            <IconV name='notifications-outline' size={24} style={{ color: 'white' }}></IconV>
-                            <Text style={styles.sectionText}>Notifications</Text>
-                            <Icon name='angle-right' size={24} style={{ marginLeft: 'auto', color: 'white' }}></Icon>
-                        </View>
-                    </TouchableWithoutFeedback>
-                    <TouchableWithoutFeedback  onPress={handlePrivacy}>
-                        <View style={styles.accountBoxSections}>
-                            <IconF name='lock' size={24} style={{ color: 'white' }}></IconF>
-                            <Text style={styles.sectionText}>Privacy & Security</Text>
-                            <Icon name='angle-right' size={24} style={{ marginLeft: 'auto', color: 'white' }}></Icon>
-                        </View>
-                    </TouchableWithoutFeedback>
+
+                    {
+                        auth.currentUser ? (
+                            <TouchableWithoutFeedback onPress={handleAccount}>
+                                <View style={styles.accountBoxSections}>
+                                    <IconV name='person-outline' size={24} style={{ color: 'white' }} ></IconV>
+                                    <Text style={styles.sectionText}>Account</Text>
+                                    <Icon name='angle-right' size={24} style={{ marginLeft: 'auto', color: 'white' }}></Icon>
+                                </View>
+                            </TouchableWithoutFeedback>
+                        ) : null
+                    }
+
+                    {
+                        auth.currentUser ? (
+                            <TouchableWithoutFeedback onPress={handleNotification}>
+                                <View style={styles.accountBoxSections}>
+                                    <IconV name='notifications-outline' size={24} style={{ color: 'white' }}></IconV>
+                                    <Text style={styles.sectionText}>Notifications</Text>
+                                    <Icon name='angle-right' size={24} style={{ marginLeft: 'auto', color: 'white' }}></Icon>
+                                </View>
+                            </TouchableWithoutFeedback>
+                        ) : null
+                    }
+
+                    {auth.currentUser ? (
+                        <TouchableWithoutFeedback onPress={handlePrivacy}>
+                            <View style={styles.accountBoxSections}>
+                                <IconF name='lock' size={24} style={{ color: 'white' }}></IconF>
+                                <Text style={styles.sectionText}>Privacy & Security</Text>
+                                <Icon name='angle-right' size={24} style={{ marginLeft: 'auto', color: 'white' }}></Icon>
+                            </View>
+                        </TouchableWithoutFeedback>
+                    ) : null
+                    }
+
                     <TouchableWithoutFeedback onPress={handleHelpSupport}>
                         <View style={styles.accountBoxSections}>
                             <IconF5 name='hands-helping' size={24} style={{ color: 'white' }}></IconF5>
@@ -133,25 +148,25 @@ const initialGameInfo = {
                     </TouchableWithoutFeedback>
 
                     {
-                        auth.currentUser?(
+                        auth.currentUser ? (
                             <TouchableWithoutFeedback onPress={handleLogout}>
-                            <View style={styles.accountBoxSections}>
-                                <IconSimple name='logout' size={24} style={{ color: 'white' }}></IconSimple>
-                                <Text style={styles.sectionText}>Logout</Text>
-                                <Icon name='angle-right' size={24} style={{ marginLeft: 'auto', color: 'white' }}></Icon>
-                            </View>
-                        </TouchableWithoutFeedback>
-                        ):(
+                                <View style={styles.accountBoxSections}>
+                                    <IconSimple name='logout' size={24} style={{ color: 'white' }}></IconSimple>
+                                    <Text style={styles.sectionText}>Logout</Text>
+                                    <Icon name='angle-right' size={24} style={{ marginLeft: 'auto', color: 'white' }}></Icon>
+                                </View>
+                            </TouchableWithoutFeedback>
+                        ) : (
                             <TouchableWithoutFeedback onPress={handleSignIn}>
-                            <View style={styles.accountBoxSections}>
-                                <IconAnt name='login' size={24} style={{ color: 'white' }}></IconAnt>
-                                <Text style={styles.sectionText}>Sign In</Text>
-                                <Icon name='angle-right' size={24} style={{ marginLeft: 'auto', color: 'white' }}></Icon>
-                            </View>
-                        </TouchableWithoutFeedback>
+                                <View style={styles.accountBoxSections}>
+                                    <IconAnt name='login' size={24} style={{ color: 'white' }}></IconAnt>
+                                    <Text style={styles.sectionText}>Sign In</Text>
+                                    <Icon name='angle-right' size={24} style={{ marginLeft: 'auto', color: 'white' }}></Icon>
+                                </View>
+                            </TouchableWithoutFeedback>
                         )
                     }
-           
+
                 </View>
             </View>
         </SafeAreaView>
