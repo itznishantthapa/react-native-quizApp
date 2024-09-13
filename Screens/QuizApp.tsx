@@ -1,10 +1,25 @@
-// import React, { useEffect, useState } from "react";
+import React, { useEffect, useState,useContext } from "react";
 import { View, Text, Alert, TouchableOpacity, StyleSheet, ImageBackground } from "react-native";
 import { StatusBar } from "expo-status-bar";
 import { styles } from '../style';
+import { MyContext } from '../AppProvider';  // Import context
+import { saveLocalData,getLocalData } from '../localStorage';
+import { get } from "react-native/Libraries/TurboModule/TurboModuleRegistry";
 
 
-const QuizApp = ({ question, options, handleOptionClick, counter,isOver, fetchQuestion ,noOfQuestions}) => {
+const QuizApp = ({ question, options,correctAns,categories, handleOptionClick, counter,isOver, fetchQuestion ,noOfQuestions}) => {
+    const { addQuizAnswer } = useContext(MyContext);
+
+    //Whenever i clicked the options, the list of the question and choosed option and correct answer list should be forwarded to the QuestionsList screen so that i can displaed the solve question and answer there.
+     const handleClickForDualScreen = (selectedOption) => {
+        handleOptionClick(selectedOption);
+        addQuizAnswer(question, selectedOption, correctAns,categories);
+     }
+
+
+  
+     
+
 
     return (
         <View style={{ flex: 1 }}>
@@ -19,7 +34,7 @@ const QuizApp = ({ question, options, handleOptionClick, counter,isOver, fetchQu
                             <TouchableOpacity
                                 key={index}
                                 style={styles.optionButton}
-                                onPress={() => handleOptionClick(option)}
+                                onPress={() => handleClickForDualScreen(option)}
                             >
                                 <Text style={styles.optionText}>{option}</Text>
                             </TouchableOpacity>
