@@ -23,35 +23,12 @@ import IconPerson from 'react-native-vector-icons/Ionicons'
 
 
 
+export default function Profile({ navigation,gameInfo,setgameInfo }) {
+  // const {userData,setUserData}=useContext(MyContext);
+  const {userData,imageUri,setImageUri,signedUpUsers}=useContext(MyContext);
+  // const {gameInfo}=useContext(MyContext);
 
 
-
-type GameInfo = {
-  gamePlayed: number;
-  points: number;
-  totalAttempted: number;
-  worldRank: string;
-};
-
-type UserData = {
-  id: string;
-  fullName: string;
-  email: string;
-  profile?: string;
-  gameInfo?: GameInfo; // Make gameInfo optional in case some users don't have this field
-};
-
-
-
-
-
-
-
-export default function Profile({ navigation, gameInfo, setgameInfo }) {
-  const {userData,setUserData}=useContext(MyContext);
-
-  const [imageUri, setImageUri] = useState(null);
-  const [signedUpUsers, setsignedUpUsers] = useState([]);
 
   // Function to handle selecting an image
   const pickImage = async () => {
@@ -76,80 +53,26 @@ export default function Profile({ navigation, gameInfo, setgameInfo }) {
   };
   // ----------------------------------------------------------------------------------------------------
 
-  // Only proceed with Firebase operations if the user is authenticated
+
+    // Function to fetch game info from Firestore 
+    const fetchGameInfo = async () => {
+      try {
+        const userAllData = await getFromFirebase();  // Fetch complete user data
+        const userAllDataInObj = userAllData.data();  // Extract user data object
+        if (userAllDataInObj && userAllDataInObj.gameInfo) {
+          setgameInfo(userAllDataInObj.gameInfo);  // Set game info state
+        }
+      } catch (error) {
+        Alert.alert("Error", "Something went wrong fetching game info.");
+      }
+    };
+
+
   useEffect(() => {
-    if (auth.currentUser) {
-      fetchUserData();
       fetchGameInfo();
-      fetchProfileImage();
-      fetchUsers();
-    }
-  }, [auth.currentUser]);
-
-
-  // Fetching user data from Firestore
-  const fetchUserData = async () => {
-    try {
-      const userDoc = await getFromFirebase();
-      const data = userDoc.data();
-      if (data) {
-        setUserData({ fullName: data.fullName, email: data.email });
-      }
-    } catch (error) {
-      Alert.alert("Error", "Something went wrong.");
-    }
-  };
-
-  // Fetching game information from Firestore
-  const fetchGameInfo = async () => {
-    try {
-      const userAllData = await getFromFirebase();
-      const userAllDataInObj = userAllData.data();
-      if (userAllDataInObj && userAllDataInObj.gameInfo) {
-        setgameInfo(userAllDataInObj.gameInfo);
-      }
-    } catch (error) {
-      Alert.alert("Error", "Something went wrong.");
-    }
-  };
-
-  // Fetching user's profile image from Firestore
-  const fetchProfileImage = async () => {
-    try {
-      const userAllData = await getFromFirebase();
-      const userAllDataInObj = userAllData.data();
-      if (userAllDataInObj && userAllDataInObj.profile) {
-        setImageUri(userAllDataInObj.profile);
-      }
-    } catch (error) {
-      Alert.alert("Error", "Something went wrong.");
-    }
-  };
-
-  // Fetching list of signed up users from Firestore
-  const fetchUsers = async () => {
-    try {
-      const querySnapshot = await getDocs(collection(firestore, 'users'));
-      
-      // Map users data and include their ID
-      const usersData = querySnapshot.docs.map(doc => ({
-        id: doc.id,
-        ...doc.data()as Omit<UserData, 'id'>,   //type assertion for typescripts
-      }));
-
-
-      // Sort users by gameInfo.points in descending order (highest points first)
-      const sortedUsers = usersData.sort((a, b) => {
-        const pointsA = a.gameInfo?.points || 0;  // Handle undefined gameInfo
-        const pointsB = b.gameInfo?.points || 0;
-        return pointsB - pointsA;  // Sort by points in descending order
-      });
+  }, [])
   
-      setsignedUpUsers(sortedUsers); // Update state with sorted users
-    } catch (error) {
-      Alert.alert("Error", "Something went wrong.");
-    }
-  };
+  
 
 
   // Updating game info in Firestore

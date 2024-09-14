@@ -387,7 +387,8 @@ export const  styles = StyleSheet.create({
         alignItems:'center',
         // borderWidth:2,
         borderColor:'grey',
-        backgroundColor:'black'
+        backgroundColor:'grey',
+        elevation:2
 
       }
     

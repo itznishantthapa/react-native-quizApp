@@ -1,0 +1,183 @@
+[
+    {
+      "category": "software engineering",
+      "id": "001",
+      "correctAnswer": "Agile",
+      "incorrectAnswers": ["Waterfall", "Spiral", "V-Model"],
+      "question": {
+        "text": "Which software development methodology emphasizes iterative development and flexibility to changing requirements?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "002",
+      "correctAnswer": "Requirement Gathering",
+      "incorrectAnswers": ["Coding", "Testing", "Deployment"],
+      "question": {
+        "text": "What is the first phase of the Software Development Life Cycle (SDLC)?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "003",
+      "correctAnswer": "Design Patterns",
+      "incorrectAnswers": ["Data Structures", "Algorithms", "Frameworks"],
+      "question": {
+        "text": "What refers to the reusable solutions to common problems in software design?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "004",
+      "correctAnswer": "Unit Testing",
+      "incorrectAnswers": ["Integration Testing", "System Testing", "Acceptance Testing"],
+      "question": {
+        "text": "Which type of testing focuses on verifying individual components of the software?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "005",
+      "correctAnswer": "Version Control",
+      "incorrectAnswers": ["Project Management", "Documentation", "Deployment"],
+      "question": {
+        "text": "What is the process of managing changes to source code over time?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "006",
+      "correctAnswer": "Encapsulation",
+      "incorrectAnswers": ["Abstraction", "Inheritance", "Polymorphism"],
+      "question": {
+        "text": "Which object-oriented principle refers to bundling data and methods within a single unit?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "007",
+      "correctAnswer": "Scrum",
+      "incorrectAnswers": ["Kanban", "Extreme Programming", "Lean"],
+      "question": {
+        "text": "Which Agile framework uses sprints, a product backlog, and daily stand-up meetings?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "008",
+      "correctAnswer": "Product Owner",
+      "incorrectAnswers": ["Scrum Master", "Developer", "Tester"],
+      "question": {
+        "text": "In the Scrum framework, who is responsible for defining the product backlog?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "009",
+      "correctAnswer": "Continuous Integration",
+      "incorrectAnswers": ["Regression Testing", "Static Analysis", "Feature Testing"],
+      "question": {
+        "text": "Which practice involves merging code changes frequently to detect integration issues early?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "010",
+      "correctAnswer": "UML",
+      "incorrectAnswers": ["XML", "JSON", "HTML"],
+      "question": {
+        "text": "What is the standard modeling language used to visualize the design of a software system?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "011",
+      "correctAnswer": "Technical Debt",
+      "incorrectAnswers": ["Project Cost", "System Lag", "Code Refactoring"],
+      "question": {
+        "text": "What refers to the implied cost of additional rework caused by choosing an easier solution now instead of using a better approach?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "012",
+      "correctAnswer": "Waterfall",
+      "incorrectAnswers": ["Agile", "Scrum", "Kanban"],
+      "question": {
+        "text": "Which traditional software development model follows a sequential design process?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "013",
+      "correctAnswer": "Regression Testing",
+      "incorrectAnswers": ["Unit Testing", "Load Testing", "System Testing"],
+      "question": {
+        "text": "Which type of testing ensures that new code changes do not adversely affect the existing functionality?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "014",
+      "correctAnswer": "Microservices",
+      "incorrectAnswers": ["Monolithic", "Layered Architecture", "Client-Server"],
+      "question": {
+        "text": "Which architectural style structures an application as a collection of loosely coupled services?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "015",
+      "correctAnswer": "Refactoring",
+      "incorrectAnswers": ["Debugging", "Deploying", "Documenting"],
+      "question": {
+        "text": "What is the process of restructuring existing code without changing its external behavior?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "016",
+      "correctAnswer": "Technical Specification",
+      "incorrectAnswers": ["User Story", "Test Plan", "Product Roadmap"],
+      "question": {
+        "text": "What document describes the technical aspects and architecture of the system to be built?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "017",
+      "correctAnswer": "DevOps",
+      "incorrectAnswers": ["Waterfall", "Agile", "Lean"],
+      "question": {
+        "text": "Which approach integrates development and operations to enable continuous delivery and automation?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "018",
+      "correctAnswer": "Polymorphism",
+      "incorrectAnswers": ["Encapsulation", "Abstraction", "Inheritance"],
+      "question": {
+        "text": "Which object-oriented concept allows objects to take on many forms based on context?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "019",
+      "correctAnswer": "Sprint Retrospective",
+      "incorrectAnswers": ["Sprint Planning", "Daily Scrum", "Product Backlog Refinement"],
+      "question": {
+        "text": "Which Scrum event focuses on inspecting the team’s performance and identifying improvements?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "020",
+      "correctAnswer": "Modularity",
+      "incorrectAnswers": ["Scalability", "Maintainability", "Extensibility"],
+      "question": {
+        "text": "Which software design principle involves dividing a system into smaller parts to improve manageability?"
+      }
+    }
+  ]
+  
