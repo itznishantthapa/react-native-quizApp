@@ -50,9 +50,9 @@ export default function App() {
   const [question, setQuestion] = useState(null);
   const [options, setOptions] = useState([]);
   const [correctAns, setCorrectAns] = useState(null);
-  const [isOver, setisOver] = useState(false)
-  const [questionAmount, setQuestionAmount] = useState(30)
-  const [categories, setcategories] = useState('');
+  const [isOver, setisOver] = useState(false);
+  const [questionAmount, setQuestionAmount] = useState(30);
+
 
 
 
@@ -260,7 +260,7 @@ export default function App() {
 
 
           <Stack.Screen name="Quiz">
-            {props => <QuizApp {...props} question={question} options={options} correctAns={correctAns} categories={categories} counter={counter} isOver={isOver} handleOptionClick={handleOptionClick} fetchQuestion={fetchQuestion} noOfQuestions={questionAmount} />}
+            {props => <QuizApp {...props} question={question} options={options} correctAns={correctAns} counter={counter} isOver={isOver} handleOptionClick={handleOptionClick} fetchQuestion={fetchQuestion} noOfQuestions={questionAmount} />}
           </Stack.Screen>
           <Stack.Screen name="Tabbar">
             {props => <Tabbar {...props} question={question} options={options} counter={counter} isOver={isOver} handleOptionClick={handleOptionClick} fetchQuestion={fetchQuestion} gameInfo={gameInfo} setgameInfo={setgameInfo} setQuestionAmount={setQuestionAmount} />}

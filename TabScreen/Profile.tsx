@@ -16,7 +16,8 @@ import { collection, getDocs } from 'firebase/firestore';
 import { useFocusEffect } from '@react-navigation/native';
 import * as ImagePicker from 'expo-image-picker';
 import { fileUploadToFirebaseStorage, getFromFirebase, getLocally, updateToFirebase } from '../db';
-import {MyContext} from '../AppProvider'
+import {MyContext} from '../AppProvider';
+import IconPerson from 'react-native-vector-icons/Ionicons'
 
 
 
@@ -271,6 +272,7 @@ export default function Profile({ navigation, gameInfo, setgameInfo }) {
                 )):''
               
               }
+
               </View>
             </ScrollView>
 

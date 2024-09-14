@@ -12,7 +12,7 @@ export const AppProvider = ({ children }) => {
 
 
    // Function to add a new answer to the quizData
-  async function addQuizAnswer(question, selectedOption, correctAns,categories) {
+  async function addQuizAnswer(question, selectedOption, correctAns) {
     try{
       const existingData =await getLocalData('quizData');
       let questionAnswersArray = [];
@@ -21,7 +21,7 @@ export const AppProvider = ({ children }) => {
       }
   
       const updateQuestionAnswersArray = [...questionAnswersArray, { question, selectedOption, correctAns }];
-       saveLocalData(categories,updateQuestionAnswersArray);
+       saveLocalData('quizData',updateQuestionAnswersArray);
     }catch(error){
          console.log('Error happened.')
          console.error(error)
