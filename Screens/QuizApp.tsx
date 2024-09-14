@@ -7,14 +7,16 @@ import { saveLocalData,getLocalData } from '../localStorage';
 import { get } from "react-native/Libraries/TurboModule/TurboModuleRegistry";
 
 
-const QuizApp = ({ question, options,correctAns, handleOptionClick, counter,isOver, fetchQuestion ,noOfQuestions}) => {
+const QuizApp = ({ question, options,categories,correctAns, handleOptionClick, counter,isOver, fetchQuestion ,noOfQuestions}) => {
     const { addQuizAnswer } = useContext(MyContext);
 
     //Whenever i clicked the options, the list of the question and choosed option and correct answer list should be forwarded to the QuestionsList screen so that i can displaed the solve question and answer there.
      const handleClickForDualScreen = (selectedOption: any) => {
         handleOptionClick(selectedOption);
-        addQuizAnswer(question, selectedOption, correctAns);
+        addQuizAnswer(question, selectedOption, correctAns,categories);
      }
+
+     
 
 
   

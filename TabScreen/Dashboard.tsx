@@ -4,13 +4,6 @@ import { StatusBar } from 'expo-status-bar'
 import Icon from 'react-native-vector-icons/FontAwesome';
 import IconEntypo from 'react-native-vector-icons/Entypo';
 import IconAnt from 'react-native-vector-icons/AntDesign';
-// import cosmos from '../assets/cosmos.jpg'
-// import lady from '../assets/lady.jpeg'
-// import console from '../assets/console.jpg'
-// import hills from '../assets/hills.png'
-import pixels from '../assets/pixels.jpeg'
-import clock from '../assets/clock.jpg'
-import database from '../assets/database.jpg'
 import programming from '../assets/programming.jpg'
 import cloudComputing from '../assets/coludComputing.jpg'
 import networking from '../assets/networking.jpeg'
