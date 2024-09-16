@@ -105,7 +105,6 @@ export default function Dashboard({ navigation, fetchQuestion, setQuestionAmount
 
                     <PopUp
                         isVisible={isModalVisible}
-
                         handleSetQuestions={handleSetQuestions}
                         setModalVisible={setModalVisible}
                     />

@@ -38,11 +38,6 @@ const Privacy = ({navigation}) => {
                     </TouchableWithoutFeedback>
                 </View>
 
-
-
-
-
-
             </View>
         </SafeAreaView>
     )

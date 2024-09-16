@@ -58,7 +58,7 @@ export default function Profile({ navigation,gameInfo,setgameInfo }) {
     const fetchGameInfo = async () => {
       try {
         const userAllData = await getFromFirebase();  // Fetch complete user data
-        const userAllDataInObj = userAllData.data();  // Extract user data object
+        const userAllDataInObj = userAllData?.data();  // Extract user data object
         if (userAllDataInObj && userAllDataInObj.gameInfo) {
           setgameInfo(userAllDataInObj.gameInfo);  // Set game info state
         }
@@ -69,8 +69,12 @@ export default function Profile({ navigation,gameInfo,setgameInfo }) {
 
 
   useEffect(() => {
+    if(auth.currentUser){
       fetchGameInfo();
-  }, [])
+    }else{
+      console.log('No user signed in');
+    }
+  }, [gameInfo?.gamePlayed]);
   
   
 
@@ -83,7 +87,7 @@ export default function Profile({ navigation,gameInfo,setgameInfo }) {
       };
       uploadGameInfo();
     }
-  }, [gameInfo.gamePlayed]);
+  }, [auth.currentUser]);
 
   // Navigation handlers
   const handleGear = () => {

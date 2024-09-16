@@ -16,12 +16,6 @@ const QuizApp = ({ question, options,categories,correctAns, handleOptionClick, c
         addQuizAnswer(question, selectedOption, correctAns,categories);
      }
 
-     
-
-
-  
-     
-
 
     return (
         <View style={{ flex: 1 }}>
@@ -52,9 +46,7 @@ const QuizApp = ({ question, options,categories,correctAns, handleOptionClick, c
                             <Text style={styles.outlineButtonText}>Restart</Text>
                         </TouchableOpacity>
                     )}
-                    </View>
-
-                    
+                    </View>   
             </View>
         </View>
 

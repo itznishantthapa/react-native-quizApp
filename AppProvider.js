@@ -3,7 +3,7 @@ import { saveLocalData, getLocalData } from './localStorage';
 import { auth,firestore } from './firebaseConfig';
 import { getFromFirebase } from './db';
 import { Alert } from 'react-native';
-import { getDocs, collection } from 'firebase/firestore'; // Make sure this is imported correctly
+import { getDocs, collection } from 'firebase/firestore'; 
 
 
 // Create the context
