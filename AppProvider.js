@@ -1,5 +1,5 @@
 import React, { useState, createContext, useEffect } from 'react';
-import { saveLocalData, getLocalData } from './localStorage';
+import { saveLocalData, getLocalData ,deleteLocalData} from './localStorage';
 import { auth,firestore } from './firebaseConfig';
 import { getFromFirebase } from './db';
 import { Alert } from 'react-native';
@@ -16,7 +16,14 @@ export const AppProvider = ({ children }) => {
   const [QuestionAnswer, setQuestionAnswer] = useState([]);  // State for quiz data
   const [imageUri, setImageUri] = useState(null);  // State for profile image URI
   const [signedUpUsers, setsignedUpUsers] = useState([]);  // State for signed-up users
+  const [topic, setTopic] = useState({database_cloud:'Database',programming_dsa:'Programming',networking_softEng:'Networking',os_aiMl:'Operating System'});
 
+
+  // deleteLocalData('quizData');
+  // deleteLocalData('database');
+  // deleteLocalData('programming');
+  // deleteLocalData('networking');
+  // deleteLocalData('cloud computing');
 
   // Function to add a new answer to the quizData
   const addQuizAnswer = async (question, selectedOption, correctAns, categories) => {
@@ -116,7 +123,8 @@ export const AppProvider = ({ children }) => {
     <MyContext.Provider value={{
       userData, setUserData, addQuizAnswer, getQuizData, 
       QuestionAnswer, imageUri, setImageUri, 
-      signedUpUsers
+      signedUpUsers,
+      topic,setTopic
     }}>
       {children}
     </MyContext.Provider>

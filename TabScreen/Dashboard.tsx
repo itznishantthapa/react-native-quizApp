@@ -1,20 +1,28 @@
 import { ScrollView, StyleSheet, Text, TextInput, View, ImageBackground, Touchable, TouchableOpacity } from 'react-native'
-import React, { useState } from 'react'
+import React, { useState,useContext } from 'react'
 import { StatusBar } from 'expo-status-bar'
 import Icon from 'react-native-vector-icons/FontAwesome';
 import IconEntypo from 'react-native-vector-icons/Entypo';
 import IconAnt from 'react-native-vector-icons/AntDesign';
-import programming from '../assets/programming.jpg'
-import cloudComputing from '../assets/coludComputing.jpg'
-import networking from '../assets/networking.jpeg'
-import darkDataBase from '../assets/darkDatabase.jpg'
+import Fdatabase from '../assets/Fdatabase.png'
+import Fhardware from '../assets/Fhardware3.jpg'
+import Fprogramming from '../assets/Fprogramming.jpg'
+import Fdsa from '../assets/Fdsa.png'
+import Fnetwork from '../assets/Fnetwork.png'
+import FsoftwareEngineering from '../assets/Fengineering1.jpg'
+import FoperatingSystem from '../assets/Fos.png'
+import FaiML from '../assets/Fai.jpg'
 
 import { styles } from '../style'
 import { useRef } from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import PopUp from '../Screens/PopUp';
+import { MyContext } from '../AppProvider';
 
 export default function Dashboard({ navigation, fetchQuestion, setQuestionAmount }) {
+   
+    const {topic,setTopic}=useContext(MyContext);
+
 
     const [isModalVisible, setModalVisible] = useState(false);
     const handleSetQuestions = (questionNo: number) => {
@@ -29,7 +37,7 @@ export default function Dashboard({ navigation, fetchQuestion, setQuestionAmount
 
     const goToQuiz = (category: string) => {
         fetchQuestion(category);
-        navigation.navigate('Quiz'); // Pass category as a parameter
+        navigation.navigate('Quiz');
     }
 
     const handleSearch = () => {
@@ -54,27 +62,27 @@ export default function Dashboard({ navigation, fetchQuestion, setQuestionAmount
 
                     <View style={styles.boxContainer}>
 
-                        <TouchableOpacity style={{ width: '100%', flex: 1, justifyContent: 'center', alignItems: 'center' }} onPress={() => goToQuiz('database')} >
-                            <ImageBackground source={darkDataBase} resizeMode="cover" imageStyle={{ borderRadius: 20, width: '100%' }} style={styles.boxes}>
-                                <Text style={styles.textStyle}>Database</Text>
+                        <TouchableOpacity style={{ width: '100%', flex: 1, justifyContent: 'center', alignItems: 'center' }} onPress={() => goToQuiz(topic.database_cloud)} >
+                            <ImageBackground source={topic.database_cloud==='Database'?Fdatabase:Fhardware} resizeMode="cover" imageStyle={{ borderRadius: 20, width: '100%' }} style={styles.boxes}>
+                                <Text style={styles.textStyle}>{topic.database_cloud}</Text>
                             </ImageBackground>
                         </TouchableOpacity>
 
-                        <TouchableOpacity style={{ width: '100%', flex: 1, justifyContent: 'center', alignItems: 'center' }} onPress={() => goToQuiz('react')}>
-                            <ImageBackground source={programming} resizeMode="cover" imageStyle={{ borderRadius: 20, width: '100%' }} style={styles.boxes}>
-                                <Text style={styles.textStyle}>Programming</Text>
+                        <TouchableOpacity style={{ width: '100%', flex: 1, justifyContent: 'center', alignItems: 'center' }} onPress={() => goToQuiz(topic.programming_dsa)}>
+                            <ImageBackground source={topic.programming_dsa==='Programming'? Fprogramming:Fdsa} resizeMode="cover" imageStyle={{ borderRadius: 20, width: '100%' }} style={styles.boxes}>
+                                <Text style={styles.textStyle}>{topic.programming_dsa}</Text>
                             </ImageBackground>
                         </TouchableOpacity>
 
-                        <TouchableOpacity style={{ width: '100%', flex: 1, justifyContent: 'center', alignItems: 'center' }} onPress={() => goToQuiz('networking')}>
-                            <ImageBackground source={networking} resizeMode="cover" imageStyle={{ borderRadius: 20, width: '100%' }} style={styles.boxes}>
-                                <Text style={styles.textStyle}>Networking & OS</Text>
+                        <TouchableOpacity style={{ width: '100%', flex: 1, justifyContent: 'center', alignItems: 'center' }} onPress={() => goToQuiz(topic.networking_softEng)}>
+                            <ImageBackground source={topic.networking_softEng==='Networking'? Fnetwork:FsoftwareEngineering} resizeMode="cover" imageStyle={{ borderRadius: 20, width: '100%' }} style={styles.boxes}>
+                                <Text style={styles.textStyle}>{topic.networking_softEng}</Text>
                             </ImageBackground>
                         </TouchableOpacity>
 
-                        <TouchableOpacity style={{ width: '100%', flex: 1, justifyContent: 'center', alignItems: 'center' }} onPress={() => goToQuiz('computing')}>
-                            <ImageBackground source={cloudComputing} resizeMode="cover" imageStyle={{ borderRadius: 20, width: '100%' }} style={styles.boxes}>
-                                <Text style={styles.textStyle}>Cloud Computing</Text>
+                        <TouchableOpacity style={{ width: '100%', flex: 1, justifyContent: 'center', alignItems: 'center' }} onPress={() => goToQuiz(topic.os_aiMl)}>
+                            <ImageBackground source={topic.os_aiMl==='Operating System'?FoperatingSystem:FaiML} resizeMode="cover" imageStyle={{ borderRadius: 20, width: '100%' }} style={styles.boxes}>
+                                <Text style={styles.textStyle}>{topic.os_aiMl}</Text>
                             </ImageBackground>
                         </TouchableOpacity>
 
@@ -107,6 +115,7 @@ export default function Dashboard({ navigation, fetchQuestion, setQuestionAmount
                         isVisible={isModalVisible}
                         handleSetQuestions={handleSetQuestions}
                         setModalVisible={setModalVisible}
+                        setTopic={setTopic}
                     />
 
 

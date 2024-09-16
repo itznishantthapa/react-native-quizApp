@@ -121,19 +121,34 @@ export default function App() {
 
     let questionData;
     switch (category) {
-      case 'database':
+      case 'Database':
         questionData = require('./data/database.json');
-        // questionData = require('./data/nepali.json');
         break;
-      case 'react':
+      case 'Hardware':
+        questionData = require('./data/computing.json'); //all set, just need json nowwwwwww.
+        break;
+
+      case 'Programming':
         questionData = require('./data/react.json');
         break;
-      case 'networking':
+      case 'DSA':
+        questionData = require('./data/react.json');
+        break;
+
+      case 'Networking':
         questionData = require('./data/networking.json');
         break;
-      case 'computing':
-        questionData = require('./data/computing.json');
+      case 'Software Engineering':
+        questionData = require('./data/networking.json');
         break;
+
+      case 'Operating System':
+        questionData = require('./data/networking.json');
+        break;
+      case 'AI & ML':
+        questionData = require('./data/networking.json');
+        break;
+
       default:
         Alert.alert('Error', 'Category not found.');
         return;
@@ -177,7 +192,7 @@ export default function App() {
     setQuestion(data[counter].question.text);
     setOptions(options);
     setCorrectAns(data[counter].correctAnswer);
-    setcategories(data[counter].category);
+    setcategories((data[counter].category).toLowerCase());
     
   };
 

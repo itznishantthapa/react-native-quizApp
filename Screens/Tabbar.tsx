@@ -3,8 +3,7 @@ import React from 'react'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import FaIcon from 'react-native-vector-icons/FontAwesome';
 import Profile from '../TabScreen/Profile';
-import Rapid from '../TabScreen/Rapid';
-import Search from '../TabScreen/Search';
+import Chart from '../TabScreen/Chart';
 import Dashboard from '../TabScreen/Dashboard';
 
 
@@ -32,11 +31,9 @@ export default function Tabbar({question, options, handleOptionClick, counter,is
                     }
                     else if (route.name === 'Profile') {
                         iconName = 'user';
-                    } else if (route.name === 'Rapid') {
-                        iconName = 'bolt';
-                    } else if (route.name === 'Search') {
-                        iconName = 'search';
-                    }
+                    } else if (route.name === 'Chart') {
+                        iconName = 'bar-chart';
+                    } 
                     return <FaIcon name={iconName} size={size} color={color} />;
                 },
                 tabBarActiveTintColor: 'tomato',
@@ -53,11 +50,8 @@ export default function Tabbar({question, options, handleOptionClick, counter,is
             <Tab.Screen name='Dashboard'>
                 {props=> <Dashboard {...props} fetchQuestion={fetchQuestion} setQuestionAmount={setQuestionAmount} />}
             </Tab.Screen>
-
-            <Tab.Screen name='Search' component={Search}>
-            </Tab.Screen>
-            <Tab.Screen name='Rapid'  >
-                {props => <Rapid {...props} question={question} options={options} counter={counter} isOver={isOver} handleOptionClick={handleOptionClick} />}
+            <Tab.Screen name='Chart'  >
+                {props => <Chart {...props} question={question} options={options} counter={counter} isOver={isOver} handleOptionClick={handleOptionClick} />}
             </Tab.Screen>
             <Tab.Screen name='Profile'>
             {props => <Profile {...props}  gameInfo={gameInfo} setgameInfo={setgameInfo}  />}

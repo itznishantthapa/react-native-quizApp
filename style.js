@@ -90,11 +90,16 @@ export const  styles = StyleSheet.create({
 
     },
     textStyle: {
-        color: '#ffffff',
-        fontWeight: 'bold',
-        fontSize: 30,
-        marginLeft: 15,
-        marginBottom: 15
+      color: '#ffffff',
+      fontWeight: 'bold',
+      fontSize: 30,
+      marginLeft: 15,
+      marginBottom: 15,
+      padding: 5,
+      backgroundColor: 'rgba(0, 0, 0, 0.5)',  // Semi-transparent black
+      // backgroundColor: 'rgba(0, 0, 255, 0.3)',  // Option for bluish background
+      borderRadius: 10
+        
     },
     textStyle2: {
         color: 'white',

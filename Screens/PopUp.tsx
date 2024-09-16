@@ -2,17 +2,17 @@ import { View, Text, TouchableOpacity, Modal, ImageBackground, TouchableWithoutF
 import React, { useState } from 'react';
 import { styles } from '../style';
 
-const PopUp = ({ isVisible, handleSetQuestions, setModalVisible }) => {
+const PopUp = ({ isVisible, handleSetQuestions, setModalVisible,setTopic }) => {
   // State to track active question and topics
   const [selectedQuestion, setSelectedQuestion] = useState(null);
   const [activeTopics, setActiveTopics] = useState({
-    database: false,
-    cloudComputing: false,
-    programming: false,
+    database: true,
+    hardware: false,
+    programming: true,
     dsa: false,
-    networking: false,
+    networking: true,
     softwareEngineering: false,
-    operatingSystem: false,
+    operatingSystem: true,
     aiML: false
   });
 
@@ -23,7 +23,8 @@ const PopUp = ({ isVisible, handleSetQuestions, setModalVisible }) => {
   };
 
   // Function to handle selecting a topic
-  const handleTopicSelect = (topic) => {
+  const handleTopicSelect = (topic: string) => {
+    setTopicInDashboard(topic);
     setActiveTopics((prevState) => {
       let newState = { ...prevState };
 
@@ -31,10 +32,10 @@ const PopUp = ({ isVisible, handleSetQuestions, setModalVisible }) => {
       switch (topic) {
         case 'database':
           newState.database = true;
-          newState.cloudComputing = false;
+          newState.hardware = false;
           break;
-        case 'cloudComputing':
-          newState.cloudComputing = true;
+        case 'hardware':
+          newState.hardware = true;
           newState.database = false;
           break;
         case 'programming':
@@ -66,6 +67,36 @@ const PopUp = ({ isVisible, handleSetQuestions, setModalVisible }) => {
     });
   };
 
+
+  const setTopicInDashboard =(topic)=>{
+    switch (topic) {
+      case 'database':
+        setTopic(prevData=>({...prevData,database_cloud:'Database'}));
+        break;
+      case 'hardware':
+        setTopic(prevData=>({...prevData,database_cloud:'Hardware'}));
+        break;
+      case 'programming':
+        setTopic(prevData=>({...prevData,programming_dsa:'Programming'}));
+        break;
+      case 'dsa':
+        setTopic(prevData=>({...prevData,programming_dsa:'DSA'}));
+        break;
+      case 'networking':
+        setTopic(prevData=>({...prevData,networking_softEng:'Networking'}));
+        break;
+      case 'softwareEngineering':
+        setTopic(prevData=>({...prevData,networking_softEng:'Software Engineering'}));
+        break;
+      case 'operatingSystem':
+        setTopic(prevData=>({...prevData,os_aiMl:'Operating System'}));
+        break;
+      case 'aiML':
+        setTopic(prevData=>({...prevData,os_aiMl:'AI & ML'}));
+        break;
+    }
+  }
+
   return (
     <Modal transparent={true} animationType="fade" visible={isVisible}>
       <TouchableWithoutFeedback onPress={() => setModalVisible(false)}>
@@ -82,7 +113,7 @@ const PopUp = ({ isVisible, handleSetQuestions, setModalVisible }) => {
                   key={num}
                   style={[
                     styles.questionsAttempt,
-                    selectedQuestion === num && { backgroundColor: 'green' }
+                    selectedQuestion === num && { backgroundColor: 'green' } 
                   ]}
                   onPress={() => handleQuestionSelect(num)}
                 >
@@ -106,17 +137,17 @@ const PopUp = ({ isVisible, handleSetQuestions, setModalVisible }) => {
                   Database
                 </Text>
               </TouchableWithoutFeedback>
-              <TouchableWithoutFeedback onPress={() => handleTopicSelect('cloudComputing')}>
+              <TouchableWithoutFeedback onPress={() => handleTopicSelect('hardware')}>
                 <Text
                   style={{
-                    backgroundColor: activeTopics.cloudComputing ? 'green' : 'grey',
+                    backgroundColor: activeTopics.hardware ? 'green' : 'grey',
                     padding: 10,
                     borderRadius: 20,
                     fontWeight: 'bold',
                     color: 'white'
                   }}
                 >
-                  Cloud Computing
+                  Hardware
                 </Text>
               </TouchableWithoutFeedback>
             </View>
