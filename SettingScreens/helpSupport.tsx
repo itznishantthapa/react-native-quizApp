@@ -54,7 +54,7 @@ const HelpSupport = ({ navigation }) => {
                 </View>
 
                 <View style={styles.deleteContainer}>
-                    <TextInput placeholder='please let us know your issue...' value={message} onChangeText={setmessage} placeholderTextColor='black' multiline={true} style={styles.deleteInfoBox}>
+                    <TextInput placeholder='please let us know your issue...' value={message} onChangeText={setmessage} placeholderTextColor='black' multiline={true} style={[styles.deleteInfoBox,{height:'30%'}]}>
                     </TextInput>
                     <TouchableOpacity style={styles.outlineButton} onPress={handleSubmition}>
                     <Text style={styles.outlineButtonText}>Submit</Text>

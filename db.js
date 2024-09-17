@@ -1,7 +1,7 @@
 import { Alert } from 'react-native';
 import { auth, firestore } from './firebaseConfig'; 
-import { doc, getDoc, updateDoc, collection ,getDocs,setDoc } from 'firebase/firestore';
-import { createUserWithEmailAndPassword,signInWithEmailAndPassword } from 'firebase/auth';
+import { doc, getDoc, updateDoc, collection ,getDocs,setDoc,deleteDoc } from 'firebase/firestore';
+import { createUserWithEmailAndPassword,signInWithEmailAndPassword,deleteUser, reauthenticateWithCredential, EmailAuthProvider } from 'firebase/auth';
 
 //For firebase storage to store the files like {image,files,video etc}
 import { getStorage, ref, uploadBytes, getDownloadURL } from 'firebase/storage';
@@ -105,6 +105,40 @@ export async function updateToFirebase(dataToBeUpdated) {
 
 }
 
+// Function to re-authenticate the user
+async function reauthenticateUser(password) {
+    const user = auth.currentUser;
+    if (user && user.email) {
+        const credential = EmailAuthProvider.credential(user.email, password);
+        await reauthenticateWithCredential(user, credential);
+    }
+}
+
+
+export async function deleteUserAccount(password) {
+    try {
+        const user = auth.currentUser;
+        if (user) {
+            await reauthenticateUser(password);
+     
+            const id = user.uid;
+            const userRef = doc(firestore, 'users', id);
+
+            // Delete user data from Firestore
+            await deleteDoc(userRef);
+            console.log('User data has been deleted from Firestore.');
+
+            // Delete user authentication record
+            await deleteUser(user);
+            console.log('User authentication record has been deleted.');
+            Alert.alert("Success", "Your account has been deleted.");
+            return;
+           
+        }
+    } catch (error) {
+        Alert.alert("Error", "Password Incorrect.");
+    }
+}
 
 
 //Function to store the files in the firebase storage------------------------>STORAGE

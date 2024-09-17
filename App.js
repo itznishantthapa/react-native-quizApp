@@ -115,7 +115,7 @@ export default function App() {
     setCounter(0);
     setPlayerPoints(0);
     setisOver(false);
-    setcategories(category)
+    setcategories((category).toLowerCase())
 
 
     let questionData;
@@ -124,7 +124,7 @@ export default function App() {
         questionData = require('./data/database.json');
         break;
       case 'Hardware':
-        questionData = require('./data/computing.json'); //all set, just need json nowwwwwww.
+        questionData = require('./data/hardware.json'); //all set, just need json nowwwwwww.
         break;
 
       case 'Programming':
@@ -191,7 +191,7 @@ export default function App() {
     setQuestion(data[counter].question.text);
     setOptions(options);
     setCorrectAns(data[counter].correctAnswer);
-    setcategories((data[counter].category).toLowerCase());
+    // setcategories((data[counter].category).toLowerCase());
     
   };
 

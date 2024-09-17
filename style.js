@@ -247,7 +247,7 @@ export const  styles = StyleSheet.create({
         gap:30
     },
     deleteInfoBox:{
-      height:'30%',
+      height:'auto',
       width:'80%',
       backgroundColor:'white',
       borderRadius:10,

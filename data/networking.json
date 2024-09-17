@@ -1,916 +1,914 @@
 [
     {
-        "category": "networking",
-        "id": "001",
-        "correctAnswer": "OSI",
-        "incorrectAnswers": ["TCP/IP", "IP Routes", "Subnetting"],
-        "question": {
-            "text": "What is the name of the networking model that consists of seven layers?"
-        }
+      "category": "computer hardware",
+      "id": "201",
+      "correctAnswer": "Computer Network",
+      "incorrectAnswers": ["Peripheral Device", "Networking Device", "LAN Topology"],
+      "question": {
+        "text": "What term describes a collection of hosts connected by networking devices?"
+      }
     },
     {
-        "category": "networking",
-        "id": "002",
-        "correctAnswer": "TCP/IP",
-        "incorrectAnswers": ["OSI", "IP Routes", "Subnetting"],
-        "question": {
-            "text": "Which protocol suite is widely used for internet communication?"
-        }
+      "category": "computer hardware",
+      "id": "202",
+      "correctAnswer": "Copper Cabling",
+      "incorrectAnswers": ["Fiber-Optic Cabling", "Wireless Connection", "Router"],
+      "question": {
+        "text": "Which type of cabling uses electrical signals to transmit data between devices?"
+      }
     },
     {
-        "category": "networking",
-        "id": "003",
-        "correctAnswer": "IP Routes",
-        "incorrectAnswers": ["OSI", "TCP/IP", "Subnetting"],
-        "question": {
-            "text": "What is used to determine the path that network traffic takes from source to destination?"
-        }
+      "category": "computer hardware",
+      "id": "203",
+      "correctAnswer": "Fiber-Optic Cabling",
+      "incorrectAnswers": ["Copper Cabling", "Wireless Connection", "Network Switch"],
+      "question": {
+        "text": "What type of cabling uses glass or plastic wire to carry information as light pulses?"
+      }
     },
     {
-        "category": "networking",
-        "id": "004",
-        "correctAnswer": "Subnetting",
-        "incorrectAnswers": ["OSI", "TCP/IP", "IP Routes"],
-        "question": {
-            "text": "What is the process of dividing a network into smaller subnetworks called?"
-        }
+      "category": "computer hardware",
+      "id": "204",
+      "correctAnswer": "Wireless Connection",
+      "incorrectAnswers": ["Fiber-Optic Cabling", "Copper Cabling", "Network Card"],
+      "question": {
+        "text": "Which type of connection uses radio signals or infrared technology to transmit data?"
+      }
     },
     {
-        "category": "networking",
-        "id": "005",
-        "correctAnswer": "DNS",
-        "incorrectAnswers": ["DHCP", "FTP", "HTTP"],
-        "question": {
-            "text": "What is the protocol used to translate domain names to IP addresses?"
-        }
+      "category": "computer hardware",
+      "id": "205",
+      "correctAnswer": "LAN",
+      "incorrectAnswers": ["WAN", "WLAN", "Peer-to-Peer Network"],
+      "question": {
+        "text": "What type of network consists of interconnected devices under the same administrative control?"
+      }
     },
     {
-        "category": "networking",
-        "id": "006",
-        "correctAnswer": "DHCP",
-        "incorrectAnswers": ["DNS", "FTP", "HTTP"],
-        "question": {
-            "text": "What is the protocol used to automatically assign IP addresses to devices on a network?"
-        }
+      "category": "computer hardware",
+      "id": "206",
+      "correctAnswer": "WAN",
+      "incorrectAnswers": ["LAN", "WLAN", "Client/Server Network"],
+      "question": {
+        "text": "Which network type connects LANs in geographically separated locations?"
+      }
     },
     {
-        "category": "networking",
-        "id": "007",
-        "correctAnswer": "FTP",
-        "incorrectAnswers": ["DNS", "DHCP", "HTTP"],
-        "question": {
-            "text": "What is the protocol used for transferring files between a client and a server?"
-        }
+      "category": "computer hardware",
+      "id": "207",
+      "correctAnswer": "WLAN",
+      "incorrectAnswers": ["LAN", "WAN", "Peer-to-Peer Network"],
+      "question": {
+        "text": "What type of network uses radio waves to transmit and receive data?"
+      }
     },
     {
-        "category": "networking",
-        "id": "008",
-        "correctAnswer": "HTTP",
-        "incorrectAnswers": ["DNS", "DHCP", "FTP"],
-        "question": {
-            "text": "What is the protocol used for transferring hypertext documents over the World Wide Web?"
-        }
+      "category": "computer hardware",
+      "id": "208",
+      "correctAnswer": "Peer-to-Peer Network",
+      "incorrectAnswers": ["Client/Server Network", "LAN", "WAN"],
+      "question": {
+        "text": "Which network type has no centralized administration and works best with ten or fewer computers?"
+      }
     },
     {
-        "category": "networking",
-        "id": "009",
-        "correctAnswer": "SMTP",
-        "incorrectAnswers": ["POP3", "IMAP", "HTTP"],
-        "question": {
-            "text": "What is the protocol used for sending email messages?"
-        }
+      "category": "computer hardware",
+      "id": "209",
+      "correctAnswer": "Client/Server Network",
+      "incorrectAnswers": ["Peer-to-Peer Network", "LAN", "WLAN"],
+      "question": {
+        "text": "In which network type do clients request information or services from a server?"
+      }
     },
     {
-        "category": "networking",
-        "id": "010",
-        "correctAnswer": "POP3",
-        "incorrectAnswers": ["SMTP", "IMAP", "HTTP"],
-        "question": {
-            "text": "What is the protocol used for retrieving email messages from a server?"
-        }
+      "category": "computer hardware",
+      "id": "210",
+      "correctAnswer": "Centralized Administration",
+      "incorrectAnswers": ["Decentralized Administration", "Peer-to-Peer Network", "Client/Server Network"],
+      "question": {
+        "text": "What reduces the number of people needed to manage devices and data on the network?"
+      }
     },
     {
-        "category": "networking",
-        "id": "011",
-        "correctAnswer": "IMAP",
-        "incorrectAnswers": ["SMTP", "POP3", "HTTP"],
-        "question": {
-            "text": "What is the protocol used for accessing email messages on a server?"
-        }
+      "category": "computer hardware",
+      "id": "211",
+      "correctAnswer": "Bandwidth",
+      "incorrectAnswers": ["Data Transmission", "Network Speed", "Network Topology"],
+      "question": {
+        "text": "What term describes the amount of data that can be transmitted within a fixed time period?"
+      }
     },
     {
-        "category": "networking",
-        "id": "012",
-        "correctAnswer": "SSH",
-        "incorrectAnswers": ["FTP", "Telnet", "RDP"],
-        "question": {
-            "text": "What is the protocol used for secure remote access to a server?"
-        }
+      "category": "computer hardware",
+      "id": "212",
+      "correctAnswer": "Simplex",
+      "incorrectAnswers": ["Half-Duplex", "Full-Duplex", "Bidirectional"],
+      "question": {
+        "text": "What type of data transmission is one-way, like a television signal?"
+      }
     },
     {
-        "category": "networking",
-        "id": "013",
-        "correctAnswer": "Telnet",
-        "incorrectAnswers": ["SSH", "FTP", "RDP"],
-        "question": {
-            "text": "What is the protocol used for remote access to a server?"
-        }
+      "category": "computer hardware",
+      "id": "213",
+      "correctAnswer": "Half-Duplex",
+      "incorrectAnswers": ["Simplex", "Full-Duplex", "Bidirectional"],
+      "question": {
+        "text": "What type of data transmission allows one direction at a time, like a walkie-talkie?"
+      }
     },
     {
-        "category": "networking",
-        "id": "014",
-        "correctAnswer": "RDP",
-        "incorrectAnswers": ["SSH", "FTP", "Telnet"],
-        "question": {
-            "text": "What is the protocol used for remote desktop access to a server?"
-        }
+      "category": "computer hardware",
+      "id": "214",
+      "correctAnswer": "Full-Duplex",
+      "incorrectAnswers": ["Simplex", "Half-Duplex", "Unidirectional"],
+      "question": {
+        "text": "What type of data transmission allows both directions at the same time, like a telephone conversation?"
+      }
     },
     {
-        "category": "networking",
-        "id": "015",
-        "correctAnswer": "Firewall",
-        "incorrectAnswers": ["Router", "Switch", "Hub"],
-        "question": {
-            "text": "What is used to protect a network from unauthorized access?"
-        }
+      "category": "computer hardware",
+      "id": "215",
+      "correctAnswer": "Data Transmission",
+      "incorrectAnswers": ["Bandwidth", "Network Speed", "Network Protocol"],
+      "question": {
+        "text": "What term refers to the exchange of data between devices?"
+      }
     },
     {
-        "category": "networking",
-        "id": "016",
-        "correctAnswer": "Router",
-        "incorrectAnswers": ["Firewall", "Switch", "Hub"],
-        "question": {
-            "text": "What is used to connect multiple networks and route data between them?"
-        }
+      "category": "computer hardware",
+      "id": "216",
+      "correctAnswer": "Workgroup",
+      "incorrectAnswers": ["Domain", "Server", "Client"],
+      "question": {
+        "text": "What is a collection of workstations and servers on a LAN designed to communicate and exchange data called?"
+      }
     },
     {
-        "category": "networking",
-        "id": "017",
-        "correctAnswer": "Switch",
-        "incorrectAnswers": ["Firewall", "Router", "Hub"],
-        "question": {
-            "text": "What is used to connect devices within a network and forward data to the intended recipient?"
-        }
+      "category": "computer hardware",
+      "id": "217",
+      "correctAnswer": "Domain",
+      "incorrectAnswers": ["Workgroup", "Client", "Peer-to-Peer Network"],
+      "question": {
+        "text": "What is a group of computers and devices with a common set of rules administered as a unit called?"
+      }
     },
     {
-        "category": "networking",
-        "id": "018",
-        "correctAnswer": "Hub",
-        "incorrectAnswers": ["Firewall", "Router", "Switch"],
-        "question": {
-            "text": "What is used to connect multiple devices within a network?"
-        }
+      "category": "computer hardware",
+      "id": "218",
+      "correctAnswer": "Document Tracking Software",
+      "incorrectAnswers": ["File Management Software", "Database Software", "Email Client"],
+      "question": {
+        "text": "What type of software helps manage and prevent file corruption and duplication in a network?"
+      }
     },
     {
-        "category": "networking",
-        "id": "019",
-        "correctAnswer": "MAC Address",
-        "incorrectAnswers": ["IP Address", "Subnet Mask", "Default Gateway"],
-        "question": {
-            "text": "What is a unique identifier assigned to network interfaces for communications on the physical network segment?"
-        }
+      "category": "computer hardware",
+      "id": "219",
+      "correctAnswer": "Network Administrator",
+      "incorrectAnswers": ["Client", "Server", "End User"],
+      "question": {
+        "text": "Who is responsible for maintaining servers for data backups and security measures in a client/server network?"
+      }
     },
     {
-        "category": "networking",
-        "id": "020",
-        "correctAnswer": "IP Address",
-        "incorrectAnswers": ["MAC Address", "Subnet Mask", "Default Gateway"],
-        "question": {
-            "text": "What is a numerical label assigned to devices participating in a computer network that uses the Internet Protocol for communication?"
-        }
+      "category": "computer hardware",
+      "id": "220",
+      "correctAnswer": "Site License",
+      "incorrectAnswers": ["Individual License", "Domain License", "Freeware"],
+      "question": {
+        "text": "What type of license reduces costs by covering all computers in an organization with a single fee?"
+      }
     },
-    {
-        "category": "networking",
-        "id": "021",
-        "correctAnswer": "Subnet Mask",
-        "incorrectAnswers": ["MAC Address", "IP Address", "Default Gateway"],
-        "question": {
-            "text": "What is used to divide an IP address into network and host portions?"
-        }
-    },
-    {
-        "category": "networking",
-        "id": "022",
-        "correctAnswer": "Default Gateway",
-        "incorrectAnswers": ["MAC Address", "IP Address", "Subnet Mask"],
-        "question": {
-            "text": "What is used to forward network traffic from devices on one network to devices on another network?"
-        }
-    },
-    {
-        "category": "networking",
-        "id": "023",
-        "correctAnswer": "DNS Server",
-        "incorrectAnswers": ["DHCP Server", "Web Server", "Mail Server"],
-        "question": {
-            "text": "What is used to translate domain names to IP addresses?"
-        }
-    },
-    {
-        "category": "networking",
-        "id": "024",
-        "correctAnswer": "DHCP Server",
-        "incorrectAnswers": ["DNS Server", "Web Server", "Mail Server"],
-        "question": {
-            "text": "What is used to automatically assign IP addresses to devices on a network?"
-        }
-    },
-    {
-        "category": "networking",
-        "id": "025",
-        "correctAnswer": "Web Server",
-        "incorrectAnswers": ["DNS Server", "DHCP Server", "Mail Server"],
-        "question": {
-            "text": "What is used to host websites and serve web pages to clients over the internet?"
-        }
-    },
-    {
-        "category": "networking",
-        "id": "026",
-        "correctAnswer": "Mail Server",
-        "incorrectAnswers": ["DNS Server", "DHCP Server", "Web Server"],
-        "question": {
-            "text": "What is used to send, receive, and store email messages?"
-        }
-    },
+        {
+            "category": "networking",
+            "id": "201",
+            "correctAnswer": "Network Media",
+            "incorrectAnswers": ["End Device", "Server", "Client"],
+            "question": {
+                "text": "What is used to interconnect end devices in a network?"
+            }
+        },
+        {
+            "category": "networking",
+            "id": "202",
+            "correctAnswer": "Simplex",
+            "incorrectAnswers": ["Half-Duplex", "Full-Duplex", "Bidirectional"],
+            "question": {
+                "text": "What type of data transmission only allows data to travel in one direction?"
+            }
+        },
+        {
+            "category": "networking",
+            "id": "203",
+            "correctAnswer": "Peer-to-Peer Network",
+            "incorrectAnswers": ["Client/Server Network", "LAN", "WAN"],
+            "question": {
+                "text": "Which network type has no centralized administration and each device has equivalent capabilities?"
+            }
+        },
+        {
+            "category": "networking",
+            "id": "204",
+            "correctAnswer": "Fiber-optic cabling",
+            "incorrectAnswers": ["Copper cabling", "Wireless connection", "Network Interface Card"],
+            "question": {
+                "text": "Which type of cabling uses glass or plastic fibers to carry information as light pulses?"
+            }
+        },
+        {
+            "category": "networking",
+            "id": "205",
+            "correctAnswer": "Bandwidth",
+            "incorrectAnswers": ["Throughput", "Latency", "Packet Loss"],
+            "question": {
+                "text": "What term describes the amount of data that can be transmitted within a fixed time period?"
+            }
+        },
+        {
+            "category": "networking",
+            "id": "206",
+            "correctAnswer": "Router",
+            "incorrectAnswers": ["Switch", "Hub", "Repeater"],
+            "question": {
+                "text": "Which device is used to route packets of data from one network to another?"
+            }
+        },
+        {
+            "category": "networking",
+            "id": "207",
+            "correctAnswer": "Collision Domain",
+            "incorrectAnswers": ["Broadcast Domain", "Subnet", "VLAN"],
+            "question": {
+                "text": "What term describes a part of a network where packet collisions can occur?"
+            }
+        },
+        {
+            "category": "networking",
+            "id": "208",
+            "correctAnswer": "Full-Duplex",
+            "incorrectAnswers": ["Simplex", "Half-Duplex", "Unidirectional"],
+            "question": {
+                "text": "Which type of data transmission allows data to travel in both directions simultaneously?"
+            }
+        },
+        {
+            "category": "networking",
+            "id": "209",
+            "correctAnswer": "Client/Server Network",
+            "incorrectAnswers": ["Peer-to-Peer Network", "LAN", "WAN"],
+            "question": {
+                "text": "Which network type involves clients requesting services from servers?"
+            }
+        },
+        {
+            "category": "networking",
+            "id": "210",
+            "correctAnswer": "Wireless Transmission",
+            "incorrectAnswers": ["Fiber-optic Cabling", "Copper Cabling", "Network Interface Card"],
+            "question": {
+                "text": "Which type of network media uses modulation of specific frequencies of electromagnetic waves?"
+            }
+        },
+        {
+            "category": "networking",
+            "id": "211",
+            "correctAnswer": "Email Server",
+            "incorrectAnswers": ["Web Server", "File Server", "Database Server"],
+            "question": {
+                "text": "Which type of server runs email server software and allows clients to access email?"
+            }
+        },
+        {
+            "category": "networking",
+            "id": "212",
+            "correctAnswer": "Switch",
+            "incorrectAnswers": ["Hub", "Router", "Repeater"],
+            "question": {
+                "text": "Which device is used to add functionality to a LAN and break up collision domains?"
+            }
+        },
+        {
+            "category": "networking",
+            "id": "213",
+            "correctAnswer": "LAN",
+            "incorrectAnswers": ["WAN", "Internet", "VPN"],
+            "question": {
+                "text": "What is a network called that is under the same administrative control and traditionally existed in a single physical location?"
+            }
+        },
+        {
+            "category": "networking",
+            "id": "214",
+            "correctAnswer": "Server",
+            "incorrectAnswers": ["Client", "End Device", "Router"],
+            "question": {
+                "text": "Which network component stores files and provides services such as email and web hosting?"
+            }
+        },
+        {
+            "category": "networking",
+            "id": "215",
+            "correctAnswer": "Broadcast Domain",
+            "incorrectAnswers": ["Collision Domain", "Subnet", "VLAN"],
+            "question": {
+                "text": "What term describes a domain where a broadcast is forwarded to all devices that can reach each other at the data link layer?"
+            }
+        },
+        {
+            "category": "networking",
+            "id": "216",
+            "correctAnswer": "File Server",
+            "incorrectAnswers": ["Email Server", "Web Server", "Database Server"],
+            "question": {
+                "text": "Which type of server stores corporate and user files and provides access to these files?"
+            }
+        },
+        {
+            "category": "networking",
+            "id": "217",
+            "correctAnswer": "Hubs",
+            "incorrectAnswers": ["Switches", "Routers", "Repeaters"],
+            "question": {
+                "text": "What device connects network segments together but does not segment a network or break broadcast domains?"
+            }
+        },
+        {
+            "category": "networking",
+            "id": "218",
+            "correctAnswer": "Peer-to-Peer Network",
+            "incorrectAnswers": ["Client/Server Network", "LAN", "WAN"],
+            "question": {
+                "text": "Which network type is used for simple tasks like transferring files and sharing printers, but is not as secure or scalable?"
+            }
+        },
+        {
+            "category": "networking",
+            "id": "219",
+            "correctAnswer": "Path Selection",
+            "incorrectAnswers": ["Packet Switching", "Packet Filtering", "Internetwork Communication"],
+            "question": {
+                "text": "Which router function involves determining the best route for data to travel across networks?"
+            }
+        },
+        {
+            "category": "networking",
+            "id": "220",
+            "correctAnswer": "WAN",
+            "incorrectAnswers": ["LAN", "Peer-to-Peer Network", "Client/Server Network"],
+            "question": {
+                "text": "What type of network connects LANs in geographically separated locations, with the Internet being a common example?"
+            }
+        },
 
+        
+            {
+              "category": "computer hardware",
+              "id": "201",
+              "correctAnswer": "Open System Interconnection",
+              "incorrectAnswers": ["Open Service Interaction", "Operational Systems Interface", "Open Source Integration"],
+              "question": {
+                "text": "What does OSI stand for in networking?"
+              }
+            },
+            {
+              "category": "computer hardware",
+              "id": "202",
+              "correctAnswer": "Layered Approach",
+              "incorrectAnswers": ["Flat Structure", "Hierarchical Design", "Peer-to-Peer Communication"],
+              "question": {
+                "text": "What approach does the OSI model use for network communication?"
+              }
+            },
+            {
+              "category": "computer hardware",
+              "id": "203",
+              "correctAnswer": "7",
+              "incorrectAnswers": ["5", "6", "8"],
+              "question": {
+                "text": "How many layers are there in the OSI reference model?"
+              }
+            },
+            {
+              "category": "computer hardware",
+              "id": "204",
+              "correctAnswer": "Application, Presentation, Session",
+              "incorrectAnswers": ["Data Link, Network, Transport", "Physical, Data Link, Network", "Session, Network, Transport"],
+              "question": {
+                "text": "Which layers are considered the upper layers in the OSI model?"
+              }
+            },
+            {
+              "category": "computer hardware",
+              "id": "205",
+              "correctAnswer": "Physical",
+              "incorrectAnswers": ["Data Link", "Transport", "Network"],
+              "question": {
+                "text": "Which OSI layer is responsible for moving bits between devices?"
+              }
+            },
+            {
+              "category": "computer hardware",
+              "id": "206",
+              "correctAnswer": "Application Layer",
+              "incorrectAnswers": ["Transport Layer", "Data Link Layer", "Network Layer"],
+              "question": {
+                "text": "Which OSI layer provides a user interface and communication services like file transfer?"
+              }
+            },
+            {
+              "category": "computer hardware",
+              "id": "207",
+              "correctAnswer": "Data Link Layer",
+              "incorrectAnswers": ["Session Layer", "Presentation Layer", "Network Layer"],
+              "question": {
+                "text": "Which OSI layer is responsible for combining packets into frames?"
+              }
+            },
+            {
+              "category": "computer hardware",
+              "id": "208",
+              "correctAnswer": "Transport Layer",
+              "incorrectAnswers": ["Session Layer", "Network Layer", "Physical Layer"],
+              "question": {
+                "text": "Which OSI layer is responsible for reliable or unreliable delivery of data?"
+              }
+            },
+            {
+              "category": "computer hardware",
+              "id": "209",
+              "correctAnswer": "Routers",
+              "incorrectAnswers": ["Hubs", "Bridges", "Switches"],
+              "question": {
+                "text": "Which device operates on the Network Layer of the OSI model?"
+              }
+            },
+            {
+              "category": "computer hardware",
+              "id": "210",
+              "correctAnswer": "Physical Layer",
+              "incorrectAnswers": ["Data Link Layer", "Network Layer", "Transport Layer"],
+              "question": {
+                "text": "At which OSI layer do hubs operate?"
+              }
+            },
+            {
+              "category": "computer hardware",
+              "id": "211",
+              "correctAnswer": "Data Encapsulation",
+              "incorrectAnswers": ["Data Encryption", "Data Compression", "Data Transmission"],
+              "question": {
+                "text": "What is the process of wrapping data with protocol information at each OSI layer called?"
+              }
+            },
+            {
+              "category": "computer hardware",
+              "id": "212",
+              "correctAnswer": "Frames",
+              "incorrectAnswers": ["Packets", "Bits", "Segments"],
+              "question": {
+                "text": "What are packets converted into for transmission on the local network?"
+              }
+            },
+            {
+              "category": "computer hardware",
+              "id": "213",
+              "correctAnswer": "CSMA/CD",
+              "incorrectAnswers": ["TCP/IP", "Ethernet/IP", "UDP"],
+              "question": {
+                "text": "Which protocol helps devices share bandwidth evenly and prevents simultaneous transmissions?"
+              }
+            },
+            {
+              "category": "computer hardware",
+              "id": "214",
+              "correctAnswer": "Collision Detection",
+              "incorrectAnswers": ["Packet Filtering", "Signal Amplification", "Error Correction"],
+              "question": {
+                "text": "What does CD stand for in the CSMA/CD protocol?"
+              }
+            },
+            {
+              "category": "computer hardware",
+              "id": "215",
+              "correctAnswer": "Straight-through cable",
+              "incorrectAnswers": ["Crossover cable", "Rolled cable", "Patch cable"],
+              "question": {
+                "text": "Which type of cable is used to connect dissimilar devices like a host to a switch?"
+              }
+            },
+            {
+              "category": "computer hardware",
+              "id": "216",
+              "correctAnswer": "Crossover cable",
+              "incorrectAnswers": ["Straight-through cable", "Rolled cable", "Patch cable"],
+              "question": {
+                "text": "Which type of cable is used to connect similar devices like a switch to a switch?"
+              }
+            },
+            {
+              "category": "computer hardware",
+              "id": "217",
+              "correctAnswer": "Data Link Layer",
+              "incorrectAnswers": ["Physical Layer", "Transport Layer", "Session Layer"],
+              "question": {
+                "text": "On which OSI layer do switches and bridges operate?"
+              }
+            },
+            {
+              "category": "computer hardware",
+              "id": "218",
+              "correctAnswer": "Three-Way-Handshake",
+              "incorrectAnswers": ["Collision Avoidance", "Packet Encapsulation", "Signal Synchronization"],
+              "question": {
+                "text": "What method is used by the Transport Layer to establish a connection-oriented session?"
+              }
+            },
+            {
+              "category": "computer hardware",
+              "id": "219",
+              "correctAnswer": "MAC Address",
+              "incorrectAnswers": ["IP Address", "URL", "Gateway Address"],
+              "question": {
+                "text": "Which address does the Data Link Layer use to identify devices on a network?"
+              }
+            },
+            {
+              "category": "computer hardware",
+              "id": "220",
+              "correctAnswer": "Bits",
+              "incorrectAnswers": ["Frames", "Segments", "Packets"],
+              "question": {
+                "text": "At the Physical Layer, data is transmitted in the form of what?"
+              }
+            }
+        ,
 
-    {
-        "category": "networking",
-        "id": "046",
-        "correctAnswer": "ARP",
-        "incorrectAnswers": ["RARP", "ICMP", "IGMP"],
-        "question": {
-            "text": "What is used to map an IP address to a MAC address?"
-        }
-    },
-    {
-        "category": "networking",
-        "id": "047",
-        "correctAnswer": "RARP",
-        "incorrectAnswers": ["ARP", "ICMP", "IGMP"],
-        "question": {
-            "text": "What is used to map a MAC address to an IP address?"
-        }
-    },
-    {
-        "category": "networking",
-        "id": "048",
-        "correctAnswer": "ICMP",
-        "incorrectAnswers": ["ARP", "RARP", "IGMP"],
-        "question": {
-            "text": "What is used to send error messages and operational information indicating success or failure when communicating with another IP address?"
-        }
-    },
-    {
-        "category": "networking",
-        "id": "049",
-        "correctAnswer": "IGMP",
-        "incorrectAnswers": ["ARP", "RARP", "ICMP"],
-        "question": {
-            "text": "What is used to manage the membership of devices in a multicast group?"
-        }
-    },
-    {
-        "category": "networking",
-        "id": "050",
-        "correctAnswer": "VLAN",
-        "incorrectAnswers": ["VPN", "VTP", "VRRP"],
-        "question": {
-            "text": "What is used to logically segment a network into separate broadcast domains?"
-        }
-    },
-    {
-        "category": "networking",
-        "id": "051",
-        "correctAnswer": "VPN",
-        "incorrectAnswers": ["VLAN", "VTP", "VRRP"],
-        "question": {
-            "text": "What is used to create a secure connection over a public network?"
-        }
-    },
-    {
-        "category": "networking",
-        "id": "052",
-        "correctAnswer": "VTP",
-        "incorrectAnswers": ["VLAN", "VPN", "VRRP"],
-        "question": {
-            "text": "What is used to manage VLAN configurations across a network?"
-        }
-    },
-
-    {
-        "category": "networking",
-        "id": "053",
-        "correctAnswer": "VRRP",
-        "incorrectAnswers": ["VLAN", "VPN", "VTP"],
-        "question": {
-            "text": "What is used to provide high availability by assigning a virtual IP address to a group of routers?"
-        }
-    },
-    {
-        "category": "networking",
-        "id": "054",
-        "correctAnswer": "NAT",
-        "incorrectAnswers": ["PAT", "NAPT", "SNAT"],
-        "question": {
-            "text": "What is used to map private IP addresses to public IP addresses?"
-        }
-    },
-    {
-        "category": "networking",
-        "id": "055",
-        "correctAnswer": "PAT",
-        "incorrectAnswers": ["NAT", "NAPT", "SNAT"],
-        "question": {
-            "text": "What is used to map multiple private IP addresses to a single public IP address?"
-        }
-    },
-    {
-        "category": "networking",
-        "id": "056",
-        "correctAnswer": "NAPT",
-        "incorrectAnswers": ["NAT", "PAT", "SNAT"],
-        "question": {
-            "text": "What is used to map multiple private IP addresses to multiple public IP addresses?"
-        }
-    },
-    {
-        "category": "networking",
-        "id": "057",
-        "correctAnswer": "SNAT",
-        "incorrectAnswers": ["NAT", "PAT", "NAPT"],
-        "question": {
-            "text": "What is used to map a single private IP address to multiple public IP addresses?"
-        }
-    },
-    {
-        "category": "networking",
-        "id": "058",
-        "correctAnswer": "ACL",
-        "incorrectAnswers": ["NAT", "PAT", "NAPT"],
-        "question": {
-            "text": "What is used to control traffic flow in and out of a network?"
-        }
-    },
-    {
-        "category": "networking",
-        "id": "059",
-        "correctAnswer": "QoS",
-        "incorrectAnswers": ["NAT", "PAT", "NAPT"],
-        "question": {
-            "text": "What is used to prioritize network traffic to improve performance?"
-        }
-    },
-    {
-        "category": "networking",
-        "id": "060",
-        "correctAnswer": "STP",
-        "incorrectAnswers": ["RSTP", "MSTP", "PVST"],
-        "question": {
-            "text": "What is used to prevent loops in a network topology?"
-        }
-    },
-    {
-        "category": "networking",
-        "id": "061",
-        "correctAnswer": "RSTP",
-        "incorrectAnswers": ["STP", "MSTP", "PVST"],
-        "question": {
-            "text": "What is used to provide faster convergence than STP in a network topology?"
-        }
-    },
-    {
-        "category": "networking",
-        "id": "062",
-        "correctAnswer": "MSTP",
-        "incorrectAnswers": ["STP", "RSTP", "PVST"],
-        "question": {
-            "text": "What is used to provide multiple spanning trees for different VLANs in a network topology?"
-        }
-    },
-    {
-        "category": "networking",
-        "id": "063",
-        "correctAnswer": "PVST",
-        "incorrectAnswers": ["STP", "RSTP", "MSTP"],
-        "question": {
-            "text": "What is used to provide a separate spanning tree for each VLAN in a network topology?"
-        }
-    },
-    {
-        "category": "networking",
-        "id": "064",
-        "correctAnswer": "OSPF",
-        "incorrectAnswers": ["RIP", "EIGRP", "BGP"],
-        "question": {
-            "text": "What is used to route IP packets within an autonomous system?"
-        }
-    },
-    {
-        "category": "networking",
-        "id": "065",
-        "correctAnswer": "RIP",
-        "incorrectAnswers": ["OSPF", "EIGRP", "BGP"],
-        "question": {
-            "text": "What is used to route IP packets between autonomous systems?"
-        }
-    },
-    {
-        "category": "networking",
-        "id": "066",
-        "correctAnswer": "EIGRP",
-        "incorrectAnswers": ["OSPF", "RIP", "BGP"],
-        "question": {
-            "text": "What is used to route IP packets based on distance and bandwidth?"
-        }
-    },  
-    {
-        "category": "networking",
-        "id": "067",
-        "correctAnswer": "BGP",
-        "incorrectAnswers": ["OSPF", "RIP", "EIGRP"],
-        "question": {
-            "text": "What is used to route IP packets between different autonomous systems?"
-        }
-    },
-    {
-        "category": "networking",
-        "id": "068",
-        "correctAnswer": "VLSM",
-        "incorrectAnswers": ["CIDR", "NAT", "PAT"],
-        "question": {
-            "text": "What is used to allocate IP addresses based on network requirements?"
-        }
-    },
-    {
-        "category": "networking",
-        "id": "069",
-        "correctAnswer": "CIDR",
-        "incorrectAnswers": ["VLSM", "NAT", "PAT"],
-        "question": {
-            "text": "What is used to aggregate IP addresses for routing purposes?"
-        }
-    },
-    {
-        "category": "networking",
-        "id": "070",
-        "correctAnswer": "BGP",
-        "incorrectAnswers": ["OSPF", "RIP", "EIGRP"],
-        "question": {
-            "text": "What is used to route IP packets between different autonomous systems?"
-        }
-    },
-    {
-        "category": "networking",
-        "id": "071",
-        "correctAnswer": "VLSM",
-        "incorrectAnswers": ["CIDR", "NAT", "PAT"],
-        "question": {
-            "text": "What is used to allocate IP addresses based on network requirements?"
-        }
-    },
-    {
-        "category": "networking",
-        "id": "072",
-        "correctAnswer": "CIDR",
-        "incorrectAnswers": ["VLSM", "NAT", "PAT"],
-        "question": {
-            "text": "What is used to aggregate IP addresses for routing purposes?"
-        }
-    },
-    {
-        "category": "networking",
-        "id": "073",
-        "correctAnswer": "BGP",
-        "incorrectAnswers": ["OSPF", "RIP", "EIGRP"],
-        "question": {
-            "text": "What is used to route IP packets between different autonomous systems?"
-        }
-    },
-    {
-        "category": "networking",
-        "id": "074",
-        "correctAnswer": "VLSM",
-        "incorrectAnswers": ["CIDR", "NAT", "PAT"],
-        "question": {
-            "text": "What is used to allocate IP addresses based on network requirements?"
-        }
-    },
-    {
-        "category": "networking",
-        "id": "075",
-        "correctAnswer": "CIDR",
-        "incorrectAnswers": ["VLSM", "NAT", "PAT"],
-        "question": {
-            "text": "What is used to aggregate IP addresses for routing purposes?"
-        }
-    },
-    {
-        "category": "networking",
-        "id": "076",
-        "correctAnswer": "BGP",
-        "incorrectAnswers": ["OSPF", "RIP", "EIGRP"],
-        "question": {
-            "text": "What is used to route IP packets between different autonomous systems?"
-        }
-    },
-    {
-        "category": "networking",
-        "id": "077",
-        "correctAnswer": "VLSM",
-        "incorrectAnswers": ["CIDR", "NAT", "PAT"],
-        "question": {
-            "text": "What is used to allocate IP addresses based on network requirements?"
-        }
-    },
-    {
-        "category": "networking",
-        "id": "078",
-        "correctAnswer": "CIDR",
-        "incorrectAnswers": ["VLSM", "NAT", "PAT"],
-        "question": {
-            "text": "What is used to aggregate IP addresses for routing purposes?"
-        }
-    },
-    {
-        "category": "networking",
-        "id": "079",
-        "correctAnswer": "BGP",
-        "incorrectAnswers": ["OSPF", "RIP", "EIGRP"],
-        "question": {
-            "text": "What is used to route IP packets between different autonomous systems?"
-        }
-    },
-    {
-        "category": "networking",
-        "id": "080",
-        "correctAnswer": "VLSM",
-        "incorrectAnswers": ["CIDR", "NAT", "PAT"],
-        "question": {
-            "text": "What is used to allocate IP addresses based on network requirements?"
-        }
-    },
-    {
-        "category": "networking",
-        "id": "081",
-        "correctAnswer": "CIDR",
-        "incorrectAnswers": ["VLSM", "NAT", "PAT"],
-        "question": {
-            "text": "What is used to aggregate IP addresses for routing purposes?"
-        }
-    },
-    {
-        "category": "networking",
-        "id": "082",
-        "correctAnswer": "BGP",
-        "incorrectAnswers": ["OSPF", "RIP", "EIGRP"],
-        "question": {
-            "text": "What is used to route IP packets between different autonomous systems?"
-        }
-    },
-    {
-        "category": "networking",
-        "id": "083",
-        "correctAnswer": "VLSM",
-        "incorrectAnswers": ["CIDR", "NAT", "PAT"],
-        "question": {
-            "text": "What is used to allocate IP addresses based on network requirements?"
-        }
-    },
-    {
-        "category": "networking",
-        "id": "084",
-        "correctAnswer": "CIDR",
-        "incorrectAnswers": ["VLSM", "NAT", "PAT"],
-        "question": {
-            "text": "What is used to aggregate IP addresses for routing purposes?"
-        }
-    },
-    {
-        "category": "networking",
-        "id": "085",
-        "correctAnswer": "BGP",
-        "incorrectAnswers": ["OSPF", "RIP", "EIGRP"],
-        "question": {
-            "text": "What is used to route IP packets between different autonomous systems?"
-        }
-    },
-    {
-        "category": "networking",
-        "id": "086",
-        "correctAnswer": "VLSM",
-        "incorrectAnswers": ["CIDR", "NAT", "PAT"],
-        "question": {
-            "text": "What is used to allocate IP addresses based on network requirements?"
-        }
-    },
-    {
-        "category": "networking",
-        "id": "087",
-        "correctAnswer": "CIDR",
-        "incorrectAnswers": ["VLSM", "NAT", "PAT"],
-        "question": {
-            "text": "What is used to aggregate IP addresses for routing purposes?"
-        }
-    },
-    {
-        "category": "networking",
-        "id": "088",
-        "correctAnswer": "BGP",
-        "incorrectAnswers": ["OSPF", "RIP", "EIGRP"],
-        "question": {
-            "text": "What is used to route IP packets between different autonomous systems?"
-        }
-    },
-    {
-        "category": "networking",
-        "id": "089",
-        "correctAnswer": "VLSM",
-        "incorrectAnswers": ["CIDR", "NAT", "PAT"],
-        "question": {
-            "text": "What is used to allocate IP addresses based on network requirements?"
-        }
-    },
-    {
-        "category": "networking",
-        "id": "090",
-        "correctAnswer": "CIDR",
-        "incorrectAnswers": ["VLSM", "NAT", "PAT"],
-        "question": {
-            "text": "What is used to aggregate IP addresses for routing purposes?"
-        }
-    },
-    {
-        "category": "networking",
-        "id": "091",
-        "correctAnswer": "BGP",
-        "incorrectAnswers": ["OSPF", "RIP", "EIGRP"],
-        "question": {
-            "text": "What is used to route IP packets between different autonomous systems?"
-        }
-    },
-    {
-        "category": "networking",
-        "id": "092",
-        "correctAnswer": "VLSM",
-        "incorrectAnswers": ["CIDR", "NAT", "PAT"],
-        "question": {
-            "text": "What is used to allocate IP addresses based on network requirements?"
-        }
-    },
-    {
-        "category": "networking",
-        "id": "093",
-        "correctAnswer": "CIDR",
-        "incorrectAnswers": ["VLSM", "NAT", "PAT"],
-        "question": {
-            "text": "What is used to aggregate IP addresses for routing purposes?"
-        }
-    },
-    {
-        "category": "networking",
-        "id": "094",
-        "correctAnswer": "BGP",
-        "incorrectAnswers": ["OSPF", "RIP", "EIGRP"],
-        "question": {
-            "text": "What is used to route IP packets between different autonomous systems?"
-        }
-    },
-    {
-        "category": "networking",
-        "id": "095",
-        "correctAnswer": "VLSM",
-        "incorrectAnswers": ["CIDR", "NAT", "PAT"],
-        "question": {
-            "text": "What is used to allocate IP addresses based on network requirements?"
-        }
-    },
-    {
-        "category": "networking",
-        "id": "096",
-        "correctAnswer": "CIDR",
-        "incorrectAnswers": ["VLSM", "NAT", "PAT"],
-        "question": {
-            "text": "What is used to aggregate IP addresses for routing purposes?"
-        }
-    },
-    {
-        "category": "networking",
-        "id": "097",
-        "correctAnswer": "BGP",
-        "incorrectAnswers": ["OSPF", "RIP", "EIGRP"],
-        "question": {
-            "text": "What is used to route IP packets between different autonomous systems?"
-        }
-    },
-    {
-        "category": "networking",
-        "id": "098",
-        "correctAnswer": "VLSM",
-        "incorrectAnswers": ["CIDR", "NAT", "PAT"],
-        "question": {
-            "text": "What is used to allocate IP addresses based on network requirements?"
-        }
-    },
-    {
-        "category": "networking",
-        "id": "099",
-        "correctAnswer": "CIDR",
-        "incorrectAnswers": ["VLSM", "NAT", "PAT"],
-        "question": {
-            "text": "What is used to aggregate IP addresses for routing purposes?"
-        }
-    },
-    {
-        "category": "networking",
-        "id": "100",
-        "correctAnswer": "BGP",
-        "incorrectAnswers": ["OSPF", "RIP", "EIGRP"],
-        "question": {
-            "text": "What is used to route IP packets between different autonomous systems?"
-        }
-    },
-    {   
-        "category": "networking",
-        "id": "101",
-        "correctAnswer": "VLSM",
-        "incorrectAnswers": ["CIDR", "NAT", "PAT"],
-        "question": {
-            "text": "What is used to allocate IP addresses based on network requirements?"
-        }
-    },
-    {   
-        "category": "networking",
-        "id": "102",
-        "correctAnswer": "CIDR",
-        "incorrectAnswers": ["VLSM", "NAT", "PAT"],
-        "question": {
-            "text": "What is used to aggregate IP addresses for routing purposes?"
-        }
-    },
-    {   
-        "category": "networking",
-        "id": "103",
-        "correctAnswer": "BGP",
-        "incorrectAnswers": ["OSPF", "RIP", "EIGRP"],
-        "question": {
-            "text": "What is used to route IP packets between different autonomous systems?"
-        }
-    },
-    {   
-        "category": "networking",
-        "id": "104",
-        "correctAnswer": "VLSM",
-        "incorrectAnswers": ["CIDR", "NAT", "PAT"],
-        "question": {
-            "text": "What is used to allocate IP addresses based on network requirements?"
-        }
-    },
-    {   
-        "category": "networking",
-        "id": "105",
-        "correctAnswer": "CIDR",
-        "incorrectAnswers": ["VLSM", "NAT", "PAT"],
-        "question": {
-            "text": "What is used to aggregate IP addresses for routing purposes?"
-        }
-    },
-    {   
-        "category": "networking",
-        "id": "106",
-        "correctAnswer": "BGP",
-        "incorrectAnswers": ["OSPF", "RIP", "EIGRP"],
-        "question": {
-            "text": "What is used to route IP packets between different autonomous systems?"
-        }
-    },
-    {   
-        "category": "networking",
-        "id": "107",
-        "correctAnswer": "VLSM",
-        "incorrectAnswers": ["CIDR", "NAT", "PAT"],
-        "question": {
-            "text": "What is used to allocate IP addresses based on network requirements?"
-        }
-    },
-    {   
-        "category": "networking",
-        "id": "108",
-        "correctAnswer": "CIDR",
-        "incorrectAnswers": ["VLSM", "NAT", "PAT"],
-        "question": {
-            "text": "What is used to aggregate IP addresses for routing purposes?"
-        }
-    },
-    {   
-        "category": "networking",
-        "id": "109",
-        "correctAnswer": "BGP",
-        "incorrectAnswers": ["OSPF", "RIP", "EIGRP"],
-        "question": {
-            "text": "What is used to route IP packets between different autonomous systems?"
-        }
-    },
-
-    {   
-        "category": "networking",
-        "id": "110",
-        "correctAnswer": "VLSM",
-        "incorrectAnswers": ["CIDR", "NAT", "PAT"],
-        "question": {
-            "text": "What is used to allocate IP addresses based on network requirements?"
-        }
-    },
-    {   
-        "category": "networking",
-        "id": "111",
-        "correctAnswer": "CIDR",
-        "incorrectAnswers": ["VLSM", "NAT", "PAT"],
-        "question": {
-            "text": "What is used to aggregate IP addresses for routing purposes?"
-        }
-    },
-    {   
-        "category": "networking",
-        "id": "112",
-        "correctAnswer": "BGP",
-        "incorrectAnswers": ["OSPF", "RIP", "EIGRP"],
-        "question": {
-            "text": "What is used to route IP packets between different autonomous systems?"
-        }
-    },
-    {   
-        "category": "networking",
-        "id": "113",
-        "correctAnswer": "VLSM",
-        "incorrectAnswers": ["CIDR", "NAT", "PAT"],
-        "question": {
-            "text": "What is used to allocate IP addresses based on network requirements?"
-        }
-    },
-    {   
-        "category": "networking",
-        "id": "114",
-        "correctAnswer": "CIDR",
-        "incorrectAnswers": ["VLSM", "NAT", "PAT"],
-        "question": {
-            "text": "What is used to aggregate IP addresses for routing purposes?"
-        }
-    },
-    {   
-        "category": "networking",
-        "id": "115",
-        "correctAnswer": "BGP",
-        "incorrectAnswers": ["OSPF", "RIP", "EIGRP"],
-        "question": {
-            "text": "What is used to route IP packets between different autonomous systems?"
-        }
-    },
-    {   
-        "category": "networking",
-        "id": "116",
-        "correctAnswer": "VLSM",
-        "incorrectAnswers": ["CIDR", "NAT", "PAT"],
-        "question": {
-            "text": "What is used to allocate IP addresses based on network requirements?"
-        }
-    },
-    {   
-        "category": "networking",
-        "id": "117",
-        "correctAnswer": "CIDR",
-        "incorrectAnswers": ["VLSM", "NAT", "PAT"],
-        "question": {
-            "text": "What is used to aggregate IP addresses for routing purposes?"
-        }
-    },
-    {   
-        "category": "networking",
-        "id": "118",
-        "correctAnswer": "BGP",
-        "incorrectAnswers": ["OSPF", "RIP", "EIGRP"],
-        "question": {
-            "text": "What is used to route IP packets between different autonomous systems?"
-        }
-    },
-    {   
-        "category": "networking",
-        "id": "119",
-        "correctAnswer": "VLSM",
-        "incorrectAnswers": ["CIDR", "NAT", "PAT"],
-        "question": {
-            "text": "What is used to allocate IP addresses based on network requirements?"
-        }
-    },
-    {   
-        "category": "networking",
-        "id": "120",
-        "correctAnswer": "CIDR",
-        "incorrectAnswers": ["VLSM", "NAT", "PAT"],
-        "question": {
-            "text": "What is used to aggregate IP addresses for routing purposes?"
-        }
-    }
-
+        
+            {
+              "category": "computer hardware",
+              "id": "108",
+              "correctAnswer": "Application Layer",
+              "incorrectAnswers": ["Network Layer", "Data Link Layer", "Physical Layer"],
+              "question": {
+                "text": "Which OSI layer provides services like file transfer and email clients?"
+              }
+            },
+            {
+              "category": "computer hardware",
+              "id": "109",
+              "correctAnswer": "Presentation Layer",
+              "incorrectAnswers": ["Session Layer", "Transport Layer", "Network Layer"],
+              "question": {
+                "text": "Which OSI layer is responsible for data translation and code formatting?"
+              }
+            },
+            {
+              "category": "computer hardware",
+              "id": "110",
+              "correctAnswer": "Session Layer",
+              "incorrectAnswers": ["Application Layer", "Transport Layer", "Network Layer"],
+              "question": {
+                "text": "Which OSI layer manages sessions and keeps application data separate?"
+              }
+            },
+            {
+              "category": "computer hardware",
+              "id": "111",
+              "correctAnswer": "Transport Layer",
+              "incorrectAnswers": ["Session Layer", "Data Link Layer", "Application Layer"],
+              "question": {
+                "text": "Which OSI layer is responsible for providing reliable or unreliable delivery of data?"
+              }
+            },
+            {
+              "category": "computer hardware",
+              "id": "112",
+              "correctAnswer": "Network Layer",
+              "incorrectAnswers": ["Transport Layer", "Physical Layer", "Session Layer"],
+              "question": {
+                "text": "Which OSI layer handles logical addressing and path determination?"
+              }
+            },
+            {
+              "category": "computer hardware",
+              "id": "113",
+              "correctAnswer": "Data Link Layer",
+              "incorrectAnswers": ["Network Layer", "Physical Layer", "Transport Layer"],
+              "question": {
+                "text": "Which OSI layer is responsible for combining packets into frames and handling MAC addresses?"
+              }
+            },
+            {
+              "category": "computer hardware",
+              "id": "114",
+              "correctAnswer": "Physical Layer",
+              "incorrectAnswers": ["Data Link Layer", "Network Layer", "Transport Layer"],
+              "question": {
+                "text": "Which OSI layer moves bits between devices and handles transmission mediums?"
+              }
+            },
+            {
+              "category": "computer hardware",
+              "id": "115",
+              "correctAnswer": "Presentation Layer",
+              "incorrectAnswers": ["Application Layer", "Data Link Layer", "Physical Layer"],
+              "question": {
+                "text": "Which OSI layer handles encryption, decryption, compression, and decompression?"
+              }
+            },
+            {
+              "category": "computer hardware",
+              "id": "116",
+              "correctAnswer": "Session Layer",
+              "incorrectAnswers": ["Presentation Layer", "Application Layer", "Transport Layer"],
+              "question": {
+                "text": "Which OSI layer is responsible for setting up, managing, and tearing down sessions?"
+              }
+            },
+            {
+              "category": "computer hardware",
+              "id": "117",
+              "correctAnswer": "Transport Layer",
+              "incorrectAnswers": ["Data Link Layer", "Network Layer", "Session Layer"],
+              "question": {
+                "text": "Which OSI layer handles segmentation of data at the sending stream and reassembles it at the receiving stream?"
+              }
+            },
+            {
+              "category": "computer hardware",
+              "id": "118",
+              "correctAnswer": "Network Layer",
+              "incorrectAnswers": ["Transport Layer", "Physical Layer", "Session Layer"],
+              "question": {
+                "text": "Which OSI layer provides routers with path detection and logical addressing?"
+              }
+            },
+            {
+              "category": "computer hardware",
+              "id": "119",
+              "correctAnswer": "Data Link Layer",
+              "incorrectAnswers": ["Physical Layer", "Transport Layer", "Session Layer"],
+              "question": {
+                "text": "Which OSI layer ensures messages are delivered to the proper device on a LAN using MAC addresses?"
+              }
+            },
+            {
+              "category": "computer hardware",
+              "id": "120",
+              "correctAnswer": "Physical Layer",
+              "incorrectAnswers": ["Data Link Layer", "Network Layer", "Application Layer"],
+              "question": {
+                "text": "Which OSI layer is responsible for specifying wire speed and pin configurations?"
+              }
+            },
+            {
+              "category": "computer hardware",
+              "id": "121",
+              "correctAnswer": "Session Layer",
+              "incorrectAnswers": ["Transport Layer", "Application Layer", "Presentation Layer"],
+              "question": {
+                "text": "Which OSI layer offers communication modes such as simplex, half-duplex, and full-duplex?"
+              }
+            },
+            {
+              "category": "computer hardware",
+              "id": "122",
+              "correctAnswer": "Application Layer",
+              "incorrectAnswers": ["Presentation Layer", "Session Layer", "Transport Layer"],
+              "question": {
+                "text": "Which OSI layer interacts directly with the user by providing a user interface?"
+              }
+            },
+            {
+              "category": "computer hardware",
+              "id": "123",
+              "correctAnswer": "Transport Layer",
+              "incorrectAnswers": ["Network Layer", "Physical Layer", "Session Layer"],
+              "question": {
+                "text": "Which OSI layer uses the Three-Way Handshake for connection-oriented communication?"
+              }
+            },
+            {
+              "category": "computer hardware",
+              "id": "124",
+              "correctAnswer": "Network Layer",
+              "incorrectAnswers": ["Transport Layer", "Data Link Layer", "Physical Layer"],
+              "question": {
+                "text": "At which OSI layer do routers operate to determine the best path for data?"
+              }
+            },
+            {
+              "category": "computer hardware",
+              "id": "125",
+              "correctAnswer": "Data Link Layer",
+              "incorrectAnswers": ["Network Layer", "Physical Layer", "Application Layer"],
+              "question": {
+                "text": "At which OSI layer do switches and bridges work?"
+              }
+            },
+            {
+              "category": "computer hardware",
+              "id": "126",
+              "correctAnswer": "Physical Layer",
+              "incorrectAnswers": ["Data Link Layer", "Session Layer", "Application Layer"],
+              "question": {
+                "text": "At which OSI layer do hubs operate?"
+              }
+            },
+            {
+              "category": "computer hardware",
+              "id": "127",
+              "correctAnswer": "Data Link Layer",
+              "incorrectAnswers": ["Network Layer", "Transport Layer", "Session Layer"],
+              "question": {
+                "text": "Which OSI layer is responsible for uniquely identifying devices on a network?"
+              }
+            }
+          ,
+            {
+              "category": "computer hardware",
+              "id": "201",
+              "correctAnswer": "Transmission Control Protocol / Internet Protocol",
+              "incorrectAnswers": ["User Datagram Protocol", "Hypertext Transfer Protocol", "Simple Mail Transfer Protocol"],
+              "question": {
+                "text": "What does TCP/IP stand for?"
+              }
+            },
+            {
+              "category": "computer hardware",
+              "id": "202",
+              "correctAnswer": "Department of Defense",
+              "incorrectAnswers": ["International Organization for Standardization", "Institute of Electrical and Electronics Engineers", "Internet Engineering Task Force"],
+              "question": {
+                "text": "Which organization created TCP/IP?"
+              }
+            },
+            {
+              "category": "computer hardware",
+              "id": "203",
+              "correctAnswer": "Four",
+              "incorrectAnswers": ["Seven", "Five", "Three"],
+              "question": {
+                "text": "How many layers are in the TCP/IP model?"
+              }
+            },
+            {
+              "category": "computer hardware",
+              "id": "204",
+              "correctAnswer": "Network Access Layer",
+              "incorrectAnswers": ["Application Layer", "Internet Layer", "Transport Layer"],
+              "question": {
+                "text": "Which layer of TCP/IP model handles data exchange between host and network?"
+              }
+            },
+            {
+              "category": "computer hardware",
+              "id": "205",
+              "correctAnswer": "Transport Layer",
+              "incorrectAnswers": ["Network Layer", "Application Layer", "Internet Layer"],
+              "question": {
+                "text": "Which layer of the TCP/IP model is responsible for establishing transmission services for applications?"
+              }
+            },
+            {
+              "category": "computer hardware",
+              "id": "206",
+              "correctAnswer": "TCP",
+              "incorrectAnswers": ["UDP", "HTTP", "FTP"],
+              "question": {
+                "text": "Which protocol uses the Three-way Handshake for reliable communication?"
+              }
+            },
+            {
+              "category": "computer hardware",
+              "id": "207",
+              "correctAnswer": "Connection-Oriented",
+              "incorrectAnswers": ["Connection-Less", "Reliable", "Encrypted"],
+              "question": {
+                "text": "TCP is known as what type of protocol?"
+              }
+            },
+            {
+              "category": "computer hardware",
+              "id": "208",
+              "correctAnswer": "UDP",
+              "incorrectAnswers": ["TCP", "IMAP", "DNS"],
+              "question": {
+                "text": "Which protocol is referred to as a 'thin' protocol and is connectionless?"
+              }
+            },
+            {
+              "category": "computer hardware",
+              "id": "209",
+              "correctAnswer": "Application Layer",
+              "incorrectAnswers": ["Transport Layer", "Network Layer", "Network Access Layer"],
+              "question": {
+                "text": "Which layer of TCP/IP handles node-to-node application communication?"
+              }
+            },
+            {
+              "category": "computer hardware",
+              "id": "210",
+              "correctAnswer": "Port 25",
+              "incorrectAnswers": ["Port 69", "Port 23", "Port 110"],
+              "question": {
+                "text": "Which port does SMTP use for sending mail?"
+              }
+            },
+            {
+              "category": "computer hardware",
+              "id": "211",
+              "correctAnswer": "Port 69",
+              "incorrectAnswers": ["Port 23", "Port 110", "Port 25"],
+              "question": {
+                "text": "Which port does TFTP use for file transfers?"
+              }
+            },
+            {
+              "category": "computer hardware",
+              "id": "212",
+              "correctAnswer": "Port 110",
+              "incorrectAnswers": ["Port 143", "Port 25", "Port 23"],
+              "question": {
+                "text": "Which port does POP3 use to retrieve mail?"
+              }
+            },
+            {
+              "category": "computer hardware",
+              "id": "213",
+              "correctAnswer": "Port 143",
+              "incorrectAnswers": ["Port 69", "Port 25", "Port 110"],
+              "question": {
+                "text": "Which port does IMAPv4 use for secure mail retrieval?"
+              }
+            },
+            {
+              "category": "computer hardware",
+              "id": "214",
+              "correctAnswer": "TLS and SSL",
+              "incorrectAnswers": ["DNS and DHCP", "HTTP and HTTPS", "FTP and TFTP"],
+              "question": {
+                "text": "Which protocols are used for securing online data transmission?"
+              }
+            },
+            {
+              "category": "computer hardware",
+              "id": "215",
+              "correctAnswer": "DNS",
+              "incorrectAnswers": ["DHCP", "HTTP", "SMTP"],
+              "question": {
+                "text": "Which protocol is used for resolving hostnames?"
+              }
+            },
+            {
+              "category": "computer hardware",
+              "id": "216",
+              "correctAnswer": "DHCP",
+              "incorrectAnswers": ["DNS", "SMTP", "IMAP"],
+              "question": {
+                "text": "Which protocol dynamically assigns IP addresses to hosts?"
+              }
+            },
+            {
+              "category": "computer hardware",
+              "id": "217",
+              "correctAnswer": "Connection-Less",
+              "incorrectAnswers": ["Connection-Oriented", "Reliable", "Encrypted"],
+              "question": {
+                "text": "UDP is known as what type of protocol?"
+              }
+            },
+            {
+              "category": "computer hardware",
+              "id": "218",
+              "correctAnswer": "Virtual Circuits",
+              "incorrectAnswers": ["Physical Circuits", "Logical Circuits", "Permanent Circuits"],
+              "question": {
+                "text": "What does TCP use to set up communication paths for data transmission?"
+              }
+            },
+            {
+              "category": "computer hardware",
+              "id": "219",
+              "correctAnswer": "Port Numbers",
+              "incorrectAnswers": ["IP Addresses", "MAC Addresses", "Routing Tables"],
+              "question": {
+                "text": "What is used for establishing communication sessions in the Host-to-Host layer?"
+              }
+            },
+            {
+              "category": "computer hardware",
+              "id": "220",
+              "correctAnswer": "Well Known Protocols and Services",
+              "incorrectAnswers": ["Private Services", "Connection Services", "Encrypted Sessions"],
+              "question": {
+                "text": "Ports below 1024 are reserved for what?"
+              }
+            }
+          
+          
+          
+        
+    
+    
 ]

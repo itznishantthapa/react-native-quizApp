@@ -1,0 +1,1498 @@
+[
+    {
+      "category": "computer hardware",
+      "id": "101",
+      "correctAnswer": "Central Processing Unit",
+      "incorrectAnswers": ["Graphics Processing Unit", "Random Access Memory", "Motherboard"],
+      "question": {
+        "text": "Which component is known as the brain of the computer, responsible for processing instructions?"
+      }
+    },
+    {
+      "category": "computer hardware",
+      "id": "102",
+      "correctAnswer": "Power Supply Unit",
+      "incorrectAnswers": ["Graphics Card", "Motherboard", "Network Card"],
+      "question": {
+        "text": "Which hardware component converts mains AC to low-voltage regulated DC power for internal components?"
+      }
+    },
+    {
+      "category": "computer hardware",
+      "id": "103",
+      "correctAnswer": "Motherboard",
+      "incorrectAnswers": ["CPU", "RAM", "Hard Drive"],
+      "question": {
+        "text": "Which component serves as the main circuit board, connecting all computer components together?"
+      }
+    },
+    {
+      "category": "computer assembly",
+      "id": "104",
+      "correctAnswer": "Thermal Paste",
+      "incorrectAnswers": ["Silicone Glue", "Conductive Gel", "Adhesive Tape"],
+      "question": {
+        "text": "What substance is applied between the CPU and the heatsink to improve heat dissipation?"
+      }
+    },
+    {
+      "category": "cables",
+      "id": "105",
+      "correctAnswer": "SATA Cable",
+      "incorrectAnswers": ["USB Cable", "HDMI Cable", "VGA Cable"],
+      "question": {
+        "text": "Which cable is commonly used to connect hard drives and SSDs to the motherboard?"
+      }
+    },
+    {
+      "category": "safe lab procedure",
+      "id": "106",
+      "correctAnswer": "Ground yourself using an anti-static wrist strap",
+      "incorrectAnswers": ["Handle parts with bare hands", "Keep the computer plugged in", "Wear rubber gloves"],
+      "question": {
+        "text": "What should you do to prevent electrostatic discharge when working inside a computer?"
+      }
+    },
+    {
+      "category": "wires",
+      "id": "107",
+      "correctAnswer": "24-pin ATX Connector",
+      "incorrectAnswers": ["6-pin PCIe Connector", "8-pin CPU Connector", "4-pin Molex Connector"],
+      "question": {
+        "text": "Which power cable connects the power supply to the motherboard?"
+      }
+    },
+    {
+      "category": "troubleshooting",
+      "id": "108",
+      "correctAnswer": "Check power connections and components",
+      "incorrectAnswers": ["Restart the system", "Update the operating system", "Reset the BIOS"],
+      "question": {
+        "text": "What is the first step in troubleshooting a computer that won't turn on?"
+      }
+    },
+    {
+      "category": "computer architecture",
+      "id": "109",
+      "correctAnswer": "Fetch, Decode, Execute",
+      "incorrectAnswers": ["Load, Execute, Store", "Input, Process, Output", "Store, Decode, Execute"],
+      "question": {
+        "text": "What are the three main stages of the CPU instruction cycle?"
+      }
+    },
+    {
+      "category": "memory",
+      "id": "110",
+      "correctAnswer": "Random Access Memory (RAM)",
+      "incorrectAnswers": ["Read-Only Memory (ROM)", "Solid-State Drive (SSD)", "Cache"],
+      "question": {
+        "text": "Which type of memory is volatile and temporarily stores data that is actively used by programs?"
+      }
+    },
+    {
+      "category": "operating systems",
+      "id": "111",
+      "correctAnswer": "Windows, MacOS, Linux",
+      "incorrectAnswers": ["Linux, Android, iOS", "ChromeOS, Linux, MacOS", "iOS, Windows, Android"],
+      "question": {
+        "text": "Which operating systems are commonly used for desktop computers?"
+      }
+    },
+    {
+      "category": "printers",
+      "id": "112",
+      "correctAnswer": "Laser Printer",
+      "incorrectAnswers": ["Inkjet Printer", "Dot Matrix Printer", "Thermal Printer"],
+      "question": {
+        "text": "Which type of printer uses a laser beam to produce high-quality text and graphics?"
+      }
+    },
+    {
+      "category": "networking",
+      "id": "113",
+      "correctAnswer": "Ethernet Cable",
+      "incorrectAnswers": ["HDMI Cable", "USB Cable", "VGA Cable"],
+      "question": {
+        "text": "Which cable is typically used for wired networking to connect a computer to a router?"
+      }
+    },
+    {
+      "category": "troubleshooting",
+      "id": "114",
+      "correctAnswer": "Run a virus scan",
+      "incorrectAnswers": ["Reinstall the operating system", "Replace the hard drive", "Disconnect peripherals"],
+      "question": {
+        "text": "What should you do if your computer is running slower than usual due to suspected malware?"
+      }
+    },
+    {
+      "category": "computer hardware",
+      "id": "115",
+      "correctAnswer": "Heat Sink",
+      "incorrectAnswers": ["Fan", "Water Cooling System", "Thermal Pad"],
+      "question": {
+        "text": "What passive cooling component is attached to the CPU to dissipate heat?"
+      }
+    },
+    {
+      "category": "preventative maintenance",
+      "id": "116",
+      "correctAnswer": "Cleaning dust from vents and fans",
+      "incorrectAnswers": ["Increasing clock speeds", "Disabling antivirus software", "Using more RAM"],
+      "question": {
+        "text": "Which action is part of regular computer maintenance to prevent overheating?"
+      }
+    },
+    {
+      "category": "advanced hardware",
+      "id": "117",
+      "correctAnswer": "Server",
+      "incorrectAnswers": ["Workstation", "Gaming PC", "Laptop"],
+      "question": {
+        "text": "What type of computer is designed to manage network resources and serve multiple users?"
+      }
+    },
+    {
+      "category": "storage",
+      "id": "118",
+      "correctAnswer": "Solid-State Drive (SSD)",
+      "incorrectAnswers": ["Hard Disk Drive (HDD)", "Flash Drive", "Optical Drive"],
+      "question": {
+        "text": "Which storage device has no moving parts and provides faster data access than traditional hard drives?"
+      }
+    },
+    {
+      "category": "security",
+      "id": "120",
+      "correctAnswer": "Phishing",
+      "incorrectAnswers": ["Malware", "Ransomware", "Spyware"],
+      "question": {
+        "text": "What is the term for fraudulent attempts to obtain sensitive information by disguising as a trustworthy entity?"
+      }
+    },
+    
+        {
+          "category": "computer hardware",
+          "id": "121",
+          "correctAnswer": "Graphics Processing Unit (GPU)",
+          "incorrectAnswers": ["Central Processing Unit (CPU)", "Motherboard", "Hard Drive"],
+          "question": {
+            "text": "Which component is responsible for rendering images, animations, and videos on a computer?"
+          }
+        },
+        {
+          "category": "computer hardware",
+          "id": "122",
+          "correctAnswer": "USB Type-C",
+          "incorrectAnswers": ["USB 2.0", "Thunderbolt", "HDMI"],
+          "question": {
+            "text": "Which modern cable standard is reversible and supports power delivery, data transfer, and video output?"
+          }
+        },
+        {
+          "category": "safe lab procedure",
+          "id": "123",
+          "correctAnswer": "Unplug the power source",
+          "incorrectAnswers": ["Leave the system running", "Turn off the monitor", "Disable Wi-Fi"],
+          "question": {
+            "text": "What is the first step when disassembling a computer to ensure safety?"
+          }
+        },
+        {
+          "category": "storage",
+          "id": "124",
+          "correctAnswer": "Non-Volatile",
+          "incorrectAnswers": ["Volatile", "Temporary", "Ephemeral"],
+          "question": {
+            "text": "What type of memory is a hard disk drive (HDD) classified as?"
+          }
+        },
+        {
+          "category": "computer assembly",
+          "id": "125",
+          "correctAnswer": "BIOS (Basic Input Output System)",
+          "incorrectAnswers": ["Operating System", "CPU", "Hard Drive"],
+          "question": {
+            "text": "Which firmware is responsible for booting up a computer and initializing hardware?"
+          }
+        },
+        {
+          "category": "advanced hardware",
+          "id": "126",
+          "correctAnswer": "RAID (Redundant Array of Independent Disks)",
+          "incorrectAnswers": ["NAS (Network Attached Storage)", "SAN (Storage Area Network)", "SSD (Solid State Drive)"],
+          "question": {
+            "text": "Which technology combines multiple hard drives for redundancy or performance improvement?"
+          }
+        },
+        {
+          "category": "preventative maintenance",
+          "id": "127",
+          "correctAnswer": "Defragment the hard drive",
+          "incorrectAnswers": ["Disable security software", "Run multiple programs at once", "Increase the screen brightness"],
+          "question": {
+            "text": "Which action helps maintain the performance of a traditional hard disk drive (HDD)?"
+          }
+        },
+        {
+          "category": "wires",
+          "id": "128",
+          "correctAnswer": "HDMI Cable",
+          "incorrectAnswers": ["VGA Cable", "Ethernet Cable", "USB Cable"],
+          "question": {
+            "text": "Which cable is used to transmit high-definition video and audio between a computer and a monitor?"
+          }
+        },
+        {
+          "category": "networking",
+          "id": "129",
+          "correctAnswer": "Wi-Fi",
+          "incorrectAnswers": ["Ethernet", "Bluetooth", "Infrared"],
+          "question": {
+            "text": "What is the most common wireless networking technology used for connecting computers and mobile devices?"
+          }
+        },
+        {
+          "category": "troubleshooting",
+          "id": "130",
+          "correctAnswer": "Check for driver updates",
+          "incorrectAnswers": ["Reformat the hard drive", "Replace the power supply", "Upgrade the CPU"],
+          "question": {
+            "text": "What should you do if your hardware peripherals (e.g., keyboard, mouse) are not functioning properly?"
+          }
+        },
+        {
+          "category": "computer architecture",
+          "id": "131",
+          "correctAnswer": "Von Neumann Architecture",
+          "incorrectAnswers": ["Harvard Architecture", "Turing Machine", "RISC Architecture"],
+          "question": {
+            "text": "Which computer architecture model is based on storing data and instructions in the same memory space?"
+          }
+        },
+        {
+          "category": "memory",
+          "id": "132",
+          "correctAnswer": "Cache",
+          "incorrectAnswers": ["RAM", "ROM", "Virtual Memory"],
+          "question": {
+            "text": "What type of memory is closest to the CPU and stores frequently accessed data for quick retrieval?"
+          }
+        },
+        {
+          "category": "operating systems",
+          "id": "133",
+          "correctAnswer": "Kernel",
+          "incorrectAnswers": ["Shell", "BIOS", "Firmware"],
+          "question": {
+            "text": "Which part of an operating system acts as the core and manages system resources?"
+          }
+        },
+        {
+          "category": "assembly language",
+          "id": "134",
+          "correctAnswer": "Assembler",
+          "incorrectAnswers": ["Compiler", "Interpreter", "Linker"],
+          "question": {
+            "text": "Which program is used to convert assembly language into machine code?"
+          }
+        },
+        {
+          "category": "troubleshooting",
+          "id": "135",
+          "correctAnswer": "Clear the CMOS",
+          "incorrectAnswers": ["Reinstall the operating system", "Install a new hard drive", "Upgrade the RAM"],
+          "question": {
+            "text": "What is a common troubleshooting step if the BIOS settings are corrupted or the system fails to boot?"
+          }
+        },
+        {
+          "category": "computer assembly",
+          "id": "136",
+          "correctAnswer": "Phillips Head Screwdriver",
+          "incorrectAnswers": ["Flat Head Screwdriver", "Pliers", "Wire Cutter"],
+          "question": {
+            "text": "What is the most commonly used tool for assembling and disassembling computers?"
+          }
+        },
+        {
+          "category": "cables",
+          "id": "137",
+          "correctAnswer": "Thunderbolt",
+          "incorrectAnswers": ["USB 3.0", "Ethernet", "SATA"],
+          "question": {
+            "text": "Which high-speed cable interface supports data, video, and power over a single connection?"
+          }
+        },
+        {
+          "category": "advanced hardware",
+          "id": "138",
+          "correctAnswer": "Dual Channel",
+          "incorrectAnswers": ["Quad Channel", "Single Channel", "Triple Channel"],
+          "question": {
+            "text": "What is the memory configuration that allows two RAM modules to work together for increased bandwidth?"
+          }
+        },
+        {
+          "category": "security",
+          "id": "139",
+          "correctAnswer": "Firewall",
+          "incorrectAnswers": ["Antivirus", "VPN", "Encryption"],
+          "question": {
+            "text": "What network security system monitors and controls incoming and outgoing network traffic?"
+          }
+        },
+        {
+          "category": "printers",
+          "id": "140",
+          "correctAnswer": "Duplex Printing",
+          "incorrectAnswers": ["Toner Printing", "Inkjet Printing", "Thermal Printing"],
+          "question": {
+            "text": "What term refers to the ability of a printer to print on both sides of the paper automatically?"
+          }
+        },
+        
+            {
+              "category": "computer hardware",
+              "id": "141",
+              "correctAnswer": "Power Supply Unit (PSU)",
+              "incorrectAnswers": ["Motherboard", "CPU", "RAM"],
+              "question": {
+                "text": "Which component provides electrical power to all other components in a computer?"
+              }
+            },
+            {
+              "category": "computer hardware",
+              "id": "142",
+              "correctAnswer": "Solid State Drive (SSD)",
+              "incorrectAnswers": ["Hard Disk Drive (HDD)", "Optical Drive", "RAM"],
+              "question": {
+                "text": "Which storage device offers faster data access speeds and greater durability than a traditional hard disk drive?"
+              }
+            },
+            {
+              "category": "computer assembly",
+              "id": "143",
+              "correctAnswer": "Thermal Paste",
+              "incorrectAnswers": ["Heat Sink", "Fan", "Cable Ties"],
+              "question": {
+                "text": "What is applied between the CPU and heat sink to improve thermal conductivity and cooling efficiency?"
+              }
+            },
+            {
+              "category": "networking",
+              "id": "144",
+              "correctAnswer": "Ethernet Cable",
+              "incorrectAnswers": ["USB Cable", "HDMI Cable", "DisplayPort Cable"],
+              "question": {
+                "text": "Which type of cable is commonly used to connect computers to a local network for wired internet access?"
+              }
+            },
+            {
+              "category": "safe lab procedure",
+              "id": "145",
+              "correctAnswer": "Anti-Static Wrist Strap",
+              "incorrectAnswers": ["Screwdriver", "Flashlight", "Cleaning Cloth"],
+              "question": {
+                "text": "Which tool helps prevent electrostatic discharge (ESD) that can damage sensitive computer components during assembly?"
+              }
+            },
+            {
+              "category": "operating systems",
+              "id": "146",
+              "correctAnswer": "File System",
+              "incorrectAnswers": ["Kernel", "BIOS", "Boot Loader"],
+              "question": {
+                "text": "What system component organizes and manages files on a storage device, such as NTFS or FAT32?"
+              }
+            },
+            {
+              "category": "troubleshooting",
+              "id": "147",
+              "correctAnswer": "Boot Order",
+              "incorrectAnswers": ["System Updates", "BIOS Settings", "RAM Slots"],
+              "question": {
+                "text": "What BIOS setting determines the sequence in which the computer looks for bootable devices?"
+              }
+            },
+            {
+              "category": "cables",
+              "id": "148",
+              "correctAnswer": "DisplayPort",
+              "incorrectAnswers": ["VGA", "DVI", "USB"],
+              "question": {
+                "text": "Which cable standard supports high-definition video and audio and is commonly used in modern monitors and graphics cards?"
+              }
+            },
+            {
+              "category": "assembly language",
+              "id": "149",
+              "correctAnswer": "Opcode",
+              "incorrectAnswers": ["Operand", "Register", "Memory Address"],
+              "question": {
+                "text": "What part of an assembly language instruction specifies the operation to be performed by the CPU?"
+              }
+            },
+            {
+              "category": "computer architecture",
+              "id": "150",
+              "correctAnswer": "Multi-core Processor",
+              "incorrectAnswers": ["Single-core Processor", "Integrated GPU", "FPGA"],
+              "question": {
+                "text": "What type of CPU architecture allows for multiple processing cores within a single chip to improve performance?"
+              }
+            },
+            {
+              "category": "memory",
+              "id": "151",
+              "correctAnswer": "RAM (Random Access Memory)",
+              "incorrectAnswers": ["ROM", "Cache", "Hard Drive"],
+              "question": {
+                "text": "Which type of memory is used for temporary storage of data that is currently being accessed by the CPU?"
+              }
+            },
+            {
+              "category": "preventative maintenance",
+              "id": "152",
+              "correctAnswer": "Cleaning Dust",
+              "incorrectAnswers": ["Updating Drivers", "Installing New Software", "Overclocking"],
+              "question": {
+                "text": "Which regular maintenance task helps prevent overheating and hardware failure in a computer system?"
+              }
+            },
+            {
+              "category": "security",
+              "id": "153",
+              "correctAnswer": "Two-Factor Authentication (2FA)",
+              "incorrectAnswers": ["Password Complexity", "Antivirus Software", "Firewall"],
+              "question": {
+                "text": "What security measure requires two forms of verification to access an account or system?"
+              }
+            },
+            {
+              "category": "advanced hardware",
+              "id": "154",
+              "correctAnswer": "Heat Sink",
+              "incorrectAnswers": ["Fan", "Power Supply", "Cable"],
+              "question": {
+                "text": "What component helps dissipate heat away from the CPU or GPU to prevent overheating?"
+              }
+            },
+            {
+              "category": "computer assembly",
+              "id": "155",
+              "correctAnswer": "Motherboard",
+              "incorrectAnswers": ["Power Supply", "Graphics Card", "CPU Cooler"],
+              "question": {
+                "text": "Which component serves as the main circuit board and connects all other components in a computer?"
+              }
+            },
+            {
+              "category": "cables",
+              "id": "156",
+              "correctAnswer": "Fiber Optic Cable",
+              "incorrectAnswers": ["Coaxial Cable", "Twisted Pair Cable", "Serial Cable"],
+              "question": {
+                "text": "Which type of cable transmits data as light signals and is used for high-speed internet connections?"
+              }
+            },
+            {
+              "category": "troubleshooting",
+              "id": "157",
+              "correctAnswer": "POST (Power-On Self-Test)",
+              "incorrectAnswers": ["BIOS Update", "System Restore", "Safe Mode"],
+              "question": {
+                "text": "What is the initial diagnostic test run by the computer when it is powered on to check hardware components?"
+              }
+            },
+            {
+              "category": "operating systems",
+              "id": "158",
+              "correctAnswer": "Kernel Panic",
+              "incorrectAnswers": ["Boot Loop", "Blue Screen of Death (BSOD)", "System Freeze"],
+              "question": {
+                "text": "What term is used to describe a critical system error in Unix-based operating systems that causes the system to halt?"
+              }
+            },
+            {
+              "category": "networking",
+              "id": "159",
+              "correctAnswer": "Router",
+              "incorrectAnswers": ["Switch", "Modem", "Hub"],
+              "question": {
+                "text": "Which device routes data between different networks, such as between a local network and the internet?"
+              }
+            },
+            {
+              "category": "memory",
+              "id": "160",
+              "correctAnswer": "Virtual Memory",
+              "incorrectAnswers": ["Physical Memory", "Cache Memory", "ROM"],
+              "question": {
+                "text": "What memory management technique uses a portion of the hard drive as additional RAM to handle more applications?"
+              }
+            },
+            {
+              "category": "computer architecture",
+              "id": "161",
+              "correctAnswer": "ALU (Arithmetic Logic Unit)",
+              "incorrectAnswers": ["CU (Control Unit)", "RAM", "GPU"],
+              "question": {
+                "text": "Which part of the CPU performs arithmetic and logic operations?"
+              }
+            },
+            {
+              "category": "safe lab procedure",
+              "id": "162",
+              "correctAnswer": "Proper Disposal of E-Waste",
+              "incorrectAnswers": ["Storing Old Hardware", "Reusing Cables", "Cleaning the Lab"],
+              "question": {
+                "text": "What is important to ensure environmental safety and compliance when discarding old computer components?"
+              }
+            },
+            
+                {
+                  "category": "Safety Procedures",
+                  "id": "001",
+                  "correctAnswer": "Preventing Cuts and Burns",
+                  "incorrectAnswers": ["Preventing Overheating", "Preventing ESD", "Preventing Data Loss"],
+                  "question": {
+                    "text": "What is a basic safety guideline to prevent physical injuries while working with computer hardware?"
+                  }
+                },
+                {
+                  "category": "Electric Safety",
+                  "id": "002",
+                  "correctAnswer": "Experienced Technicians Should Handle High Voltage Repairs",
+                  "incorrectAnswers": ["Replace Power Supplies Yourself", "Use Different Power Cords Interchangeably", "Ignore Electrical Safety Guidelines"],
+                  "question": {
+                    "text": "Who should handle repairs of high voltage components such as power supplies and monitors?"
+                  }
+                },
+                {
+                  "category": "Fire Safety",
+                  "id": "003",
+                  "correctAnswer": "Contact Emergency Services",
+                  "incorrectAnswers": ["Fight the Fire Yourself", "Use Water to Extinguish the Fire", "Ignore the Fire"],
+                  "question": {
+                    "text": "What is the correct action to take if a fire is out of control in the workplace?"
+                  }
+                },
+                {
+                  "category": "Electrostatic Discharge (ESD)",
+                  "id": "004",
+                  "correctAnswer": "Static Electricity Jumping to Components",
+                  "incorrectAnswers": ["Power Fluctuations", "Electromagnetic Interference", "High Humidity"],
+                  "question": {
+                    "text": "What happens during Electrostatic Discharge (ESD) that can damage computer components?"
+                  }
+                },
+                {
+                  "category": "Electromagnetic Interference (EMI)",
+                  "id": "005",
+                  "correctAnswer": "Distortion of Signals in Network Environments",
+                  "incorrectAnswers": ["Interference from Radio Transmitters", "Static Electricity Buildup", "Power Surge Effects"],
+                  "question": {
+                    "text": "What does Electromagnetic Interference (EMI) affect in a network environment?"
+                  }
+                },
+                {
+                  "category": "Radio Frequency Interference (RFI)",
+                  "id": "006",
+                  "correctAnswer": "Wireless Networks",
+                  "incorrectAnswers": ["Power Supply Units", "Desktop Computers", "Cooling Fans"],
+                  "question": {
+                    "text": "Which technology is commonly affected by Radio Frequency Interference (RFI)?"
+                  }
+                },
+                {
+                  "category": "Climate and Equipment",
+                  "id": "007",
+                  "correctAnswer": "Overheating from High Temperatures",
+                  "incorrectAnswers": ["Increased ESD from Low Humidity", "Moisture Damage from High Humidity", "Data Loss from Power Fluctuations"],
+                  "question": {
+                    "text": "What can high environmental temperatures cause in computer equipment?"
+                  }
+                },
+                {
+                  "category": "Power Fluctuations",
+                  "id": "008",
+                  "correctAnswer": "Brownout",
+                  "incorrectAnswers": ["Power Surge", "Spike", "Blackout"],
+                  "question": {
+                    "text": "Which type of AC power fluctuation is characterized by a reduced voltage level below 80%?"
+                  }
+                },
+                {
+                  "category": "Power Protection Devices",
+                  "id": "009",
+                  "correctAnswer": "Uninterruptible Power Supply (UPS)",
+                  "incorrectAnswers": ["Surge Suppressor", "Standby Power Supply (SPS)", "Power Strip"],
+                  "question": {
+                    "text": "Which device helps protect against brownouts and blackouts by providing backup power?"
+                  }
+                },
+                {
+                  "category": "Environmental Safety",
+                  "id": "010",
+                  "correctAnswer": "Material Safety and Data Sheet (MSDS)",
+                  "incorrectAnswers": ["Power Protection Devices", "Antistatic Wrist Strap", "Cleaning Tools"],
+                  "question": {
+                    "text": "What document provides information about hazardous materials and first aid requirements?"
+                  }
+                },
+                {
+                  "category": "Proper Disposal",
+                  "id": "011",
+                  "correctAnswer": "Batteries and CRTs Contain Harmful Metals",
+                  "incorrectAnswers": ["Regular Household Trash", "Composting", "Standard Recycling Bin"],
+                  "question": {
+                    "text": "Why is it important to properly dispose of batteries and CRTs?"
+                  }
+                },
+                {
+                  "category": "ESD Tools",
+                  "id": "012",
+                  "correctAnswer": "Antistatic Wrist Strap",
+                  "incorrectAnswers": ["Multimeter", "Loopback Adapter", "Digital Camera"],
+                  "question": {
+                    "text": "Which tool is used to prevent electrostatic discharge (ESD) damage to computer components?"
+                  }
+                },
+                {
+                  "category": "Hand Tools",
+                  "id": "013",
+                  "correctAnswer": "Small Hand Tools",
+                  "incorrectAnswers": ["Power Tools", "Specialized Diagnostic Equipment", "Cleaning Brushes"],
+                  "question": {
+                    "text": "What type of tools are typically used in the computer assembly process?"
+                  }
+                },
+                {
+                  "category": "Diagnostic Tools",
+                  "id": "014",
+                  "correctAnswer": "Digital Multimeter",
+                  "incorrectAnswers": ["Antistatic Mat", "Cable Tester", "Screwdriver Set"],
+                  "question": {
+                    "text": "Which tool is used to test hardware components for electrical issues?"
+                  }
+                },
+                {
+                  "category": "Disk Management",
+                  "id": "015",
+                  "correctAnswer": "Scandisk or chkdsk",
+                  "incorrectAnswers": ["Defrag", "Disk Cleanup", "Fdisk"],
+                  "question": {
+                    "text": "Which tool checks the integrity of files and folders on a hard drive and scans for physical errors?"
+                  }
+                },
+                {
+                  "category": "Protection Software",
+                  "id": "016",
+                  "correctAnswer": "Antivirus Program",
+                  "incorrectAnswers": ["Disk Management Tool", "System File Checker", "Windows Security Center"],
+                  "question": {
+                    "text": "Which software tool protects against virus attacks?"
+                  }
+                },
+                {
+                  "category": "Organizational Tools",
+                  "id": "017",
+                  "correctAnswer": "Documentation of Services and Repairs",
+                  "incorrectAnswers": ["System Updates", "Data Backups", "Network Configurations"],
+                  "question": {
+                    "text": "What is important for technicians to document for future reference and consistency?"
+                  }
+                },
+                {
+                  "category": "Safe Lab Procedures",
+                  "id": "018",
+                  "correctAnswer": "Use Antistatic Mat",
+                  "incorrectAnswers": ["Regular Cleaning", "Frequent Restarts", "Power Cycling"],
+                  "question": {
+                    "text": "What tool helps prevent static electricity buildup when working with computer hardware?"
+                  }
+                },
+                {
+                  "category": "Fire Safety",
+                  "id": "019",
+                  "correctAnswer": "Read Instructions on the Fire Extinguisher",
+                  "incorrectAnswers": ["Fight the Fire Immediately", "Ignore Fire Safety Procedures", "Use Water on Electrical Fires"],
+                  "question": {
+                    "text": "What should you do before using a fire extinguisher in your workplace?"
+                  }
+                },
+                {
+                  "category": "Climate and Equipment",
+                  "id": "020",
+                  "correctAnswer": "Humidity Too High Can Cause Moisture Damage",
+                  "incorrectAnswers": ["Low Temperature Can Cause Overheating", "High Humidity Increases ESD", "Low Humidity Reduces EMI"],
+                  "question": {
+                    "text": "What can high humidity levels do to computer equipment?"
+                  }
+                },
+
+
+                
+                    {
+                        "category": "computer hardware",
+                        "id": "201",
+                        "correctAnswer": "Case",
+                        "incorrectAnswers": ["Power Supply Unit", "Motherboard", "CPU"],
+                        "question": {
+                            "text": "Which component houses all the other computer components in an assembled PC?"
+                        }
+                    },
+                    {
+                        "category": "computer hardware",
+                        "id": "202",
+                        "correctAnswer": "Power Supply Unit",
+                        "incorrectAnswers": ["Graphics Card", "CPU", "RAM"],
+                        "question": {
+                            "text": "Which component converts mains AC to low-voltage regulated DC power for internal components?"
+                        }
+                    },
+                    {
+                        "category": "computer hardware",
+                        "id": "203",
+                        "correctAnswer": "Motherboard",
+                        "incorrectAnswers": ["Power Supply Unit", "CPU", "RAM"],
+                        "question": {
+                            "text": "Which component connects all the other components of a computer system together?"
+                        }
+                    },
+                    {
+                        "category": "computer hardware",
+                        "id": "204",
+                        "correctAnswer": "CPU",
+                        "incorrectAnswers": ["Motherboard", "Power Supply Unit", "RAM"],
+                        "question": {
+                            "text": "Which component is often referred to as the brain of the computer, responsible for processing instructions?"
+                        }
+                    },
+                    {
+                        "category": "computer hardware",
+                        "id": "205",
+                        "correctAnswer": "RAM",
+                        "incorrectAnswers": ["CPU", "Motherboard", "Power Supply Unit"],
+                        "question": {
+                            "text": "Which component provides temporary storage for data that the CPU is currently processing?"
+                        }
+                    },
+                    {
+                        "category": "computer hardware",
+                        "id": "206",
+                        "correctAnswer": "Fan Assembly",
+                        "incorrectAnswers": ["Power Supply Unit", "Motherboard", "RAM"],
+                        "question": {
+                            "text": "Which component helps to cool down the CPU and other internal components?"
+                        }
+                    },
+                    {
+                        "category": "computer hardware",
+                        "id": "207",
+                        "correctAnswer": "Storage Drives",
+                        "incorrectAnswers": ["Motherboard", "CPU", "Power Supply Unit"],
+                        "question": {
+                            "text": "Which components are used to store the operating system, applications, and user data?"
+                        }
+                    },
+                    {
+                        "category": "computer hardware",
+                        "id": "208",
+                        "correctAnswer": "Adapter Cards",
+                        "incorrectAnswers": ["CPU", "Motherboard", "RAM"],
+                        "question": {
+                            "text": "Which components are added to the motherboard to provide additional functionality, such as video or network capabilities?"
+                        }
+                    },
+                    {
+                        "category": "computer hardware",
+                        "id": "209",
+                        "correctAnswer": "Monitor",
+                        "incorrectAnswers": ["Keyboard", "Mouse", "Printer"],
+                        "question": {
+                            "text": "Which component displays the output from the computer to the user?"
+                        }
+                    },
+                    {
+                        "category": "computer hardware",
+                        "id": "210",
+                        "correctAnswer": "Thermal Compound",
+                        "incorrectAnswers": ["RAM", "CPU", "Motherboard"],
+                        "question": {
+                            "text": "Which substance is applied between the CPU and heat sink to help dissipate heat?"
+                        }
+                    },
+                    {
+                        "category": "computer hardware",
+                        "id": "211",
+                        "correctAnswer": "Anti-static Mat",
+                        "incorrectAnswers": ["Power Supply Unit", "Case", "Fan Assembly"],
+                        "question": {
+                            "text": "Which tool helps prevent ESD (electrostatic discharge) damage during computer assembly?"
+                        }
+                    },
+                    {
+                        "category": "computer hardware",
+                        "id": "212",
+                        "correctAnswer": "Internal Cables",
+                        "incorrectAnswers": ["Monitor", "Keyboard", "Mouse"],
+                        "question": {
+                            "text": "Which components are used to connect the motherboard to the internal drives and fans?"
+                        }
+                    },
+                    {
+                        "category": "computer hardware",
+                        "id": "213",
+                        "correctAnswer": "PCI or PCIe Slots",
+                        "incorrectAnswers": ["RAM Slots", "CPU Socket", "Power Supply Unit"],
+                        "question": {
+                            "text": "Which slots are used to install adapter cards such as video cards or network cards?"
+                        }
+                    },
+                    {
+                        "category": "computer hardware",
+                        "id": "214",
+                        "correctAnswer": "I/O Connectors",
+                        "incorrectAnswers": ["Internal Cables", "Power Supply Unit", "RAM"],
+                        "question": {
+                            "text": "Which connectors on the back of the motherboard should align with the openings in the I/O plate?"
+                        }
+                    },
+                    {
+                        "category": "computer hardware",
+                        "id": "215",
+                        "correctAnswer": "Optical Drive",
+                        "incorrectAnswers": ["SATA Hard Disk", "SSD", "Power Supply Unit"],
+                        "question": {
+                            "text": "Which component is commonly installed in 5.25 inch drive bays and accessed from the front of the case?"
+                        }
+                    },
+                    {
+                        "category": "computer hardware",
+                        "id": "216",
+                        "correctAnswer": "Power Connectors",
+                        "incorrectAnswers": ["Data Cables", "Fan Connectors", "USB Ports"],
+                        "question": {
+                            "text": "Which type of connectors provide power to the motherboard and internal components?"
+                        }
+                    },
+                    {
+                        "category": "computer hardware",
+                        "id": "217",
+                        "correctAnswer": "Plastic Standoffs",
+                        "incorrectAnswers": ["Motherboard", "Power Supply Unit", "Cooling Fan"],
+                        "question": {
+                            "text": "Which components are used to securely install the motherboard in the case and avoid short circuits?"
+                        }
+                    },
+                    {
+                        "category": "computer hardware",
+                        "id": "218",
+                        "correctAnswer": "Heat Sink",
+                        "incorrectAnswers": ["RAM", "Fan Assembly", "CPU"],
+                        "question": {
+                            "text": "Which component is attached to the CPU to help dissipate heat?"
+                        }
+                    },
+                    {
+                        "category": "computer hardware",
+                        "id": "219",
+                        "correctAnswer": "Reset Switch",
+                        "incorrectAnswers": ["Power Button", "HDD-LED", "Speaker"],
+                        "question": {
+                            "text": "Which front panel connector is used to restart the computer without turning it off?"
+                        }
+                    },
+                    {
+                        "category": "computer hardware",
+                        "id": "220",
+                        "correctAnswer": "External Cables",
+                        "incorrectAnswers": ["Internal Cables", "Power Supply Unit", "Adapter Cards"],
+                        "question": {
+                            "text": "Which components are connected to the computer after reassembling the case to provide functionality such as internet and peripherals?"
+                        }
+                    },
+                        {
+                            "category": "computer hardware",
+                            "id": "301",
+                            "correctAnswer": "RAID 0",
+                            "incorrectAnswers": ["RAID 1", "RAID 5", "RAID 6"],
+                            "question": {
+                                "text": "Which RAID level uses striping but no redundancy?"
+                            }
+                        },
+                        {
+                            "category": "computer hardware",
+                            "id": "302",
+                            "correctAnswer": "RAID 1",
+                            "incorrectAnswers": ["RAID 0", "RAID 5", "RAID 10"],
+                            "question": {
+                                "text": "Which RAID level provides mirroring of data for redundancy?"
+                            }
+                        },
+                        {
+                            "category": "computer hardware",
+                            "id": "303",
+                            "correctAnswer": "RAID 5",
+                            "incorrectAnswers": ["RAID 0", "RAID 1", "RAID 6"],
+                            "question": {
+                                "text": "Which RAID level uses striping with parity to provide fault tolerance?"
+                            }
+                        },
+                        {
+                            "category": "computer hardware",
+                            "id": "304",
+                            "correctAnswer": "RAID 6",
+                            "incorrectAnswers": ["RAID 0", "RAID 1", "RAID 5"],
+                            "question": {
+                                "text": "Which RAID level can withstand the failure of two drives simultaneously?"
+                            }
+                        },
+                        {
+                            "category": "computer hardware",
+                            "id": "305",
+                            "correctAnswer": "SATA",
+                            "incorrectAnswers": ["IDE", "PATA", "SCSI"],
+                            "question": {
+                                "text": "Which drive interface uses a 7-pin data cable and a 15-pin power cable?"
+                            }
+                        },
+                        {
+                            "category": "computer hardware",
+                            "id": "306",
+                            "correctAnswer": "Optical Drive",
+                            "incorrectAnswers": ["Hard Drive", "Solid State Drive", "Flash Drive"],
+                            "question": {
+                                "text": "Which storage device uses lasers to read data on optical media?"
+                            }
+                        },
+                        {
+                            "category": "computer hardware",
+                            "id": "307",
+                            "correctAnswer": "External Flash Drive",
+                            "incorrectAnswers": ["Optical Drive", "Hard Drive", "SATA Drive"],
+                            "question": {
+                                "text": "Which storage device connects to a USB port and uses non-volatile memory chips?"
+                            }
+                        },
+                        {
+                            "category": "computer hardware",
+                            "id": "308",
+                            "correctAnswer": "Serial (DB-9)",
+                            "incorrectAnswers": ["USB", "FireWire", "Parallel (DB-25)"],
+                            "question": {
+                                "text": "Which port is used to connect older serial devices such as modems?"
+                            }
+                        },
+                        {
+                            "category": "computer hardware",
+                            "id": "309",
+                            "correctAnswer": "USB",
+                            "incorrectAnswers": ["FireWire", "Parallel", "PS/2"],
+                            "question": {
+                                "text": "Which port standard was designed to replace serial and parallel connections?"
+                            }
+                        },
+                        {
+                            "category": "computer hardware",
+                            "id": "310",
+                            "correctAnswer": "FireWire",
+                            "incorrectAnswers": ["USB", "Parallel", "PS/2"],
+                            "question": {
+                                "text": "Which high-speed interface supports data rates up to 3.2 Gbps over a 100m distance?"
+                            }
+                        },
+                        {
+                            "category": "computer hardware",
+                            "id": "311",
+                            "correctAnswer": "Parallel Ports (DB-25)",
+                            "incorrectAnswers": ["USB", "FireWire", "PS/2"],
+                            "question": {
+                                "text": "Which port transmits 8 bits of data at one time and is used for connecting printers?"
+                            }
+                        },
+                        {
+                            "category": "computer hardware",
+                            "id": "312",
+                            "correctAnswer": "PS/2",
+                            "incorrectAnswers": ["USB", "FireWire", "Parallel"],
+                            "question": {
+                                "text": "Which port connects a keyboard or mouse to a computer?"
+                            }
+                        },
+                        {
+                            "category": "computer hardware",
+                            "id": "313",
+                            "correctAnswer": "KVM Switch",
+                            "incorrectAnswers": ["Monitor", "Printer", "Scanner"],
+                            "question": {
+                                "text": "What device allows you to control multiple computers using a single keyboard, monitor, and mouse?"
+                            }
+                        },
+                        {
+                            "category": "computer hardware",
+                            "id": "314",
+                            "correctAnswer": "CRT",
+                            "incorrectAnswers": ["LCD", "LED", "OLED"],
+                            "question": {
+                                "text": "Which type of monitor uses a vacuum tube and an electron gun to produce images?"
+                            }
+                        },
+                        {
+                            "category": "computer hardware",
+                            "id": "315",
+                            "correctAnswer": "LCD",
+                            "incorrectAnswers": ["CRT", "LED", "OLED"],
+                            "question": {
+                                "text": "Which type of monitor uses liquid crystals and a backlight to produce images?"
+                            }
+                        },
+                        {
+                            "category": "computer hardware",
+                            "id": "316",
+                            "correctAnswer": "LED",
+                            "incorrectAnswers": ["CRT", "LCD", "OLED"],
+                            "question": {
+                                "text": "Which monitor technology uses light-emitting diodes for backlighting?"
+                            }
+                        },
+                        {
+                            "category": "computer hardware",
+                            "id": "317",
+                            "correctAnswer": "RAID 10",
+                            "incorrectAnswers": ["RAID 0", "RAID 1", "RAID 5"],
+                            "question": {
+                                "text": "Which RAID level combines striping and mirroring for improved performance and redundancy?"
+                            }
+                        },
+                        {
+                            "category": "computer hardware",
+                            "id": "318",
+                            "correctAnswer": "IDE or PATA",
+                            "incorrectAnswers": ["SATA", "SCSI", "USB"],
+                            "question": {
+                                "text": "Which drive interface uses a 40-pin connector and supports master and slave configurations?"
+                            }
+                        },
+                        {
+                            "category": "computer hardware",
+                            "id": "319",
+                            "correctAnswer": "Ethernet",
+                            "incorrectAnswers": ["USB", "FireWire", "Parallel"],
+                            "question": {
+                                "text": "Which network port connects a computer to a network and supports data rates of 10Mbps, 100Mbps, or 1000Mbps?"
+                            }
+                        },
+                        {
+                            "category": "computer hardware",
+                            "id": "320",
+                            "correctAnswer": "Input Device",
+                            "incorrectAnswers": ["Output Device", "Storage Device", "Network Device"],
+                            "question": {
+                                "text": "What is the general term for devices used to enter data or instructions into a computer?"
+                            }
+                        },
+                        {
+                            "category": "computer hardware",
+                            "id": "321",
+                            "correctAnswer": "Output Device",
+                            "incorrectAnswers": ["Input Device", "Storage Device", "Network Device"],
+                            "question": {
+                                "text": "What is the general term for devices used to present information from a computer to the user?"
+                            }
+                        },
+                        {
+                            "category": "computer hardware",
+                            "id": "322",
+                            "correctAnswer": "Biometric Authentication Device",
+                            "incorrectAnswers": ["Keyboard", "Mouse", "Scanner"],
+                            "question": {
+                                "text": "Which input device uses unique physical characteristics for user authentication?"
+                            }
+                        },
+                        {
+                            "category": "computer hardware",
+                            "id": "323",
+                            "correctAnswer": "Optical Media",
+                            "incorrectAnswers": ["Flash Drive", "Hard Drive", "SATA Drive"],
+                            "question": {
+                                "text": "What term describes storage devices like CD, DVD, and Blu-ray that use lasers to read data?"
+                            }
+                        },
+                        {
+                            "category": "computer hardware",
+                            "id": "324",
+                            "correctAnswer": "Parallel",
+                            "incorrectAnswers": ["USB", "FireWire", "SATA"],
+                            "question": {
+                                "text": "Which type of port is used to connect printers and transmits 8 bits of data at once?"
+                            }
+                        },
+
+                        
+                            {
+                                "category": "computer hardware",
+                                "id": "201",
+                                "correctAnswer": "Central Processing Unit",
+                                "incorrectAnswers": ["Graphics Processing Unit", "Random Access Memory", "Motherboard"],
+                                "question": {
+                                    "text": "Which component is known as the brain of the computer, responsible for processing instructions?"
+                                }
+                            },
+                            {
+                                "category": "computer hardware",
+                                "id": "202",
+                                "correctAnswer": "Power Supply Unit",
+                                "incorrectAnswers": ["Graphics Card", "Motherboard", "Network Card"],
+                                "question": {
+                                    "text": "Which hardware component converts mains AC to low-voltage regulated DC power for internal components?"
+                                }
+                            },
+                            {
+                                "category": "computer hardware",
+                                "id": "203",
+                                "correctAnswer": "LGA 1155",
+                                "incorrectAnswers": ["LGA 775", "Socket AM3", "Socket FM2"],
+                                "question": {
+                                    "text": "Which Intel CPU socket is used by the 2nd and 3rd generation processors?"
+                                }
+                            },
+                            {
+                                "category": "computer hardware",
+                                "id": "204",
+                                "correctAnswer": "Hyper-Threading",
+                                "incorrectAnswers": ["Overclocking", "CPU Throttling", "Cache Memory"],
+                                "question": {
+                                    "text": "Which feature allows a single CPU to perform as though there are two CPUs?"
+                                }
+                            },
+                            {
+                                "category": "computer hardware",
+                                "id": "205",
+                                "correctAnswer": "Cache Memory",
+                                "incorrectAnswers": ["RAM", "ROM", "Hard Disk Drive"],
+                                "question": {
+                                    "text": "Which type of memory stores frequently used data for faster access by the CPU?"
+                                }
+                            },
+                            {
+                                "category": "computer hardware",
+                                "id": "206",
+                                "correctAnswer": "DIMM",
+                                "incorrectAnswers": ["SODIMM", "SIMM", "SDRAM"],
+                                "question": {
+                                    "text": "Which type of memory module has memory chips on both sides?"
+                                }
+                            },
+                            {
+                                "category": "computer hardware",
+                                "id": "207",
+                                "correctAnswer": "DDR4-SDRAM",
+                                "incorrectAnswers": ["DDR2-SDRAM", "DDR3-SDRAM", "DDR5-SDRAM"],
+                                "question": {
+                                    "text": "Which type of RAM module has 288 pins and offers improved speed and performance over DDR3?"
+                                }
+                            },
+                            {
+                                "category": "computer hardware",
+                                "id": "208",
+                                "correctAnswer": "PCIe",
+                                "incorrectAnswers": ["PCI", "AGP", "SATA"],
+                                "question": {
+                                    "text": "Which expansion slot is used for video adapters and other high-speed peripherals?"
+                                }
+                            },
+                            {
+                                "category": "computer hardware",
+                                "id": "209",
+                                "correctAnswer": "Floppy Disk Drive",
+                                "incorrectAnswers": ["Hard Disk Drive", "Solid State Drive", "CD-ROM Drive"],
+                                "question": {
+                                    "text": "Which storage device uses removable 3.5-inch floppy disks?"
+                                }
+                            },
+                            {
+                                "category": "computer hardware",
+                                "id": "210",
+                                "correctAnswer": "Solid State Drive",
+                                "incorrectAnswers": ["Hard Disk Drive", "Floppy Disk Drive", "CD-ROM Drive"],
+                                "question": {
+                                    "text": "Which type of storage drive uses flash memory instead of magnetic disks?"
+                                }
+                            },
+                            {
+                                "category": "computer hardware",
+                                "id": "211",
+                                "correctAnswer": "Socket AM3+",
+                                "incorrectAnswers": ["LGA 2011", "Socket FM2", "LGA 1150"],
+                                "question": {
+                                    "text": "Which AMD CPU socket supports the AM3+ architecture?"
+                                }
+                            },
+                            {
+                                "category": "computer hardware",
+                                "id": "212",
+                                "correctAnswer": "Quad Core",
+                                "incorrectAnswers": ["Dual Core", "Triple Core", "Hexa Core"],
+                                "question": {
+                                    "text": "Which CPU type has four cores that can process instructions simultaneously?"
+                                }
+                            },
+                            {
+                                "category": "computer hardware",
+                                "id": "213",
+                                "correctAnswer": "ROM",
+                                "incorrectAnswers": ["RAM", "Cache Memory", "Flash Memory"],
+                                "question": {
+                                    "text": "Which type of memory is non-volatile and stores basic instructions for booting the computer?"
+                                }
+                            },
+                            {
+                                "category": "computer hardware",
+                                "id": "214",
+                                "correctAnswer": "Socket AM2",
+                                "incorrectAnswers": ["LGA 1155", "Socket FM1", "LGA 1366"],
+                                "question": {
+                                    "text": "Which AMD socket was used for early Athlon 64 processors?"
+                                }
+                            },
+                            {
+                                "category": "computer hardware",
+                                "id": "215",
+                                "correctAnswer": "CPU Throttling",
+                                "incorrectAnswers": ["Overclocking", "Cache Memory", "Hyper-Threading"],
+                                "question": {
+                                    "text": "Which feature allows a CPU to run at less than its rated speed to save power and reduce heat?"
+                                }
+                            },
+                            {
+                                "category": "computer hardware",
+                                "id": "216",
+                                "correctAnswer": "L1 Cache",
+                                "incorrectAnswers": ["L2 Cache", "L3 Cache", "RAM"],
+                                "question": {
+                                    "text": "Which level of cache memory is closest to the CPU core and offers the fastest access time?"
+                                }
+                            },
+                            {
+                                "category": "computer hardware",
+                                "id": "217",
+                                "correctAnswer": "Power Connectors",
+                                "incorrectAnswers": ["PCI Slots", "DIMM Slots", "SATA Ports"],
+                                "question": {
+                                    "text": "What type of connectors are used to provide power to various internal components of a computer?"
+                                }
+                            },
+                            {
+                                "category": "computer hardware",
+                                "id": "218",
+                                "correctAnswer": "AGP",
+                                "incorrectAnswers": ["PCIe", "PCI", "SATA"],
+                                "question": {
+                                    "text": "Which expansion slot was designed specifically for video adapters before PCIe became popular?"
+                                }
+                            },
+                            {
+                                "category": "computer hardware",
+                                "id": "219",
+                                "correctAnswer": "Hexa Core",
+                                "incorrectAnswers": ["Single Core", "Quad Core", "Octa Core"],
+                                "question": {
+                                    "text": "Which CPU type has six cores that can process multiple sets of instructions simultaneously?"
+                                }
+                            },
+                            {
+                                "category": "computer hardware",
+                                "id": "220",
+                                "correctAnswer": "DIMM",
+                                "incorrectAnswers": ["SIMM", "SODIMM", "DDR"],
+                                "question": {
+                                    "text": "Which memory module type is commonly used in desktops and has memory chips on both sides?"
+                                }
+                            },
+                            
+                                {
+                                    "category": "computer maintenance",
+                                    "id": "001",
+                                    "correctAnswer": "Preventive Maintenance",
+                                    "incorrectAnswers": ["Corrective Maintenance", "Predictive Maintenance", "Reactive Maintenance"],
+                                    "question": {
+                                        "text": "What type of maintenance involves regular inspections and cleaning to prevent system failures?"
+                                    }
+                                },
+                                {
+                                    "category": "computer maintenance",
+                                    "id": "002",
+                                    "correctAnswer": "Remove dust from fan intakes",
+                                    "incorrectAnswers": ["Update virus definition files", "Check and secure loose cables", "Defragment hard drives"],
+                                    "question": {
+                                        "text": "Which of the following is a hardware maintenance step to keep the computer running smoothly?"
+                                    }
+                                },
+                                {
+                                    "category": "computer maintenance",
+                                    "id": "003",
+                                    "correctAnswer": "Review software updates",
+                                    "incorrectAnswers": ["Clean mouse and keyboard", "Remove dust from power supply", "Scan for viruses and spyware"],
+                                    "question": {
+                                        "text": "Which software maintenance step helps improve performance by updating the software?"
+                                    }
+                                },
+                                {
+                                    "category": "troubleshooting",
+                                    "id": "004",
+                                    "correctAnswer": "Identify the problem",
+                                    "incorrectAnswers": ["Document findings", "Verify solution and full system functionality", "Establish a theory of probable causes"],
+                                    "question": {
+                                        "text": "What is the first step in the troubleshooting process?"
+                                    }
+                                },
+                                {
+                                    "category": "data protection",
+                                    "id": "005",
+                                    "correctAnswer": "Data Backup",
+                                    "incorrectAnswers": ["Virus Scanning", "Hardware Repair", "Software Installation"],
+                                    "question": {
+                                        "text": "What involves creating a copy of data to protect against loss?"
+                                    }
+                                },
+                                {
+                                    "category": "troubleshooting",
+                                    "id": "006",
+                                    "correctAnswer": "Event Viewer",
+                                    "incorrectAnswers": ["Device Manager", "BIOS Information", "Beep Codes"],
+                                    "question": {
+                                        "text": "Which tool provides information about system, user, or software errors?"
+                                    }
+                                },
+                                {
+                                    "category": "troubleshooting",
+                                    "id": "007",
+                                    "correctAnswer": "Device Manager",
+                                    "incorrectAnswers": ["Event Viewer", "BIOS Information", "Beep Codes"],
+                                    "question": {
+                                        "text": "Which tool displays devices configured on a computer and flags any issues with them?"
+                                    }
+                                },
+                                {
+                                    "category": "troubleshooting",
+                                    "id": "008",
+                                    "correctAnswer": "Beep Codes",
+                                    "incorrectAnswers": ["Device Manager", "Event Viewer", "BIOS Information"],
+                                    "question": {
+                                        "text": "What is used to diagnose hardware failures based on a sequence of beeps?"
+                                    }
+                                },
+                                {
+                                    "category": "data protection",
+                                    "id": "009",
+                                    "correctAnswer": "Document findings",
+                                    "incorrectAnswers": ["Identify the problem", "Establish a theory of probable causes", "Verify solution and full system functionality"],
+                                    "question": {
+                                        "text": "What should you do after troubleshooting a problem to ensure all steps and outcomes are recorded?"
+                                    }
+                                },
+                                {
+                                    "category": "preventive maintenance",
+                                    "id": "010",
+                                    "correctAnswer": "Increases equipment stability",
+                                    "incorrectAnswers": ["Reduces the number of software failures", "Decreases repair costs", "Increases data corruption"],
+                                    "question": {
+                                        "text": "Which of the following is a benefit of preventive maintenance?"
+                                    }
+                                },
+                                {
+                                    "category": "hardware maintenance",
+                                    "id": "011",
+                                    "correctAnswer": "Clean mouse and keyboard",
+                                    "incorrectAnswers": ["Update driver updates", "Defragment hard drives", "Scan hard drives for errors"],
+                                    "question": {
+                                        "text": "Which hardware maintenance task helps maintain input devices?"
+                                    }
+                                },
+                                {
+                                    "category": "software maintenance",
+                                    "id": "012",
+                                    "correctAnswer": "Update virus definition files",
+                                    "incorrectAnswers": ["Clean mouse and keyboard", "Remove dust from power supply", "Check and secure loose cables"],
+                                    "question": {
+                                        "text": "Which software maintenance task helps protect against new threats?"
+                                    }
+                                },
+                                {
+                                    "category": "troubleshooting",
+                                    "id": "013",
+                                    "correctAnswer": "Establish a theory of probable causes",
+                                    "incorrectAnswers": ["Verify full system functionality", "Determine an exact cause", "Implement the solution"],
+                                    "question": {
+                                        "text": "What is the step after identifying the problem and before testing possible solutions?"
+                                    }
+                                },
+                                {
+                                    "category": "data protection",
+                                    "id": "014",
+                                    "correctAnswer": "Check data integrity of the backup",
+                                    "incorrectAnswers": ["Update virus definition files", "Scan for viruses and spyware", "Remove unwanted programs"],
+                                    "question": {
+                                        "text": "What should be verified to ensure that a data backup is reliable?"
+                                    }
+                                },
+                                {
+                                    "category": "troubleshooting",
+                                    "id": "015",
+                                    "correctAnswer": "Verify full system functionality",
+                                    "incorrectAnswers": ["Document findings", "Establish a theory of probable causes", "Determine an exact cause"],
+                                    "question": {
+                                        "text": "What should you do after implementing a solution to ensure the system is fully operational?"
+                                    }
+                                },
+                                {
+                                    "category": "preventive maintenance",
+                                    "id": "016",
+                                    "correctAnswer": "Increase data protection",
+                                    "incorrectAnswers": ["Increase repair costs", "Decrease equipment stability", "Reduce the life of components"],
+                                    "question": {
+                                        "text": "Which preventive maintenance benefit helps to safeguard against data loss?"
+                                    }
+                                },
+                                {
+                                    "category": "troubleshooting",
+                                    "id": "017",
+                                    "correctAnswer": "Test the theory to determine an exact cause",
+                                    "incorrectAnswers": ["Document findings", "Establish a plan of action", "Identify the problem"],
+                                    "question": {
+                                        "text": "What step involves checking theories to pinpoint the actual cause of a problem?"
+                                    }
+                                },
+                                {
+                                    "category": "troubleshooting",
+                                    "id": "018",
+                                    "correctAnswer": "BIOS Information",
+                                    "incorrectAnswers": ["Event Viewer", "Device Manager", "Beep Codes"],
+                                    "question": {
+                                        "text": "What information should be checked if the computer fails to boot and you need to verify BIOS settings?"
+                                    }
+                                },
+                                {
+                                    "category": "data protection",
+                                    "id": "019",
+                                    "correctAnswer": "Data Backup",
+                                    "incorrectAnswers": ["Virus Scanning", "Software Updates", "Driver Installation"],
+                                    "question": {
+                                        "text": "What process involves saving a copy of data to prevent loss?"
+                                    }
+                                },
+                                {
+                                    "category": "troubleshooting",
+                                    "id": "020",
+                                    "correctAnswer": "Document findings",
+                                    "incorrectAnswers": ["Verify solution", "Determine an exact cause", "Identify the problem"],
+                                    "question": {
+                                        "text": "What should be done to keep a record of the troubleshooting process and outcomes?"
+                                    }
+                                }
+                            
+  ]
+  
