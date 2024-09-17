@@ -21,7 +21,7 @@ export default function Login({ navigation }) {
     };
 
     const toggleLogin = () => {
-        navigation.navigate('Signup');
+        navigation.navigate('Creation');
     }
 
 

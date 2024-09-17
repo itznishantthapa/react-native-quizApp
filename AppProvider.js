@@ -124,7 +124,7 @@ export const AppProvider = ({ children }) => {
       userData, setUserData, addQuizAnswer, getQuizData, 
       QuestionAnswer, imageUri, setImageUri, 
       signedUpUsers,
-      topic,setTopic
+      topic,setTopic,setQuestionAnswer
     }}>
       {children}
     </MyContext.Provider>

@@ -1,6 +1,5 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator, CardStyleInterpolators } from '@react-navigation/stack';
-import Signup from './Screens/Signup';
 import Login from './Screens/Login';
 import Creation from './Screens/Creation';
 import { Alert } from 'react-native';
@@ -200,18 +199,17 @@ export default function App() {
   // Define a mapping of screen names to their interpolators
   const screenInterpolators = {
     Login: CardStyleInterpolators.forVerticalIOS,
-    Signup: CardStyleInterpolators.forFadeFromBottomAndroid,
-    Creation: CardStyleInterpolators.forHorizontalIOS,
+    Creation: CardStyleInterpolators.forFadeFromBottomAndroid,
     Setting: CardStyleInterpolators.forFadeFromBottomAndroid,
     History: CardStyleInterpolators.forFadeFromBottomAndroid,
     UserProfile: CardStyleInterpolators.forFadeFromBottomAndroid,
     QuestionList: CardStyleInterpolators.forHorizontalIOS,
 
 
-    Account: CardStyleInterpolators.forHorizontalIOS,
-    Notifications: CardStyleInterpolators.forHorizontalIOS,
-    Privacy: CardStyleInterpolators.forHorizontalIOS,
-    About: CardStyleInterpolators.forHorizontalIOS,
+    Account: CardStyleInterpolators.forFadeFromBottomAndroid,
+    Notifications: CardStyleInterpolators.forFadeFromBottomAndroid,
+    Privacy: CardStyleInterpolators.forFadeFromBottomAndroid,
+    About: CardStyleInterpolators.forFadeFromBottomAndroid,
     HelpSupport: CardStyleInterpolators.forFadeFromBottomAndroid,
 
     AccountEdit: CardStyleInterpolators.forFadeFromBottomAndroid,
@@ -258,7 +256,6 @@ export default function App() {
             detachPreviousScreen: false,
           })} >
           <Stack.Screen name="Login" component={Login} />
-          <Stack.Screen name="Signup" component={Signup} />
           <Stack.Screen name="Creation" component={Creation} />
           <Stack.Screen name="Setting" >
             {props => <Setting {...props} setgameInfo={setgameInfo} />}

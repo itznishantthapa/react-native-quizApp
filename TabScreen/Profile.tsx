@@ -74,7 +74,7 @@ export default function Profile({ navigation,gameInfo,setgameInfo }) {
     }else{
       console.log('No user signed in');
     }
-  }, [gameInfo?.gamePlayed]);
+  }, []);
   
   
 

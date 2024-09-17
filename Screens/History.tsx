@@ -7,19 +7,25 @@ import IconFA6 from 'react-native-vector-icons/FontAwesome6';
 import IconEnypto from 'react-native-vector-icons/Entypo';
 import IconIonicons from 'react-native-vector-icons/Ionicons';
 import IconMc from 'react-native-vector-icons/MaterialCommunityIcons';
-import { useContext } from "react";
+import { useContext,useState } from "react";
 import { MyContext } from "../AppProvider";
 
 
 const History = ({navigation}) => {
     const {getQuizData,topic} = useContext(MyContext);
+    const [loading, setLoading] = useState(false);
 
-
-    const handleDualByHistory=(category: string)=>{
-        getQuizData(category);
-        navigation.navigate('QuestionList');
-    }
-
+    const handleDualByHistory = async (category: string) => {
+        try {
+            setLoading(true); // Show loading while fetching
+            await getQuizData(category); // Wait until the data is fully loaded
+            setLoading(false); // Remove loading state
+            navigation.navigate('QuestionList', { category }); // Navigate after the data is ready
+        } catch (error) {
+            setLoading(false); // Handle error and remove loading state
+            Alert.alert("Error", "Failed to load quiz data.");
+        }
+    };
 
     return (
         <SafeAreaView style={styles.background}>
