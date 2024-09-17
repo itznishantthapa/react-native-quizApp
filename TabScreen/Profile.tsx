@@ -139,45 +139,45 @@ export default function Profile({ navigation,gameInfo,setgameInfo }) {
             </View>
             <View style={styles.gameInfo}>
 
-              <TouchableOpacity style={styles.gameInfoIcons}>
+              <View style={styles.gameInfoIcons}>
                 {/* <View style={styles.gameInfoIcons}> */}
                 <Image style={styles.iconImage} source={rank}></Image>
-                <Text style={{ fontWeight: 'bold', fontSize: 20 }}>#{gameInfo.worldRank}</Text>
-                <Text style={{ fontWeight: 'bold' }}>World</Text>
-                <Text style={{ fontWeight: 'bold' }}>Rank</Text>
+                <Text style={{ fontWeight: 'bold', fontSize: 20 }}>{gameInfo.totalAttempted}</Text>
+                <Text style={{ fontWeight: 'bold' }}>Questions</Text>
+                <Text style={{ fontWeight: 'bold' }}>Solved</Text>
                 {/* </View> */}
-              </TouchableOpacity>
+              </View>
 
-              <TouchableOpacity style={styles.gameInfoIcons}>
+              <View style={styles.gameInfoIcons}>
                 <Image style={styles.iconImage} source={console_logo}></Image>
                 <Text style={{ fontWeight: 'bold', fontSize: 20 }}>{gameInfo.gamePlayed}</Text>
                 <Text style={{ fontWeight: 'bold' }}>Games</Text>
                 <Text style={{ fontWeight: 'bold' }}>Completed</Text>
-              </TouchableOpacity>
-              <TouchableOpacity style={styles.gameInfoIcons}>
+              </View>
+              <View style={styles.gameInfoIcons}>
                 <Image style={styles.iconImage} source={points}></Image>
                 <Text style={{ fontWeight: 'bold', fontSize: 20 }}>{gameInfo.points}</Text>
                 <Text style={{ fontWeight: 'bold' }}>Points</Text>
                 <Text style={{ fontWeight: 'bold' }}>Total</Text>
-              </TouchableOpacity>
-              <TouchableOpacity style={styles.gameInfoIcons}>
+              </View>
+              <View style={styles.gameInfoIcons}>
                 <Image style={styles.iconImage} source={charge}></Image>
                 <Text style={{ fontWeight: 'bold', fontSize: 20 }}>{((((gameInfo.points) / 4) * 100) / (gameInfo.totalAttempted)).toFixed(2)}% </Text>
                 <Text style={{ fontWeight: 'bold' }}>Accuracy</Text>
                 <Text style={{ fontWeight: 'bold' }}>rate</Text>
-              </TouchableOpacity>
-              <TouchableOpacity style={styles.gameInfoIcons}>
+              </View>
+              <View style={styles.gameInfoIcons}>
                 <Image style={styles.iconImage} source={correct}></Image>
                 <Text style={{ fontWeight: 'bold', fontSize: 20 }}>{((gameInfo.points) / 4)}</Text>
                 <Text style={{ fontWeight: 'bold' }}>Correct</Text>
                 <Text style={{ fontWeight: 'bold' }}>answers</Text>
-              </TouchableOpacity>
-              <TouchableOpacity style={styles.gameInfoIcons}>
+              </View>
+              <View style={styles.gameInfoIcons}>
                 <Image style={styles.iconImage} source={wrong}></Image>
                 <Text style={{ fontWeight: 'bold', fontSize: 20 }}>{(gameInfo.totalAttempted) - ((gameInfo.points) / 4)}</Text>
                 <Text style={{ fontWeight: 'bold' }}>Incorrect</Text>
                 <Text style={{ fontWeight: 'bold' }}>answers</Text>
-              </TouchableOpacity>
+              </View>
 
             </View>
 

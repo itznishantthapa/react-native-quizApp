@@ -67,9 +67,9 @@ export const  styles = StyleSheet.create({
         backgroundColor: '#f0efeb',
         borderRadius: 20,
         flexDirection: 'row',
-        justifyContent: 'flex-start',
+        justifyContent: 'center',
         alignItems: 'center',
-        paddingLeft: 30,
+        gap:5
 
     },
     boxContainer: {
@@ -322,7 +322,7 @@ export const  styles = StyleSheet.create({
         borderRadius: 20,
         // borderColor: 'grey',
         // borderWidth: 2,
-        backgroundColor: 'white'
+        backgroundColor: '#eaf4f4'
       },
       iconsNameContainer: {
         backgroundColor: '#dee2e6',

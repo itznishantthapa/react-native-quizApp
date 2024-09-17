@@ -25,6 +25,7 @@ const QuestionList = () => {
     animateDeleteAll();
   };
 
+
   // Function to animate each question sliding and disappearing
   const animateDeleteAll = () => {
     const animations = questions.map((_, index) =>
@@ -51,7 +52,7 @@ const QuestionList = () => {
         <View style={{ flexDirection: 'row', width: '90%', justifyContent: 'space-between' }}>
           <View></View>
           <Text style={{ color: 'white', fontSize: 20 }}>Solved Questions</Text>
-          <TouchableOpacity onLongPress={handleDeleteAll}>
+          <TouchableOpacity onLongPress={handleDeleteAll} >
             <IconIon name="reorder-three" size={30} style={{ color: 'white' }} />
           </TouchableOpacity>
         </View>

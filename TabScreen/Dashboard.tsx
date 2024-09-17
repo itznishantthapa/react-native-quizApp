@@ -1,7 +1,6 @@
 import { ScrollView, StyleSheet, Text, TextInput, View, ImageBackground, Touchable, TouchableOpacity } from 'react-native'
-import React, { useState,useContext } from 'react'
+import React, { useState, useContext } from 'react'
 import { StatusBar } from 'expo-status-bar'
-import Icon from 'react-native-vector-icons/FontAwesome';
 import IconEntypo from 'react-native-vector-icons/Entypo';
 import IconAnt from 'react-native-vector-icons/AntDesign';
 import Fdatabase from '../assets/Fdatabase.png'
@@ -14,14 +13,14 @@ import FoperatingSystem from '../assets/Fos.png'
 import FaiML from '../assets/Fai.jpg'
 
 import { styles } from '../style'
-import { useRef } from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import PopUp from '../Screens/PopUp';
 import { MyContext } from '../AppProvider';
+import IconFan from 'react-native-vector-icons/Fontisto';
 
 export default function Dashboard({ navigation, fetchQuestion, setQuestionAmount }) {
-   
-    const {topic,setTopic}=useContext(MyContext);
+
+    const { topic, setTopic } = useContext(MyContext);
 
 
     const [isModalVisible, setModalVisible] = useState(false);
@@ -32,7 +31,6 @@ export default function Dashboard({ navigation, fetchQuestion, setQuestionAmount
     };
 
 
-    const textInputRef = useRef(null);
 
 
     const goToQuiz = (category: string) => {
@@ -40,48 +38,44 @@ export default function Dashboard({ navigation, fetchQuestion, setQuestionAmount
         navigation.navigate('Quiz');
     }
 
-    const handleSearch = () => {
-        textInputRef.current.focus();
-    }
 
     return (
         <SafeAreaView style={styles.root}>
             <StatusBar hidden={false} backgroundColor='black' style='light' />
+
             <ScrollView style={styles.background_Dashboard}>
 
                 <View style={{
                     flexDirection: 'column', justifyContent: 'center', alignItems: 'center'
                 }}>
-
                     <View style={styles.searchView}>
-                        <TouchableOpacity onPress={handleSearch}>
-                            <Icon name='search' style={{ color: '#495057' }} size={30}></Icon>
-                        </TouchableOpacity>
-                        <TextInput ref={textInputRef} style={{ fontSize: 20, fontWeight: 'bold', width: '80%' }} placeholder='username' placeholderTextColor='#495057'></TextInput>
+                        <Text style={{ fontSize: 30, color: 'black', fontWeight:900}}>Quizit</Text>
+                        <IconFan name='fire' size={30} style={{color:'#00b4d8'}}></IconFan>
+
                     </View>
 
                     <View style={styles.boxContainer}>
 
                         <TouchableOpacity style={{ width: '100%', flex: 1, justifyContent: 'center', alignItems: 'center' }} onPress={() => goToQuiz(topic.database_cloud)} >
-                            <ImageBackground source={topic.database_cloud==='Database'?Fdatabase:Fhardware} resizeMode="cover" imageStyle={{ borderRadius: 20, width: '100%' }} style={styles.boxes}>
+                            <ImageBackground source={topic.database_cloud === 'Database' ? Fdatabase : Fhardware} resizeMode="cover" imageStyle={{ borderRadius: 20, width: '100%' }} style={styles.boxes}>
                                 <Text style={styles.textStyle}>{topic.database_cloud}</Text>
                             </ImageBackground>
                         </TouchableOpacity>
 
                         <TouchableOpacity style={{ width: '100%', flex: 1, justifyContent: 'center', alignItems: 'center' }} onPress={() => goToQuiz(topic.programming_dsa)}>
-                            <ImageBackground source={topic.programming_dsa==='Programming'? Fprogramming:Fdsa} resizeMode="cover" imageStyle={{ borderRadius: 20, width: '100%' }} style={styles.boxes}>
+                            <ImageBackground source={topic.programming_dsa === 'Programming' ? Fprogramming : Fdsa} resizeMode="cover" imageStyle={{ borderRadius: 20, width: '100%' }} style={styles.boxes}>
                                 <Text style={styles.textStyle}>{topic.programming_dsa}</Text>
                             </ImageBackground>
                         </TouchableOpacity>
 
                         <TouchableOpacity style={{ width: '100%', flex: 1, justifyContent: 'center', alignItems: 'center' }} onPress={() => goToQuiz(topic.networking_softEng)}>
-                            <ImageBackground source={topic.networking_softEng==='Networking'? Fnetwork:FsoftwareEngineering} resizeMode="cover" imageStyle={{ borderRadius: 20, width: '100%' }} style={styles.boxes}>
+                            <ImageBackground source={topic.networking_softEng === 'Networking' ? Fnetwork : FsoftwareEngineering} resizeMode="cover" imageStyle={{ borderRadius: 20, width: '100%' }} style={styles.boxes}>
                                 <Text style={styles.textStyle}>{topic.networking_softEng}</Text>
                             </ImageBackground>
                         </TouchableOpacity>
 
                         <TouchableOpacity style={{ width: '100%', flex: 1, justifyContent: 'center', alignItems: 'center' }} onPress={() => goToQuiz(topic.os_aiMl)}>
-                            <ImageBackground source={topic.os_aiMl==='Operating System'?FoperatingSystem:FaiML} resizeMode="cover" imageStyle={{ borderRadius: 20, width: '100%' }} style={styles.boxes}>
+                            <ImageBackground source={topic.os_aiMl === 'Operating System' ? FoperatingSystem : FaiML} resizeMode="cover" imageStyle={{ borderRadius: 20, width: '100%' }} style={styles.boxes}>
                                 <Text style={styles.textStyle}>{topic.os_aiMl}</Text>
                             </ImageBackground>
                         </TouchableOpacity>
@@ -98,14 +92,14 @@ export default function Dashboard({ navigation, fetchQuestion, setQuestionAmount
                             </View>
                         </TouchableOpacity>
 
-                        <TouchableOpacity style={{ width: '45%', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }} onPress={()=>navigation.navigate('History')}>
+                        <TouchableOpacity style={{ width: '45%', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }} onPress={() => navigation.navigate('History')}>
                             {/* <ImageBackground source={clock} resizeMode='cover' imageStyle={{ height: 150, width: '100%', borderRadius: 20, }} style={{ height: 150, width: '100%', justifyContent: 'center',alignItems:'center' }}>
 
                             <Text style={[styles.textStyle2,{fontSize:18,fontWeight:'900'}]}></Text>
 
                         </ImageBackground> */}
                             <View style={{ height: 150, width: '100%', justifyContent: 'center', alignItems: 'center', backgroundColor: '#2c0735', borderRadius: 20 }}>
-                                <IconEntypo name='back-in-time' size={60} style={{color:'white'}}></IconEntypo>
+                                <IconEntypo name='back-in-time' size={60} style={{ color: 'white' }}></IconEntypo>
                             </View>
                         </TouchableOpacity>
                     </View>
