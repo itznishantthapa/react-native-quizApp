@@ -1,6 +1,6 @@
 import { Text, View, Image, TouchableOpacity, ScrollView, Alert } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
-import React, { useState, useEffect, useCallback,useContext } from 'react';
+import React, { useEffect,useContext } from 'react';
 import { styles } from '../style';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import console_logo from '../assets/console_logo.png';
@@ -10,14 +10,11 @@ import wrong from '../assets/wrong.png';
 import points from '../assets/points.png';
 import charge from '../assets/charge.png';
 import IconF from 'react-native-vector-icons/Feather';
-import Iconfontisto from 'react-native-vector-icons/Fontisto';
-import { auth, firestore } from '../firebaseConfig';
-import { collection, getDocs } from 'firebase/firestore';
-import { useFocusEffect } from '@react-navigation/native';
+import { auth } from '../firebaseConfig';
 import * as ImagePicker from 'expo-image-picker';
 import { fileUploadToFirebaseStorage, getFromFirebase, getLocally, updateToFirebase } from '../db';
 import {MyContext} from '../AppProvider';
-import IconPerson from 'react-native-vector-icons/Ionicons'
+
 
 
 
@@ -183,7 +180,6 @@ export default function Profile({ navigation,gameInfo,setgameInfo }) {
 
             <View style={styles.friendTextAndNotificationContainer}>
             <Text style={{ fontSize: 30, fontWeight: 'bold',}}>Friends ({auth.currentUser?signedUpUsers.length-1:0})</Text>
-            <Iconfontisto name='bell' size={50}></Iconfontisto>
             </View>
 
             <ScrollView style={{ marginTop: 31 }}>

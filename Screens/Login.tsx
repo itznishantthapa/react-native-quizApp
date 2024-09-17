@@ -8,6 +8,7 @@ import { styles } from '../style.js'
 import NetInfo from '@react-native-community/netinfo';
 import { signAccount } from '../db.js';
 
+
 export default function Login({ navigation }) {
    const [passwordVisible, setPasswordVisible] = useState(true);
 
@@ -43,7 +44,7 @@ export default function Login({ navigation }) {
           await signAccount(navigation,email,password);
             setUsername("");
             setPassword("");
-
+         
     };
 
 

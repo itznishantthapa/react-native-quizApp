@@ -31,6 +31,13 @@ export default function Creation({ navigation }) {
 
 
     const handleSignup = async () => {
+        //Checking the internet connection
+        const networkState = await NetInfo.fetch();
+        if (!networkState.isConnected) {
+            Alert.alert("Network Error", "Please connect to the internet.");
+            return
+        }
+
         if (!email || !password) {
             Alert.alert("Error", "emails and password fields cannot be empty.");
             return;
@@ -44,7 +51,7 @@ export default function Creation({ navigation }) {
             return;
         }
         //calling a crearAccount function that I made in db.js file.
-        await createAccount(navigation,email,password,    {fullName:fullName,email:email});
+        await createAccount(navigation, email, password, { fullName: fullName, email: email });
     };
 
 
