@@ -10,32 +10,13 @@ import points from '../assets/points.png'
 import charge from '../assets/charge.png'
 
 import { auth } from '../firebaseConfig'; // Import Firestore and Auth
-import { useRoute, RouteProp } from '@react-navigation/native';
-
-/// Define the type for the route params
-type GameInfo = {
-  gamePlayed: number;
-  points: number;
-  totalAttempted: number;
-  worldRank: string;
-};
-
-type User = {
-  email: string;
-  fullName: string;
-  gameInfo: GameInfo;
-  profile: string;
-};
-
-type UserProfileRouteProp = RouteProp<{ UserProfile: { user: User; signedUpUsers: any[] } }, 'UserProfile'>;
+import { useRoute } from '@react-navigation/native';
 
 
 
 export default function UserProfile({ navigation }) {
-  const route = useRoute<UserProfileRouteProp>();
-  // const route = useRoute();
-
-  const { user, signedUpUsers } = route.params
+  const route = useRoute();
+  const {user, signedUpUsers} = route.params as { user: any, signedUpUsers: any[] };
 
   const handleUserProfile = (user: any, signedUpUsers: any[]) => {
     navigation.navigate('UserProfile', { user, signedUpUsers })
@@ -68,7 +49,7 @@ export default function UserProfile({ navigation }) {
               <TouchableOpacity style={styles.gameInfoIcons}>
                 {/* <View style={styles.gameInfoIcons}> */}
                 <Image style={styles.iconImage} source={rank}></Image>
-                <Text style={{ fontWeight: 'bold', fontSize: 20 }}>#{user.gameInfo ? user.gameInfo.worldRank : 'NA'}</Text>
+                <Text style={{ fontWeight: 'bold', fontSize: 20 }}>#{user.gameInfo ? user.gameInfo.totalAttempted : 'NA'}</Text>
                 <Text style={{ fontWeight: 'bold' }}>World</Text>
                 <Text style={{ fontWeight: 'bold' }}>Rank</Text>
                 {/* </View> */}

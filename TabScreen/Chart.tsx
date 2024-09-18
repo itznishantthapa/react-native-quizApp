@@ -15,7 +15,7 @@ const Chart = ({ navigation }) => {
     const { signedUpUsers } = useContext(MyContext);
 
 
-    const handleUserProfile = (user: any, signedUpUsers) => {
+    const handleUserProfile = (user: any, signedUpUsers: any) => {
         navigation.navigate('UserProfile', { user, signedUpUsers });
     };
 

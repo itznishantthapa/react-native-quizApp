@@ -36,16 +36,6 @@ const QuizApp = ({ question, options,categories,correctAns, handleOptionClick, c
                         ))}
                     </View>
                 </View>
-
-                    <View style={{position:'absolute',top:'80%'}}>
-                    {isOver && (
-                        <TouchableOpacity
-                            style={styles.outlineButton}
-                            onPress={fetchQuestion}>
-                            <Text style={styles.outlineButtonText}>Restart</Text>
-                        </TouchableOpacity>
-                    )}
-                    </View>   
             </View>
         </View>
 

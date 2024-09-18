@@ -14,7 +14,8 @@ import { auth } from '../firebaseConfig';
 import * as ImagePicker from 'expo-image-picker';
 import { fileUploadToFirebaseStorage, getFromFirebase, updateToFirebase } from '../db';
 import {MyContext} from '../AppProvider';
-
+import { useFocusEffect } from '@react-navigation/native';
+import { useCallback } from 'react';
 
 
 
@@ -65,13 +66,17 @@ export default function Profile({ navigation,gameInfo,setgameInfo }) {
     };
 
 
-  useEffect(() => {
-    if(auth.currentUser){
-      fetchGameInfo();
-    }else{
-      console.log('No user signed in');
-    }
-  }, []);
+    
+    useFocusEffect(
+      useCallback(() => {
+        if(auth.currentUser){
+          fetchGameInfo();
+        } else {
+          console.log('No user signed in');
+        }
+      }, [])
+    );
+    
   
   
 
@@ -84,7 +89,7 @@ export default function Profile({ navigation,gameInfo,setgameInfo }) {
       };
       uploadGameInfo();
     }
-  }, [auth.currentUser]);
+  }, [gameInfo.gamePlayed]); // Update only when gamePlayed changes
 
   // Navigation handlers
   const handleGear = () => {
