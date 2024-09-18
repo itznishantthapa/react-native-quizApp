@@ -1,5 +1,5 @@
-import { StyleSheet, Text, View, TouchableOpacity, TouchableWithoutFeedback, Alert } from 'react-native'
-import React, { useState, useEffect } from 'react'
+import { Text, View, TouchableOpacity, TouchableWithoutFeedback, Alert } from 'react-native'
+import React from 'react'
 import { styles } from '../style'
 import { StatusBar } from 'expo-status-bar'
 import { SafeAreaView } from 'react-native-safe-area-context'
@@ -9,10 +9,8 @@ import IconF from 'react-native-vector-icons/Feather';
 import IconF5 from 'react-native-vector-icons/FontAwesome5';
 import IconSimple from 'react-native-vector-icons/SimpleLineIcons';
 import IconAnt from 'react-native-vector-icons/AntDesign';
+import { logout,isAuthenticated } from '../authService'
 
-import { signOut } from 'firebase/auth';
-import { auth } from '../firebaseConfig';
-import { saveLocally } from '../db'
 
 
 const Setting = ({ navigation, setgameInfo }) => {
@@ -31,30 +29,23 @@ const Setting = ({ navigation, setgameInfo }) => {
             "Confirm Logout",
             "Are you sure you want to logout?",
             [
-                {
-                    text: "Cancel",
-                    style: "cancel"
-                },
+                { text: "Cancel", style: "cancel" },
                 {
                     text: "Logout",
                     onPress: async () => {
-                        try {
-                            //signout the user
-                            await signOut(auth);
-                            //when user get signout the data is reset to zero
-                            setgameInfo(initialGameInfo)
+                        const result = await logout(); // Use service to handle logout
+                        if (result.success) {
+                            setgameInfo(initialGameInfo); // Reset the game info
                             navigation.navigate('Profile');
-                            console.log("User logged out");
-                        } catch (error) {
-                            console.error("Error logging out: ", error);
+                        } else {
+                            console.error("Error logging out: ", result.error);
                         }
                     },
                     style: "destructive"
                 }
             ]
         );
-
-    }
+    };
 
     const handleSignIn = () => {
         navigation.navigate('Login')
@@ -98,7 +89,7 @@ const Setting = ({ navigation, setgameInfo }) => {
                     {/* Account Box Sections */}
 
                     {
-                        auth.currentUser ? (
+                      isAuthenticated() ? (
                             <TouchableWithoutFeedback onPress={handleAccount}>
                                 <View style={styles.accountBoxSections}>
                                     <IconV name='person-outline' size={24} style={{ color: 'white' }} ></IconV>
@@ -110,7 +101,7 @@ const Setting = ({ navigation, setgameInfo }) => {
                     }
 
                     {
-                        auth.currentUser ? (
+                      isAuthenticated() ? (
                             <TouchableWithoutFeedback onPress={handleNotification}>
                                 <View style={styles.accountBoxSections}>
                                     <IconV name='notifications-outline' size={24} style={{ color: 'white' }}></IconV>
@@ -121,7 +112,7 @@ const Setting = ({ navigation, setgameInfo }) => {
                         ) : null
                     }
 
-                    {auth.currentUser ? (
+                    {isAuthenticated() ? (
                         <TouchableWithoutFeedback onPress={handlePrivacy}>
                             <View style={styles.accountBoxSections}>
                                 <IconF name='lock' size={24} style={{ color: 'white' }}></IconF>
@@ -148,7 +139,7 @@ const Setting = ({ navigation, setgameInfo }) => {
                     </TouchableWithoutFeedback>
 
                     {
-                        auth.currentUser ? (
+                       isAuthenticated()? (
                             <TouchableWithoutFeedback onPress={handleLogout}>
                                 <View style={styles.accountBoxSections}>
                                     <IconSimple name='logout' size={24} style={{ color: 'white' }}></IconSimple>

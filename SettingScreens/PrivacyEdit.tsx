@@ -1,17 +1,15 @@
-import { View, Text, TouchableOpacity, StyleSheet, TouchableWithoutFeedback, TextInput } from 'react-native'
+import { View, Text, TouchableOpacity, TouchableWithoutFeedback, TextInput } from 'react-native'
 import React from 'react'
 import { styles } from '../style'
 import { StatusBar } from 'expo-status-bar'
 import IconF from 'react-native-vector-icons/Feather'
 import { SafeAreaView } from 'react-native-safe-area-context'
-import IconF6 from 'react-native-vector-icons/FontAwesome6'
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faEye, faEyeSlash } from '@fortawesome/free-regular-svg-icons';
 
-import { auth, firestore } from '../firebaseConfig'; // Import Firestore and Auth
-import { doc, getDoc, updateDoc } from 'firebase/firestore';
+import { auth } from '../firebaseConfig'; // Import Firestore and Auth
 import { EmailAuthProvider, reauthenticateWithCredential, updatePassword } from 'firebase/auth';
-import { useState, useEffect, } from 'react';
+import { useState } from 'react';
 import { Alert } from 'react-native'
 
 const PrivacyEdit = ({ navigation }) => {

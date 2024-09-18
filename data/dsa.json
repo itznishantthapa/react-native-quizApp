@@ -1,0 +1,908 @@
+[
+    {
+      "category": "Data Structures",
+      "id": "201",
+      "correctAnswer": "O(1)",
+      "incorrectAnswers": ["O(n)", "O(log n)", "O(n^2)"],
+      "question": {
+        "text": "What is the time complexity of accessing an element in an ArrayList by index?"
+      }
+    },
+    {
+      "category": "Data Structures",
+      "id": "202",
+      "correctAnswer": "O(n)",
+      "incorrectAnswers": ["O(1)", "O(n log n)", "O(n^2)"],
+      "question": {
+        "text": "What is the time complexity of inserting an element in the middle of a Linked List?"
+      }
+    },
+    {
+      "category": "Data Structures",
+      "id": "203",
+      "correctAnswer": "Stack",
+      "incorrectAnswers": ["Queue", "Linked List", "HashMap"],
+      "question": {
+        "text": "Which data structure follows the Last In, First Out (LIFO) principle?"
+      }
+    },
+    {
+      "category": "Algorithms",
+      "id": "204",
+      "correctAnswer": "O(log n)",
+      "incorrectAnswers": ["O(1)", "O(n)", "O(n^2)"],
+      "question": {
+        "text": "What is the time complexity of binary search?"
+      }
+    },
+    {
+      "category": "Data Structures",
+      "id": "205",
+      "correctAnswer": "O(n^2)",
+      "incorrectAnswers": ["O(log n)", "O(n)", "O(n log n)"],
+      "question": {
+        "text": "What is the time complexity of the Bubble Sort algorithm in the worst case?"
+      }
+    },
+    {
+      "category": "Data Structures",
+      "id": "206",
+      "correctAnswer": "Queue",
+      "incorrectAnswers": ["Stack", "Tree", "Graph"],
+      "question": {
+        "text": "Which data structure follows the First In, First Out (FIFO) principle?"
+      }
+    },
+    {
+      "category": "Algorithms",
+      "id": "207",
+      "correctAnswer": "Merge Sort",
+      "incorrectAnswers": ["Quick Sort", "Insertion Sort", "Bubble Sort"],
+      "question": {
+        "text": "Which sorting algorithm divides the list into halves and recursively sorts them before merging?"
+      }
+    },
+    {
+      "category": "Data Structures",
+      "id": "208",
+      "correctAnswer": "Hash Table",
+      "incorrectAnswers": ["ArrayList", "Linked List", "Queue"],
+      "question": {
+        "text": "Which data structure provides constant time complexity, O(1), for both insertions and lookups in the average case?"
+      }
+    },
+    {
+      "category": "Data Structures",
+      "id": "209",
+      "correctAnswer": "Binary Search Tree",
+      "incorrectAnswers": ["Heap", "Graph", "Trie"],
+      "question": {
+        "text": "Which tree data structure ensures that the left child is smaller and the right child is larger than the parent node?"
+      }
+    },
+    {
+      "category": "Algorithms",
+      "id": "210",
+      "correctAnswer": "Depth First Search (DFS)",
+      "incorrectAnswers": ["Breadth First Search (BFS)", "Dijkstra's Algorithm", "Prim's Algorithm"],
+      "question": {
+        "text": "Which graph traversal algorithm uses a stack to explore as far as possible along each branch before backtracking?"
+      }
+    },
+    {
+      "category": "Data Structures",
+      "id": "211",
+      "correctAnswer": "O(1)",
+      "incorrectAnswers": ["O(n)", "O(log n)", "O(n^2)"],
+      "question": {
+        "text": "What is the time complexity of inserting an element at the end of an ArrayList (assuming no resizing is required)?"
+      }
+    },
+    {
+      "category": "Data Structures",
+      "id": "212",
+      "correctAnswer": "Linked List",
+      "incorrectAnswers": ["Array", "Stack", "HashMap"],
+      "question": {
+        "text": "Which data structure consists of nodes where each node contains data and a reference to the next node?"
+      }
+    },
+    {
+      "category": "Algorithms",
+      "id": "213",
+      "correctAnswer": "O(n log n)",
+      "incorrectAnswers": ["O(n)", "O(n^2)", "O(log n)"],
+      "question": {
+        "text": "What is the average-case time complexity of Quick Sort?"
+      }
+    },
+    {
+      "category": "Data Structures",
+      "id": "214",
+      "correctAnswer": "Priority Queue",
+      "incorrectAnswers": ["Stack", "Deque", "HashMap"],
+      "question": {
+        "text": "Which data structure allows insertion in any order but retrieves the highest (or lowest) priority element first?"
+      }
+    },
+    {
+      "category": "Algorithms",
+      "id": "215",
+      "correctAnswer": "O(n)",
+      "incorrectAnswers": ["O(log n)", "O(n^2)", "O(1)"],
+      "question": {
+        "text": "What is the time complexity of traversing an entire Linked List?"
+      }
+    },
+    {
+      "category": "Algorithms",
+      "id": "216",
+      "correctAnswer": "Breadth First Search (BFS)",
+      "incorrectAnswers": ["Depth First Search (DFS)", "Dijkstra's Algorithm", "Kruskal's Algorithm"],
+      "question": {
+        "text": "Which graph traversal algorithm explores all neighbors of a node before moving to the next level?"
+      }
+    },
+    {
+      "category": "Data Structures",
+      "id": "217",
+      "correctAnswer": "Graph",
+      "incorrectAnswers": ["Tree", "Stack", "Heap"],
+      "question": {
+        "text": "Which data structure is used to represent relationships between pairs of objects where nodes are connected by edges?"
+      }
+    },
+    {
+      "category": "Algorithms",
+      "id": "218",
+      "correctAnswer": "O(n log n)",
+      "incorrectAnswers": ["O(n)", "O(n^2)", "O(1)"],
+      "question": {
+        "text": "What is the time complexity of the Merge Sort algorithm?"
+      }
+    },
+    {
+      "category": "Data Structures",
+      "id": "219",
+      "correctAnswer": "Heap",
+      "incorrectAnswers": ["Stack", "Queue", "Graph"],
+      "question": {
+        "text": "Which data structure is a complete binary tree where the value of each node is greater than or equal to its children?"
+      }
+    },
+    {
+      "category": "Algorithms",
+      "id": "220",
+      "correctAnswer": "O(n^2)",
+      "incorrectAnswers": ["O(n)", "O(log n)", "O(n log n)"],
+      "question": {
+        "text": "What is the worst-case time complexity of the Selection Sort algorithm?"
+      }
+    },
+    {
+      "category": "Data Structures",
+      "id": "221",
+      "correctAnswer": "Trie",
+      "incorrectAnswers": ["Heap", "Graph", "Tree"],
+      "question": {
+        "text": "Which data structure is used to store a dynamic set of strings with common prefixes?"
+      }
+    },
+    {
+      "category": "Algorithms",
+      "id": "222",
+      "correctAnswer": "O(n)",
+      "incorrectAnswers": ["O(log n)", "O(n^2)", "O(1)"],
+      "question": {
+        "text": "What is the time complexity of linear search?"
+      }
+    },
+    {
+      "category": "Data Structures",
+      "id": "223",
+      "correctAnswer": "O(n)",
+      "incorrectAnswers": ["O(1)", "O(n log n)", "O(n^2)"],
+      "question": {
+        "text": "What is the time complexity of removing an element from the middle of a Linked List?"
+      }
+    },
+    {
+      "category": "Data Structures",
+      "id": "224",
+      "correctAnswer": "HashMap",
+      "incorrectAnswers": ["Tree", "Heap", "Graph"],
+      "question": {
+        "text": "Which data structure provides constant time complexity, O(1), for lookups in the average case?"
+      }
+    },
+    {
+      "category": "Algorithms",
+      "id": "225",
+      "correctAnswer": "O(n^2)",
+      "incorrectAnswers": ["O(n)", "O(log n)", "O(n log n)"],
+      "question": {
+        "text": "What is the worst-case time complexity of the Insertion Sort algorithm?"
+      }
+    },
+    {
+      "category": "Data Structures",
+      "id": "226",
+      "correctAnswer": "Array",
+      "incorrectAnswers": ["Linked List", "Stack", "Queue"],
+      "question": {
+        "text": "Which data structure stores elements of the same type in contiguous memory locations?"
+      }
+    },
+    {
+      "category": "Algorithms",
+      "id": "227",
+      "correctAnswer": "O(n log n)",
+      "incorrectAnswers": ["O(n)", "O(n^2)", "O(log n)"],
+      "question": {
+        "text": "What is the average-case time complexity of Heap Sort?"
+        }
+    },
+    {
+      "category": "Data Structures",
+      "id": "228",
+      "correctAnswer": "Graph",
+      "incorrectAnswers": ["Tree", "Heap", "Queue"],
+      "question": {
+        "text": "Which data structure is used to represent networks of nodes connected by edges?"
+      }
+    },
+    {
+      "category": "Algorithms",
+      "id": "229",
+      "correctAnswer": "O(n)",
+      "incorrectAnswers": ["O(log n)", "O(n^2)", "O(1)"],
+      "question": {
+        "text": "What is the time complexity of counting the occurrences of each element in an array?"
+      }
+    },
+    {
+      "category": "Data Structures",
+      "id": "230",
+      "correctAnswer": "Stack",
+      "incorrectAnswers": ["Queue", "Linked List", "HashMap"],
+      "question": {
+        "text": "Which data structure follows the Last In, First Out (LIFO) principle?"
+      }
+    },
+    {
+      "category": "Algorithms",
+      "id": "231",
+      "correctAnswer": "O(log n)",
+      "incorrectAnswers": ["O(1)", "O(n)", "O(n^2)"],
+      "question": {
+        "text": "What is the time complexity of binary search?"
+      }
+    },
+    {
+      "category": "Data Structures",
+      "id": "232",
+      "correctAnswer": "Queue",
+      "incorrectAnswers": ["Stack", "Tree", "Graph"],
+      "question": {
+        "text": "Which data structure follows the First In, First Out (FIFO) principle?"
+      }
+    },
+    {
+      "category": "Algorithms",
+      "id": "233",
+      "correctAnswer": "Merge Sort",
+      "incorrectAnswers": ["Quick Sort", "Insertion Sort", "Bubble Sort"],
+      "question": {
+        "text": "Which sorting algorithm divides the list into halves and recursively sorts them before merging?"
+      }
+    },
+    {
+      "category": "Data Structures",
+      "id": "234",
+      "correctAnswer": "Hash Table",
+      "incorrectAnswers": ["ArrayList", "Linked List", "Queue"],
+      "question": {
+        "text": "Which data structure provides constant time complexity, O(1), for both insertions and lookups in the average case?"    
+        }
+    },
+
+    {
+      "category": "Data Structures",
+      "id": "235",
+      "correctAnswer": "Binary Search Tree",
+      "incorrectAnswers": ["Heap", "Graph", "Trie"],
+      "question": {
+        "text": "Which tree data structure ensures that the left child is smaller and the right child is larger than the parent node?"
+      }
+    },
+    {
+      "category": "Algorithms",
+      "id": "236",
+      "correctAnswer": "Depth First Search (DFS)",
+      "incorrectAnswers": ["Breadth First Search (BFS)", "Dijkstra's Algorithm", "Prim's Algorithm"],
+      "question": {
+        "text": "Which graph traversal algorithm uses a stack to explore as far as possible along each branch before backtracking?"
+      }
+    },
+    {
+      "category": "Data Structures",
+      "id": "237",
+      "correctAnswer": "O(1)",
+      "incorrectAnswers": ["O(n)", "O(log n)", "O(n^2)"],
+      "question": {
+        "text": "What is the time complexity of inserting an element at the end of an ArrayList (assuming no resizing is required)?"
+      }
+    },
+    {
+      "category": "Data Structures",
+      "id": "238",
+      "correctAnswer": "Linked List",
+      "incorrectAnswers": ["Array", "Stack", "HashMap"],
+      "question": {
+        "text": "Which data structure consists of nodes where each node contains data and a reference to the next node?"
+      }
+    },
+    {
+      "category": "Algorithms",
+      "id": "239",
+      "correctAnswer": "O(n log n)",
+      "incorrectAnswers": ["O(n)", "O(n^2)", "O(log n)"],
+      "question": {
+        "text": "What is the average-case time complexity of Quick Sort?"
+      }
+    },
+    {
+      "category": "Data Structures",
+      "id": "240",
+      "correctAnswer": "Priority Queue",
+      "incorrectAnswers": ["Stack", "Deque", "HashMap"],
+      "question": {
+        "text": "Which data structure allows insertion in any order but retrieves the highest (or lowest) priority element first?"
+      }
+    },
+    {
+      "category": "Algorithms",
+      "id": "241",
+      "correctAnswer": "O(n)",
+        "incorrectAnswers": ["O(log n)", "O(n^2)", "O(1)"],
+        "question": {
+          "text": "What is the time complexity of traversing an entire Linked List?"
+        }
+    },
+    {
+      "category": "Algorithms",
+      "id": "242",
+      "correctAnswer": "Breadth First Search (BFS)",
+      "incorrectAnswers": ["Depth First Search (DFS)", "Dijkstra's Algorithm", "Kruskal's Algorithm"],
+      "question": {
+        "text": "Which graph traversal algorithm explores all neighbors of a node before moving to the next level?"
+      }
+    },
+    {
+      "category": "Data Structures",
+      "id": "243",
+      "correctAnswer": "Graph",
+      "incorrectAnswers": ["Tree", "Stack", "Heap"],
+      "question": {
+        "text": "Which data structure is used to represent relationships between pairs of objects where nodes are connected by edges?"
+      }
+    },
+    {
+      "category": "Algorithms",
+      "id": "244",
+      "correctAnswer": "O(n log n)",
+      "incorrectAnswers": ["O(n)", "O(n^2)", "O(1)"],
+      "question": {
+        "text": "What is the time complexity of the Merge Sort algorithm?"
+      }
+    },
+    {
+      "category": "Data Structures",
+      "id": "245",
+      "correctAnswer": "Heap",
+      "incorrectAnswers": ["Stack", "Queue", "Graph"],
+      "question": {
+        "text": "Which data structure is a complete binary tree where the value of each node is greater than or equal to its children?"
+      }
+    },
+    {
+      "category": "Algorithms",
+      "id": "246",
+      "correctAnswer": "O(n^2)",
+      "incorrectAnswers": ["O(n)", "O(log n)", "O(n log n)"],
+      "question": {
+        "text": "What is the worst-case time complexity of the Selection Sort algorithm?"
+      }
+    },
+    {
+      "category": "Data Structures",
+      "id": "247",
+      "correctAnswer": "Trie",
+      "incorrectAnswers": ["Heap", "Graph", "Tree"],
+      "question": {
+        "text": "Which data structure is used to store a dynamic set of strings with common prefixes?"
+      }
+    },
+    {
+      "category": "Algorithms",
+      "id": "248",
+      "correctAnswer": "O(n)",
+      "incorrectAnswers": ["O(log n)", "O(n^2)", "O(1)"],
+        "question": {
+            "text": "What is the time complexity of linear search?"
+        }
+    },
+    {
+      "category": "Data Structures",
+      "id": "249",
+      "correctAnswer": "O(n)",
+      "incorrectAnswers": ["O(1)", "O(n log n)", "O(n^2)"],
+      "question": {
+        "text": "What is the time complexity of removing an element from the middle of a Linked List?"
+      }
+    },
+    {
+      "category": "Data Structures",
+      "id": "250",
+      "correctAnswer": "HashMap",
+      "incorrectAnswers": ["Tree", "Heap", "Graph"],
+      "question": {
+        "text": "Which data structure provides constant time complexity, O(1), for lookups in the average case?"
+      }
+    },
+    {
+      "category": "Algorithms",
+      "id": "251",
+      "correctAnswer": "O(n^2)",
+      "incorrectAnswers": ["O(n)", "O(log n)", "O(n log n)"],
+      "question": {
+        "text": "What is the worst-case time complexity of the Insertion Sort algorithm?"
+      }
+    },
+    {
+      "category": "Data Structures",
+      "id": "252",
+      "correctAnswer": "Array",
+      "incorrectAnswers": ["Linked List", "Stack", "Queue"],
+      "question": {
+        "text": "Which data structure stores elements of the same type in contiguous memory locations?"
+      }
+    },
+    {
+      "category": "Algorithms",
+      "id": "253",
+      "correctAnswer": "O(n log n)",
+      "incorrectAnswers": ["O(n)", "O(n^2)", "O(log n)"],
+      "question": {
+        "text": "What is the average-case time complexity of Heap Sort?"
+      }
+    },
+    {
+      "category": "Data Structures",
+      "id": "254",
+      "correctAnswer": "Graph",
+      "incorrectAnswers": ["Tree", "Heap", "Queue"],
+      "question": {
+        "text": "Which data structure is used to represent networks of nodes connected by edges?"
+      }
+    },
+    {
+      "category": "Algorithms",
+      "id": "255",
+      "correctAnswer": "O(n)",
+      "incorrectAnswers": ["O(log n)", "O(n^2)", "O(1)"],
+      "question": {
+        "text": "What is the time complexity of counting the occurrences of each element in an array?"  
+        }
+    }
+    ,
+    {
+      "category": "Data Structures",
+      "id": "256",
+      "correctAnswer": "Stack",
+      "incorrectAnswers": ["Queue", "Linked List", "HashMap"],
+      "question": {
+        "text": "Which data structure follows the Last In, First Out (LIFO) principle?"
+      }
+    },
+    {
+      "category": "Algorithms",
+      "id": "257",
+      "correctAnswer": "O(log n)",
+      "incorrectAnswers": ["O(1)", "O(n)", "O(n^2)"],
+      "question": {
+        "text": "What is the time complexity of binary search?"
+      }
+    },
+    {
+      "category": "Data Structures",
+      "id": "258",
+      "correctAnswer": "Queue",
+      "incorrectAnswers": ["Stack", "Tree", "Graph"],
+      "question": {
+        "text": "Which data structure follows the First In, First Out (FIFO) principle?"
+      }
+    },
+    {
+      "category": "Algorithms",
+      "id": "259",
+      "correctAnswer": "Merge Sort",
+      "incorrectAnswers": ["Quick Sort", "Insertion Sort", "Bubble Sort"],
+      "question": {
+        "text": "Which sorting algorithm divides the list into halves and recursively sorts them before merging?"
+      }
+    },
+    {
+      "category": "Data Structures",
+      "id": "260",
+      "correctAnswer": "Hash Table",
+      "incorrectAnswers": ["ArrayList", "Linked List", "Queue"],
+      "question": {
+        "text": "Which data structure provides constant time complexity, O(1), for both insertions and lookups in the average case?"
+      }
+    },
+    {
+      "category": "Data Structures",
+      "id": "261",
+      "correctAnswer": "Binary Search Tree",
+      "incorrectAnswers": ["Heap", "Graph", "Trie"],
+      "question": {
+        "text": "Which tree data structure ensures that the left child is smaller and the right child is larger than the parent node?"
+      }
+    },
+    {
+      "category": "Algorithms",
+      "id": "262",
+      "correctAnswer": "Depth First Search (DFS)",
+      "incorrectAnswers": ["Breadth First Search (BFS)", "Dijkstra's Algorithm", "Prim's Algorithm"],
+      "question": {
+        "text": "Which graph traversal algorithm uses a stack to explore as far as possible along each branch before backtracking?"
+      }
+    },
+    {
+      "category": "Data Structures",
+      "id": "263",
+      "correctAnswer": "O(1)",
+      "incorrectAnswers": ["O(n)", "O(log n)", "O(n^2)"],
+      "question": {
+        "text": "What is the time complexity of inserting an element at the end of an ArrayList (assuming no resizing is required)?"
+      }
+    },
+    {
+      "category": "Data Structures",
+      "id": "264",
+      "correctAnswer": "Linked List",
+      "incorrectAnswers": ["Array", "Stack", "HashMap"],
+      "question": {
+        "text": "Which data structure consists of nodes where each node contains data and a reference to the next node?"
+      }
+    },
+    {
+      "category": "Algorithms",
+      "id": "265",
+      "correctAnswer": "O(n log n)",
+      "incorrectAnswers": ["O(n)", "O(n^2)", "O(log n)"],
+      "question": {
+        "text": "What is the average-case time complexity of Quick Sort?"
+      }
+    },
+    {
+      "category": "Data Structures",
+      "id": "266",
+      "correctAnswer": "Priority Queue",
+      "incorrectAnswers": ["Stack", "Deque", "HashMap"],
+      "question": {
+        "text": "Which data structure allows insertion in any order but retrieves the highest (or lowest) priority element first?"
+      }
+    },
+    {
+      "category": "Algorithms",
+      "id": "267",
+      "correctAnswer": "O(n)",
+      "incorrectAnswers": ["O(log n)", "O(n^2)", "O(1)"],
+      "question": {
+        "text": "What is the time complexity of traversing an entire Linked List?"
+      }
+    },
+    {
+      "category": "Algorithms",
+      "id": "268",
+      "correctAnswer": "Breadth First Search (BFS)",
+      "incorrectAnswers": ["Depth First Search (DFS)", "Dijkstra's Algorithm", "Kruskal's Algorithm"],
+      "question": {
+        "text": "Which graph traversal algorithm explores all neighbors of a node before moving to the next level?"
+      }
+    },
+    {
+      "category": "Data Structures",
+      "id": "269",
+      "correctAnswer": "Graph",
+      "incorrectAnswers": ["Tree", "Stack", "Heap"],
+        "question": {
+            "text": "Which data structure is used to represent relationships between pairs of objects where nodes are connected by edges?"
+        }
+    },
+    {
+      "category": "Algorithms",
+      "id": "270",
+      "correctAnswer": "O(n log n)",
+      "incorrectAnswers": ["O(n)", "O(n^2)", "O(1)"],
+      "question": {
+        "text": "What is the time complexity of the Merge Sort algorithm?"
+      }
+    },
+    {
+      "category": "Data Structures",
+      "id": "271",
+      "correctAnswer": "Heap",
+      "incorrectAnswers": ["Stack", "Queue", "Graph"],
+      "question": {
+        "text": "Which data structure is a complete binary tree where the value of each node is greater than or equal to its children?"
+      }
+    },
+    {
+      "category": "Algorithms",
+      "id": "272",
+      "correctAnswer": "O(n^2)",
+      "incorrectAnswers": ["O(n)", "O(log n)", "O(n log n)"],
+      "question": {
+        "text": "What is the worst-case time complexity of the Selection Sort algorithm?"
+      }
+    },
+    {
+      "category": "Data Structures",
+      "id": "273",
+      "correctAnswer": "Trie",
+      "incorrectAnswers": ["Heap", "Graph", "Tree"],
+      "question": {
+        "text": "Which data structure is used to store a dynamic set of strings with common prefixes?"
+      }
+    },
+    {
+      "category": "Algorithms",
+      "id": "274",
+      "correctAnswer": "O(n)",
+      "incorrectAnswers": ["O(log n)", "O(n^2)", "O(1)"],
+      "question": {
+        "text": "What is the time complexity of linear search?"
+      }
+    },
+    {
+      "category": "Data Structures",
+      "id": "275",
+      "correctAnswer": "O(n)",
+      "incorrectAnswers": ["O(1)", "O(n log n)", "O(n^2)"],
+      "question": {
+        "text": "What is the time complexity of removing an element from the middle of a Linked List?"
+      }
+    },
+    {
+      "category": "Data Structures",
+      "id": "276",
+      "correctAnswer": "HashMap",
+      "incorrectAnswers": ["Tree", "Heap", "Graph"],
+      "question": {
+        "text": "Which data structure provides constant time complexity, O(1), for lookups in the average case?"
+        }   
+    },
+    {
+      "category": "Algorithms",
+      "id": "277",
+      "correctAnswer": "O(n^2)",
+      "incorrectAnswers": ["O(n)", "O(log n)", "O(n log n)"],
+      "question": {
+        "text": "What is the worst-case time complexity of the Insertion Sort algorithm?"
+      }
+    },
+    {
+      "category": "Data Structures",
+      "id": "278",
+      "correctAnswer": "Array",
+      "incorrectAnswers": ["Linked List", "Stack", "Queue"],
+      "question": {
+        "text": "Which data structure stores elements of the same type in contiguous memory locations?"
+      }
+    },
+    {
+      "category": "Algorithms",
+      "id": "279",
+      "correctAnswer": "O(n log n)",
+      "incorrectAnswers": ["O(n)", "O(n^2)", "O(log n)"],
+      "question": {
+        "text": "What is the average-case time complexity of Heap Sort?"
+      }
+    },
+    {
+      "category": "Data Structures",
+      "id": "280",
+      "correctAnswer": "Graph",
+      "incorrectAnswers": ["Tree", "Heap", "Queue"],
+      "question": {
+        "text": "Which data structure is used to represent networks of nodes connected by edges?"
+      }
+    },
+    {
+      "category": "Algorithms",
+      "id": "281",
+      "correctAnswer": "O(n)",
+      "incorrectAnswers": ["O(log n)", "O(n^2)", "O(1)"],
+      "question": {
+        "text": "What is the time complexity of counting the occurrences of each element in an array?"
+      }
+    },
+    {
+      "category": "Data Structures",
+      "id": "282",
+      "correctAnswer": "Stack",
+      "incorrectAnswers": ["Queue", "Linked List", "HashMap"],
+      "question": {
+        "text": "Which data structure follows the Last In, First Out (LIFO) principle?"
+      }
+    },
+    {
+      "category": "Algorithms",
+      "id": "283",
+      "correctAnswer": "O(log n)",
+      "incorrectAnswers": ["O(1)", "O(n)", "O(n^2)"],
+      "question": {
+        "text": "What is the time complexity of binary search?"
+      }
+    },
+    {
+      "category": "Data Structures",
+      "id": "284",
+      "correctAnswer": "Queue",
+      "incorrectAnswers": ["Stack", "Tree", "Graph"],
+      "question": {
+        "text": "Which data structure follows the First In, First Out (FIFO) principle?"
+      }
+    },
+    {
+      "category": "Algorithms",
+      "id": "285",
+      "correctAnswer": "Merge Sort",
+      "incorrectAnswers": ["Quick Sort", "Insertion Sort", "Bubble Sort"],
+      "question": {
+        "text": "Which sorting algorithm divides the list into halves and recursively sorts them before merging?"
+      }
+    },
+    {
+      "category": "Data Structures",
+      "id": "286",
+      "correctAnswer": "Hash Table",
+      "incorrectAnswers": ["ArrayList", "Linked List", "Queue"],
+      "question": {
+        "text": "Which data structure provides constant time complexity, O(1), for both insertions and lookups in the average case?"
+      }
+    },
+    {
+      "category": "Data Structures",
+      "id": "287",
+      "correctAnswer": "Binary Search Tree",
+      "incorrectAnswers": ["Heap", "Graph", "Trie"],
+      "question": {
+        "text": "Which tree data structure ensures that the left child is smaller and the right child is larger than the parent node?"
+      }
+    },
+    {
+      "category": "Algorithms",
+      "id": "288",
+      "correctAnswer": "Depth First Search (DFS)",
+      "incorrectAnswers": ["Breadth First Search (BFS)", "Dijkstra's Algorithm", "Prim's Algorithm"],
+      "question": {
+        "text": "Which graph traversal algorithm uses a stack to explore as far as possible along each branch before backtracking?"
+      }
+    },
+    {
+      "category": "Data Structures",
+      "id": "289",
+      "correctAnswer": "O(1)",
+      "incorrectAnswers": ["O(n)", "O(log n)", "O(n^2)"],
+      "question": {
+        "text": "What is the time complexity of inserting an element at the end of an ArrayList (assuming no resizing is required)?"
+      }
+    },
+    {
+      "category": "Data Structures",
+      "id": "290",
+      "correctAnswer": "Linked List",
+      "incorrectAnswers": ["Array", "Stack", "HashMap"],
+      "question": {
+        "text": "Which data structure consists of nodes where each node contains data and a reference to the next node?"
+      }
+    },
+    {
+      "category": "Algorithms",
+      "id": "291",
+      "correctAnswer": "O(n log n)",
+      "incorrectAnswers": ["O(n)", "O(n^2)", "O(log n)"],
+      "question": {
+        "text": "What is the average-case time complexity of Quick Sort?"
+      }
+    },
+    {
+      "category": "Data Structures",
+      "id": "292",
+      "correctAnswer": "Priority Queue",
+      "incorrectAnswers": ["Stack", "Deque", "HashMap"],
+      "question": {
+        "text": "Which data structure allows insertion in any order but retrieves the highest (or lowest) priority element first?"
+      }
+    },
+    {
+      "category": "Algorithms",
+      "id": "293",
+      "correctAnswer": "O(n)",
+      "incorrectAnswers": ["O(log n)", "O(n^2)", "O(1)"],
+      "question": {
+        "text": "What is the time complexity of traversing an entire Linked List?"
+      }
+    },
+    {
+      "category": "Algorithms",
+      "id": "294",
+      "correctAnswer": "Breadth First Search (BFS)",
+      "incorrectAnswers": ["Depth First Search (DFS)", "Dijkstra's Algorithm", "Kruskal's Algorithm"],
+      "question": {
+        "text": "Which graph traversal algorithm explores all neighbors of a node before moving to the next level?"
+      }
+    },
+    {
+      "category": "Data Structures",
+      "id": "295",
+      "correctAnswer": "Graph",
+      "incorrectAnswers": ["Tree", "Stack", "Heap"],
+        "question": {
+            "text": "Which data structure is used to represent relationships between pairs of objects where nodes are connected by edges?"
+        }
+    },
+    {
+      "category": "Algorithms",
+      "id": "296",
+      "correctAnswer": "O(n log n)",
+      "incorrectAnswers": ["O(n)", "O(n^2)", "O(1)"],
+      "question": {
+        "text": "What is the time complexity of the Merge Sort algorithm?"
+      }
+    },
+    {
+      "category": "Data Structures",
+      "id": "297",
+      "correctAnswer": "Heap",
+      "incorrectAnswers": ["Stack", "Queue", "Graph"],
+      "question": {
+        "text": "Which data structure is a complete binary tree where the value of each node is greater than or equal to its children?"
+      }
+    },
+    {
+      "category": "Algorithms",
+      "id": "298",
+      "correctAnswer": "O(n^2)",
+      "incorrectAnswers": ["O(n)", "O(log n)", "O(n log n)"],
+      "question": {
+        "text": "What is the worst-case time complexity of the Selection Sort algorithm?"
+      }
+    },
+    {
+      "category": "Data Structures",
+      "id": "299",
+      "correctAnswer": "Trie",
+      "incorrectAnswers": ["Heap", "Graph", "Tree"],
+      "question": {
+        "text": "Which data structure is used to store a dynamic set of strings with common prefixes?"
+      }
+    },
+    {
+      "category": "Algorithms",
+      "id": "300",
+      "correctAnswer": "O(n)",
+      "incorrectAnswers": ["O(log n)", "O(n^2)", "O(1)"],
+      "question": {
+        "text": "What is the time complexity of linear search?"
+      }
+    }
+
+
+
+  ]
+  

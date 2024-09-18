@@ -1,0 +1,911 @@
+[
+    {
+      "category": "AI and ML",
+      "id": "401",
+      "correctAnswer": "Supervised Learning",
+      "incorrectAnswers": ["Unsupervised Learning", "Reinforcement Learning", "Self-Supervised Learning"],
+      "question": {
+        "text": "In which type of machine learning is the model trained on labeled data?"
+      }
+    },
+    {
+      "category": "AI and ML",
+      "id": "402",
+      "correctAnswer": "Unsupervised Learning",
+      "incorrectAnswers": ["Supervised Learning", "Reinforcement Learning", "Transfer Learning"],
+      "question": {
+        "text": "Which type of machine learning is used when the model is trained on data without explicit labels?"
+      }
+    },
+    {
+      "category": "AI and ML",
+      "id": "403",
+      "correctAnswer": "Neural Networks",
+      "incorrectAnswers": ["Decision Trees", "Support Vector Machines", "K-Nearest Neighbors"],
+      "question": {
+        "text": "Which machine learning model is inspired by the structure of the human brain?"
+      }
+    },
+    {
+      "category": "AI and ML",
+      "id": "404",
+      "correctAnswer": "Overfitting",
+      "incorrectAnswers": ["Underfitting", "Regularization", "Generalization"],
+      "question": {
+        "text": "What is the term for a model that performs well on training data but poorly on unseen data?"
+      }
+    },
+    {
+      "category": "AI and ML",
+      "id": "405",
+      "correctAnswer": "Reinforcement Learning",
+      "incorrectAnswers": ["Supervised Learning", "Unsupervised Learning", "Semi-Supervised Learning"],
+      "question": {
+        "text": "In which type of learning does an agent learn to take actions in an environment to maximize a cumulative reward?"
+      }
+    },
+    {
+      "category": "AI and ML",
+      "id": "406",
+      "correctAnswer": "Gradient Descent",
+      "incorrectAnswers": ["Backpropagation", "Activation Function", "Hyperparameter Tuning"],
+      "question": {
+        "text": "What is the name of the optimization algorithm used to minimize the error in machine learning models?"
+      }
+    },
+    {
+      "category": "AI and ML",
+      "id": "407",
+      "correctAnswer": "Classification",
+      "incorrectAnswers": ["Regression", "Clustering", "Dimensionality Reduction"],
+      "question": {
+        "text": "Which type of machine learning problem involves predicting a discrete label or category?"
+      }
+    },
+    {
+      "category": "AI and ML",
+      "id": "408",
+      "correctAnswer": "Regression",
+      "incorrectAnswers": ["Classification", "Clustering", "Dimensionality Reduction"],
+      "question": {
+        "text": "Which type of machine learning problem involves predicting a continuous numerical value?"
+      }
+    },
+    {
+      "category": "AI and ML",
+      "id": "409",
+      "correctAnswer": "K-Means Clustering",
+      "incorrectAnswers": ["Linear Regression", "Logistic Regression", "Decision Trees"],
+      "question": {
+        "text": "Which unsupervised learning algorithm is commonly used for partitioning a dataset into distinct groups based on similarity?"
+      }
+    },
+    {
+      "category": "AI and ML",
+      "id": "410",
+      "correctAnswer": "Activation Function",
+      "incorrectAnswers": ["Loss Function", "Cost Function", "Regularization"],
+      "question": {
+        "text": "What is the function called that determines the output of a neural network node based on its input?"
+      }
+    },
+    {
+      "category": "AI and ML",
+      "id": "411",
+      "correctAnswer": "Hyperparameters",
+      "incorrectAnswers": ["Parameters", "Weights", "Biases"],
+      "question": {
+        "text": "What are the parameters called that are set before the learning process begins and control the behavior of the learning algorithm?"
+      }
+    },
+    {
+      "category": "AI and ML",
+      "id": "412",
+      "correctAnswer": "Confusion Matrix",
+      "incorrectAnswers": ["ROC Curve", "Precision-Recall Curve", "Cost Matrix"],
+      "question": {
+        "text": "Which table is used to describe the performance of a classification model by showing true positives, false positives, true negatives, and false negatives?"
+      }
+    },
+    {
+      "category": "AI and ML",
+      "id": "413",
+      "correctAnswer": "Bias-Variance Tradeoff",
+      "incorrectAnswers": ["Regularization", "Data Augmentation", "Cross-Validation"],
+      "question": {
+        "text": "What is the tradeoff between the model's ability to generalize to new data and its ability to accurately fit training data called?"
+      }
+    },
+    {
+      "category": "AI and ML",
+      "id": "414",
+      "correctAnswer": "Transfer Learning",
+      "incorrectAnswers": ["Supervised Learning", "Reinforcement Learning", "Multi-Task Learning"],
+      "question": {
+        "text": "Which approach in machine learning involves using a pre-trained model on one task and applying it to another related task?"
+      }
+    },
+    {
+      "category": "AI and ML",
+      "id": "415",
+      "correctAnswer": "Feature Engineering",
+      "incorrectAnswers": ["Data Cleaning", "Model Tuning", "Cross-Validation"],
+      "question": {
+        "text": "What is the process of selecting, modifying, or creating features to improve the performance of machine learning models?"
+      }
+    },
+    {
+      "category": "AI and ML",
+      "id": "416",
+      "correctAnswer": "Artificial Intelligence",
+      "incorrectAnswers": ["Machine Learning", "Deep Learning", "Neural Networks"],
+      "question": {
+        "text": "Which field involves creating systems that can perform tasks that normally require human intelligence?"
+      }
+    },
+    {
+      "category": "AI and ML",
+      "id": "417",
+      "correctAnswer": "Dimensionality Reduction",
+      "incorrectAnswers": ["Data Augmentation", "Regularization", "Normalization"],
+      "question": {
+        "text": "Which technique reduces the number of features in a dataset while preserving as much information as possible?"
+      }
+    },
+    {
+      "category": "AI and ML",
+      "id": "418",
+      "correctAnswer": "Support Vector Machine",
+      "incorrectAnswers": ["Decision Tree", "Neural Network", "K-Means"],
+      "question": {
+        "text": "Which supervised learning algorithm is used for classification and regression and works by finding the hyperplane that best separates the data into classes?"
+      }
+    },
+    {
+      "category": "AI and ML",
+      "id": "419",
+      "correctAnswer": "Cross-Validation",
+      "incorrectAnswers": ["Gradient Descent", "Grid Search", "Random Search"],
+      "question": {
+        "text": "What is the technique called where the dataset is split into several folds and the model is trained and validated on different folds to ensure generalization?"
+      }
+    },
+    {
+      "category": "AI and ML",
+      "id": "420",
+      "correctAnswer": "Deep Learning",
+      "incorrectAnswers": ["Reinforcement Learning", "Transfer Learning", "Dimensionality Reduction"],
+      "question": {
+        "text": "Which subset of machine learning focuses on using neural networks with many layers to automatically learn feature representations?"
+      }
+    },
+    
+        {
+          "category": "AI and ML",
+          "id": "401",
+          "correctAnswer": "Artificial Intelligence",
+          "incorrectAnswers": ["Machine Learning", "Deep Learning", "Data Mining"],
+          "question": {
+            "text": "What does AI stand for in the field of computer science?"
+          }
+        },
+        {
+          "category": "AI and ML",
+          "id": "402",
+          "correctAnswer": "Machine Learning",
+          "incorrectAnswers": ["Data Science", "Artificial Intelligence", "Data Analytics"],
+          "question": {
+            "text": "Which field of AI involves systems that learn from data and improve over time without being explicitly programmed?"
+          }
+        },
+        {
+          "category": "AI and ML",
+          "id": "403",
+          "correctAnswer": "Supervised Learning",
+          "incorrectAnswers": ["Unsupervised Learning", "Reinforcement Learning", "Semi-Supervised Learning"],
+          "question": {
+            "text": "In which type of machine learning are models trained on labeled data to make predictions?"
+          }
+        },
+        {
+          "category": "AI and ML",
+          "id": "404",
+          "correctAnswer": "Unsupervised Learning",
+          "incorrectAnswers": ["Supervised Learning", "Reinforcement Learning", "Deep Learning"],
+          "question": {
+            "text": "Which type of machine learning works with unlabeled data to find hidden patterns?"
+          }
+        },
+        {
+          "category": "AI and ML",
+          "id": "405",
+          "correctAnswer": "Neural Network",
+          "incorrectAnswers": ["Decision Tree", "Support Vector Machine", "K-Means"],
+          "question": {
+            "text": "What is the machine learning model inspired by the human brain and its network of neurons called?"
+          }
+        },
+        {
+          "category": "AI and ML",
+          "id": "406",
+          "correctAnswer": "Reinforcement Learning",
+          "incorrectAnswers": ["Supervised Learning", "Unsupervised Learning", "Transfer Learning"],
+          "question": {
+            "text": "Which type of machine learning uses rewards and punishments to train an agent to make decisions in an environment?"
+          }
+        },
+        {
+          "category": "AI and ML",
+          "id": "407",
+          "correctAnswer": "Classification",
+          "incorrectAnswers": ["Regression", "Clustering", "Dimensionality Reduction"],
+          "question": {
+            "text": "Which machine learning task involves predicting a discrete label, such as 'spam' or 'not spam'?"
+          }
+        },
+        {
+          "category": "AI and ML",
+          "id": "408",
+          "correctAnswer": "Regression",
+          "incorrectAnswers": ["Classification", "Clustering", "Dimensionality Reduction"],
+          "question": {
+            "text": "Which machine learning task predicts a continuous value, such as house prices or stock prices?"
+          }
+        },
+        {
+          "category": "AI and ML",
+          "id": "409",
+          "correctAnswer": "K-Means",
+          "incorrectAnswers": ["Linear Regression", "Decision Tree", "Naive Bayes"],
+          "question": {
+            "text": "Which unsupervised learning algorithm is commonly used for clustering data into groups?"
+          }
+        },
+        {
+          "category": "AI and ML",
+          "id": "410",
+          "correctAnswer": "Deep Learning",
+          "incorrectAnswers": ["Shallow Learning", "Supervised Learning", "Transfer Learning"],
+          "question": {
+            "text": "What is the branch of machine learning that focuses on using deep neural networks with many layers?"
+          }
+        },
+        {
+          "category": "AI and ML",
+          "id": "411",
+          "correctAnswer": "Overfitting",
+          "incorrectAnswers": ["Underfitting", "Cross-Validation", "Regularization"],
+          "question": {
+            "text": "What is it called when a machine learning model performs well on training data but poorly on new, unseen data?"
+          }
+        },
+        {
+          "category": "AI and ML",
+          "id": "412",
+          "correctAnswer": "Training Data",
+          "incorrectAnswers": ["Test Data", "Validation Data", "Cross-Validation Data"],
+          "question": {
+            "text": "What is the term for the dataset used to train a machine learning model?"
+          }
+        },
+        {
+          "category": "AI and ML",
+          "id": "413",
+          "correctAnswer": "Test Data",
+          "incorrectAnswers": ["Training Data", "Validation Data", "Raw Data"],
+          "question": {
+            "text": "Which dataset is used to evaluate the performance of a trained machine learning model?"
+          }
+        },
+        {
+          "category": "AI and ML",
+          "id": "414",
+          "correctAnswer": "Feature",
+          "incorrectAnswers": ["Label", "Target", "Sample"],
+          "question": {
+            "text": "What is the term for an individual measurable property or characteristic of a dataset used as input in machine learning models?"
+          }
+        },
+        {
+          "category": "AI and ML",
+          "id": "415",
+          "correctAnswer": "Gradient Descent",
+          "incorrectAnswers": ["Decision Tree", "Random Forest", "K-Means"],
+          "question": {
+            "text": "Which optimization algorithm is commonly used to minimize the loss function in machine learning models?"
+          }
+        },
+        {
+          "category": "AI and ML",
+          "id": "416",
+          "correctAnswer": "Support Vector Machine (SVM)",
+          "incorrectAnswers": ["Linear Regression", "Logistic Regression", "K-Nearest Neighbors"],
+          "question": {
+            "text": "Which machine learning algorithm is used for both classification and regression, and works by finding a hyperplane that best separates the data into classes?"
+          }
+        },
+        {
+          "category": "AI and ML",
+          "id": "417",
+          "correctAnswer": "Random Forest",
+          "incorrectAnswers": ["Neural Network", "SVM", "Naive Bayes"],
+          "question": {
+            "text": "Which ensemble machine learning algorithm builds multiple decision trees and merges them together to improve accuracy and reduce overfitting?"
+          }
+        },
+        {
+          "category": "AI and ML",
+          "id": "418",
+          "correctAnswer": "Hyperparameter",
+          "incorrectAnswers": ["Parameter", "Bias", "Weight"],
+          "question": {
+            "text": "What is the term for a variable that is set before the learning process begins and cannot be learned from the data, such as learning rate or number of layers?"
+          }
+        },
+        {
+          "category": "AI and ML",
+          "id": "419",
+          "correctAnswer": "Confusion Matrix",
+          "incorrectAnswers": ["Precision-Recall Curve", "ROC Curve", "Correlation Matrix"],
+          "question": {
+            "text": "Which table is used to evaluate the performance of a classification algorithm by displaying true positives, false positives, true negatives, and false negatives?"
+          }
+        },
+        {
+          "category": "AI and ML",
+          "id": "420",
+          "correctAnswer": "Bias-Variance Tradeoff",
+          "incorrectAnswers": ["Overfitting-Underfitting", "Optimization Error", "Regularization Error"],
+          "question": {
+            "text": "What is the fundamental tradeoff in machine learning that must be managed to avoid overfitting or underfitting?"
+          }
+        },
+            {
+              "category": "NLP",
+              "id": "501",
+              "correctAnswer": "Tokenization",
+              "incorrectAnswers": ["Stemming", "Lemmatization", "Parsing"],
+              "question": {
+                "text": "What is the process of splitting text into individual words or subwords called?"
+              }
+            },
+            {
+              "category": "NLP",
+              "id": "502",
+              "correctAnswer": "Bag of Words",
+              "incorrectAnswers": ["Word2Vec", "TF-IDF", "GloVe"],
+              "question": {
+                "text": "Which representation model converts text into a collection of its word counts, disregarding grammar and word order?"
+              }
+            },
+            {
+              "category": "NLP",
+              "id": "503",
+              "correctAnswer": "Stemming",
+              "incorrectAnswers": ["Lemmatization", "Tokenization", "Parsing"],
+              "question": {
+                "text": "Which NLP technique reduces words to their root form by chopping off suffixes, without necessarily producing a valid word?"
+              }
+            },
+            {
+              "category": "NLP",
+              "id": "504",
+              "correctAnswer": "Lemmatization",
+              "incorrectAnswers": ["Stemming", "Tokenization", "Syntactic Parsing"],
+              "question": {
+                "text": "Which technique reduces words to their base or dictionary form while ensuring the output is a valid word?"
+              }
+            },
+            {
+              "category": "NLP",
+              "id": "505",
+              "correctAnswer": "Named Entity Recognition (NER)",
+              "incorrectAnswers": ["Sentiment Analysis", "Part-of-Speech Tagging", "Dependency Parsing"],
+              "question": {
+                "text": "Which NLP task identifies and classifies proper nouns like names of people, organizations, and locations?"
+              }
+            },
+            {
+              "category": "NLP",
+              "id": "506",
+              "correctAnswer": "Word2Vec",
+              "incorrectAnswers": ["Bag of Words", "TF-IDF", "GloVe"],
+              "question": {
+                "text": "Which neural network model is used to produce word embeddings, where words with similar meaning are mapped close to each other in vector space?"
+              }
+            },
+            {
+              "category": "NLP",
+              "id": "507",
+              "correctAnswer": "TF-IDF (Term Frequency-Inverse Document Frequency)",
+              "incorrectAnswers": ["Word2Vec", "One-Hot Encoding", "GloVe"],
+              "question": {
+                "text": "Which model measures the importance of a word in a document relative to a collection of documents?"
+              }
+            },
+            {
+              "category": "NLP",
+              "id": "508",
+              "correctAnswer": "Part-of-Speech Tagging (POS)",
+              "incorrectAnswers": ["Dependency Parsing", "Syntactic Parsing", "NER"],
+              "question": {
+                "text": "Which NLP task involves labeling each word in a sentence with its grammatical category, such as noun, verb, adjective?"
+              }
+            },
+            {
+              "category": "NLP",
+              "id": "509",
+              "correctAnswer": "Stop Words",
+              "incorrectAnswers": ["Punctuation", "Synonyms", "Named Entities"],
+              "question": {
+                "text": "What are the common words like 'is', 'the', and 'and' that are often removed from text data to reduce noise in NLP tasks?"
+              }
+            },
+            {
+              "category": "NLP",
+              "id": "510",
+              "correctAnswer": "Sentiment Analysis",
+              "incorrectAnswers": ["NER", "Topic Modeling", "Text Classification"],
+              "question": {
+                "text": "Which task in NLP involves determining the emotional tone or attitude expressed in a piece of text?"
+              }
+            },
+            {
+              "category": "NLP",
+              "id": "511",
+              "correctAnswer": "Transformer",
+              "incorrectAnswers": ["LSTM", "RNN", "Naive Bayes"],
+              "question": {
+                "text": "Which deep learning model, introduced in 2017, has revolutionized NLP by using self-attention mechanisms to process sequential data more efficiently?"
+              }
+            },
+            {
+              "category": "NLP",
+              "id": "512",
+              "correctAnswer": "BLEU (Bilingual Evaluation Understudy)",
+              "incorrectAnswers": ["ROUGE", "F1 Score", "Cross-Entropy"],
+              "question": {
+                "text": "Which metric is commonly used for evaluating the quality of machine-generated translations in comparison to human translations?"
+              }
+            },
+            {
+              "category": "NLP",
+              "id": "513",
+              "correctAnswer": "Sequence-to-Sequence (Seq2Seq)",
+              "incorrectAnswers": ["Bag of Words", "CNN", "Markov Model"],
+              "question": {
+                "text": "Which architecture is used in NLP tasks like machine translation and text summarization where an input sequence is mapped to an output sequence?"
+              }
+            },
+            {
+              "category": "NLP",
+              "id": "514",
+              "correctAnswer": "Attention Mechanism",
+              "incorrectAnswers": ["Pooling Layer", "Recurrent Layer", "Dense Layer"],
+              "question": {
+                "text": "Which mechanism in neural networks helps models focus on relevant parts of the input sequence, particularly in translation tasks?"
+              }
+            },
+            {
+              "category": "NLP",
+              "id": "515",
+              "correctAnswer": "GloVe (Global Vectors for Word Representation)",
+              "incorrectAnswers": ["Bag of Words", "One-Hot Encoding", "Word2Vec"],
+              "question": {
+                "text": "Which unsupervised learning algorithm is used to generate word embeddings by considering global word co-occurrence statistics?"
+              }
+            },
+            {
+              "category": "NLP",
+              "id": "516",
+              "correctAnswer": "BERT (Bidirectional Encoder Representations from Transformers)",
+              "incorrectAnswers": ["GPT", "ELMo", "Seq2Seq"],
+              "question": {
+                "text": "Which transformer-based model is pre-trained on large amounts of text data and uses bidirectional context to improve NLP tasks like question answering and sentiment analysis?"
+              }
+            },
+            {
+              "category": "NLP",
+              "id": "517",
+              "correctAnswer": "Latent Dirichlet Allocation (LDA)",
+              "incorrectAnswers": ["K-Means", "DBSCAN", "Agglomerative Clustering"],
+              "question": {
+                "text": "Which unsupervised machine learning algorithm is used for topic modeling, where a set of documents is represented as a mixture of topics?"
+              }
+            },
+            {
+              "category": "NLP",
+              "id": "518",
+              "correctAnswer": "Perplexity",
+              "incorrectAnswers": ["Accuracy", "Precision", "Recall"],
+              "question": {
+                "text": "What metric is used to evaluate language models, with lower values indicating better performance in predicting words?"
+              }
+            },
+            {
+              "category": "NLP",
+              "id": "519",
+              "correctAnswer": "Text Summarization",
+              "incorrectAnswers": ["Sentence Segmentation", "Topic Modeling", "Sentiment Analysis"],
+              "question": {
+                "text": "Which NLP task involves producing a concise summary of a larger body of text while preserving its meaning?"
+              }
+            },
+            {
+              "category": "NLP",
+              "id": "520",
+              "correctAnswer": "Zero-Shot Learning",
+              "incorrectAnswers": ["Few-Shot Learning", "Transfer Learning", "Supervised Learning"],
+              "question": {
+                "text": "Which technique allows a model to classify data into categories it has not been explicitly trained on?"
+              }
+            },
+                {
+                  "category": "NLP",
+                  "id": "501",
+                  "correctAnswer": "Natural Language Processing",
+                  "incorrectAnswers": ["Machine Learning", "Deep Learning", "Computer Vision"],
+                  "question": {
+                    "text": "What does NLP stand for in the field of artificial intelligence?"
+                  }
+                },
+                {
+                  "category": "NLP",
+                  "id": "502",
+                  "correctAnswer": "Tokenization",
+                  "incorrectAnswers": ["Stemming", "Lemmatization", "Parsing"],
+                  "question": {
+                    "text": "What is the process of breaking text into individual words or subwords called?"
+                  }
+                },
+                {
+                  "category": "NLP",
+                  "id": "503",
+                  "correctAnswer": "Bag of Words",
+                  "incorrectAnswers": ["Word2Vec", "TF-IDF", "GloVe"],
+                  "question": {
+                    "text": "Which model represents text as a collection of its word counts, ignoring grammar and word order?"
+                  }
+                },
+                {
+                  "category": "NLP",
+                  "id": "504",
+                  "correctAnswer": "Stemming",
+                  "incorrectAnswers": ["Lemmatization", "Tokenization", "Parsing"],
+                  "question": {
+                    "text": "Which technique reduces words to their root form by removing suffixes, even if the result is not a valid word?"
+                  }
+                },
+                {
+                  "category": "NLP",
+                  "id": "505",
+                  "correctAnswer": "Lemmatization",
+                  "incorrectAnswers": ["Stemming", "Tokenization", "Syntactic Parsing"],
+                  "question": {
+                    "text": "Which process reduces words to their base or dictionary form while ensuring the output is a valid word?"
+                  }
+                },
+                {
+                  "category": "NLP",
+                  "id": "506",
+                  "correctAnswer": "Named Entity Recognition (NER)",
+                  "incorrectAnswers": ["Sentiment Analysis", "Part-of-Speech Tagging", "Dependency Parsing"],
+                  "question": {
+                    "text": "Which NLP task identifies and classifies proper nouns like names of people, organizations, and locations?"
+                  }
+                },
+                {
+                  "category": "NLP",
+                  "id": "507",
+                  "correctAnswer": "Word2Vec",
+                  "incorrectAnswers": ["Bag of Words", "TF-IDF", "GloVe"],
+                  "question": {
+                    "text": "Which model produces word embeddings where words with similar meanings are mapped close to each other in vector space?"
+                  }
+                },
+                {
+                  "category": "NLP",
+                  "id": "508",
+                  "correctAnswer": "TF-IDF (Term Frequency-Inverse Document Frequency)",
+                  "incorrectAnswers": ["Word2Vec", "One-Hot Encoding", "GloVe"],
+                  "question": {
+                    "text": "Which model measures the importance of a word in a document relative to a collection of documents?"
+                  }
+                },
+                {
+                  "category": "NLP",
+                  "id": "509",
+                  "correctAnswer": "Part-of-Speech Tagging (POS)",
+                  "incorrectAnswers": ["Dependency Parsing", "Syntactic Parsing", "NER"],
+                  "question": {
+                    "text": "Which NLP task involves labeling each word in a sentence with its grammatical category, such as noun, verb, adjective?"
+                  }
+                },
+                {
+                  "category": "NLP",
+                  "id": "510",
+                  "correctAnswer": "Stop Words",
+                  "incorrectAnswers": ["Punctuation", "Synonyms", "Named Entities"],
+                  "question": {
+                    "text": "What are the common words like 'is', 'the', and 'and' that are often removed from text data to reduce noise in NLP tasks?"
+                  }
+                },
+                {
+                  "category": "NLP",
+                  "id": "511",
+                  "correctAnswer": "Sentiment Analysis",
+                  "incorrectAnswers": ["NER", "Topic Modeling", "Text Classification"],
+                  "question": {
+                    "text": "Which task in NLP involves determining the emotional tone or attitude expressed in a piece of text?"
+                  }
+                },
+                {
+                  "category": "NLP",
+                  "id": "512",
+                  "correctAnswer": "Transformer",
+                  "incorrectAnswers": ["LSTM", "RNN", "Naive Bayes"],
+                  "question": {
+                    "text": "Which deep learning model, introduced in 2017, has revolutionized NLP by using self-attention mechanisms to process sequential data more efficiently?"
+                    }
+                },
+                {
+                  "category": "NLP",
+                  "id": "513",
+                  "correctAnswer": "BLEU (Bilingual Evaluation Understudy)",
+                  "incorrectAnswers": ["ROUGE", "F1 Score", "Cross-Entropy"],
+                  "question": {
+                    "text": "Which metric is commonly used for evaluating the quality of machine-generated translations in comparison to human translations?"
+                  }
+                },
+                {
+                  "category": "NLP",
+                  "id": "514",
+                  "correctAnswer": "Sequence-to-Sequence (Seq2Seq)",
+                  "incorrectAnswers": ["Bag of Words", "CNN", "Markov Model"],
+                  "question": {
+                    "text": "Which architecture is used in NLP tasks like machine translation and text summarization where an input sequence is mapped to an output sequence?"
+                  }
+                },
+                {
+                  "category": "NLP",
+                  "id": "515",
+                  "correctAnswer": "Attention Mechanism",
+                  "incorrectAnswers": ["Pooling Layer", "Recurrent Layer", "Dense Layer"],
+                  "question": {
+                    "text": "Which mechanism in neural networks helps models focus on relevant parts of the input sequence, particularly in translation tasks?"
+                  }
+                },
+                {
+                  "category": "NLP",
+                  "id": "516",
+                  "correctAnswer": "GloVe (Global Vectors for Word Representation)",
+                  "incorrectAnswers": ["Bag of Words", "One-Hot Encoding", "Word2Vec"],
+                  "question": {
+                    "text": "Which unsupervised learning algorithm is used to generate word embeddings by considering global word co-occurrence statistics?"
+                  }
+                },
+                {
+                  "category": "NLP",
+                  "id": "517",
+                  "correctAnswer": "BERT (Bidirectional Encoder Representations from Transformers)",
+                  "incorrectAnswers": ["GPT", "ELMo", "Seq2Seq"],
+                  "question": {
+                    "text": "Which transformer-based model is pre-trained on large amounts of text data and uses bidirectional context to improve NLP tasks like question answering and sentiment analysis?"
+                  }
+                },
+                {
+                  "category": "NLP",
+                  "id": "518",
+                  "correctAnswer": "Latent Dirichlet Allocation (LDA)",
+                  "incorrectAnswers": ["K-Means", "DBSCAN", "Agglomerative Clustering"],
+                  "question": {
+                    "text": "Which unsupervised machine learning algorithm is used for topic modeling, where a set of documents is represented as a mixture of topics?"
+                  }
+                },
+                {
+                  "category": "NLP",
+                  "id": "519",
+                  "correctAnswer": "Perplexity",
+                  "incorrectAnswers": ["Accuracy", "Precision", "Recall"],
+                  "question": {
+                    "text": "What metric is used to evaluate language models, with lower values indicating better performance in predicting words?"
+                  }
+                },
+                {
+                  "category": "NLP",
+                  "id": "520",
+                  "correctAnswer": "Text Summarization",
+                  "incorrectAnswers": ["Sentence Segmentation", "Topic Modeling", "Sentiment Analysis"],
+                  "question": {
+                    "text": "Which NLP task involves producing a concise summary of a larger body of text while preserving its meaning?"
+                  }
+                },
+                
+                    {
+                      "category": "NLP",
+                      "id": "521",
+                      "correctAnswer": "Tokenization",
+                      "incorrectAnswers": ["Stemming", "Lemmatization", "Parsing"],
+                      "question": {
+                        "text": "What is the process of splitting text into individual words or subwords called?"
+                      }
+                    },
+                    {
+                      "category": "NLP",
+                      "id": "522",
+                      "correctAnswer": "Bag of Words",
+                      "incorrectAnswers": ["Word2Vec", "TF-IDF", "GloVe"],
+                      "question": {
+                        "text": "Which representation model converts text into a collection of its word counts, disregarding grammar and word order?"
+                      }
+                    },
+                    {
+                      "category": "NLP",
+                      "id": "523",
+                      "correctAnswer": "Stemming",
+                      "incorrectAnswers": ["Lemmatization", "Tokenization", "Parsing"],
+                      "question": {
+                        "text": "Which NLP technique reduces words to their root form by chopping off suffixes, without necessarily producing a valid word?"
+                      }
+                    },
+                    {
+                      "category": "NLP",
+                      "id": "524",
+                      "correctAnswer": "Lemmatization",
+                      "incorrectAnswers": ["Stemming", "Tokenization", "Syntactic Parsing"],
+                      "question": {
+                        "text": "Which technique reduces words to their base or dictionary form while ensuring the output is a valid word?"
+                      }
+                    },
+                    {
+                      "category": "NLP",
+                      "id": "525",
+                      "correctAnswer": "Named Entity Recognition (NER)",
+                      "incorrectAnswers": ["Sentiment Analysis", "Part-of-Speech Tagging", "Dependency Parsing"],
+                      "question": {
+                        "text": "Which NLP task identifies and classifies proper nouns like names of people, organizations, and locations?"
+                      }
+                    },
+                    {
+                      "category": "NLP",
+                      "id": "526",
+                      "correctAnswer": "Word2Vec",
+                      "incorrectAnswers": ["Bag of Words", "TF-IDF", "GloVe"],
+                      "question": {
+                        "text": "Which neural network model is used to produce word embeddings, where words with similar meaning are mapped close to each other in vector space?"
+                      }
+                    },
+                    {
+                      "category": "NLP",
+                      "id": "527",
+                      "correctAnswer": "TF-IDF (Term Frequency-Inverse Document Frequency)",
+                      "incorrectAnswers": ["Word2Vec", "One-Hot Encoding", "GloVe"],
+                      "question": {
+                        "text": "Which model measures the importance of a word in a document relative to a collection of documents?"
+                      }
+                    },
+                    {
+                      "category": "NLP",
+                      "id": "528",
+                      "correctAnswer": "Part-of-Speech Tagging (POS)",
+                      "incorrectAnswers": ["Dependency Parsing", "Syntactic Parsing", "NER"],
+                      "question": {
+                        "text": "Which NLP task involves labeling each word in a sentence with its grammatical category, such as noun, verb, adjective?"
+                      }
+                    },
+                    {
+                      "category": "NLP",
+                      "id": "529",
+                      "correctAnswer": "Stop Words",
+                      "incorrectAnswers": ["Punctuation", "Synonyms", "Named Entities"],
+                      "question": {
+                        "text": "What are the common words like 'is', 'the', and 'and' that are often removed from text data to reduce noise in NLP tasks?"
+                      }
+                    },
+                    {
+                      "category": "NLP",
+                      "id": "530",
+                      "correctAnswer": "Sentiment Analysis",
+                      "incorrectAnswers": ["NER", "Topic Modeling", "Text Classification"],
+                      "question": {
+                        "text": "Which task in NLP involves determining the emotional tone or attitude expressed in a piece of text?"
+                      }
+                    },
+                    {
+                      "category": "NLP",
+                      "id": "531",
+                      "correctAnswer": "Transformer",
+                      "incorrectAnswers": ["LSTM", "RNN", "Naive Bayes"],
+                      "question": {
+                        "text": "Which deep learning model, introduced in 2017, has revolutionized NLP by using self-attention mechanisms to process sequential data more efficiently?"
+                      }
+                    },
+                    {
+                      "category": "NLP",
+                      "id": "532",
+                      "correctAnswer": "BLEU (Bilingual Evaluation Understudy)",
+                      "incorrectAnswers": ["ROUGE", "F1 Score", "Cross-Entropy"],
+                      "question": {
+                        "text": "Which metric is commonly used for evaluating the quality of machine-generated translations in comparison to human translations?"
+                      }
+                    },
+                    {
+                      "category": "NLP",
+                      "id": "533",
+                      "correctAnswer": "Sequence-to-Sequence (Seq2Seq)",
+                      "incorrectAnswers": ["Bag of Words", "CNN", "Markov Model"],
+                      "question": {
+                        "text": "Which architecture is used in NLP tasks like machine translation and text summarization where an input sequence is mapped to an output sequence?"
+                      }
+                    },
+                    {
+                      "category": "NLP",
+                      "id": "534",
+                      "correctAnswer": "Attention Mechanism",
+                      "incorrectAnswers": ["Pooling Layer", "Recurrent Layer", "Dense Layer"],
+                      "question": {
+                        "text": "Which mechanism in neural networks helps models focus on relevant parts of the input sequence, particularly in translation tasks?"
+                      }
+                    },
+                    {
+                      "category": "NLP",
+                      "id": "535",
+                      "correctAnswer": "GloVe (Global Vectors for Word Representation)",
+                      "incorrectAnswers": ["Bag of Words", "One-Hot Encoding", "Word2Vec"],
+                      "question": {
+                        "text": "Which unsupervised learning algorithm is used to generate word embeddings by considering global word co-occurrence statistics?"
+                      }
+                    },
+                    {
+                      "category": "NLP",
+                      "id": "536",
+                      "correctAnswer": "BERT (Bidirectional Encoder Representations from Transformers)",
+                      "incorrectAnswers": ["GPT", "ELMo", "Seq2Seq"],
+                      "question": {
+                        "text": "Which transformer-based model is pre-trained on large amounts of text data and uses bidirectional context to improve NLP tasks like question answering and sentiment analysis?"
+                      }
+                    },
+                    {
+                      "category": "NLP",
+                      "id": "537",
+                      "correctAnswer": "Latent Dirichlet Allocation (LDA)",
+                      "incorrectAnswers": ["K-Means", "DBSCAN", "Agglomerative Clustering"],
+                      "question": {
+                        "text": "Which unsupervised machine learning algorithm is used for topic modeling, where a set of documents is represented as a mixture of topics?"
+                      }
+                    },
+                    {
+                      "category": "NLP",
+                      "id": "538",
+                      "correctAnswer": "Perplexity",
+                      "incorrectAnswers": ["Accuracy", "Precision", "Recall"],
+                      "question": {
+                        "text": "What metric is used to evaluate language models, with lower values indicating better performance in predicting words?"
+                      }
+                    },
+                    {
+                      "category": "NLP",
+                      "id": "539",
+                      "correctAnswer": "Text Summarization",
+                      "incorrectAnswers": ["Sentence Segmentation", "Topic Modeling", "Sentiment Analysis"],
+                      "question": {
+                        "text": "Which NLP task involves producing a concise summary of a larger body of text while preserving its meaning?"
+                      }
+                    },
+                    {
+                      "category": "NLP",
+                      "id": "540",
+                      "correctAnswer": "Zero-Shot Learning",
+                      "incorrectAnswers": ["Few-Shot Learning", "Transfer Learning", "Supervised Learning"],
+                      "question": {
+                        "text": "Which technique allows a model to classify data into categories it has not been explicitly trained on?"
+                      }
+                    }
+                  
+                  
+          
+          
+      
+      
+  ]
+  

@@ -4,7 +4,7 @@ import { styles } from '../style';
 
 const PopUp = ({ isVisible, handleSetQuestions, setModalVisible,setTopic }) => {
   // State to track active question and topics
-  const [selectedQuestion, setSelectedQuestion] = useState(null);
+  const [selectedQuestion, setSelectedQuestion] = useState(30);
   const [activeTopics, setActiveTopics] = useState({
     database: true,
     hardware: false,

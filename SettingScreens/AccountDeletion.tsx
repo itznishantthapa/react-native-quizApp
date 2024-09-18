@@ -1,4 +1,4 @@
-import { View, Text, TouchableOpacity, StyleSheet, TouchableWithoutFeedback, Modal, Alert } from 'react-native'
+import { View, Text, TouchableOpacity, Modal, Alert } from 'react-native'
 import React from 'react'
 import { styles } from '../style'
 import { StatusBar } from 'expo-status-bar'

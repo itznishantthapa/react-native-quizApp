@@ -12,7 +12,7 @@ import charge from '../assets/charge.png';
 import IconF from 'react-native-vector-icons/Feather';
 import { auth } from '../firebaseConfig';
 import * as ImagePicker from 'expo-image-picker';
-import { fileUploadToFirebaseStorage, getFromFirebase, getLocally, updateToFirebase } from '../db';
+import { fileUploadToFirebaseStorage, getFromFirebase, updateToFirebase } from '../db';
 import {MyContext} from '../AppProvider';
 
 

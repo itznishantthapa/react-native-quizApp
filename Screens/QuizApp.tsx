@@ -1,10 +1,9 @@
-import React, { useEffect, useState,useContext } from "react";
-import { View, Text, Alert, TouchableOpacity, StyleSheet, ImageBackground } from "react-native";
+import React, { useContext } from "react";
+import { View, Text, TouchableOpacity } from "react-native";
 import { StatusBar } from "expo-status-bar";
 import { styles } from '../style';
 import { MyContext } from '../AppProvider';  // Import context
-import { saveLocalData,getLocalData } from '../localStorage';
-import { get } from "react-native/Libraries/TurboModule/TurboModuleRegistry";
+
 
 
 const QuizApp = ({ question, options,categories,correctAns, handleOptionClick, counter,isOver, fetchQuestion ,noOfQuestions}) => {

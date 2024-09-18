@@ -5,7 +5,7 @@ import Creation from './Screens/Creation';
 import { Alert } from 'react-native';
 import QuizApp from './Screens/QuizApp';
 import Tabbar from './Screens/Tabbar';
-import { useState, useEffect, createContext, useContext } from 'react';
+import { useState, useEffect } from 'react';
 import { enableScreens } from 'react-native-screens';
 import Setting from './Screens/Setting';
 import Account from './SettingScreens/Account';
@@ -16,14 +16,9 @@ import Notifications from './SettingScreens/Notification';
 import Privacy from './SettingScreens/Privacy';
 import PrivacyEdit from './SettingScreens/PrivacyEdit';
 import HelpSupport from './SettingScreens/helpSupport';
-
-import { storage } from './firebaseConfig';
-import { ref, getDownloadURL } from 'firebase/storage';
-
 import UserProfile from './Screens/UserProfile';
 import { saveLocalData, getLocalData } from './localStorage';
-import { fileUploadToFirebaseStorage, getFromFirebase, updateToFirebase } from './db';
-import { AppProvider, MyContext } from './AppProvider';
+import { AppProvider } from './AppProvider';
 import History from './Screens/History';
 import QuestionList from './Screens/QuestionList';
 
@@ -32,13 +27,6 @@ import QuestionList from './Screens/QuestionList';
 enableScreens(false);
 
 const Stack = createStackNavigator();
-
-
-
-// const MyContext = createContext();
-// const { addQuizAnswer } = useContext(MyContext);
-
-
 
 
 export default function App() {
@@ -128,24 +116,24 @@ export default function App() {
         break;
 
       case 'Programming':
-        questionData = require('./data/react.json');
+        questionData = require('./data/Programming.json');
         break;
       case 'DSA':
-        questionData = require('./data/react.json');
+        questionData = require('./data/dsa.json');
         break;
 
       case 'Networking':
         questionData = require('./data/networking.json');
         break;
       case 'Software Engineering':
-        questionData = require('./data/networking.json');
+        questionData = require('./data/softwareEngineering.json');
         break;
 
       case 'Operating System':
-        questionData = require('./data/networking.json');
+        questionData = require('./data/operatingSystem.json');
         break;
       case 'AI & ML':
-        questionData = require('./data/networking.json');
+        questionData = require('./data/aiML.json');
         break;
 
       default:
@@ -236,11 +224,6 @@ export default function App() {
   }, [gameInfo]);
   // ------------------------------------------(STORING END)----------------------------------------------------------------------------
 
-
-
-
-
-
   return (
     // <View style={styles.container}>
     <AppProvider >
@@ -286,5 +269,5 @@ export default function App() {
   );
 }
 
-// export {MyContext}
+
 

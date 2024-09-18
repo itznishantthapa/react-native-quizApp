@@ -178,6 +178,726 @@
       "question": {
         "text": "Which software design principle involves dividing a system into smaller parts to improve manageability?"
       }
+    },
+    {
+      "category": "software engineering",
+      "id": "021",
+      "correctAnswer": "Waterfall",
+      "incorrectAnswers": ["Agile", "Scrum", "Kanban"],
+      "question": {
+        "text": "Which software development approach follows a linear and sequential design process?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "022",
+      "correctAnswer": "Use Case Diagram",
+      "incorrectAnswers": ["Class Diagram", "Sequence Diagram", "State Chart"],
+      "question": {
+        "text": "Which UML diagram is used to represent the functional requirements of a system?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "023",
+      "correctAnswer": "Component Testing",
+      "incorrectAnswers": ["Integration Testing", "System Testing", "Acceptance Testing"],
+      "question": {
+        "text": "Which type of testing focuses on individual parts of a software system?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "024",
+      "correctAnswer": "Gantt Chart",
+      "incorrectAnswers": ["Network Diagram", "Critical Path Analysis", "Work Breakdown Structure"],
+      "question": {
+        "text": "Which project management tool is used to represent the schedule of a project?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "025",
+      "correctAnswer": "Agile",
+      "incorrectAnswers": ["Waterfall", "V-Model", "Spiral"],
+      "question": {
+        "text": "Which software development methodology emphasizes iterative development and customer collaboration?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "026",
+      "correctAnswer": "Class Diagram",
+      "incorrectAnswers": ["Use Case Diagram", "Sequence Diagram", "Activity Diagram"],
+      "question": {
+        "text": "Which UML diagram is used to represent the static structure of a system?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "027",
+      "correctAnswer": "Risk Analysis",
+      "incorrectAnswers": ["Cost-Benefit Analysis", "Earned Value", "Work Breakdown Structure"],
+      "question": {
+        "text": "Which project management activity involves identifying and assessing potential risks?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "028",
+      "correctAnswer": "Encapsulation",
+      "incorrectAnswers": ["Inheritance", "Polymorphism", "Abstraction"],
+      "question": {
+        "text": "Which object-oriented concept involves bundling data and methods that operate on the data within a single unit?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "029",
+      "correctAnswer": "System Modelling",
+      "incorrectAnswers": ["System Testing", "System Maintenance", "System Deployment"],
+      "question": {
+        "text": "Which stage of the software life cycle involves creating abstract representations of a system?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "030",
+      "correctAnswer": "Prototyping",
+      "incorrectAnswers": ["Waterfall", "Agile", "Spiral"],
+      "question": {
+        "text": "Which software development approach involves creating incomplete versions of the software program being developed?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "031",
+      "correctAnswer": "Agile",
+      "incorrectAnswers": ["Waterfall", "V-Model", "Spiral"],
+      "question": {
+        "text": "Which software development methodology emphasizes iterative development and customer collaboration?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "032",
+      "correctAnswer": "Class Diagram",
+      "incorrectAnswers": ["Use Case Diagram", "Sequence Diagram", "Activity Diagram"],
+      "question": {
+        "text": "Which UML diagram is used to represent the static structure of a system?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "033",
+      "correctAnswer": "Risk Analysis",
+      "incorrectAnswers": ["Cost-Benefit Analysis", "Earned Value", "Work Breakdown Structure"],
+      "question": {
+        "text": "Which project management activity involves identifying and assessing potential risks?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "034",
+      "correctAnswer": "Encapsulation",
+      "incorrectAnswers": ["Inheritance", "Polymorphism", "Abstraction"],
+      "question": {
+        "text": "Which object-oriented concept involves bundling data and methods that operate on the data within a single unit?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "035",
+      "correctAnswer": "System Modelling",
+      "incorrectAnswers": ["System Testing", "System Maintenance", "System Deployment"],
+      "question": {
+        "text": "Which stage of the software life cycle involves creating abstract representations of a system?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "036",
+      "correctAnswer": "Prototyping",
+      "incorrectAnswers": ["Waterfall", "Agile", "Spiral"],
+      "question": {
+        "text": "Which software development approach involves creating incomplete versions of the software program being developed?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "037",
+      "correctAnswer": "Use Case Diagram",
+      "incorrectAnswers": ["Class Diagram", "Sequence Diagram", "State Chart"],
+      "question": {
+        "text": "Which UML diagram is used to represent the functional requirements of a system?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "038",
+      "correctAnswer": "Component Testing",
+      "incorrectAnswers": ["Integration Testing", "System Testing", "Acceptance Testing"],
+      "question": {
+        "text": "Which type of testing focuses on individual parts of a software system?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "039",
+      "correctAnswer": "Gantt Chart",
+      "incorrectAnswers": ["Network Diagram", "Critical Path Analysis", "Work Breakdown Structure"],
+      "question": {
+        "text": "Which project management tool is used to represent the schedule of a project?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "040",
+      "correctAnswer": "Inheritance",
+      "incorrectAnswers": ["Encapsulation", "Polymorphism", "Abstraction"],
+      "question": {
+        "text": "Which object-oriented concept allows a class to inherit properties and methods from another class?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "041",
+      "correctAnswer": "Sequence Diagram",
+      "incorrectAnswers": ["Class Diagram", "Use Case Diagram", "Activity Diagram"],
+      "question": {
+        "text": "Which UML diagram is used to represent the interaction between objects over time?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "042",
+      "correctAnswer": "Critical Path Analysis",
+      "incorrectAnswers": ["Gantt Chart", "Network Diagram", "Work Breakdown Structure"],
+      "question": {
+        "text": "Which project management technique is used to identify the sequence of crucial steps that determine the minimum project duration?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "043",
+      "correctAnswer": "Polymorphism",
+      "incorrectAnswers": ["Inheritance", "Encapsulation", "Abstraction"],
+      "question": {
+        "text": "Which object-oriented concept allows objects to be treated as instances of their parent class rather than their actual class?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "044",
+      "correctAnswer": "System Testing",
+      "incorrectAnswers": ["Unit Testing", "Integration Testing", "Acceptance Testing"],
+      "question": {
+        "text": "Which type of testing involves testing the complete and integrated software system to evaluate its compliance with the specified requirements?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "045",
+      "correctAnswer": "Work Breakdown Structure",
+      "incorrectAnswers": ["Gantt Chart", "Network Diagram", "Critical Path Analysis"],
+      "question": {
+        "text": "Which project management tool is used to break down a project into smaller, more manageable components?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "046",
+      "correctAnswer": "Abstraction",
+      "incorrectAnswers": ["Encapsulation", "Inheritance", "Polymorphism"],
+      "question": {
+        "text": "Which object-oriented concept involves hiding the complex implementation details and showing only the essential features of an object?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "047",
+      "correctAnswer": "Activity Diagram",
+      "incorrectAnswers": ["Class Diagram", "Use Case Diagram", "Sequence Diagram"],
+      "question": {
+        "text": "Which UML diagram is used to represent the flow of activities in a system?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "048",
+      "correctAnswer": "Earned Value",
+      "incorrectAnswers": ["Cost-Benefit Analysis", "Risk Analysis", "Work Breakdown Structure"],
+      "question": {
+        "text": "Which project management technique measures the performance of a project in terms of budget and schedule?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "049",
+      "correctAnswer": "Scrum Master",
+      "incorrectAnswers": ["Product Owner", "Developer", "Tester"],
+      "question": {
+        "text": "In the Scrum framework, who is responsible for ensuring that the team follows the Scrum process?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "050",
+      "correctAnswer": "Continuous Deployment",
+      "incorrectAnswers": ["Continuous Integration", "Continuous Delivery", "Feature Toggling"],
+      "question": {
+        "text": "Which practice involves automatically deploying every code change to production?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "051",
+      "correctAnswer": "Use Case Diagram",
+      "incorrectAnswers": ["Class Diagram", "Sequence Diagram", "Activity Diagram"],
+      "question": {
+        "text": "Which UML diagram is used to represent the functional requirements of a system?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "052",
+      "correctAnswer": "Component Testing",
+      "incorrectAnswers": ["Integration Testing", "System Testing", "Acceptance Testing"],
+      "question": {
+        "text": "Which type of testing focuses on individual parts of a software system?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "053",
+      "correctAnswer": "Gantt Chart",
+      "incorrectAnswers": ["Network Diagram", "Critical Path Analysis", "Work Breakdown Structure"],
+      "question": {
+        "text": "Which project management tool is used to represent the schedule of a project?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "054",
+      "correctAnswer": "Inheritance",
+      "incorrectAnswers": ["Encapsulation", "Polymorphism", "Abstraction"],
+      "question": {
+        "text": "Which object-oriented concept allows a class to inherit properties and methods from another class?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "055",
+      "correctAnswer": "Sequence Diagram",
+      "incorrectAnswers": ["Class Diagram", "Use Case Diagram", "Activity Diagram"],
+      "question": {
+        "text": "Which UML diagram is used to represent the interaction between objects over time?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "056",
+      "correctAnswer": "Critical Path Analysis",
+      "incorrectAnswers": ["Gantt Chart", "Network Diagram", "Work Breakdown Structure"],
+      "question": {
+        "text": "Which project management technique is used to identify the sequence of crucial steps that determine the minimum project duration?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "057",
+      "correctAnswer": "Polymorphism",
+      "incorrectAnswers": ["Inheritance", "Encapsulation", "Abstraction"],
+      "question": {
+        "text": "Which object-oriented concept allows objects to be treated as instances of their parent class rather than their actual class?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "058",
+      "correctAnswer": "System Testing",
+      "incorrectAnswers": ["Unit Testing", "Integration Testing", "Acceptance Testing"],
+      "question": {
+        "text": "Which type of testing involves testing the complete and integrated software system to evaluate its compliance with the specified requirements?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "059",
+      "correctAnswer": "Work Breakdown Structure",
+      "incorrectAnswers": ["Gantt Chart", "Network Diagram", "Critical Path Analysis"],
+      "question": {
+        "text": "Which project management tool is used to break down a project into smaller, more manageable components?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "060",
+      "correctAnswer": "Agile",
+      "incorrectAnswers": ["Waterfall", "V-Model", "Spiral"],
+      "question": {
+        "text": "Which software development methodology emphasizes iterative development and customer collaboration?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "061",
+      "correctAnswer": "Class Diagram",
+      "incorrectAnswers": ["Use Case Diagram", "Sequence Diagram", "Activity Diagram"],
+      "question": {
+        "text": "Which UML diagram is used to represent the static structure of a system?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "062",
+      "correctAnswer": "Risk Analysis",
+      "incorrectAnswers": ["Cost-Benefit Analysis", "Earned Value", "Work Breakdown Structure"],
+      "question": {
+        "text": "Which project management activity involves identifying and assessing potential risks?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "063",
+      "correctAnswer": "Encapsulation",
+      "incorrectAnswers": ["Inheritance", "Polymorphism", "Abstraction"],
+      "question": {
+        "text": "Which object-oriented concept involves bundling data and methods that operate on the data within a single unit?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "064",
+      "correctAnswer": "System Modelling",
+      "incorrectAnswers": ["System Testing", "System Maintenance", "System Deployment"],
+      "question": {
+        "text": "Which stage of the software life cycle involves creating abstract representations of a system?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "065",
+      "correctAnswer": "Prototyping",
+      "incorrectAnswers": ["Waterfall", "Agile", "Spiral"],
+      "question": {
+        "text": "Which software development approach involves creating incomplete versions of the software program being developed?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "066",
+      "correctAnswer": "Abstraction",
+      "incorrectAnswers": ["Encapsulation", "Inheritance", "Polymorphism"],
+      "question": {
+        "text": "Which object-oriented concept involves hiding the complex implementation details and showing only the essential features of an object?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "067",
+      "correctAnswer": "Integration Testing",
+      "incorrectAnswers": ["Unit Testing", "System Testing", "Acceptance Testing"],
+      "question": {
+        "text": "Which type of testing involves combining individual software modules and testing them as a group?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "068",
+      "correctAnswer": "Scrum",
+      "incorrectAnswers": ["Waterfall", "V-Model", "Spiral"],
+      "question": {
+        "text": "Which Agile framework uses iterative cycles called sprints to manage software development?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "069",
+      "correctAnswer": "State Chart",
+      "incorrectAnswers": ["Class Diagram", "Sequence Diagram", "Activity Diagram"],
+      "question": {
+        "text": "Which UML diagram is used to represent the states and transitions of an object throughout its lifecycle?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "070",
+      "correctAnswer": "Configuration Management",
+      "incorrectAnswers": ["Risk Management", "Quality Management", "Project Management"],
+      "question": {
+        "text": "Which project management activity involves maintaining the consistency of a product's performance, functional, and physical attributes with its requirements, design, and operational information?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "071",
+      "correctAnswer": "DSDM",
+      "incorrectAnswers": ["Scrum", "Kanban", "XP"],
+      "question": {
+        "text": "Which Agile methodology focuses on delivering business value early and continuously through iterative development and frequent delivery?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "072",
+      "correctAnswer": "Earned Value",
+      "incorrectAnswers": ["Cost-Benefit Analysis", "Work Breakdown Structure", "Critical Path Analysis"],
+      "question": {
+        "text": "Which project management technique is used to measure project performance and progress in an objective manner?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "073",
+      "correctAnswer": "Rational Unified Process (RUP)",
+      "incorrectAnswers": ["Scrum", "Kanban", "XP"],
+      "question": {
+        "text": "Which software development process framework is iterative and incremental, and emphasizes a disciplined approach to assigning tasks and responsibilities within a development organization?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "074",
+      "correctAnswer": "Deployment Diagram",
+      "incorrectAnswers": ["Class Diagram", "Sequence Diagram", "Activity Diagram"],
+      "question": {
+        "text": "Which UML diagram is used to represent the physical deployment of artifacts on nodes?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "075",
+      "correctAnswer": "XP (Extreme Programming)",
+      "incorrectAnswers": ["Scrum", "Kanban", "DSDM"],
+      "question": {
+        "text": "Which Agile methodology emphasizes technical excellence and good design, and includes practices such as pair programming and test-driven development?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "076",
+      "correctAnswer": "Waterfall",
+      "incorrectAnswers": ["Agile", "Scrum", "Kanban"],
+      "question": {
+        "text": "Which software development approach follows a linear and sequential design process?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "077",
+      "correctAnswer": "Use Case Diagram",
+      "incorrectAnswers": ["Class Diagram", "Sequence Diagram", "State Chart"],
+      "question": {
+        "text": "Which UML diagram is used to represent the functional requirements of a system?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "078",
+      "correctAnswer": "Component Testing",
+      "incorrectAnswers": ["Integration Testing", "System Testing", "Acceptance Testing"],
+      "question": {
+        "text": "Which type of testing focuses on individual parts of a software system?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "079",
+      "correctAnswer": "Gantt Chart",
+      "incorrectAnswers": ["Network Diagram", "Critical Path Analysis", "Work Breakdown Structure"],
+      "question": {
+        "text": "Which project management tool is used to represent the schedule of a project?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "080",
+      "correctAnswer": "Agile",
+      "incorrectAnswers": ["Waterfall", "V-Model", "Spiral"],
+      "question": {
+        "text": "Which software development methodology emphasizes iterative development and customer collaboration?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "081",
+      "correctAnswer": "Class Diagram",
+      "incorrectAnswers": ["Use Case Diagram", "Sequence Diagram", "Activity Diagram"],
+      "question": {
+        "text": "Which UML diagram is used to represent the static structure of a system?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "082",
+      "correctAnswer": "Risk Analysis",
+      "incorrectAnswers": ["Cost-Benefit Analysis", "Earned Value", "Work Breakdown Structure"],
+      "question": {
+        "text": "Which project management activity involves identifying and assessing potential risks?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "083",
+      "correctAnswer": "Encapsulation",
+      "incorrectAnswers": ["Inheritance", "Polymorphism", "Abstraction"],
+      "question": {
+        "text": "Which object-oriented concept involves bundling data and methods that operate on the data within a single unit?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "084",
+      "correctAnswer": "System Modelling",
+      "incorrectAnswers": ["System Testing", "System Maintenance", "System Deployment"],
+      "question": {
+        "text": "Which stage of the software life cycle involves creating abstract representations of a system?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "085",
+      "correctAnswer": "Prototyping",
+      "incorrectAnswers": ["Waterfall", "Agile", "Spiral"],
+      "question": {
+        "text": "Which software development approach involves creating incomplete versions of the software program being developed?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "086",
+      "correctAnswer": "Scrum",
+      "incorrectAnswers": ["Waterfall", "V-Model", "Spiral"],
+      "question": {
+        "text": "Which Agile framework uses iterative cycles called sprints to manage software development?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "087",
+      "correctAnswer": "State Chart",
+      "incorrectAnswers": ["Class Diagram", "Sequence Diagram", "Activity Diagram"],
+      "question": {
+        "text": "Which UML diagram is used to represent the states and transitions of an object throughout its lifecycle?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "088",
+      "correctAnswer": "Configuration Management",
+      "incorrectAnswers": ["Risk Management", "Quality Management", "Project Management"],
+      "question": {
+        "text": "Which project management activity involves maintaining the consistency of a product's performance, functional, and physical attributes with its requirements, design, and operational information?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "089",
+      "correctAnswer": "DSDM",
+      "incorrectAnswers": ["Scrum", "Kanban", "XP"],
+      "question": {
+        "text": "Which Agile methodology focuses on delivering business value early and continuously through iterative development and frequent delivery?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "090",
+      "correctAnswer": "Earned Value",
+      "incorrectAnswers": ["Cost-Benefit Analysis", "Work Breakdown Structure", "Critical Path Analysis"],
+      "question": {
+        "text": "Which project management technique is used to measure project performance and progress in an objective manner?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "091",
+      "correctAnswer": "Requirement Specification",
+      "incorrectAnswers": ["System Testing", "System Deployment", "System Maintenance"],
+      "question": {
+        "text": "Which stage of the software life cycle involves gathering and defining what the software is supposed to do?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "092",
+      "correctAnswer": "System Architecture",
+      "incorrectAnswers": ["System Testing", "System Deployment", "System Maintenance"],
+      "question": {
+        "text": "Which stage of the software life cycle involves defining the structure and behavior of the system?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "093",
+      "correctAnswer": "Testing",
+      "incorrectAnswers": ["Requirement Specification", "System Modelling", "System Deployment"],
+      "question": {
+        "text": "Which stage of the software life cycle involves verifying that the software meets the specified requirements?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "094",
+      "correctAnswer": "Maintenance",
+      "incorrectAnswers": ["Requirement Specification", "System Modelling", "System Deployment"],
+      "question": {
+        "text": "Which stage of the software life cycle involves updating and improving the software after it has been deployed?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "095",
+      "correctAnswer": "Agile",
+      "incorrectAnswers": ["Waterfall", "V-Model", "Spiral"],
+      "question": {
+        "text": "Which software development methodology emphasizes iterative development and customer collaboration?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "096",
+      "correctAnswer": "Class Diagram",
+      "incorrectAnswers": ["Use Case Diagram", "Sequence Diagram", "Activity Diagram"],
+      "question": {
+        "text": "Which UML diagram is used to represent the static structure of a system?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "097",
+      "correctAnswer": "Risk Analysis",
+      "incorrectAnswers": ["Cost-Benefit Analysis", "Earned Value", "Work Breakdown Structure"],
+      "question": {
+        "text": "Which project management activity involves identifying and assessing potential risks?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "098",
+      "correctAnswer": "Encapsulation",
+      "incorrectAnswers": ["Inheritance", "Polymorphism", "Abstraction"],
+      "question": {
+        "text": "Which object-oriented concept involves bundling data and methods that operate on the data within a single unit?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "099",
+      "correctAnswer": "System Modelling",
+      "incorrectAnswers": ["System Testing", "System Maintenance", "System Deployment"],
+      "question": {
+        "text": "Which stage of the software life cycle involves creating abstract representations of a system?"
+      }
+    },
+    {
+      "category": "software engineering",
+      "id": "100",
+      "correctAnswer": "Prototyping",
+      "incorrectAnswers": ["Waterfall", "Agile", "Spiral"],
+      "question": {
+        "text": "Which software development approach involves creating incomplete versions of the software program being developed?"
+      }
     }
   ]
   

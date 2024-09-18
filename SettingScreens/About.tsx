@@ -3,9 +3,7 @@ import React from 'react'
 import { styles } from '../style'
 import { StatusBar } from 'expo-status-bar'
 import IconF from 'react-native-vector-icons/Feather'
-import IconAnt from 'react-native-vector-icons/AntDesign'
 import { SafeAreaView } from 'react-native-safe-area-context'
-import { useState } from 'react'
 import IconFA from 'react-native-vector-icons/FontAwesome';
 
 

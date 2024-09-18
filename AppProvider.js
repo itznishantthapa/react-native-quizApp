@@ -1,5 +1,5 @@
 import React, { useState, createContext, useEffect } from 'react';
-import { saveLocalData, getLocalData ,deleteLocalData} from './localStorage';
+import { saveLocalData, getLocalData } from './localStorage';
 import { auth,firestore } from './firebaseConfig';
 import { getFromFirebase } from './db';
 import { Alert } from 'react-native';
@@ -19,11 +19,7 @@ export const AppProvider = ({ children }) => {
   const [topic, setTopic] = useState({database_cloud:'Database',programming_dsa:'Programming',networking_softEng:'Networking',os_aiMl:'Operating System'});
 
 
-  // deleteLocalData('quizData');
-  // deleteLocalData('database');
-  // deleteLocalData('programming');
-  // deleteLocalData('networking');
-  // deleteLocalData('cloud computing');
+
 
   // Function to add a new answer to the quizData
   const addQuizAnswer = async (question, selectedOption, correctAns, categories) => {

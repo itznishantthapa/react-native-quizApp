@@ -1,182 +1,923 @@
 [
     {
-        "category": "programming",
-        "id": "001",
-        "correctAnswer": "JavaScript",
-        "incorrectAnswers": ["Python", "Java", "C++"],
+        "category": "Java programming",
+        "id": "201",
+        "correctAnswer": "public static void main(String[] args)",
+        "incorrectAnswers": ["main()", "void main()", "public void main(String args[])"],
         "question": {
-            "text": "Which programming language is often used for web development?"
+            "text": "Which is the correct signature of the main method in Java?"
         }
     },
     {
-        "category": "programming",
-        "id": "002",
-        "correctAnswer": "JSON",
-        "incorrectAnswers": ["XML", "YAML", "CSV"],
+        "category": "Java programming",
+        "id": "202",
+        "correctAnswer": "int",
+        "incorrectAnswers": ["char", "float", "boolean"],
         "question": {
-            "text": "Which data interchange format is commonly used in web APIs?"
+            "text": "Which data type is used to declare a variable that holds whole numbers?"
         }
     },
     {
-        "category": "programming",
-        "id": "003",
-        "correctAnswer": "true",
-        "incorrectAnswers": ["false"],
+        "category": "Java programming",
+        "id": "203",
+        "correctAnswer": "++",
+        "incorrectAnswers": ["--", "+=", "-="],
         "question": {
-            "text": "JSON stands for JavaScript Object Notation. (true/false)"
+            "text": "Which operator is used for incrementing a value by 1?"
         }
     },
     {
-        "category": "programming",
-        "id": "004",
-        "correctAnswer": "key-value pairs",
-        "incorrectAnswers": ["arrays", "objects", "strings"],
+        "category": "Java programming",
+        "id": "204",
+        "correctAnswer": "for (int i = 0; i < 5; i++)",
+        "incorrectAnswers": ["for (i = 0; i <= 5)", "while (i < 5)", "do {i++;} while(i < 5)"],
         "question": {
-            "text": "In JSON, data is represented using what?"
+            "text": "Which of the following represents the correct syntax for a basic for-loop in Java?"
         }
     },
     {
-        "category": "programming",
-        "id": "005",
-        "correctAnswer": "parse",
-        "incorrectAnswers": ["stringify", "serialize", "decode"],
+        "category": "Java programming",
+        "id": "205",
+        "correctAnswer": "break;",
+        "incorrectAnswers": ["exit;", "stop;", "terminate;"],
         "question": {
-            "text": "In JavaScript, what method is used to convert a JSON string into a JavaScript object?"
+            "text": "Which keyword is used to exit from a loop in Java?"
         }
     },
     {
-        "category": "programming",
-        "id": "006",
-        "correctAnswer": "stringify",
-        "incorrectAnswers": ["parse", "serialize", "encode"],
-        "question": {
-            "text": "In JavaScript, what method is used to convert a JavaScript object into a JSON string?"
-        }
-    },
-    {
-        "category": "programming",
-        "id": "007",
-        "correctAnswer": "null",
-        "incorrectAnswers": ["undefined", "NaN", "false"],
-        "question": {
-            "text": "In JSON, what value represents the absence of a value?"
-        }
-    },
-    {
-        "category": "programming",
-        "id": "008",
-        "correctAnswer": "square brackets",
-        "incorrectAnswers": ["curly braces", "parentheses", "angle brackets"],
-        "question": {
-            "text": "In JSON, arrays are enclosed in what?"
-        }
-    },
-    {
-        "category": "programming",
-        "id": "009",
-        "correctAnswer": "curly braces",
-        "incorrectAnswers": ["square brackets", "parentheses", "angle brackets"],
-        "question": {
-            "text": "In JSON, objects are enclosed in what?"
-        }
-    },
-    {
-        "category": "programming",
-        "id": "010",
+        "category": "Java programming",
+        "id": "206",
         "correctAnswer": "false",
-        "incorrectAnswers": ["true"],
+        "incorrectAnswers": ["true", "null", "undefined"],
         "question": {
-            "text": "In JSON, property names must be enclosed in double quotes. (true/false)"
+            "text": "What will be the output of the following expression: (5 > 10) ?"
         }
     },
     {
-        "category": "programming",
-        "id": "011",
-        "correctAnswer": "JavaScript",
-        "incorrectAnswers": ["Java", "Python", "C++"],
+        "category": "Java programming",
+        "id": "207",
+        "correctAnswer": "System.out.println(\"Hello World!\");",
+        "incorrectAnswers": ["print(\"Hello World!\");", "cout << \"Hello World!\";", "Console.WriteLine(\"Hello World!\");"],
         "question": {
-            "text": "Which programming language is often used alongside JSON for web development?"
+            "text": "Which statement correctly prints 'Hello World!' in Java?"
         }
     },
     {
-        "category": "programming",
-        "id": "012",
-        "correctAnswer": "JSON.parse()",
-        "incorrectAnswers": ["JSON.stringify()", "JSON.serialize()", "JSON.decode()"],
+        "category": "Java programming",
+        "id": "208",
+        "correctAnswer": "null",
+        "incorrectAnswers": ["undefined", "0", "empty"],
         "question": {
-            "text": "In JavaScript, what method is used to parse a JSON string?"
+            "text": "What is the default value of a reference variable in Java?"
         }
     },
     {
-        "category": "programming",
-        "id": "013",
-        "correctAnswer": "JSON.stringify()",
-        "incorrectAnswers": ["JSON.parse()", "JSON.serialize()", "JSON.encode()"],
+        "category": "Java programming",
+        "id": "209",
+        "correctAnswer": "Inheritance",
+        "incorrectAnswers": ["Polymorphism", "Encapsulation", "Abstraction"],
         "question": {
-            "text": "In JavaScript, what method is used to convert an object into a JSON string?"
+            "text": "Which concept in Java allows a class to inherit properties from another class?"
         }
     },
     {
-        "category": "programming",
-        "id": "014",
-        "correctAnswer": "true",
-        "incorrectAnswers": ["false"],
+        "category": "Java programming",
+        "id": "210",
+        "correctAnswer": "while loop",
+        "incorrectAnswers": ["for loop", "do-while loop", "if statement"],
         "question": {
-            "text": "JSON can represent complex data structures. (true/false)"
+            "text": "Which loop executes while a certain condition is true in Java?"
         }
     },
     {
-        "category": "programming",
-        "id": "015",
-        "correctAnswer": "JSON",
-        "incorrectAnswers": ["XML", "YAML", "CSV"],
+        "category": "Java programming",
+        "id": "211",
+        "correctAnswer": "class",
+        "incorrectAnswers": ["object", "interface", "method"],
         "question": {
-            "text": "Which data format is often used for configuration files?"
+            "text": "What keyword is used to declare a blueprint for an object in Java?"
         }
     },
     {
-        "category": "programming",
-        "id": "016",
-        "correctAnswer": "JSON",
-        "incorrectAnswers": ["HTML", "CSS", "JavaScript"],
+        "category": "Java programming",
+        "id": "212",
+        "correctAnswer": "==",
+        "incorrectAnswers": ["=", "equals()", "!="],
         "question": {
-            "text": "Which format is commonly used for data exchange between a client and a server?"
+            "text": "Which operator is used to compare two values for equality in Java?"
         }
     },
     {
-        "category": "programming",
-        "id": "017",
-        "correctAnswer": "true",
-        "incorrectAnswers": ["false"],
+        "category": "Java programming",
+        "id": "213",
+        "correctAnswer": "boolean",
+        "incorrectAnswers": ["int", "double", "char"],
         "question": {
-            "text": "JSON is a lightweight data interchange format. (true/false)"
+            "text": "Which data type is used to store true or false values in Java?"
         }
     },
     {
-        "category": "programming",
-        "id": "018",
-        "correctAnswer": "JSON",
-        "incorrectAnswers": ["XML", "YAML", "CSV"],
+        "category": "Java programming",
+        "id": "214",
+        "correctAnswer": "public",
+        "incorrectAnswers": ["protected", "private", "static"],
         "question": {
-            "text": "Which format is often used for storing and transmitting data in web applications?"
+            "text": "Which access modifier allows a method or variable to be accessed by any other class?"
         }
     },
     {
-        "category": "programming",
-        "id": "019",
-        "correctAnswer": "JSON",
-        "incorrectAnswers": ["XML", "YAML", "CSV"],
+        "category": "Java programming",
+        "id": "215",
+        "correctAnswer": "String",
+        "incorrectAnswers": ["int", "boolean", "double"],
         "question": {
-            "text": "Which format is human-readable and easy to understand?"
+            "text": "Which data type is used to store text in Java?"
         }
     },
     {
-        "category": "programming",
-        "id": "020",
-        "correctAnswer": "JSON",
-        "incorrectAnswers": ["XML", "YAML", "CSV"],
+        "category": "Java programming",
+        "id": "216",
+        "correctAnswer": "void",
+        "incorrectAnswers": ["int", "String", "double"],
         "question": {
-            "text": "Which format is often used for representing data in NoSQL databases?"
+            "text": "Which return type signifies that a method does not return a value?"
+        }
+    },
+    {
+        "category": "Java programming",
+        "id": "217",
+        "correctAnswer": "Object-Oriented Programming",
+        "incorrectAnswers": ["Functional Programming", "Procedural Programming", "Declarative Programming"],
+        "question": {
+            "text": "What does OOP stand for in Java?"
+        }
+    },
+    {
+        "category": "Java programming",
+        "id": "218",
+        "correctAnswer": "this",
+        "incorrectAnswers": ["super", "self", "static"],
+        "question": {
+            "text": "Which keyword is used to refer to the current instance of a class in Java?"
+        }
+    },
+    {
+        "category": "Java programming",
+        "id": "219",
+        "correctAnswer": "int a = 5; a++;",
+        "incorrectAnswers": ["int a = 5; ++a;", "int a = 5; --a;", "int a = 5; a--;"],
+        "question": {
+            "text": "Which code snippet correctly increments the value of 'a' by 1 in Java?"
+        }
+    },
+    {
+        "category": "Java programming",
+        "id": "220",
+        "correctAnswer": "int[] arr = new int[5];",
+        "incorrectAnswers": ["int arr[] = new int(5);", "int arr[5];", "int[5] arr;"],
+        "question": {
+            "text": "Which is the correct way to declare an array of size 5 in Java?"
+        }
+    },
+        {
+            "category": "Java programming",
+            "id": "221",
+            "correctAnswer": "Math.sqrt(25)",
+            "incorrectAnswers": ["Math.pow(25, 2)", "sqrt(25)", "Math.squareRoot(25)"],
+            "question": {
+                "text": "Which method is used to calculate the square root of 25 in Java?"
+            }
+        },
+        {
+            "category": "Java programming",
+            "id": "222",
+            "correctAnswer": "==",
+            "incorrectAnswers": ["=", "!=", "equals()"],
+            "question": {
+                "text": "Which operator is used to check if two primitive values are equal in Java?"
+            }
+        },
+        {
+            "category": "Java programming",
+            "id": "223",
+            "correctAnswer": "ArrayList",
+            "incorrectAnswers": ["HashMap", "HashSet", "TreeMap"],
+            "question": {
+                "text": "Which class in Java provides dynamic arrays that can grow in size?"
+            }
+        },
+        {
+            "category": "Java programming",
+            "id": "224",
+            "correctAnswer": "continue",
+            "incorrectAnswers": ["break", "return", "exit"],
+            "question": {
+                "text": "Which keyword is used to skip the current iteration of a loop in Java?"
+            }
+        },
+        {
+            "category": "Java programming",
+            "id": "225",
+            "correctAnswer": "StringBuilder",
+            "incorrectAnswers": ["StringBuffer", "String", "Character"],
+            "question": {
+                "text": "Which class is used to create mutable (modifiable) strings in Java?"
+            }
+        },
+        {
+            "category": "Java programming",
+            "id": "226",
+            "correctAnswer": "static",
+            "incorrectAnswers": ["final", "void", "abstract"],
+            "question": {
+                "text": "Which keyword in Java allows a method or variable to belong to the class rather than instances of the class?"
+            }
+        },
+        {
+            "category": "Java programming",
+            "id": "227",
+            "correctAnswer": "throw",
+            "incorrectAnswers": ["throws", "catch", "try"],
+            "question": {
+                "text": "Which keyword is used to explicitly throw an exception in Java?"
+            }
+        },
+        {
+            "category": "Java programming",
+            "id": "228",
+            "correctAnswer": "try-catch",
+            "incorrectAnswers": ["if-else", "switch-case", "for-while"],
+            "question": {
+                "text": "Which block is used to handle exceptions in Java?"
+            }
+        },
+        {
+            "category": "Java programming",
+            "id": "229",
+            "correctAnswer": "int",
+            "incorrectAnswers": ["byte", "float", "long"],
+            "question": {
+                "text": "What is the default data type for integer values in Java?"
+            }
+        },
+        {
+            "category": "Java programming",
+            "id": "230",
+            "correctAnswer": "final",
+            "incorrectAnswers": ["const", "immutable", "static"],
+            "question": {
+                "text": "Which keyword is used to declare a constant in Java?"
+            }
+        },
+        {
+            "category": "Java programming",
+            "id": "231",
+            "correctAnswer": "null",
+            "incorrectAnswers": ["0", "undefined", "empty"],
+            "question": {
+                "text": "What is the default value of an uninitialized object reference in Java?"
+            }
+        },
+        {
+            "category": "Java programming",
+            "id": "232",
+            "correctAnswer": "new",
+            "incorrectAnswers": ["create", "construct", "instantiate"],
+            "question": {
+                "text": "Which keyword is used to create new objects in Java?"
+            }
+        },
+        {
+            "category": "Java programming",
+            "id": "233",
+            "correctAnswer": "super",
+            "incorrectAnswers": ["this", "self", "parent"],
+            "question": {
+                "text": "Which keyword is used to call the parent class constructor in Java?"
+            }
+        },
+        {
+            "category": "Java programming",
+            "id": "234",
+            "correctAnswer": "equals()",
+            "incorrectAnswers": ["==", "compare()", "==="],
+            "question": {
+                "text": "Which method is used to compare two objects for equality in Java?"
+            }
+        },
+        {
+            "category": "Java programming",
+            "id": "235",
+            "correctAnswer": "Overloading",
+            "incorrectAnswers": ["Overriding", "Inheritance", "Polymorphism"],
+            "question": {
+                "text": "What is the concept called when multiple methods have the same name but different parameters in Java?"
+            }
+        },
+        {
+            "category": "Java programming",
+            "id": "236",
+            "correctAnswer": "Overriding",
+            "incorrectAnswers": ["Overloading", "Abstraction", "Encapsulation"],
+            "question": {
+                "text": "What is it called when a subclass provides a specific implementation for a method that is already defined in its parent class?"
+            }
+        },
+        {
+            "category": "Java programming",
+            "id": "237",
+            "correctAnswer": "synchronized",
+            "incorrectAnswers": ["volatile", "transient", "abstract"],
+            "question": {
+                "text": "Which keyword in Java is used to prevent multiple threads from accessing the same block of code simultaneously?"
+            }
+        },
+        {
+            "category": "Java programming",
+            "id": "238",
+            "correctAnswer": "instanceof",
+            "incorrectAnswers": ["typeof", "is", "=="],
+            "question": {
+                "text": "Which operator is used to check if an object is an instance of a specific class in Java?"
+            }
+        },
+        {
+            "category": "Java programming",
+            "id": "239",
+            "correctAnswer": "Packages",
+            "incorrectAnswers": ["Interfaces", "Classes", "Modules"],
+            "question": {
+                "text": "Which feature in Java is used to organize classes and interfaces into namespaces?"
+            }
+        },
+        {
+            "category": "Java programming",
+            "id": "240",
+            "correctAnswer": "Polymorphism",
+            "incorrectAnswers": ["Inheritance", "Abstraction", "Encapsulation"],
+            "question": {
+                "text": "Which OOP concept allows one interface to be used for a general class of actions in Java?"
+            }
+        }
+    ,
+    {
+        "category": "Java programming",
+        "id": "228",
+        "correctAnswer": "finally",
+        "incorrectAnswers": ["final", "finalize", "end"],
+        "question": {
+            "text": "Which block in Java is used to execute important code such as closing resources, regardless of whether an exception is thrown or not?"
+        }
+    },
+    {
+        "category": "Java programming",
+        "id": "229",
+        "correctAnswer": "super",
+        "incorrectAnswers": ["this", "parent", "base"],
+        "question": {
+            "text": "Which keyword in Java is used to refer to the immediate parent class object?"
+        }
+    },
+    {
+        "category": "Java programming",
+        "id": "230",
+        "correctAnswer": "interface",
+        "incorrectAnswers": ["abstract", "class", "extends"],
+        "question": {
+            "text": "Which keyword is used to define a completely abstract class that provides no implementation?"
+        }
+    },
+    {
+        "category": "Java programming",
+        "id": "231",
+        "correctAnswer": "package",
+        "incorrectAnswers": ["import", "namespace", "module"],
+        "question": {
+            "text": "Which keyword is used to define a package in Java?"
+        }
+    },
+    {
+        "category": "Java programming",
+        "id": "232",
+        "correctAnswer": "synchronized",
+        "incorrectAnswers": ["volatile", "transient", "native"],
+        "question": {
+            "text": "Which keyword is used to indicate that a method can be accessed by only one thread at a time?"
+        }
+    },
+    {
+        "category": "Java programming",
+        "id": "233",
+        "correctAnswer": "instanceof",
+        "incorrectAnswers": ["isInstance", "ofType", "typeOf"],
+        "question": {
+            "text": "Which keyword is used to test whether an object is an instance of a specific class or subclass?"
+        }
+    },
+    {
+        "category": "Java programming",
+        "id": "234",
+        "correctAnswer": "transient",
+        "incorrectAnswers": ["volatile", "static", "final"],
+        "question": {
+            "text": "Which keyword is used to indicate that a field should not be serialized?"
+        }
+    },
+    {
+        "category": "Java programming",
+        "id": "235",
+        "correctAnswer": "enum",
+        "incorrectAnswers": ["enumeration", "enumClass", "enumType"],
+        "question": {
+            "text": "Which keyword is used to define a set of named constants in Java?"
         }
     }
+    ,
+    {
+        "category": "Java programming",
+        "id": "232",
+        "correctAnswer": "synchronized",
+        "incorrectAnswers": ["volatile", "transient", "native"],
+        "question": {
+            "text": "Which keyword is used to indicate that a method can be accessed by only one thread at a time?"
+        }
+    },
+    {
+        "category": "Java programming",
+        "id": "233",
+        "correctAnswer": "instanceof",
+        "incorrectAnswers": ["isInstance", "ofType", "typeOf"],
+        "question": {
+            "text": "Which keyword is used to test whether an object is an instance of a specific class or subclass?"
+        }
+    },
+    {
+        "category": "Java programming",
+        "id": "234",
+        "correctAnswer": "transient",
+        "incorrectAnswers": ["volatile", "static", "final"],
+        "question": {
+            "text": "Which keyword is used to indicate that a field should not be serialized?"
+        }
+    },
+    {
+        "category": "Java programming",
+        "id": "235",
+        "correctAnswer": "enum",
+        "incorrectAnswers": ["enumeration", "enumClass", "enumType"],
+        "question": {
+            "text": "Which keyword is used to define a set of named constants in Java?"
+        }
+    },
+    {
+        "category": "Java programming",
+        "id": "236",
+        "correctAnswer": "polymorphism",
+        "incorrectAnswers": ["inheritance", "encapsulation", "abstraction"],
+        "question": {
+            "text": "Which OOP concept allows one interface to be used for a general class of actions in Java?"
+        }
+    },
+    {
+        "category": "Java programming",
+        "id": "237",
+        "correctAnswer": "JVM",
+        "incorrectAnswers": ["JRE", "JDK", "JIT"],
+        "question": {
+            "text": "Which component of the Java platform is responsible for converting bytecode into machine code?"
+        }
+    },
+    {
+        "category": "Java programming",
+        "id": "238",
+        "correctAnswer": "Garbage Collection",
+        "incorrectAnswers": ["Memory Management", "Exception Handling", "Thread Management"],
+        "question": {
+            "text": "Which process in Java automatically deallocates memory by destroying unreachable objects?"
+        }
+    },
+    {
+        "category": "Java programming",
+        "id": "239",
+        "correctAnswer": "Reflection",
+        "incorrectAnswers": ["Introspection", "Serialization", "Deserialization"],
+        "question": {
+            "text": "Which feature in Java allows inspection and modification of the runtime behavior of applications?"
+        }
+    },
+    {
+        "category": "Java programming",
+        "id": "240",
+        "correctAnswer": "Generics",
+        "incorrectAnswers": ["Templates", "Collections", "Streams"],
+        "question": {
+            "text": "Which feature in Java allows the creation of classes, interfaces, and methods with a placeholder for types?"
+        }
+    },
+    {
+        "category": "Java programming",
+        "id": "241",
+        "correctAnswer": "Lambda Expressions",
+        "incorrectAnswers": ["Anonymous Classes", "Inner Classes", "Functional Interfaces"],
+        "question": {
+            "text": "Which feature introduced in Java 8 allows the implementation of functional programming by providing a clear and concise way to represent one method interface using an expression?"
+        }
+    },
+    {
+        "category": "Java programming",
+        "id": "242",
+        "correctAnswer": "public static void main(String[] args)",
+        "incorrectAnswers": ["public void main(String[] args)", "static void main(String[] args)", "void main(String[] args)"],
+        "question": {
+            "text": "What is the correct signature of the main method in Java?"
+        }
+    },
+    {
+        "category": "Java programming",
+        "id": "243",
+        "correctAnswer": "int",
+        "incorrectAnswers": ["Integer", "float", "double"],
+        "question": {
+            "text": "Which primitive data type is used to store integer values in Java?"
+        }
+    },
+    {
+        "category": "Java programming",
+        "id": "244",
+        "correctAnswer": "String",
+        "incorrectAnswers": ["string", "char", "Character"],
+        "question": {
+            "text": "Which class is used to represent a sequence of characters in Java?"
+        }
+    },
+    {
+        "category": "Java programming",
+        "id": "245",
+        "correctAnswer": "new",
+        "incorrectAnswers": ["create", "instantiate", "build"],
+        "question": {
+            "text": "Which keyword is used to create a new object in Java?"
+        }
+    },
+    {
+        "category": "Java programming",
+        "id": "246",
+        "correctAnswer": "extends",
+        "incorrectAnswers": ["implements", "inherits", "derives"],
+        "question": {
+            "text": "Which keyword is used to inherit a class in Java?"
+        }
+    },
+    {
+        "category": "Java programming",
+        "id": "247",
+        "correctAnswer": "implements",
+        "incorrectAnswers": ["extends", "inherits", "derives"],
+        "question": {
+            "text": "Which keyword is used to implement an interface in Java?"
+        }
+    },
+    {
+        "category": "Java programming",
+        "id": "248",
+        "correctAnswer": "null",
+        "incorrectAnswers": ["undefined", "none", "empty"],
+        "question": {
+            "text": "What is the default value of an object reference that is declared but not initialized in Java?"
+        }
+    },
+    {
+        "category": "Java programming",
+        "id": "249",
+        "correctAnswer": "boolean",
+        "incorrectAnswers": ["byte", "int", "char"],
+        "question": {
+            "text": "Which primitive data type is used to store true or false values in Java?"
+        }
+    },
+    {
+        "category": "Java programming",
+        "id": "250",
+        "correctAnswer": "this",
+        "incorrectAnswers": ["self", "me", "current"],
+        "question": {
+            "text": "Which keyword is used to refer to the current object in a method or constructor in Java?"
+        }
+    },
+    {
+        "category": "Java programming",
+        "id": "251",
+        "correctAnswer": "super",
+        "incorrectAnswers": ["this", "parent", "base"],
+        "question": {
+            "text": "Which keyword is used to refer to the immediate parent class object in Java?"
+        }
+    },
+    {
+        "category": "Java programming",
+        "id": "252",
+        "correctAnswer": "public",
+        "incorrectAnswers": ["private", "protected", "default"],
+        "question": {
+            "text": "What is the access modifier for the following method?\n\n-----------------\npublic void display() {\n    System.out.println(\"Hello World\");\n}\n-----------------"
+        }
+    },
+    {
+        "category": "Java programming",
+        "id": "253",
+        "correctAnswer": "int",
+        "incorrectAnswers": ["float", "double", "long"],
+        "question": {
+            "text": "What is the return type of the following method?\n\n-----------------\npublic int add(int a, int b) {\n    return a + b;\n}\n-----------------"
+        }
+    },
+    {
+        "category": "Java programming",
+        "id": "254",
+        "correctAnswer": "for",
+        "incorrectAnswers": ["while", "do-while", "foreach"],
+        "question": {
+            "text": "Which loop is used in the following code snippet?\n\n-----------------\nfor (int i = 0; i < 10; i++) {\n    System.out.println(i);\n}\n-----------------"
+        }
+    },
+    {
+        "category": "Java programming",
+        "id": "255",
+        "correctAnswer": "try-catch",
+        "incorrectAnswers": ["if-else", "switch-case", "for-each"],
+        "question": {
+            "text": "Which construct is used for exception handling in the following code snippet?\n\n-----------------\ntry {\n    int result = 10 / 0;\n} catch (ArithmeticException e) {\n    System.out.println(\"Cannot divide by zero\");\n}\n-----------------"
+        }
+    },
+    {
+        "category": "Java programming",
+        "id": "256",
+        "correctAnswer": "ArrayIndexOutOfBoundsException",
+        "incorrectAnswers": ["NullPointerException", "ClassCastException", "ArithmeticException"],
+        "question": {
+            "text": "What exception will be thrown by the following code snippet?\n\n-----------------\nint[] arr = new int[5];\nSystem.out.println(arr[10]);\n-----------------"
+        }
+    },
+    {
+        "category": "Java programming",
+        "id": "257",
+        "correctAnswer": "null",
+        "incorrectAnswers": ["0", "undefined", "empty"],
+        "question": {
+            "text": "What will be the output of the following code snippet?\n\n-----------------\nString str = null;\nSystem.out.println(str);\n-----------------"
+        }
+    },
+    {
+        "category": "Java programming",
+        "id": "258",
+        "correctAnswer": "Hello World",
+        "incorrectAnswers": ["Hello", "World", "Compilation Error"],
+        "question": {
+            "text": "What will be the output of the following code snippet?\n\n-----------------\npublic class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello World\");\n    }\n}\n-----------------"
+        }
+    },
+    {
+        "category": "Java programming",
+        "id": "259",
+        "correctAnswer": "5",
+        "incorrectAnswers": ["4", "6", "Compilation Error"],
+        "question": {
+            "text": "What will be the output of the following code snippet?\n\n-----------------\nint a = 2;\nint b = 3;\nSystem.out.println(a + b);\n-----------------"
+        }
+    },
+    {
+        "category": "Java programming",
+        "id": "260",
+        "correctAnswer": "true",
+        "incorrectAnswers": ["false", "1", "0"],
+        "question": {
+            "text": "What will be the output of the following code snippet?\n\n-----------------\nboolean flag = true;\nSystem.out.println(flag);\n-----------------"
+        }
+    },
+    {
+        "category": "Java programming",
+        "id": "261",
+        "correctAnswer": "null",
+        "incorrectAnswers": ["0", "undefined", "empty"],
+        "question": {
+            "text": "What will be the output of the following code snippet?\n\n-----------------\nString str = null;\nSystem.out.println(str);\n-----------------"
+        }
+    },
+    {
+        "category": "Java programming",
+        "id": "262",
+        "correctAnswer": "Hello World",
+        "incorrectAnswers": ["Hello", "World", "Compilation Error"],
+        "question": {
+            "text": "What will be the output of the following code snippet?\n\n-----------------\npublic class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello World\");\n    }\n}\n-----------------"
+        }
+    },
+    {
+        "category": "Java programming",
+        "id": "263",
+        "correctAnswer": "5",
+        "incorrectAnswers": ["4", "6", "Compilation Error"],
+        "question": {
+            "text": "What will be the output of the following code snippet?\n\n-----------------\nint a = 2;\nint b = 3;\nSystem.out.println(a + b);\n-----------------"
+        }
+    },
+    {
+        "category": "Java programming",
+        "id": "264",
+        "correctAnswer": "true",
+        "incorrectAnswers": ["false", "1", "0"],
+        "question": {
+            "text": "What will be the output of the following code snippet?\n\n-----------------\nboolean flag = true;\nSystem.out.println(flag);\n-----------------"
+        }
+    },
+    {
+        "category": "Java programming",
+        "id": "265",
+        "correctAnswer": "null",
+        "incorrectAnswers": ["0", "undefined", "empty"],
+        "question": {
+            "text": "What will be the output of the following code snippet?\n\n-----------------\nString str = null;\nSystem.out.println(str);\n-----------------"
+        }
+    },
+    {
+        "category": "Java programming",
+        "id": "266",
+        "correctAnswer": "Hello World",
+        "incorrectAnswers": ["Hello", "World", "Compilation Error"],
+        "question": {
+            "text": "What will be the output of the following code snippet?\n\n-----------------\npublic class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello World\");\n    }\n}\n-----------------"
+        }
+    },
+    {
+        "category": "Java programming",
+        "id": "267",
+        "correctAnswer": "5",
+        "incorrectAnswers": ["4", "6", "Compilation Error"],
+        "question": {
+            "text": "What will be the output of the following code snippet?\n\n-----------------\nint a = 2;\nint b = 3;\nSystem.out.println(a + b);\n-----------------"
+        }
+    },
+    {
+        "category": "Java programming",
+        "id": "268",
+        "correctAnswer": "11",
+        "incorrectAnswers": ["10", "12", "Compilation Error"],
+        "question": {
+            "text": "What will be the output of the following code snippet?\n\n-----------------\nint x = 10;\nx++;\nSystem.out.println(x);\n-----------------"
+        }
+    },
+    {
+        "category": "Java programming",
+        "id": "269",
+        "correctAnswer": "9",
+        "incorrectAnswers": ["10", "8", "Compilation Error"],
+        "question": {
+            "text": "What will be the output of the following code snippet?\n\n-----------------\nint x = 10;\nx--;\nSystem.out.println(x);\n-----------------"
+        }
+    },
+    {
+        "category": "Java programming",
+        "id": "270",
+        "correctAnswer": "11",
+        "incorrectAnswers": ["10", "12", "Compilation Error"],
+        "question": {
+            "text": "What will be the output of the following code snippet?\n\n-----------------\nint x = 10;\nSystem.out.println(++x);\n-----------------"
+        }
+    },
+    {
+        "category": "Java programming",
+        "id": "271",
+        "correctAnswer": "10",
+        "incorrectAnswers": ["9", "11", "Compilation Error"],
+        "question": {
+            "text": "What will be the output of the following code snippet?\n\n-----------------\nint x = 10;\nSystem.out.println(x++);\nSystem.out.println(x);\n-----------------"
+        }
+    },
+    {
+        "category": "Java programming",
+        "id": "272",
+        "correctAnswer": "9",
+        "incorrectAnswers": ["10", "8", "Compilation Error"],
+        "question": {
+            "text": "What will be the output of the following code snippet?\n\n-----------------\nint x = 10;\nSystem.out.println(--x);\n-----------------"
+        }
+    },
+    {
+        "category": "Java programming",
+        "id": "273",
+        "correctAnswer": "10",
+        "incorrectAnswers": ["9", "11", "Compilation Error"],
+        "question": {
+            "text": "What will be the output of the following code snippet?\n\n-----------------\nint x = 10;\nSystem.out.println(x--);\nSystem.out.println(x);\n-----------------"
+        }
+    },
+    {
+        "category": "Java programming",
+        "id": "274",
+        "correctAnswer": "21",
+        "incorrectAnswers": ["20", "22", "Compilation Error"],
+        "question": {
+            "text": "What will be the output of the following code snippet?\n\n-----------------\nint x = 10;\nx += 10;\nx++;\nSystem.out.println(x);\n-----------------"
+        }
+    },
+    {
+        "category": "Java programming",
+        "id": "275",
+        "correctAnswer": "19",
+        "incorrectAnswers": ["20", "18", "Compilation Error"],
+        "question": {
+            "text": "What will be the output of the following code snippet?\n\n-----------------\nint x = 20;\nx -= 1;\nx--;\nSystem.out.println(x);\n-----------------"
+        }
+    },
+    {
+        "category": "Java programming",
+        "id": "276",
+        "correctAnswer": "10",
+        "incorrectAnswers": ["11", "9", "Compilation Error"],
+        "question": {
+            "text": "What will be the output of the following code snippet?\n\n-----------------\nint x = 10;\nint y = x++;\nSystem.out.println(y);\n-----------------"
+        }
+    },
+    {
+        "category": "Java programming",
+        "id": "277",
+        "correctAnswer": "11",
+        "incorrectAnswers": ["10", "12", "Compilation Error"],
+        "question": {
+            "text": "What will be the output of the following code snippet?\n\n-----------------\nint x = 10;\nint y = ++x;\nSystem.out.println(y);\n-----------------"
+        }
+    },
+    {
+        "category": "Java programming",
+        "id": "278",
+        "correctAnswer": "10",
+        "incorrectAnswers": ["11", "9", "Compilation Error"],
+        "question": {
+            "text": "What will be the output of the following code snippet?\n\n-----------------\nint x = 10;\nSystem.out.println(x++);\nSystem.out.println(x);\n-----------------"
+        }
+    },
+    {
+        "category": "Java programming",
+        "id": "279",
+        "correctAnswer": "9",
+        "incorrectAnswers": ["10", "8", "Compilation Error"],
+        "question": {
+            "text": "What will be the output of the following code snippet?\n\n-----------------\nint x = 10;\nSystem.out.println(x--);\nSystem.out.println(x);\n-----------------"
+        }
+    },
+    {
+        "category": "Java programming",
+        "id": "280",
+        "correctAnswer": "21",
+        "incorrectAnswers": ["20", "22", "Compilation Error"],
+        "question": {
+            "text": "What will be the output of the following code snippet?\n\n-----------------\nint x = 10;\nx += 10;\nx++;\nSystem.out.println(x);\n-----------------"
+        }
+    },
+    {
+        "category": "Java programming",
+        "id": "281",
+        "correctAnswer": "19",
+        "incorrectAnswers": ["20", "18", "Compilation Error"],
+        "question": {
+            "text": "What will be the output of the following code snippet?\n\n-----------------\nint x = 20;\nx -= 1;\nx--;\nSystem.out.println(x);\n-----------------"
+        }
+    },
+    {
+        "category": "Java programming",
+        "id": "282",
+        "correctAnswer": "20",
+        "incorrectAnswers": ["21", "19", "Compilation Error"],
+        "question": {
+            "text": "What will be the output of the following code snippet?\n\n-----------------\nint x = 10;\nint y = x++ + ++x;\nSystem.out.println(y);\n-----------------"
+        }
+    },
+    {
+        "category": "Java programming",
+        "id": "283",
+        "correctAnswer": "21",
+        "incorrectAnswers": ["20", "22", "Compilation Error"],
+        "question": {
+            "text": "What will be the output of the following code snippet?\n\n-----------------\nint x = 10;\nint y = ++x + ++x;\nSystem.out.println(y);\n-----------------"
+        }
+    },
+    {
+        "category": "Java programming",
+        "id": "284",
+        "correctAnswer": "20",
+        "incorrectAnswers": ["21", "19", "Compilation Error"],
+        "question": {
+            "text": "What will be the output of the following code snippet?\n\n-----------------\nint x = 10;\nint y = x++ + x++;\nSystem.out.println(y);\n-----------------"
+        }
+    },
+    {
+        "category": "Java programming",
+        "id": "285",
+        "correctAnswer": "20",
+        "incorrectAnswers": ["21", "19", "Compilation Error"],
+        "question": {
+            "text": "What will be the output of the following code snippet?\n\n-----------------\nint x = 10;\nint y = ++x + x++;\nSystem.out.println(y);\n-----------------"
+        }
+    }
+    
 ]

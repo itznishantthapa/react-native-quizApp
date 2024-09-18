@@ -1,5 +1,5 @@
 // import React, { useEffect, useState } from "react";
-import { View, Text, Alert, TouchableOpacity, StyleSheet, ImageBackground, Image } from "react-native";
+import { View, Text, TouchableOpacity, Image } from "react-native";
 import { StatusBar } from "expo-status-bar";
 import { styles } from '../style';
 import { SafeAreaView } from "react-native-safe-area-context";
@@ -8,7 +8,7 @@ import { MyContext } from "../AppProvider";
 import { useContext } from "react";
 import { auth } from "../firebaseConfig";
 import IconM from 'react-native-vector-icons/MaterialCommunityIcons';
-import points from '../assets/points.png';
+
 
 const Chart = ({ navigation }) => {
 

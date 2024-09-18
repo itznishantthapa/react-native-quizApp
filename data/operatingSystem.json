@@ -1,0 +1,962 @@
+[
+    {
+      "category": "Operating Systems",
+      "id": "301",
+      "correctAnswer": "Device Driver",
+      "incorrectAnswers": ["Kernel", "Bootloader", "Registry"],
+      "question": {
+        "text": "What is the small program written by the hardware manufacturer to control hardware access called?"
+      }
+    },
+    {
+      "category": "Operating Systems",
+      "id": "302",
+      "correctAnswer": "Plug and Play (PnP)",
+      "incorrectAnswers": ["Hot Swapping", "Device Manager", "BIOS"],
+      "question": {
+        "text": "Which technology allows the operating system to automatically assign system resources and install drivers?"
+      }
+    },
+    {
+      "category": "Operating Systems",
+      "id": "303",
+      "correctAnswer": "Command Line Interface (CLI)",
+      "incorrectAnswers": ["Graphical User Interface (GUI)", "Virtual Console", "Text Editor"],
+      "question": {
+        "text": "In which type of interface does the user type commands at a prompt?"
+      }
+    },
+    {
+      "category": "Operating Systems",
+      "id": "304",
+      "correctAnswer": "Multi-Tasking",
+      "incorrectAnswers": ["Multi-User", "Multi-Processing", "Multi-Threading"],
+      "question": {
+        "text": "Which operating system concept allows a computer to run multiple applications at the same time?"
+      }
+    },
+    {
+      "category": "Operating Systems",
+      "id": "305",
+      "correctAnswer": "File System",
+      "incorrectAnswers": ["Partition", "Directory", "Registry"],
+      "question": {
+        "text": "What does an operating system use to organize and store data on a hard drive?"
+      }
+    },
+    {
+      "category": "Operating Systems",
+      "id": "306",
+      "correctAnswer": "Virtual Memory",
+      "incorrectAnswers": ["RAM", "Cache", "Swap Space"],
+      "question": {
+        "text": "What is the term for using hard disk space to emulate RAM?"
+      }
+    },
+    {
+      "category": "Operating Systems",
+      "id": "307",
+      "correctAnswer": "Protected Mode",
+      "incorrectAnswers": ["Real Mode", "Virtual Mode", "Safe Mode"],
+      "question": {
+        "text": "In which CPU operating mode does the CPU have access to all of the memory, including virtual memory?"
+      }
+    },
+    {
+      "category": "Operating Systems",
+      "id": "308",
+      "correctAnswer": "NTFS",
+      "incorrectAnswers": ["FAT32", "exFAT", "HFS+"],
+      "question": {
+        "text": "Which file system supports partition sizes up to 16 exabytes and incorporates file system security features?"
+      }
+    },
+    {
+      "category": "Operating Systems",
+      "id": "309",
+      "correctAnswer": "Compatibility Mode",
+      "incorrectAnswers": ["Safe Mode", "Recovery Mode", "Virtual Machine"],
+      "question": {
+        "text": "Which mode allows an application to run as if it were on an older version of the operating system?"
+      }
+    },
+    {
+      "category": "Operating Systems",
+      "id": "310",
+      "correctAnswer": "Multi-User",
+      "incorrectAnswers": ["Single-User", "Single-Threading", "Time Sharing"],
+      "question": {
+        "text": "Which concept refers to multiple users sharing the same resources such as printers and applications at the same time?"
+      }
+    },
+    {
+      "category": "Operating Systems",
+      "id": "311",
+      "correctAnswer": "Registry",
+      "incorrectAnswers": ["File System", "Device Driver", "Task Manager"],
+      "question": {
+        "text": "Which database contains all the information about the configuration of a Windows computer?"
+      }
+    },
+    {
+      "category": "Operating Systems",
+      "id": "312",
+      "correctAnswer": "Kernel",
+      "incorrectAnswers": ["Shell", "Bootloader", "Device Driver"],
+      "question": {
+        "text": "What is the core part of an operating system responsible for managing system resources and communication between hardware and software?"
+      }
+    },
+    {
+      "category": "Operating Systems",
+      "id": "313",
+      "correctAnswer": "Safe Mode",
+      "incorrectAnswers": ["Recovery Mode", "Compatibility Mode", "Debug Mode"],
+      "question": {
+        "text": "Which boot mode starts Windows with only basic drivers and services?"
+      }
+    },
+    {
+      "category": "Operating Systems",
+      "id": "314",
+      "correctAnswer": "Disk Cloning",
+      "incorrectAnswers": ["Network Installation", "Disk Formatting", "Recovery Disc"],
+      "question": {
+        "text": "What is the process of creating an exact copy of a hard drive for installation across multiple machines called?"
+      }
+    },
+    {
+      "category": "Operating Systems",
+      "id": "315",
+      "correctAnswer": "Task Manager",
+      "incorrectAnswers": ["Device Manager", "Registry Editor", "Control Panel"],
+      "question": {
+        "text": "Which utility allows users to view and manage running applications and processes in Windows?"
+      }
+    },
+    {
+      "category": "Operating Systems",
+      "id": "316",
+      "correctAnswer": "Real Mode",
+      "incorrectAnswers": ["Protected Mode", "Virtual Real Mode", "Enhanced Mode"],
+      "question": {
+        "text": "Which CPU mode allows only 1 MB of system memory to be accessed and can execute one instruction at a time?"
+      }
+    },
+    {
+      "category": "Operating Systems",
+      "id": "317",
+      "correctAnswer": "Windows Server",
+      "incorrectAnswers": ["Windows 10", "macOS", "Linux Mint"],
+      "question": {
+        "text": "Which version of Microsoft Windows is primarily used in a network environment to manage and run multiple-user applications?"
+      }
+    },
+    {
+      "category": "Operating Systems",
+      "id": "318",
+      "correctAnswer": "Partitioning",
+      "incorrectAnswers": ["Formatting", "Cloning", "Mapping"],
+      "question": {
+        "text": "Which process divides a hard drive into separate sections before installing an operating system?"
+      }
+    },
+    {
+      "category": "Operating Systems",
+      "id": "319",
+      "correctAnswer": "Cmd",
+      "incorrectAnswers": ["PowerShell", "Dxdiag", "Msconfig"],
+      "question": {
+        "text": "Which command line tool in Windows is used to execute basic command-line programs and utilities?"
+      }
+    },
+    {
+      "category": "Operating Systems",
+      "id": "320",
+      "correctAnswer": "Mac OS",
+      "incorrectAnswers": ["Linux", "Windows", "UNIX"],
+      "question": {
+        "text": "Which operating system is proprietary to Apple computers and is based on a customized version of UNIX?"
+      }
+    },
+    {
+      "category": "Operating Systems",
+      "id": "321",
+      "correctAnswer": "BIOS",
+      "incorrectAnswers": ["UEFI", "CMOS", "Firmware"],
+      "question": {
+        "text": "Which firmware is responsible for initializing hardware components and loading the operating system during the boot process?"
+      }
+    },
+    {
+      "category": "Operating Systems",
+      "id": "322",
+      "correctAnswer": "Swap Space",
+      "incorrectAnswers": ["Virtual Memory", "RAM", "Cache"],
+      "question": {
+        "text": "What is the area on a hard drive used by the operating system to store data that does not fit in RAM?"
+      }
+    },
+    {
+      "category": "Operating Systems",
+      "id": "323",
+      "correctAnswer": "exFAT",
+      "incorrectAnswers": ["NTFS", "FAT32", "HFS+"],
+      "question": {
+        "text": "Which file system is designed for flash drives and supports file sizes up to 16 exabytes?"
+      }
+    },
+    {
+      "category": "Operating Systems",
+      "id": "324",
+      "correctAnswer": "Virtual Machine",
+      "incorrectAnswers": ["Emulator", "Compatibility Mode", "Safe Mode"],
+      "question": {
+        "text": "Which technology allows a computer to run multiple operating systems simultaneously on the same hardware?"
+      }
+    },
+    {
+      "category": "Operating Systems",
+      "id": "325",
+      "correctAnswer": "Graphical User Interface (GUI)",
+      "incorrectAnswers": ["Command Line Interface (CLI)", "Text Editor", "Virtual Console"],
+      "question": {
+        "text": "Which type of interface allows users to interact with the operating system using visual elements like windows and icons?"
+      }
+    },
+    {
+      "category": "Operating Systems",
+      "id": "326",
+      "correctAnswer": "Multi-Threading",
+      "incorrectAnswers": ["Multi-Processing", "Multi-Tasking", "Multi-User"],
+      "question": {
+        "text": "Which operating system concept allows a single application to run multiple tasks or processes at the same time?"
+      }
+    },
+    {
+      "category": "Operating Systems",
+      "id": "327",
+      "correctAnswer": "Directory",
+      "incorrectAnswers": ["File System", "Partition", "Registry"],
+        "question": {
+            "text": "What is the term for a container that holds files and other directories in an operating system?"
+        }
+    },
+    
+        {
+          "category": "Operating Systems",
+          "id": "321",
+          "correctAnswer": "Process Scheduling",
+          "incorrectAnswers": ["Memory Management", "File System", "Booting"],
+          "question": {
+            "text": "Which component of the operating system decides the order in which processes are executed?"
+          }
+        },
+        {
+          "category": "Operating Systems",
+          "id": "322",
+          "correctAnswer": "Paging",
+          "incorrectAnswers": ["Segmentation", "Swapping", "Fragmentation"],
+          "question": {
+            "text": "Which memory management scheme divides the memory into fixed-size pages?"
+          }
+        },
+        {
+          "category": "Operating Systems",
+          "id": "323",
+          "correctAnswer": "Round Robin",
+          "incorrectAnswers": ["First Come First Serve", "Priority Scheduling", "Shortest Job First"],
+          "question": {
+            "text": "Which CPU scheduling algorithm assigns a fixed time quantum to each process?"
+          }
+        },
+        {
+          "category": "Operating Systems",
+          "id": "324",
+          "correctAnswer": "Kernel Mode",
+          "incorrectAnswers": ["User Mode", "Virtual Mode", "Safe Mode"],
+          "question": {
+            "text": "In which mode does the CPU have unrestricted access to all system resources?"
+          }
+        },
+        {
+          "category": "Operating Systems",
+          "id": "325",
+          "correctAnswer": "Context Switching",
+          "incorrectAnswers": ["Interrupt Handling", "Deadlock", "Multitasking"],
+          "question": {
+            "text": "What is the process of saving and restoring the state of a CPU to switch between processes?"
+          }
+        },
+        {
+          "category": "Operating Systems",
+          "id": "326",
+          "correctAnswer": "Mutex",
+          "incorrectAnswers": ["Semaphore", "Lock", "Monitor"],
+          "question": {
+            "text": "Which synchronization mechanism ensures that only one thread accesses a critical section at a time?"
+          }
+        },
+        {
+          "category": "Operating Systems",
+          "id": "327",
+          "correctAnswer": "Deadlock",
+          "incorrectAnswers": ["Race Condition", "Starvation", "Livelock"],
+          "question": {
+            "text": "What is the situation called when two or more processes are blocked forever, waiting for each other to release resources?"
+          }
+        },
+        {
+          "category": "Operating Systems",
+          "id": "328",
+          "correctAnswer": "Virtual Memory",
+          "incorrectAnswers": ["Cache Memory", "Physical Memory", "Main Memory"],
+          "question": {
+            "text": "Which technique uses hard disk space to extend the RAM, allowing more processes to run concurrently?"
+          }
+        },
+        {
+          "category": "Operating Systems",
+          "id": "329",
+          "correctAnswer": "Thrashing",
+          "incorrectAnswers": ["Swapping", "Fragmentation", "Paging"],
+          "question": {
+            "text": "What occurs when an operating system spends more time swapping pages in and out of memory than executing processes?"
+          }
+        },
+        {
+          "category": "Operating Systems",
+          "id": "330",
+          "correctAnswer": "Semaphore",
+          "incorrectAnswers": ["Mutex", "Lock", "Interrupt"],
+          "question": {
+            "text": "Which synchronization mechanism is used to control access to a common resource by multiple processes in a concurrent system?"
+          }
+        },
+        {
+          "category": "Operating Systems",
+          "id": "331",
+          "correctAnswer": "Bootloader",
+          "incorrectAnswers": ["Kernel", "Shell", "BIOS"],
+          "question": {
+            "text": "Which program loads the operating system into memory when the computer is powered on?"
+          }
+        },
+        {
+          "category": "Operating Systems",
+          "id": "332",
+          "correctAnswer": "Race Condition",
+          "incorrectAnswers": ["Deadlock", "Starvation", "Livelock"],
+          "question": {
+            "text": "What occurs when two or more processes compete for the same resource and the final outcome depends on the order of execution?"
+          }
+        },
+        {
+          "category": "Operating Systems",
+          "id": "333",
+          "correctAnswer": "Multithreading",
+          "incorrectAnswers": ["Multiprocessing", "Multitasking", "Time Sharing"],
+          "question": {
+            "text": "Which concept allows multiple threads within a process to be executed concurrently?"
+          }
+        },
+        {
+          "category": "Operating Systems",
+          "id": "334",
+          "correctAnswer": "Fragmentation",
+          "incorrectAnswers": ["Swapping", "Paging", "Compaction"],
+          "question": {
+            "text": "What is the term for wasted memory space that occurs when memory is allocated inefficiently?"
+          }
+        },
+        {
+          "category": "Operating Systems",
+          "id": "335",
+          "correctAnswer": "Inode",
+          "incorrectAnswers": ["Sector", "Cluster", "Page Table"],
+          "question": {
+            "text": "Which data structure is used in Unix-based file systems to represent a file?"
+          }
+        },
+        {
+          "category": "Operating Systems",
+          "id": "336",
+          "correctAnswer": "Interrupt",
+          "incorrectAnswers": ["Polling", "Context Switch", "System Call"],
+          "question": {
+            "text": "Which signal from hardware or software causes the operating system to stop its current task and execute a higher-priority task?"
+          }
+        },
+        {
+          "category": "Operating Systems",
+          "id": "337",
+          "correctAnswer": "Fork",
+          "incorrectAnswers": ["Exec", "Wait", "Kill"],
+          "question": {
+            "text": "Which system call creates a new process by duplicating the calling process?"
+          }
+        },
+        {
+          "category": "Operating Systems",
+          "id": "338",
+          "correctAnswer": "Swapping",
+          "incorrectAnswers": ["Paging", "Fragmentation", "Compaction"],
+          "question": {
+            "text": "What is the process of moving processes between main memory and disk storage in a time-sharing system?"
+          }
+        },
+        {
+          "category": "Operating Systems",
+          "id": "339",
+          "correctAnswer": "Shell",
+          "incorrectAnswers": ["Kernel", "Bootloader", "Registry"],
+          "question": {
+            "text": "Which component of the operating system provides an interface between the user and the kernel?"
+          }
+        },
+        {
+          "category": "Operating Systems",
+          "id": "340",
+          "correctAnswer": "Scheduler",
+          "incorrectAnswers": ["Dispatcher", "Page Table", "Mutex"],
+          "question": {
+            "text": "Which component of the operating system determines which process will run next on the CPU?"
+          }
+        },
+        {
+          "category": "Operating Systems",
+          "id": "341",
+          "correctAnswer": "Page Table",
+          "incorrectAnswers": ["Inode", "Sector", "Cluster"],
+          "question": {
+            "text": "Which data structure is used to map virtual memory addresses to physical memory addresses?"
+          }
+        }
+     ,
+     {
+        "category": "Operating Systems",
+        "id": "340",
+        "correctAnswer": "Scheduler",
+        "incorrectAnswers": ["Dispatcher", "Page Table", "Mutex"],
+        "question": {
+          "text": "Which component of the operating system determines which process will run next on the CPU?"
+        }
+      },
+      {
+        "category": "Operating Systems",
+        "id": "341",
+        "correctAnswer": "Page Table",
+        "incorrectAnswers": ["Inode", "Sector", "Cluster"],
+        "question": {
+          "text": "Which data structure is used to map virtual memory addresses to physical memory addresses?"
+        }
+      },
+      {
+        "category": "Operating Systems",
+        "id": "342",
+        "correctAnswer": "Kernel",
+        "incorrectAnswers": ["Shell", "BIOS", "Bootloader"],
+        "question": {
+          "text": "What is the core component of an operating system that manages system resources?"
+        }
+      },
+      {
+        "category": "Operating Systems",
+        "id": "343",
+        "correctAnswer": "Semaphore",
+        "incorrectAnswers": ["Thread", "Process", "Interrupt"],
+        "question": {
+          "text": "Which synchronization primitive is used to control access to a common resource in concurrent programming?"
+        }
+      },
+      {
+        "category": "Operating Systems",
+        "id": "344",
+        "correctAnswer": "File System",
+        "incorrectAnswers": ["Scheduler", "Kernel", "Shell"],
+        "question": {
+          "text": "Which component of an operating system is responsible for managing files and directories?"
+        }
+      },
+      {
+        "category": "Operating Systems",
+        "id": "345",
+        "correctAnswer": "RAM",
+        "incorrectAnswers": ["CPU", "Hard Disk", "Cache"],
+        "question": {
+          "text": "Which type of memory is used for temporary storage and is volatile?"
+        }
+      },
+      {
+        "category": "Operating Systems",
+        "id": "346",
+        "correctAnswer": "Bootloader",
+        "incorrectAnswers": ["Kernel", "BIOS", "Shell"],
+        "question": {
+          "text": "What is the name of the program that loads the operating system into memory when the computer is started?"
+        }
+      },
+      {
+        "category": "Operating Systems",
+        "id": "347",
+        "correctAnswer": "Multitasking",
+        "incorrectAnswers": ["Multithreading", "Multiprocessing", "Multicasting"],
+        "question": {
+          "text": "What is the ability of an operating system to execute multiple tasks simultaneously called?"
+        }
+      },
+      {
+        "category": "Operating Systems",
+        "id": "348",
+        "correctAnswer": "BIOS",
+        "incorrectAnswers": ["Bootloader", "Kernel", "Shell"],
+        "question": {
+          "text": "What is the firmware called that initializes hardware during the booting process?"
+        }
+      },
+      {
+        "category": "Operating Systems",
+        "id": "349",
+        "correctAnswer": "Process",
+        "incorrectAnswers": ["Thread", "Semaphore", "Mutex"],
+        "question": {
+          "text": "What is a program in execution called?"
+        }
+      },
+      {
+        "category": "Operating Systems",
+        "id": "350",
+        "correctAnswer": "Deadlock",
+        "incorrectAnswers": ["Starvation", "Livelock", "Race Condition"],
+        "question": {
+          "text": "What is the condition called when two or more processes are unable to proceed because each is waiting for the other to release a resource?"
+        }
+      },
+      {
+        "category": "Operating Systems",
+        "id": "351",
+        "correctAnswer": "Virtual Memory",
+        "incorrectAnswers": ["Physical Memory", "Cache Memory", "Secondary Memory"],
+        "question": {
+          "text": "What is the memory management technique that creates an illusion of a large memory space by using disk storage?"
+        }
+      },
+      {
+        "category": "Operating Systems",
+        "id": "352",
+        "correctAnswer": "Scheduler",
+        "incorrectAnswers": ["Dispatcher", "Page Table", "Mutex"],
+        "question": {
+          "text": "Which component of the operating system determines which process will run next on the CPU?"
+        }
+      },
+      {
+        "category": "Operating Systems",
+        "id": "353",
+        "correctAnswer": "Page Table",
+        "incorrectAnswers": ["Inode", "Sector", "Cluster"],
+        "question": {
+          "text": "Which data structure is used to map virtual memory addresses to physical memory addresses?"
+        }
+      },
+      {
+        "category": "Operating Systems",
+        "id": "354",
+        "correctAnswer": "Kernel",
+        "incorrectAnswers": ["Shell", "BIOS", "Bootloader"],
+        "question": {
+          "text": "What is the core component of an operating system that manages system resources?"
+        }
+      },
+      {
+        "category": "Operating Systems",
+        "id": "355",
+        "correctAnswer": "Semaphore",
+        "incorrectAnswers": ["Thread", "Process", "Interrupt"],
+        "question": {
+          "text": "Which synchronization primitive is used to control access to a common resource in concurrent programming?"
+        }
+      },
+      {
+        "category": "Operating Systems",
+        "id": "356",
+        "correctAnswer": "File System",
+        "incorrectAnswers": ["Scheduler", "Kernel", "Shell"],
+        "question": {
+          "text": "Which component of an operating system is responsible for managing files and directories?"
+        }
+      },
+      {
+        "category": "Operating Systems",
+        "id": "357",
+        "correctAnswer": "Context Switch",
+        "incorrectAnswers": ["Interrupt", "System Call", "Deadlock"],
+        "question": {
+          "text": "What is the process of storing and restoring the state of a CPU so that a process can be resumed from the same point at a later time?"
+        }
+      },
+      {
+        "category": "Operating Systems",
+        "id": "358",
+        "correctAnswer": "Thrashing",
+        "incorrectAnswers": ["Swapping", "Paging", "Segmentation"],
+        "question": {
+          "text": "What is the condition called when excessive paging operations are causing a significant slowdown in system performance?"
+        }
+      },
+      {
+        "category": "Operating Systems",
+        "id": "359",
+        "correctAnswer": "Shell",
+        "incorrectAnswers": ["Kernel", "BIOS", "Bootloader"],
+        "question": {
+          "text": "What is the command-line interface that allows users to interact with the operating system?"
+        }
+      },
+      {
+        "category": "Operating Systems",
+        "id": "360",
+        "correctAnswer": "Interrupt",
+        "incorrectAnswers": ["System Call", "Context Switch", "Deadlock"],
+        "question": {
+          "text": "What is the signal called that prompts the operating system to stop and figure out what to do next?"
+        }
+      },
+      {
+        "category": "Operating Systems",
+        "id": "361",
+        "correctAnswer": "Swapping",
+        "incorrectAnswers": ["Paging", "Segmentation", "Thrashing"],
+        "question": {
+          "text": "What is the process of moving data from RAM to disk (and vice versa) to ensure that the system can handle more processes than the physical memory can accommodate?"
+        }
+      },
+      {
+        "category": "Operating Systems",
+        "id": "362",
+        "correctAnswer": "Multithreading",
+        "incorrectAnswers": ["Multitasking", "Multiprocessing", "Multicasting"],
+        "question": {
+          "text": "What is the ability of a CPU to provide multiple threads of execution within a single process called?"
+        }
+      },
+      {
+        "category": "Operating Systems",
+        "id": "363",
+        "correctAnswer": "Multiprocessing",
+        "incorrectAnswers": ["Multithreading", "Multitasking", "Multicasting"],
+        "question": {
+          "text": "What is the use of two or more CPUs within a single computer system called?"
+        }
+      },
+      {
+        "category": "Operating Systems",
+        "id": "364",
+        "correctAnswer": "Cache",
+        "incorrectAnswers": ["RAM", "Hard Disk", "Register"],
+        "question": {
+          "text": "What is the small, fast memory located close to the CPU used to store frequently accessed data called?"
+        }
+      },
+      {
+        "category": "Operating Systems",
+        "id": "365",
+        "correctAnswer": "System Call",
+        "incorrectAnswers": ["Interrupt", "Context Switch", "Deadlock"],
+        "question": {
+          "text": "What is the mechanism that allows user-level processes to request services from the operating system?"
+        }
+      },
+      {
+        "category": "Operating Systems",
+        "id": "366",
+        "correctAnswer": "Paging",
+        "incorrectAnswers": ["Swapping", "Segmentation", "Thrashing"],
+        "question": {
+          "text": "What is the memory management scheme that eliminates the need for contiguous allocation of physical memory?"
+        }
+      },
+      {
+        "category": "Operating Systems",
+        "id": "367",
+        "correctAnswer": "Segmentation",
+        "incorrectAnswers": ["Paging", "Swapping", "Thrashing"],
+        "question": {
+          "text": "What is the memory management technique that divides the process's memory into different segments?"
+        }
+      },
+      {
+        "category": "Operating Systems",
+        "id": "368",
+        "correctAnswer": "CPU",
+        "incorrectAnswers": ["RAM", "Hard Disk", "Cache"],
+        "question": {
+          "text": "Which component of a computer executes instructions from programs?"
+        }
+      },
+      {
+        "category": "Operating Systems",
+        "id": "369",
+        "correctAnswer": "RAM",
+        "incorrectAnswers": ["CPU", "Hard Disk", "Cache"],
+        "question": {
+          "text": "Which type of memory is used for temporary storage and is volatile?"
+        }
+      },
+      {
+        "category": "Operating Systems",
+        "id": "370",
+        "correctAnswer": "Bootloader",
+        "incorrectAnswers": ["Kernel", "BIOS", "Shell"],
+        "question": {
+          "text": "What is the name of the program that loads the operating system into memory when the computer is started?"
+        }
+      },
+      {
+        "category": "Operating Systems",
+        "id": "371",
+        "correctAnswer": "Multitasking",
+        "incorrectAnswers": ["Multithreading", "Multiprocessing", "Multicasting"],
+        "question": {
+          "text": "What is the ability of an operating system to execute multiple tasks simultaneously called?"
+        }
+      },
+      {
+        "category": "Operating Systems",
+        "id": "372",
+        "correctAnswer": "BIOS",
+        "incorrectAnswers": ["Bootloader", "Kernel", "Shell"],
+        "question": {
+          "text": "What is the firmware called that initializes hardware during the booting process?"
+        }
+      },
+      {
+        "category": "Operating Systems",
+        "id": "373",
+        "correctAnswer": "Process",
+        "incorrectAnswers": ["Thread", "Semaphore", "Mutex"],
+        "question": {
+          "text": "What is a program in execution called?"
+        }
+      },
+      {
+        "category": "Operating Systems",
+        "id": "374",
+        "correctAnswer": "Deadlock",
+        "incorrectAnswers": ["Starvation", "Livelock", "Race Condition"],
+        "question": {
+          "text": "What is the condition called when two or more processes are unable to proceed because each is waiting for the other to release a resource?"
+        }
+      },
+      {
+        "category": "Operating Systems",
+        "id": "375",
+        "correctAnswer": "Virtual Memory",
+        "incorrectAnswers": ["Physical Memory", "Cache Memory", "Secondary Memory"],
+        "question": {
+          "text": "What is the memory management technique that creates an illusion of a large memory space by using disk storage?"
+        }
+      },
+      {
+        "category": "Operating Systems",
+        "id": "376",
+        "correctAnswer": "Context Switch",
+        "incorrectAnswers": ["Interrupt", "System Call", "Deadlock"],
+        "question": {
+          "text": "What is the process of storing and restoring the state of a CPU so that a process can be resumed from the same point at a later time?"
+        }
+      },
+      {
+        "category": "Operating Systems",
+        "id": "377",
+        "correctAnswer": "Thrashing",
+        "incorrectAnswers": ["Swapping", "Paging", "Segmentation"],
+        "question": {
+          "text": "What is the condition called when excessive paging operations are causing a significant slowdown in system performance?"
+        }
+      },
+      {
+        "category": "Operating Systems",
+        "id": "378",
+        "correctAnswer": "Shell",
+        "incorrectAnswers": ["Kernel", "BIOS", "Bootloader"],
+        "question": {
+          "text": "What is the command-line interface that allows users to interact with the operating system?"
+        }
+      },
+      {
+        "category": "Operating Systems",
+        "id": "379",
+        "correctAnswer": "Interrupt",
+        "incorrectAnswers": ["System Call", "Context Switch", "Deadlock"],
+        "question": {
+          "text": "What is the signal called that prompts the operating system to stop and figure out what to do next?"
+        }
+      },
+      {
+        "category": "Operating Systems",
+        "id": "380",
+        "correctAnswer": "Swapping",
+        "incorrectAnswers": ["Paging", "Segmentation", "Thrashing"],
+        "question": {
+          "text": "What is the process of moving data from RAM to disk (and vice versa) to ensure that the system can handle more processes than the physical memory can accommodate?"
+        }
+      },
+      {
+        "category": "Operating Systems",
+        "id": "381",
+        "correctAnswer": "Multithreading",
+        "incorrectAnswers": ["Multitasking", "Multiprocessing", "Multicasting"],
+        "question": {
+          "text": "What is the ability of a CPU to provide multiple threads of execution within a single process called?"
+        }
+      },
+      {
+        "category": "Operating Systems",
+        "id": "382",
+        "correctAnswer": "Multiprocessing",
+        "incorrectAnswers": ["Multithreading", "Multitasking", "Multicasting"],
+        "question": {
+          "text": "What is the use of two or more CPUs within a single computer system called?"
+        }
+      },
+      {
+        "category": "Operating Systems",
+        "id": "383",
+        "correctAnswer": "Cache",
+        "incorrectAnswers": ["RAM", "Hard Disk", "Register"],
+        "question": {
+          "text": "What is the small, fast memory located close to the CPU used to store frequently accessed data called?"
+        }
+      },
+      {
+        "category": "Operating Systems",
+        "id": "384",
+        "correctAnswer": "System Call",
+        "incorrectAnswers": ["Interrupt", "Context Switch", "Deadlock"],
+        "question": {
+          "text": "What is the mechanism that allows user-level processes to request services from the operating system?"
+        }
+      },
+      {
+        "category": "Operating Systems",
+        "id": "385",
+        "correctAnswer": "Paging",
+        "incorrectAnswers": ["Swapping", "Segmentation", "Thrashing"],
+        "question": {
+          "text": "What is the memory management scheme that eliminates the need for contiguous allocation of physical memory?"
+        }
+      },
+      {
+        "category": "Operating Systems",
+        "id": "386",
+        "correctAnswer": "Segmentation",
+        "incorrectAnswers": ["Paging", "Swapping", "Thrashing"],
+        "question": {
+          "text": "What is the memory management technique that divides the process's memory into different segments?"
+        }
+      },
+      {
+        "category": "Operating Systems",
+        "id": "387",
+        "correctAnswer": "Scheduler",
+        "incorrectAnswers": ["Dispatcher", "Page Table", "Mutex"],
+        "question": {
+          "text": "Which component of the operating system determines which process will run next on the CPU?"
+        }
+      }
+      ,
+      {
+        "category": "Operating Systems",
+        "id": "388",
+        "correctAnswer": "Dispatcher",
+        "incorrectAnswers": ["Scheduler", "Page Table", "Mutex"],
+        "question": {
+          "text": "Which component of the operating system gives control of the CPU to the process selected by the scheduler?"
+        }
+      },
+      {
+        "category": "Operating Systems",
+        "id": "389",
+        "correctAnswer": "Boot Sector",
+        "incorrectAnswers": ["Kernel", "BIOS", "Shell"],
+        "question": {
+          "text": "What is the sector of a storage device that contains the machine code to be loaded into RAM by a computer system's built-in firmware?"
+        }
+      },
+      {
+        "category": "Operating Systems",
+        "id": "390",
+        "correctAnswer": "User Interface",
+        "incorrectAnswers": ["Kernel", "File System", "Scheduler"],
+        "question": {
+          "text": "What is the part of the operating system that allows users to interact with the computer?"
+        }
+      },
+      {
+        "category": "Operating Systems",
+        "id": "391",
+        "correctAnswer": "Command Line Interface",
+        "incorrectAnswers": ["Graphical User Interface", "Kernel", "Shell"],
+        "question": {
+          "text": "What is the type of user interface that allows users to interact with the operating system by typing commands?"
+        }
+      },
+      {
+        "category": "Operating Systems",
+        "id": "392",
+        "correctAnswer": "Graphical User Interface",
+        "incorrectAnswers": ["Command Line Interface", "Kernel", "Shell"],
+        "question": {
+          "text": "What is the type of user interface that allows users to interact with the operating system through graphical icons and visual indicators?"
+        }
+      },
+      {
+        "category": "Operating Systems",
+        "id": "393",
+        "correctAnswer": "Device Driver",
+        "incorrectAnswers": ["Kernel", "BIOS", "Shell"],
+        "question": {
+          "text": "What is the software that allows the operating system to communicate with hardware devices?"
+        }
+      },
+      {
+        "category": "Operating Systems",
+        "id": "394",
+        "correctAnswer": "File",
+        "incorrectAnswers": ["Process", "Thread", "Semaphore"],
+        "question": {
+          "text": "What is a collection of data or information that has a name, called the filename?"
+        }
+      },
+      {
+        "category": "Operating Systems",
+        "id": "395",
+        "correctAnswer": "Directory",
+        "incorrectAnswers": ["File", "Process", "Thread"],
+        "question": {
+          "text": "What is a special type of file that contains a list of other files and directories?"
+        }
+      },
+      {
+        "category": "Operating Systems",
+        "id": "396",
+        "correctAnswer": "System Call",
+        "incorrectAnswers": ["Interrupt", "Context Switch", "Deadlock"],
+        "question": {
+          "text": "What is the mechanism that allows user-level processes to request services from the operating system?"
+        }
+      },
+      {
+        "category": "Operating Systems",
+        "id": "397",
+        "correctAnswer": "Kernel Mode",
+        "incorrectAnswers": ["User Mode", "Supervisor Mode", "Protected Mode"],
+        "question": {
+          "text": "What is the mode of operation in which the operating system has unrestricted access to all system resources?"
+        }
+      }
+      
+      
+  ]
+  

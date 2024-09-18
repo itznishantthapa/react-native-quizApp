@@ -83,7 +83,7 @@ export default function Login({ navigation }) {
                         </View>
 
                         <TouchableOpacity onPress={toggleLogin}>
-                            <Text style={{ color: 'white', marginTop: 6 }}>Don't have an account?</Text>
+                            <Text style={{ color: 'white', marginTop: 6 }}>Don&apos;t have an account?</Text>
                         </TouchableOpacity>
                     </View>
 

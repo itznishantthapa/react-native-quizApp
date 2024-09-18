@@ -5,7 +5,6 @@ import { StatusBar } from 'expo-status-bar'
 import IconF from 'react-native-vector-icons/Feather'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { useState } from 'react'
-import IconF6 from 'react-native-vector-icons/FontAwesome6'
 
 
 const Notifications = ({ navigation }) => {

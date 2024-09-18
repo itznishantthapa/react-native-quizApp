@@ -1,5 +1,5 @@
 // import React, { useEffect, useState } from "react";
-import { View, Text, Alert, TouchableOpacity, StyleSheet, ImageBackground,TouchableWithoutFeedback } from "react-native";
+import { View, Text, Alert, StyleSheet,TouchableWithoutFeedback } from "react-native";
 import { StatusBar } from "expo-status-bar";
 import { styles } from '../style';
 import { SafeAreaView } from 'react-native-safe-area-context';

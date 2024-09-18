@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet} from 'react-native'
 import React from 'react'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import FaIcon from 'react-native-vector-icons/FontAwesome';
@@ -14,7 +14,7 @@ import Dashboard from '../TabScreen/Dashboard';
 const Tab = createBottomTabNavigator();
 
 
-export default function Tabbar({question, options, handleOptionClick, counter,isOver, gameInfo, setgameInfo, fetchQuestion,setQuestionAmount  }) {
+export default function Tabbar({ gameInfo, setgameInfo, fetchQuestion,setQuestionAmount  }) {
 
     return (
 
@@ -51,7 +51,7 @@ export default function Tabbar({question, options, handleOptionClick, counter,is
                 {props=> <Dashboard {...props} fetchQuestion={fetchQuestion} setQuestionAmount={setQuestionAmount} />}
             </Tab.Screen>
             <Tab.Screen name='Chart'  >
-                {props => <Chart {...props} question={question} options={options} counter={counter} isOver={isOver} handleOptionClick={handleOptionClick} />}
+                {props => <Chart {...props}  />}
             </Tab.Screen>
             <Tab.Screen name='Profile'>
             {props => <Profile {...props}  gameInfo={gameInfo} setgameInfo={setgameInfo}  />}

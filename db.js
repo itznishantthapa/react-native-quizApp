@@ -1,6 +1,6 @@
 import { Alert } from 'react-native';
 import { auth, firestore } from './firebaseConfig'; 
-import { doc, getDoc, updateDoc, collection ,getDocs,setDoc,deleteDoc } from 'firebase/firestore';
+import { doc, getDoc, updateDoc,setDoc,deleteDoc } from 'firebase/firestore';
 import { createUserWithEmailAndPassword,signInWithEmailAndPassword,deleteUser, reauthenticateWithCredential, EmailAuthProvider } from 'firebase/auth';
 
 //For firebase storage to store the files like {image,files,video etc}

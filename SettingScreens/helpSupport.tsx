@@ -3,11 +3,9 @@ import React from 'react'
 import { styles } from '../style'
 import { StatusBar } from 'expo-status-bar'
 import IconF from 'react-native-vector-icons/Feather'
-import IconAnt from 'react-native-vector-icons/AntDesign'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { useState } from 'react'
 import { TextInput } from 'react-native-gesture-handler'
-import { auth, firestore } from '../firebaseConfig';
 import { Linking } from 'react-native'
 
 import { Alert } from 'react-native'

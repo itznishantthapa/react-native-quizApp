@@ -1,4 +1,4 @@
-import { ScrollView, StyleSheet, Text, TextInput, View, ImageBackground, Touchable, TouchableOpacity } from 'react-native'
+import { ScrollView, Text, View, ImageBackground,  TouchableOpacity } from 'react-native'
 import React, { useState, useContext } from 'react'
 import { StatusBar } from 'expo-status-bar'
 import IconEntypo from 'react-native-vector-icons/Entypo';
