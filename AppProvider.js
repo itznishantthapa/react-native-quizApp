@@ -1,22 +1,21 @@
 import React, { useState, createContext, useEffect } from 'react';
 import { saveLocalData, getLocalData } from './localStorage';
-import { auth,firestore } from './firebaseConfig';
+import { auth, firestore } from './firebaseConfig';
 import { getFromFirebase } from './db';
 import { Alert } from 'react-native';
-import { getDocs, collection } from 'firebase/firestore'; 
-
+import { getDocs, collection } from 'firebase/firestore';
+import NetInfo from '@react-native-community/netinfo';
 
 // Create the context
 const MyContext = createContext();
 
 // Context Provider component
 export const AppProvider = ({ children }) => {
-  // State to manage user data
   const [userData, setUserData] = useState({ fullName: '', email: '' });
   const [QuestionAnswer, setQuestionAnswer] = useState([]);  // State for quiz data
   const [imageUri, setImageUri] = useState(null);  // State for profile image URI
   const [signedUpUsers, setsignedUpUsers] = useState([]);  // State for signed-up users
-  const [topic, setTopic] = useState({database_cloud:'Database',programming_dsa:'Programming',networking_softEng:'Networking',os_aiMl:'Operating System'});
+  const [topic, setTopic] = useState({ database_cloud: 'Database', programming_dsa: 'Programming', networking_softEng: 'Networking', os_aiMl: 'Operating System' });
 
 
 
@@ -26,14 +25,14 @@ export const AppProvider = ({ children }) => {
     try {
       const existingData = await getLocalData(categories);  // Fetch data from local storage
       let questionAnswersArray = existingData ? JSON.parse(existingData) : [];
-      
+
       // Prepend the new answer to the array to ensure latest answers appear first
       const updateQuestionAnswersArray = [{ question, selectedOption, correctAns }, ...questionAnswersArray];
       saveLocalData(categories, updateQuestionAnswersArray);  // Save updated array to local storage
 
       console.log('Data saved to category:', categories);
     } catch (error) {
-      console.error('Error saving quiz data:', error);
+      Alert.alert("Error", "Something went wrong.");
     }
   };
 
@@ -43,12 +42,21 @@ export const AppProvider = ({ children }) => {
       const data = await getLocalData(categories);  // Fetch data from local storage
       setQuestionAnswer(data ? JSON.parse(data) : []);  // Update state
     } catch (error) {
-      console.error('Error fetching quiz data:', error);
+      Alert.alert("Error", "Something went wrong.");
     }
   };
 
+
+
+
   // Function to fetch user data from Firestore
   const fetchUserData = async () => {
+
+    //Checking the internet connection
+    const networkState = await NetInfo.fetch();
+    if (!networkState.isConnected) {
+      return
+    }
     try {
       const userDoc = await getFromFirebase();  // Fetch user document from Firestore
       const data = userDoc.data();  // Extract user data
@@ -63,6 +71,11 @@ export const AppProvider = ({ children }) => {
 
   // Function to fetch user's profile image from Firestore
   const fetchProfileImage = async () => {
+        //Checking the internet connection
+        const networkState = await NetInfo.fetch();
+        if (!networkState.isConnected) {
+          return
+        }
     try {
       const userAllData = await getFromFirebase();  // Fetch complete user data
       const userAllDataInObj = userAllData.data();  // Extract user data object
@@ -76,9 +89,14 @@ export const AppProvider = ({ children }) => {
 
   // Function to fetch list of signed-up users from Firestore
   const fetchUsers = async () => {
+        //Checking the internet connection
+        const networkState = await NetInfo.fetch();
+        if (!networkState.isConnected) {
+          return
+        }
     try {
       const querySnapshot = await getDocs(collection(firestore, 'users'));  // Fetch users collection
-      
+
       // Map users data and include their ID
       const usersData = querySnapshot.docs.map(doc => ({
         id: doc.id,
@@ -107,7 +125,7 @@ export const AppProvider = ({ children }) => {
         fetchUsers();  // Fetch signed-up users when a user is authenticated
       } else {
         setUserData({ fullName: '', email: '' });  // Reset user data on logout
-        setImageUri(null); 
+        setImageUri(null);
       }
     });
 
@@ -117,10 +135,10 @@ export const AppProvider = ({ children }) => {
 
   return (
     <MyContext.Provider value={{
-      userData, setUserData, addQuizAnswer, getQuizData, 
-      QuestionAnswer, imageUri, setImageUri, 
+      userData, setUserData, addQuizAnswer, getQuizData,
+      QuestionAnswer, imageUri, setImageUri,
       signedUpUsers,
-      topic,setTopic,setQuestionAnswer
+      topic, setTopic, setQuestionAnswer
     }}>
       {children}
     </MyContext.Provider>

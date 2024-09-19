@@ -29,7 +29,6 @@ const Chart = ({ navigation }) => {
             {auth.currentUser ?
                 (<Text style={{ color: 'white', fontWeight: 'bold', fontSize: 25, marginTop: 10, marginLeft: 20 }}>Leaderboard</Text>
                 ) : ''
-
             }
 
             <ScrollView style={{}}>
