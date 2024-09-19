@@ -6,7 +6,7 @@ import { getFirestore } from 'firebase/firestore';
 import { getStorage, ref, getDownloadURL } from 'firebase/storage';  
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyAOj6Q03_dxq_ySxsN3Mzv43-81iHRgox8',
+  apiKey: '---------Your API key here------------',
   authDomain: 'v3quiz-ef69a.firebaseapp.com', 
   projectId: 'v3quiz-ef69a',
   storageBucket: 'v3quiz-ef69a.appspot.com',
