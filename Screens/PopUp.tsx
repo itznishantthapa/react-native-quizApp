@@ -1,6 +1,6 @@
 import { View, Text, TouchableOpacity, Modal, ImageBackground, TouchableWithoutFeedback } from 'react-native';
 import React, { useState } from 'react';
-import { styles } from '../style';
+import { styles } from '../style/style';
 
 const PopUp = ({ isVisible, handleSetQuestions, setModalVisible,setTopic }) => {
   // State to track active question and topics

@@ -1,6 +1,6 @@
 // authService.js
 import { signOut } from 'firebase/auth';
-import { auth } from './firebaseConfig';
+import { auth } from '../firebaseConfig';
 
 // Abstract the Firebase logic into this service
 const logout = async () => {

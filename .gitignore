@@ -36,4 +36,7 @@ yarn-error.*
 
 # Ignore the Android build folder
 /android/
-./firebaseConfig.js
+data/
+
+# Ignore the firebaseConfig.js file
+/firebaseConfig.js

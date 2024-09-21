@@ -12,10 +12,10 @@ import FsoftwareEngineering from '../assets/Fengineering1.jpg'
 import FoperatingSystem from '../assets/Fos.png'
 import FaiML from '../assets/Fai.jpg'
 
-import { styles } from '../style'
+import { styles } from '../style/style'
 import { SafeAreaView } from 'react-native-safe-area-context';
 import PopUp from '../Screens/PopUp';
-import { MyContext } from '../AppProvider';
+import { MyContext } from '../backend/AppProvider';
 import IconFan from 'react-native-vector-icons/Fontisto';
 
 export default function Dashboard({ navigation, fetchQuestion, setQuestionAmount }) {

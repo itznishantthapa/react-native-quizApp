@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import { View, Text, TouchableOpacity } from "react-native";
 import { StatusBar } from "expo-status-bar";
-import { styles } from '../style';
-import { MyContext } from '../AppProvider';  // Import context
+import { styles } from '../style/style';
+import { MyContext } from '../backend/AppProvider';  // Import context
 
 
 

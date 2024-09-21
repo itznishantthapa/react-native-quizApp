@@ -1,6 +1,6 @@
 import { View, Text, TouchableOpacity, StyleSheet, TouchableWithoutFeedback } from 'react-native'
 import React from 'react'
-import { styles } from '../style'
+import { styles } from '../style/style'
 import { StatusBar } from 'expo-status-bar'
 import IconF from 'react-native-vector-icons/Feather'
 import { SafeAreaView } from 'react-native-safe-area-context'

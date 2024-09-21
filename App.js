@@ -17,8 +17,8 @@ import Privacy from './SettingScreens/Privacy';
 import PrivacyEdit from './SettingScreens/PrivacyEdit';
 import HelpSupport from './SettingScreens/helpSupport';
 import UserProfile from './Screens/UserProfile';
-import { saveLocalData, getLocalData } from './localStorage';
-import { AppProvider } from './AppProvider';
+import { saveLocalData, getLocalData } from './backend/localStorage';
+import { AppProvider } from './backend/AppProvider';
 import History from './Screens/History';
 import QuestionList from './Screens/QuestionList';
 

@@ -1,13 +1,13 @@
 import React, { useContext, useEffect, useState, useRef } from "react";
 import { View, Text, ScrollView, Animated, Easing } from "react-native";
 import { StatusBar } from "expo-status-bar";
-import { MyContext } from '../AppProvider';  // Import context
-import { styles } from '../style';
+import { MyContext } from '../backend/AppProvider';  // Import context
+import { styles } from '../style/style';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import IconIon from 'react-native-vector-icons/Ionicons';
 import { TouchableOpacity } from "react-native-gesture-handler";
 import { useRoute } from '@react-navigation/native';
-import { deleteLocalData } from "../localStorage";
+import { deleteLocalData } from "../backend/localStorage";
 
 const QuestionList = () => {
   const route = useRoute();

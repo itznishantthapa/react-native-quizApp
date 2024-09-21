@@ -3,7 +3,7 @@ import { Alert, Text, TextInput, View, TouchableOpacity, KeyboardAvoidingView } 
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faEye, faEyeSlash } from '@fortawesome/free-regular-svg-icons';
 import React, { useState } from 'react';
-import { styles } from '../style'
+import { styles } from '../style/style'
 import { createAccount } from '../db';
 
 // Internet connection checking

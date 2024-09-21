@@ -1,6 +1,6 @@
 import { Text, View, TouchableOpacity, TouchableWithoutFeedback, Alert } from 'react-native'
 import React from 'react'
-import { styles } from '../style'
+import { styles } from '../style/style'
 import { StatusBar } from 'expo-status-bar'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import Icon from 'react-native-vector-icons/FontAwesome';
@@ -9,7 +9,7 @@ import IconF from 'react-native-vector-icons/Feather';
 import IconF5 from 'react-native-vector-icons/FontAwesome5';
 import IconSimple from 'react-native-vector-icons/SimpleLineIcons';
 import IconAnt from 'react-native-vector-icons/AntDesign';
-import { logout,isAuthenticated } from '../authService'
+import { logout,isAuthenticated } from '../backend/authService'
 
 
 

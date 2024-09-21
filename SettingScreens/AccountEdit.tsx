@@ -1,13 +1,13 @@
 import { View, Text, TouchableOpacity, TouchableWithoutFeedback, TextInput ,Alert} from 'react-native'
 import React,{useContext} from 'react'
-import { styles } from '../style'
+import { styles } from '../style/style'
 import { StatusBar } from 'expo-status-bar'
 import IconF from 'react-native-vector-icons/Feather'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import IconF6 from 'react-native-vector-icons/FontAwesome6'
 import {useEffect } from 'react';
 import { getFromFirebase, updateToFirebase,saveLocally } from '../db'
-import { MyContext } from '../AppProvider'
+import { MyContext } from '../backend/AppProvider'
 
 
 

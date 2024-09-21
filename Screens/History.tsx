@@ -1,14 +1,14 @@
 // import React, { useEffect, useState } from "react";
 import { View, Text, Alert, StyleSheet,TouchableWithoutFeedback } from "react-native";
 import { StatusBar } from "expo-status-bar";
-import { styles } from '../style';
+import { styles } from '../style/style';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import IconFA6 from 'react-native-vector-icons/FontAwesome6';
 import IconEnypto from 'react-native-vector-icons/Entypo';
 import IconIonicons from 'react-native-vector-icons/Ionicons';
 import IconMc from 'react-native-vector-icons/MaterialCommunityIcons';
 import { useContext,useState } from "react";
-import { MyContext } from "../AppProvider";
+import { MyContext } from "../backend/AppProvider";
 
 
 const History = ({navigation}) => {

@@ -1,7 +1,7 @@
 import React, { useState, createContext, useEffect } from 'react';
 import { saveLocalData, getLocalData } from './localStorage';
-import { auth, firestore } from './firebaseConfig';
-import { getFromFirebase } from './db';
+import { auth, firestore } from '../firebaseConfig';
+import { getFromFirebase } from '../db';
 import { Alert } from 'react-native';
 import { getDocs, collection } from 'firebase/firestore';
 import NetInfo from '@react-native-community/netinfo';

@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View, Image, TouchableOpacity, ScrollView, Alert } from 'react-native'
 import { StatusBar } from 'expo-status-bar';
 import React from 'react'
-import { styles } from '../style'
+import { styles } from '../style/style'
 import console_logo from '../assets/console_logo.png'
 import rank from '../assets/rank.png'
 import correct from '../assets/correct.png'
