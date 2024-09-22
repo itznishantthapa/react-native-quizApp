@@ -1,3 +1,2 @@
-<h1>App Preview</h1>
+I developed this quiz app using React Native Expo CLI to help university students prepare for their MCQs exams. The app includes extracted content from study materials and lecture slides, offering a customizable practice experience where users can select between 10 to 100 questions. Users can track their progress with a question history feature and check their ranking on a leaderboard, earning 4 points for each correct answer. The focus is on improving question-solving accuracy for better learning, not just points. You can sign up with any email—just remember it for future logins!
 
-![QuizOverView](https://github.com/user-attachments/assets/9cadd76e-e24f-47ad-b3a0-707a5b2f4bf5)
