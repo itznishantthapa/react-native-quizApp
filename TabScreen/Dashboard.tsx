@@ -1,4 +1,4 @@
-import { ScrollView, Text, View, ImageBackground,  TouchableOpacity } from 'react-native'
+import { ScrollView, Text, View, ImageBackground, TouchableOpacity } from 'react-native'
 import React, { useState, useContext } from 'react'
 import { StatusBar } from 'expo-status-bar'
 import IconEntypo from 'react-native-vector-icons/Entypo';
@@ -11,21 +11,19 @@ import Fnetwork from '../assets/Fnetwork.png'
 import FsoftwareEngineering from '../assets/Fengineering1.jpg'
 import FoperatingSystem from '../assets/Fos.png'
 import FaiML from '../assets/Fai.jpg'
-
 import { styles } from '../style/style'
 import { SafeAreaView } from 'react-native-safe-area-context';
 import PopUp from '../Screens/PopUp';
 import { MyContext } from '../backend/AppProvider';
 import IconFan from 'react-native-vector-icons/Fontisto';
 
+
+
+
 export default function Dashboard({ navigation, fetchQuestion, setQuestionAmount }) {
-
     const { topic, setTopic } = useContext(MyContext);
-
-
     const [isModalVisible, setModalVisible] = useState(false);
     const handleSetQuestions = (questionNo: number) => {
-        // Handle logic here
         setQuestionAmount(questionNo)
         setModalVisible(false);
     };
@@ -49,8 +47,8 @@ export default function Dashboard({ navigation, fetchQuestion, setQuestionAmount
                     flexDirection: 'column', justifyContent: 'center', alignItems: 'center'
                 }}>
                     <View style={styles.searchView}>
-                        <Text style={{ fontSize: 30, color: 'black', fontWeight:900}}>Quizit</Text>
-                        <IconFan name='fire' size={30} style={{color:'#00b4d8'}}></IconFan>
+                        <Text style={{ fontSize: 30, color: 'black', fontWeight: 900 }}>Quizit</Text>
+                        <IconFan name='fire' size={30} style={{ color: '#00b4d8' }}></IconFan>
 
                     </View>
 
@@ -84,20 +82,12 @@ export default function Dashboard({ navigation, fetchQuestion, setQuestionAmount
 
                     <View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center', width: '100%', height: 150, gap: 8, marginTop: 12 }}>
                         <TouchableOpacity style={{ width: '45%', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }} onPress={() => setModalVisible(true)}>
-                            {/* <ImageBackground source={pixels} resizeMode='cover' imageStyle={{ height: 150, width: '100%', borderRadius: 20 }} style={{ height: 150, width: '100%', justifyContent: 'center',alignItems:'center' }}>
-                            <Text style={[styles.textStyle2,{fontSize:18,fontWeight:'900'}]}>Set Question</Text>
-                        </ImageBackground> */}
                             <View style={{ height: 150, width: '100%', justifyContent: 'center', alignItems: 'center', backgroundColor: '#ffa200', borderRadius: 20 }}>
                                 <IconAnt name='select1' size={60}></IconAnt>
                             </View>
                         </TouchableOpacity>
 
                         <TouchableOpacity style={{ width: '45%', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }} onPress={() => navigation.navigate('History')}>
-                            {/* <ImageBackground source={clock} resizeMode='cover' imageStyle={{ height: 150, width: '100%', borderRadius: 20, }} style={{ height: 150, width: '100%', justifyContent: 'center',alignItems:'center' }}>
-
-                            <Text style={[styles.textStyle2,{fontSize:18,fontWeight:'900'}]}></Text>
-
-                        </ImageBackground> */}
                             <View style={{ height: 150, width: '100%', justifyContent: 'center', alignItems: 'center', backgroundColor: '#2c0735', borderRadius: 20 }}>
                                 <IconEntypo name='back-in-time' size={60} style={{ color: 'white' }}></IconEntypo>
                             </View>
