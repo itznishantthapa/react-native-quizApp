@@ -44,22 +44,10 @@ const Chart = ({ navigation }) => {
                             <Text style={{ color: '#00b4d8', fontWeight: 'bold', fontSize: 18, marginTop: 30, textDecorationLine: 'underline' }}>Please sign in to see leadership board</Text>
                             <IconM name='bird' size={18} style={{ color: '#00b4d8' }}></IconM>
                         </TouchableOpacity>)
-
                     }
-
-
                 </View>
             </ScrollView>
-
         </SafeAreaView>
-
-
-
-
-
-
-
-
     );
 };
 
