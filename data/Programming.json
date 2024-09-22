@@ -619,7 +619,7 @@
         "correctAnswer": "public",
         "incorrectAnswers": ["private", "protected", "default"],
         "question": {
-            "text": "What is the access modifier for the following method?\n\n-----------------\npublic void display() {\n    System.out.println(\"Hello World\");\n}\n-----------------"
+            "text": "What is the access modifier for the following method?\n-----------------\npublic void display() {\n    System.out.println(\"Hello World\");\n}\n-----------------"
         }
     },
     {
@@ -628,7 +628,7 @@
         "correctAnswer": "int",
         "incorrectAnswers": ["float", "double", "long"],
         "question": {
-            "text": "What is the return type of the following method?\n\n-----------------\npublic int add(int a, int b) {\n    return a + b;\n}\n-----------------"
+            "text": "What is the return type of the following method?\n-----------------\npublic int add(int a, int b) {\n    return a + b;\n}\n-----------------"
         }
     },
     {
@@ -637,7 +637,7 @@
         "correctAnswer": "for",
         "incorrectAnswers": ["while", "do-while", "foreach"],
         "question": {
-            "text": "Which loop is used in the following code snippet?\n\n-----------------\nfor (int i = 0; i < 10; i++) {\n    System.out.println(i);\n}\n-----------------"
+            "text": "Which loop is used in the following code snippet?\n-----------------\nfor (int i = 0; i < 10; i++) {\n    System.out.println(i);\n}\n-----------------"
         }
     },
     {
@@ -646,7 +646,7 @@
         "correctAnswer": "try-catch",
         "incorrectAnswers": ["if-else", "switch-case", "for-each"],
         "question": {
-            "text": "Which construct is used for exception handling in the following code snippet?\n\n-----------------\ntry {\n    int result = 10 / 0;\n} catch (ArithmeticException e) {\n    System.out.println(\"Cannot divide by zero\");\n}\n-----------------"
+            "text": "Which construct is used for exception handling in the following code snippet?\n-----------------\ntry {\n    int result = 10 / 0;\n} catch (ArithmeticException e) {\n    System.out.println(\"Cannot divide by zero\");\n}\n-----------------"
         }
     },
     {
@@ -655,7 +655,7 @@
         "correctAnswer": "ArrayIndexOutOfBoundsException",
         "incorrectAnswers": ["NullPointerException", "ClassCastException", "ArithmeticException"],
         "question": {
-            "text": "What exception will be thrown by the following code snippet?\n\n-----------------\nint[] arr = new int[5];\nSystem.out.println(arr[10]);\n-----------------"
+            "text": "What exception will be thrown by the following code snippet?\n-----------------\nint[] arr = new int[5];\nSystem.out.println(arr[10]);\n-----------------"
         }
     },
     {
@@ -664,7 +664,7 @@
         "correctAnswer": "null",
         "incorrectAnswers": ["0", "undefined", "empty"],
         "question": {
-            "text": "What will be the output of the following code snippet?\n\n-----------------\nString str = null;\nSystem.out.println(str);\n-----------------"
+            "text": "What will be the output of the following code snippet?\n-----------------\nString str = null;\nSystem.out.println(str);\n-----------------"
         }
     },
     {
@@ -673,7 +673,7 @@
         "correctAnswer": "Hello World",
         "incorrectAnswers": ["Hello", "World", "Compilation Error"],
         "question": {
-            "text": "What will be the output of the following code snippet?\n\n-----------------\npublic class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello World\");\n    }\n}\n-----------------"
+            "text": "What will be the output of the following code snippet?\n-----------------\npublic class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello World\");\n    }\n}\n-----------------"
         }
     },
     {
@@ -682,7 +682,7 @@
         "correctAnswer": "5",
         "incorrectAnswers": ["4", "6", "Compilation Error"],
         "question": {
-            "text": "What will be the output of the following code snippet?\n\n-----------------\nint a = 2;\nint b = 3;\nSystem.out.println(a + b);\n-----------------"
+            "text": "What will be the output of the following code snippet?\n-----------------\nint a = 2;\nint b = 3;\nSystem.out.println(a + b);\n-----------------"
         }
     },
     {
@@ -691,7 +691,7 @@
         "correctAnswer": "true",
         "incorrectAnswers": ["false", "1", "0"],
         "question": {
-            "text": "What will be the output of the following code snippet?\n\n-----------------\nboolean flag = true;\nSystem.out.println(flag);\n-----------------"
+            "text": "What will be the output of the following code snippet?\n-----------------\nboolean flag = true;\nSystem.out.println(flag);\n-----------------"
         }
     },
     {
@@ -700,7 +700,7 @@
         "correctAnswer": "null",
         "incorrectAnswers": ["0", "undefined", "empty"],
         "question": {
-            "text": "What will be the output of the following code snippet?\n\n-----------------\nString str = null;\nSystem.out.println(str);\n-----------------"
+            "text": "What will be the output of the following code snippet?\n-----------------\nString str = null;\nSystem.out.println(str);\n-----------------"
         }
     },
     {
@@ -709,7 +709,7 @@
         "correctAnswer": "Hello World",
         "incorrectAnswers": ["Hello", "World", "Compilation Error"],
         "question": {
-            "text": "What will be the output of the following code snippet?\n\n-----------------\npublic class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello World\");\n    }\n}\n-----------------"
+            "text": "What will be the output of the following code snippet?\n-----------------\npublic class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello World\");\n    }\n}\n-----------------"
         }
     },
     {
@@ -718,7 +718,7 @@
         "correctAnswer": "5",
         "incorrectAnswers": ["4", "6", "Compilation Error"],
         "question": {
-            "text": "What will be the output of the following code snippet?\n\n-----------------\nint a = 2;\nint b = 3;\nSystem.out.println(a + b);\n-----------------"
+            "text": "What will be the output of the following code snippet?\n-----------------\nint a = 2;\nint b = 3;\nSystem.out.println(a + b);\n-----------------"
         }
     },
     {
@@ -727,7 +727,7 @@
         "correctAnswer": "true",
         "incorrectAnswers": ["false", "1", "0"],
         "question": {
-            "text": "What will be the output of the following code snippet?\n\n-----------------\nboolean flag = true;\nSystem.out.println(flag);\n-----------------"
+            "text": "What will be the output of the following code snippet?\n-----------------\nboolean flag = true;\nSystem.out.println(flag);\n-----------------"
         }
     },
     {
@@ -736,7 +736,7 @@
         "correctAnswer": "null",
         "incorrectAnswers": ["0", "undefined", "empty"],
         "question": {
-            "text": "What will be the output of the following code snippet?\n\n-----------------\nString str = null;\nSystem.out.println(str);\n-----------------"
+            "text": "What will be the output of the following code snippet?\n-----------------\nString str = null;\nSystem.out.println(str);\n-----------------"
         }
     },
     {
@@ -745,7 +745,7 @@
         "correctAnswer": "Hello World",
         "incorrectAnswers": ["Hello", "World", "Compilation Error"],
         "question": {
-            "text": "What will be the output of the following code snippet?\n\n-----------------\npublic class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello World\");\n    }\n}\n-----------------"
+            "text": "What will be the output of the following code snippet?\n-----------------\npublic class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello World\");\n    }\n}\n-----------------"
         }
     },
     {
@@ -754,7 +754,7 @@
         "correctAnswer": "5",
         "incorrectAnswers": ["4", "6", "Compilation Error"],
         "question": {
-            "text": "What will be the output of the following code snippet?\n\n-----------------\nint a = 2;\nint b = 3;\nSystem.out.println(a + b);\n-----------------"
+            "text": "What will be the output of the following code snippet?\n-----------------\nint a = 2;\nint b = 3;\nSystem.out.println(a + b);\n-----------------"
         }
     },
     {
@@ -763,7 +763,7 @@
         "correctAnswer": "11",
         "incorrectAnswers": ["10", "12", "Compilation Error"],
         "question": {
-            "text": "What will be the output of the following code snippet?\n\n-----------------\nint x = 10;\nx++;\nSystem.out.println(x);\n-----------------"
+            "text": "What will be the output of the following code snippet?\n-----------------\nint x = 10;\nx++;\nSystem.out.println(x);\n-----------------"
         }
     },
     {
@@ -772,7 +772,7 @@
         "correctAnswer": "9",
         "incorrectAnswers": ["10", "8", "Compilation Error"],
         "question": {
-            "text": "What will be the output of the following code snippet?\n\n-----------------\nint x = 10;\nx--;\nSystem.out.println(x);\n-----------------"
+            "text": "What will be the output of the following code snippet?\n-----------------\nint x = 10;\nx--;\nSystem.out.println(x);\n-----------------"
         }
     },
     {
@@ -781,7 +781,7 @@
         "correctAnswer": "11",
         "incorrectAnswers": ["10", "12", "Compilation Error"],
         "question": {
-            "text": "What will be the output of the following code snippet?\n\n-----------------\nint x = 10;\nSystem.out.println(++x);\n-----------------"
+            "text": "What will be the output of the following code snippet?\n-----------------\nint x = 10;\nSystem.out.println(++x);\n-----------------"
         }
     },
     {
@@ -790,7 +790,7 @@
         "correctAnswer": "10",
         "incorrectAnswers": ["9", "11", "Compilation Error"],
         "question": {
-            "text": "What will be the output of the following code snippet?\n\n-----------------\nint x = 10;\nSystem.out.println(x++);\nSystem.out.println(x);\n-----------------"
+            "text": "What will be the output of the following code snippet?\n-----------------\nint x = 10;\nSystem.out.println(x++);\nSystem.out.println(x);\n-----------------"
         }
     },
     {
@@ -799,7 +799,7 @@
         "correctAnswer": "9",
         "incorrectAnswers": ["10", "8", "Compilation Error"],
         "question": {
-            "text": "What will be the output of the following code snippet?\n\n-----------------\nint x = 10;\nSystem.out.println(--x);\n-----------------"
+            "text": "What will be the output of the following code snippet?\n-----------------\nint x = 10;\nSystem.out.println(--x);\n-----------------"
         }
     },
     {
@@ -808,7 +808,7 @@
         "correctAnswer": "10",
         "incorrectAnswers": ["9", "11", "Compilation Error"],
         "question": {
-            "text": "What will be the output of the following code snippet?\n\n-----------------\nint x = 10;\nSystem.out.println(x--);\nSystem.out.println(x);\n-----------------"
+            "text": "What will be the output of the following code snippet?\n-----------------\nint x = 10;\nSystem.out.println(x--);\nSystem.out.println(x);\n-----------------"
         }
     },
     {
@@ -817,7 +817,7 @@
         "correctAnswer": "21",
         "incorrectAnswers": ["20", "22", "Compilation Error"],
         "question": {
-            "text": "What will be the output of the following code snippet?\n\n-----------------\nint x = 10;\nx += 10;\nx++;\nSystem.out.println(x);\n-----------------"
+            "text": "What will be the output of the following code snippet?\n-----------------\nint x = 10;\nx += 10;\nx++;\nSystem.out.println(x);\n-----------------"
         }
     },
     {
@@ -826,7 +826,7 @@
         "correctAnswer": "19",
         "incorrectAnswers": ["20", "18", "Compilation Error"],
         "question": {
-            "text": "What will be the output of the following code snippet?\n\n-----------------\nint x = 20;\nx -= 1;\nx--;\nSystem.out.println(x);\n-----------------"
+            "text": "What will be the output of the following code snippet?\n-----------------\nint x = 20;\nx -= 1;\nx--;\nSystem.out.println(x);\n-----------------"
         }
     },
     {
@@ -835,7 +835,7 @@
         "correctAnswer": "10",
         "incorrectAnswers": ["11", "9", "Compilation Error"],
         "question": {
-            "text": "What will be the output of the following code snippet?\n\n-----------------\nint x = 10;\nint y = x++;\nSystem.out.println(y);\n-----------------"
+            "text": "What will be the output of the following code snippet?\n-----------------\nint x = 10;\nint y = x++;\nSystem.out.println(y);\n-----------------"
         }
     },
     {
@@ -844,7 +844,7 @@
         "correctAnswer": "11",
         "incorrectAnswers": ["10", "12", "Compilation Error"],
         "question": {
-            "text": "What will be the output of the following code snippet?\n\n-----------------\nint x = 10;\nint y = ++x;\nSystem.out.println(y);\n-----------------"
+            "text": "What will be the output of the following code snippet?\n-----------------\nint x = 10;\nint y = ++x;\nSystem.out.println(y);\n-----------------"
         }
     },
     {
@@ -853,7 +853,7 @@
         "correctAnswer": "10",
         "incorrectAnswers": ["11", "9", "Compilation Error"],
         "question": {
-            "text": "What will be the output of the following code snippet?\n\n-----------------\nint x = 10;\nSystem.out.println(x++);\nSystem.out.println(x);\n-----------------"
+            "text": "What will be the output of the following code snippet?\n-----------------\nint x = 10;\nSystem.out.println(x++);\nSystem.out.println(x);\n-----------------"
         }
     },
     {
@@ -862,7 +862,7 @@
         "correctAnswer": "9",
         "incorrectAnswers": ["10", "8", "Compilation Error"],
         "question": {
-            "text": "What will be the output of the following code snippet?\n\n-----------------\nint x = 10;\nSystem.out.println(x--);\nSystem.out.println(x);\n-----------------"
+            "text": "What will be the output of the following code snippet?\n-----------------\nint x = 10;\nSystem.out.println(x--);\nSystem.out.println(x);\n-----------------"
         }
     },
     {
@@ -871,7 +871,7 @@
         "correctAnswer": "21",
         "incorrectAnswers": ["20", "22", "Compilation Error"],
         "question": {
-            "text": "What will be the output of the following code snippet?\n\n-----------------\nint x = 10;\nx += 10;\nx++;\nSystem.out.println(x);\n-----------------"
+            "text": "What will be the output of the following code snippet?\n-----------------\nint x = 10;\nx += 10;\nx++;\nSystem.out.println(x);\n-----------------"
         }
     },
     {
@@ -880,7 +880,7 @@
         "correctAnswer": "19",
         "incorrectAnswers": ["20", "18", "Compilation Error"],
         "question": {
-            "text": "What will be the output of the following code snippet?\n\n-----------------\nint x = 20;\nx -= 1;\nx--;\nSystem.out.println(x);\n-----------------"
+            "text": "What will be the output of the following code snippet?\n-----------------\nint x = 20;\nx -= 1;\nx--;\nSystem.out.println(x);\n-----------------"
         }
     },
     {
@@ -889,7 +889,7 @@
         "correctAnswer": "20",
         "incorrectAnswers": ["21", "19", "Compilation Error"],
         "question": {
-            "text": "What will be the output of the following code snippet?\n\n-----------------\nint x = 10;\nint y = x++ + ++x;\nSystem.out.println(y);\n-----------------"
+            "text": "What will be the output of the following code snippet?\n-----------------\nint x = 10;\nint y = x++ + ++x;\nSystem.out.println(y);\n-----------------"
         }
     },
     {
@@ -898,7 +898,7 @@
         "correctAnswer": "21",
         "incorrectAnswers": ["20", "22", "Compilation Error"],
         "question": {
-            "text": "What will be the output of the following code snippet?\n\n-----------------\nint x = 10;\nint y = ++x + ++x;\nSystem.out.println(y);\n-----------------"
+            "text": "What will be the output of the following code snippet?\n-----------------\nint x = 10;\nint y = ++x + ++x;\nSystem.out.println(y);\n-----------------"
         }
     },
     {
@@ -907,7 +907,7 @@
         "correctAnswer": "20",
         "incorrectAnswers": ["21", "19", "Compilation Error"],
         "question": {
-            "text": "What will be the output of the following code snippet?\n\n-----------------\nint x = 10;\nint y = x++ + x++;\nSystem.out.println(y);\n-----------------"
+            "text": "What will be the output of the following code snippet?\n-----------------\nint x = 10;\nint y = x++ + x++;\nSystem.out.println(y);\n-----------------"
         }
     },
     {
@@ -916,7 +916,7 @@
         "correctAnswer": "20",
         "incorrectAnswers": ["21", "19", "Compilation Error"],
         "question": {
-            "text": "What will be the output of the following code snippet?\n\n-----------------\nint x = 10;\nint y = ++x + x++;\nSystem.out.println(y);\n-----------------"
+            "text": "What will be the output of the following code snippet?\n-----------------\nint x = 10;\nint y = ++x + x++;\nSystem.out.println(y);\n-----------------"
         }
     }
     

@@ -4,7 +4,7 @@ import { StatusBar } from "expo-status-bar";
 import { MyContext } from '../backend/AppProvider';  // Import context
 import { styles } from '../style/style';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import IconIon from 'react-native-vector-icons/Ionicons';
+import IconM from 'react-native-vector-icons/MaterialCommunityIcons';
 import { TouchableOpacity } from "react-native-gesture-handler";
 import { useRoute } from '@react-navigation/native';
 import { deleteLocalData } from "../backend/localStorage";
@@ -49,13 +49,20 @@ const QuestionList = () => {
     <SafeAreaView style={styles.background}>
       <StatusBar hidden={false} backgroundColor="black" style="light" />
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'flex-start' }}>
-        <View style={{ flexDirection: 'row', width: '90%', justifyContent: 'space-between' }}>
-          <View></View>
-          <Text style={{ color: 'white', fontSize: 20 }}>Solved Questions</Text>
-          <TouchableOpacity onLongPress={handleDeleteAll} >
-            <IconIon name="reorder-three" size={30} style={{ color: 'white' }} />
-          </TouchableOpacity>
-        </View>
+          {
+            questions.length?(
+              <View style={{ flexDirection: 'row', width: '90%', justifyContent: 'space-between' }}>
+              <View></View>
+              <Text style={{ color: 'white', fontSize: 20 }}>Solved Questions</Text>
+              <TouchableOpacity onLongPress={handleDeleteAll} >
+              <IconM name="delete-sweep" size={30} style={{ color: 'white' }} />
+            </TouchableOpacity>
+            </View>
+            ):( <View style={{ flexDirection:'column', alignItems: 'center', justifyContent: 'center',height:'100%' }}><IconM name="delete-circle-outline" size={100} style={{ color: 'white' }} />
+            <Text style={{color:'white',fontSize:30}}>No questions to display.</Text>
+            </View> )
+          }
+
         <ScrollView showsVerticalScrollIndicator={false}>
           {questions.map((answer, index) => (
             <Animated.View
@@ -70,7 +77,7 @@ const QuestionList = () => {
                   },
                 ],
                 opacity: animatedValues[index], // Fade out
-                backgroundColor: answer.selectedOption === answer.correctAns ? '#92e6a7' : '#ffccd5',
+                backgroundColor: answer.selectedOption === answer.correctAns ? '#80ed99' : '#ffafcc',
                 padding: 15,
                 marginTop: 20,
                 borderRadius: 20,

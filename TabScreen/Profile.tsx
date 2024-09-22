@@ -25,9 +25,6 @@ export default function Profile({ navigation,gameInfo,setgameInfo }) {
   // const {userData,setUserData}=useContext(MyContext);
   const {userData,imageUri,setImageUri,signedUpUsers}=useContext(MyContext);
   // const {gameInfo}=useContext(MyContext);
-
-
-
   // Function to handle selecting an image
   const pickImage = async () => {
     const permissionResult = await ImagePicker.requestMediaLibraryPermissionsAsync();
