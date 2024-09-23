@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState, useRef } from "react";
+import React, { useContext, useState, useRef } from "react";
 import { View, Text, ScrollView, Animated, Easing } from "react-native";
 import { StatusBar } from "expo-status-bar";
 import { MyContext } from '../backend/AppProvider';  // Import context
