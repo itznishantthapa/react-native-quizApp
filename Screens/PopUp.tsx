@@ -1,4 +1,4 @@
-import { View, Text, TouchableOpacity, Modal, ImageBackground, TouchableWithoutFeedback } from 'react-native';
+import { View, Text, TouchableOpacity, Modal, TouchableWithoutFeedback } from 'react-native';
 import React, { useState } from 'react';
 import { styles } from '../style/style';
 
