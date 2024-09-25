@@ -1,4 +1,3 @@
-// import React, { useEffect, useState } from "react";
 import { View, Text, TouchableOpacity, Image } from "react-native";
 import { StatusBar } from "expo-status-bar";
 import { styles } from '../style/style';

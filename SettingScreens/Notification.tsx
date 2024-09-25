@@ -35,7 +35,7 @@ const Notifications = ({ navigation }) => {
                         <View style={[styles.accountBoxSections, { borderWidth: 1, borderRadius: 10, justifyContent: 'space-evenly', flexDirection: 'row', alignItems: 'center' }]}>
                             <Text style={[styles.sectionText, { paddingLeft: 10, width: '60%' }]}>Notifications</Text>
                             <TouchableOpacity style={[styles.deleteButton, { width: '30%', backgroundColor: isOn ? 'green' : 'red' }]} onPress={handleNotyOnOff}>
-                                <Text style={[styles.buttonText, { textAlign: 'center' }]}>Trun {isOn ? "on" : "off"}</Text>
+                                <Text style={[styles.buttonText, { textAlign: 'center' }]}>Turn {isOn ? "on" : "off"}</Text>
                             </TouchableOpacity>
                         </View>
                     </TouchableWithoutFeedback>
