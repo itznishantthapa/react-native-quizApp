@@ -34,7 +34,6 @@ export default function UserProfile({ navigation }) {
 
           <View style={styles.profileContainer} >
             <TouchableOpacity >
-              {/* <Image  source={imageUri ? { uri: profileImageUri } : require("../assets/lady.jpeg")} style={styles.profileImage}></Image> */}
               <Image source={user.profile ? { uri: user.profile } : require('../assets/person.jpg')} style={styles.profileImage}></Image>
             </TouchableOpacity>
           </View>
@@ -47,12 +46,10 @@ export default function UserProfile({ navigation }) {
             <View style={styles.gameInfo}>
 
               <TouchableOpacity style={styles.gameInfoIcons}>
-                {/* <View style={styles.gameInfoIcons}> */}
                 <Image style={styles.iconImage} source={rank}></Image>
                 <Text style={{ fontWeight: 'bold', fontSize: 20 }}>#{user.gameInfo ? user.gameInfo.totalAttempted : 'NA'}</Text>
                 <Text style={{ fontWeight: 'bold' }}>World</Text>
                 <Text style={{ fontWeight: 'bold' }}>Rank</Text>
-                {/* </View> */}
               </TouchableOpacity>
 
               <TouchableOpacity style={styles.gameInfoIcons}>
