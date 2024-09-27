@@ -22,9 +22,7 @@ import { useFocusEffect } from '@react-navigation/native';
 
 
 export default function Profile({ navigation,gameInfo,setgameInfo }) {
-  // const {userData,setUserData}=useContext(MyContext);
   const {userData,imageUri,setImageUri,signedUpUsers}=useContext(MyContext);
-  // const {gameInfo}=useContext(MyContext);
   // Function to handle selecting an image
   const pickImage = async () => {
     const permissionResult = await ImagePicker.requestMediaLibraryPermissionsAsync();
@@ -46,7 +44,6 @@ export default function Profile({ navigation,gameInfo,setgameInfo }) {
       Alert.alert('Please SignIn', 'You must sign in to change the profile');
     }
   };
-  // ----------------------------------------------------------------------------------------------------
 
 
     // Function to fetch game info from Firestore 
@@ -86,7 +83,7 @@ export default function Profile({ navigation,gameInfo,setgameInfo }) {
       };
       uploadGameInfo();
     }
-  }, [gameInfo.gamePlayed]); // Update only when gamePlayed changes
+  }, [gameInfo.gamePlayed]); 
 
   // Navigation handlers
   const handleGear = () => {
@@ -118,7 +115,6 @@ export default function Profile({ navigation,gameInfo,setgameInfo }) {
 
           <View style={styles.profileContainer}>
             <TouchableOpacity onLongPress={pickImage}>
-              {/* <Image  source={imageUri ? { uri: profileImageUri } : require("../assets/lady.jpeg")} style={styles.profileImage}></Image> */}
               <Image source={imageUri ? { uri: imageUri } : require('../assets/person.jpg')} style={styles.profileImage}></Image>
             </TouchableOpacity>
           </View>
