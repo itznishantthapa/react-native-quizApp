@@ -179,7 +179,6 @@ export default function App() {
     setQuestion(data[counter].question.text);
     setOptions(options);
     setCorrectAns(data[counter].correctAnswer);
-    // setcategories((data[counter].category).toLowerCase());
     
   };
 
@@ -225,7 +224,6 @@ export default function App() {
   // ------------------------------------------(STORING END)----------------------------------------------------------------------------
 
   return (
-    // <View style={styles.container}>
     <AppProvider >
       <NavigationContainer>
         <Stack.Navigator initialRouteName="Tabbar"
