@@ -111,7 +111,6 @@ export default function Creation({ navigation }) {
 
                 </View>
             </View>
-            {/* </ImageBackground> */}
         </KeyboardAvoidingView>
     );
 }

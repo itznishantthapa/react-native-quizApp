@@ -43,7 +43,6 @@ export default function Tabbar({ gameInfo, setgameInfo, fetchQuestion,setQuestio
                     borderTopColor: 'black',
                     // marginBottom:5,
                     height: 60
-
                 }
             })}
         >

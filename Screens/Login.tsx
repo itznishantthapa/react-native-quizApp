@@ -52,8 +52,6 @@ export default function Login({ navigation }) {
         <KeyboardAvoidingView
             style={styles.root}>
             <StatusBar hidden={false} backgroundColor='black' style='light' />
-
-            {/* <ImageBackground source={neon2} style={styles.background}> */}
             <View style={styles.background}>
                 <View style={styles.innerView}>
                     <TextInput value={email} onChangeText={setUsername} style={styles.inputField} placeholder='Enter your email' placeholderTextColor='#adb5bd' />
@@ -91,7 +89,6 @@ export default function Login({ navigation }) {
 
                 </View>
             </View>
-            {/* </ImageBackground> */}
         </KeyboardAvoidingView>
     );
 }

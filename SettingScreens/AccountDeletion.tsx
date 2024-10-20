@@ -12,8 +12,6 @@ import { TextInput } from 'react-native-gesture-handler'
 
 const DeleteConfirmationModal = ({ isVisible, onClose, onConfirm }) => {
 
-
-
   return (
     <Modal
       transparent={true}
